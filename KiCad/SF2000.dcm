@@ -1,0 +1,21 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP Conn_2Rows-86Pins_even_odd
+D Generic connector, double row, 86 pins, even/odd pin numbering scheme (row 2 odd numbers, row 1 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)
+K connector
+F ~
+$ENDCMP
+#
+$CMP LD29150PTR
+D 1.5A low dropout linear regulator, adjustable output, TO-252
+K 1.5A LDO linear voltage regulator adjustable positive
+F http://ww1.microchip.com/downloads/en/devicedoc/20005685a.pdf
+$ENDCMP
+#
+$CMP SN74CBT16211
+D 24-bit FET bus switch with level shifter
+K bus
+F https://www.ti.com/lit/ds/symlink/sn74cbtd16211.pdf
+$ENDCMP
+#
+#End Doc Library

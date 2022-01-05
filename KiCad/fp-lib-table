@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name SF2000)(type KiCad)(uri ${KIPRJMOD}/SF2000.pretty)(options "")(descr ""))
+)
