@@ -78,26 +78,12 @@ F 3 "~" H 1200 4050 50  0001 C CNN
 $EndComp
 Text GLabel 1500 1650 2    50   Input ~ 0
 GND
-Text GLabel 1500 1750 2    50   Input ~ 0
-GND
 Text GLabel 1500 1850 2    50   Input ~ 0
 +5VDC
-Text GLabel 1500 1950 2    50   Input ~ 0
-CLK7M
 Text GLabel 1000 1650 0    50   Input ~ 0
-GND
-Text GLabel 1000 1750 0    50   Input ~ 0
 GND
 Text GLabel 1000 1850 0    50   Input ~ 0
 +5VDC
-Text GLabel 1000 1950 0    50   Input ~ 0
--12VDC
-Text GLabel 1500 2050 2    50   Input ~ 0
-CLK28M
-Text GLabel 1000 2050 0    50   Input ~ 0
-+12VDC
-Text GLabel 1000 2150 0    50   Input ~ 0
-CFGIN
 Text GLabel 1500 2250 2    50   Input ~ 0
 GND
 Text GLabel 1500 2150 2    50   Input ~ 0
@@ -254,20 +240,12 @@ Text GLabel 3400 3500 2    50   Input ~ 0
 GND
 Text GLabel 6950 1550 2    50   Input ~ 0
 +5VDC
-Text GLabel 6950 1650 2    50   Input ~ 0
-CLK7M
 Text GLabel 2400 2400 0    50   Input ~ 0
 GND
 Text GLabel 2400 3500 0    50   Input ~ 0
 GND
 Text GLabel 6450 1550 0    50   Input ~ 0
 +5VDC
-Text GLabel 6450 1650 0    50   Input ~ 0
--12VDC
-Text GLabel 6950 1750 2    50   Input ~ 0
-CLK28M
-Text GLabel 6450 1750 0    50   Input ~ 0
-+12VDC
 Text GLabel 6450 1850 0    50   Input ~ 0
 CFGIN
 Text GLabel 3400 1700 2    50   Input ~ 0
@@ -436,20 +414,181 @@ Wire Wire Line
 Text GLabel 2400 3300 0    50   Input ~ 0
 4V3
 $Comp
-L SF2000:LD29150PTR U1
+L SF2000:LD29150PTR U2
 U 1 1 61D74FCD
-P 4500 1200
-F 0 "U1" H 4500 1567 50  0000 C CNN
-F 1 "LD29150PTR" H 4500 1476 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:TO-252-5_TabPin3" H 4600 900 50  0001 L CNN
-F 3 "http://ww1.microchip.com/downloads/en/devicedoc/20005685a.pdf" H 4250 1450 50  0001 C CNN
-	1    4500 1200
+P 3900 1050
+F 0 "U2" H 3900 1417 50  0000 C CNN
+F 1 "LD29150PTR" H 3900 1326 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TO-252-5_TabPin3" H 4000 750 50  0001 L CNN
+F 3 "http://ww1.microchip.com/downloads/en/devicedoc/20005685a.pdf" H 3650 1300 50  0001 C CNN
+	1    3900 1050
 	1    0    0    -1  
 $EndComp
-Text GLabel 4100 1100 0    50   Input ~ 0
+Text GLabel 3400 950  0    50   Input ~ 0
 +5VDC
 Wire Wire Line
-	4100 1300 4100 1100
-Text GLabel 4500 1500 3    50   Input ~ 0
+	3500 1150 3500 950 
+Text GLabel 3900 1350 3    50   Input ~ 0
 GND
+$Comp
+L Regulator_Linear:LM1117-3.3 U1
+U 1 1 61D7BC02
+P 2350 950
+F 0 "U1" H 2350 1192 50  0000 C CNN
+F 1 "LM1117-3.3" H 2350 1101 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-223" H 2350 950 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm1117.pdf" H 2350 950 50  0001 C CNN
+	1    2350 950 
+	1    0    0    -1  
+$EndComp
+Text GLabel 1950 950  0    50   Input ~ 0
++5VDC
+Text GLabel 2350 1250 3    50   Input ~ 0
+GND
+$Comp
+L Device:C_Small C1
+U 1 1 61D8CF9D
+P 2000 850
+F 0 "C1" H 1750 1000 50  0000 L CNN
+F 1 "10uF" H 1750 900 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 2000 850 50  0001 C CNN
+F 3 "~" H 2000 850 50  0001 C CNN
+	1    2000 850 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 950  2000 950 
+Connection ~ 2000 950 
+Wire Wire Line
+	2000 950  2050 950 
+Text GLabel 2000 750  1    50   Input ~ 0
+GND
+$Comp
+L Device:C_Small C2
+U 1 1 61D93B95
+P 2700 850
+F 0 "C2" H 2800 1000 50  0000 L CNN
+F 1 "10uF" H 2800 900 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 2700 850 50  0001 C CNN
+F 3 "~" H 2700 850 50  0001 C CNN
+	1    2700 850 
+	1    0    0    -1  
+$EndComp
+Text GLabel 2700 750  1    50   Input ~ 0
+GND
+Wire Wire Line
+	2650 1050 2650 950 
+Wire Wire Line
+	2650 950  2700 950 
+Connection ~ 2650 950 
+Connection ~ 2700 950 
+Wire Wire Line
+	2700 950  2750 950 
+$Comp
+L Device:C_Small C3
+U 1 1 61D97053
+P 2750 1050
+F 0 "C3" H 2800 850 50  0000 L CNN
+F 1 "0.1uF" H 2800 950 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2750 1050 50  0001 C CNN
+F 3 "~" H 2750 1050 50  0001 C CNN
+	1    2750 1050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 1250 2750 1250
+Wire Wire Line
+	2750 1250 2750 1150
+Text GLabel 2800 950  2    50   Output ~ 0
+3V3
+Wire Wire Line
+	2750 950  2800 950 
+Connection ~ 2750 950 
+Text GLabel 4650 950  2    50   Output ~ 0
+4V3
+$Comp
+L Device:C_Small C4
+U 1 1 61D9D5AB
+P 3450 850
+F 0 "C4" H 3250 1000 50  0000 L CNN
+F 1 "0.33uF" H 3100 900 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 3450 850 50  0001 C CNN
+F 3 "~" H 3450 850 50  0001 C CNN
+	1    3450 850 
+	1    0    0    -1  
+$EndComp
+Text GLabel 3450 750  1    50   Input ~ 0
+GND
+Wire Wire Line
+	3400 950  3450 950 
+Connection ~ 3500 950 
+Connection ~ 3450 950 
+Wire Wire Line
+	3450 950  3500 950 
+$Comp
+L Device:R_Small R2
+U 1 1 61DA2771
+P 4350 1250
+F 0 "R2" H 4409 1296 50  0000 L CNN
+F 1 "1.2k" H 4409 1205 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4350 1250 50  0001 C CNN
+F 3 "~" H 4350 1250 50  0001 C CNN
+	1    4350 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 1150 4350 1150
+Wire Wire Line
+	4350 1350 3900 1350
+$Comp
+L Device:R_Small R1
+U 1 1 61DA6A29
+P 4350 1050
+F 0 "R1" H 4409 1096 50  0000 L CNN
+F 1 "3k" H 4409 1005 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4350 1050 50  0001 C CNN
+F 3 "~" H 4350 1050 50  0001 C CNN
+	1    4350 1050
+	1    0    0    -1  
+$EndComp
+Connection ~ 4350 1150
+Wire Wire Line
+	4300 950  4350 950 
+Connection ~ 4350 950 
+Wire Wire Line
+	4350 950  4550 950 
+$Comp
+L Device:C_Small C5
+U 1 1 61DA7AE4
+P 4550 850
+F 0 "C5" H 4650 1000 50  0000 L CNN
+F 1 "10uF" H 4650 900 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 4550 850 50  0001 C CNN
+F 3 "~" H 4550 850 50  0001 C CNN
+	1    4550 850 
+	1    0    0    -1  
+$EndComp
+Connection ~ 4550 950 
+Wire Wire Line
+	4550 950  4650 950 
+Text GLabel 4550 750  1    50   Input ~ 0
+GND
+Wire Wire Line
+	1000 1750 1000 1650
+Wire Wire Line
+	1500 1750 1500 1650
+Text GLabel 1000 2150 0    50   Input ~ 0
+CFGIN
+NoConn ~ 1500 1950
+Text Notes 1550 2000 0    50   ~ 0
+CLK7M
+NoConn ~ 1500 2050
+Text Notes 1550 2100 0    50   ~ 0
+CLK28M
+NoConn ~ 1000 1950
+Text Notes 550  2000 0    50   ~ 0
+-5V/-12V
+NoConn ~ 1000 2050
+Text Notes 750  2100 0    50   ~ 0
++12V
 $EndSCHEMATC
