@@ -266,107 +266,107 @@ Text GLabel 2550 4150 0    50   Input ~ 0
 A8
 Text GLabel 2550 4450 0    50   Input ~ 0
 FC0
-Text GLabel 4100 2050 0    50   Input ~ 0
+Text GLabel 4350 2050 0    50   Input ~ 0
 A9
 Text GLabel 2550 4550 0    50   Input ~ 0
 FC1
-Text GLabel 4100 2150 0    50   Input ~ 0
+Text GLabel 4350 2150 0    50   Input ~ 0
 A10
 Text GLabel 2550 4650 0    50   Input ~ 0
 FC2
-Text GLabel 4100 2250 0    50   Input ~ 0
+Text GLabel 4350 2250 0    50   Input ~ 0
 A11
-Text GLabel 4100 2350 0    50   Input ~ 0
+Text GLabel 4350 2350 0    50   Input ~ 0
 A12
-Text GLabel 4100 2950 0    50   Input ~ 0
+Text GLabel 4350 2950 0    50   Input ~ 0
 A13
-Text GLabel 4100 2450 0    50   Input ~ 0
+Text GLabel 4350 2450 0    50   Input ~ 0
 IPL0
-Text GLabel 4100 3050 0    50   Input ~ 0
+Text GLabel 4350 3050 0    50   Input ~ 0
 A14
-Text GLabel 4100 2550 0    50   Input ~ 0
+Text GLabel 4350 2550 0    50   Input ~ 0
 IPL1
-Text GLabel 4100 3150 0    50   Input ~ 0
+Text GLabel 4350 3150 0    50   Input ~ 0
 A15
-Text GLabel 4100 2750 0    50   Input ~ 0
+Text GLabel 4350 2750 0    50   Input ~ 0
 IPL2
-Text GLabel 4100 3250 0    50   Input ~ 0
+Text GLabel 4350 3250 0    50   Input ~ 0
 A16
-Text GLabel 4100 2850 0    50   Input ~ 0
+Text GLabel 4350 2850 0    50   Input ~ 0
 BERR
-Text GLabel 4100 3350 0    50   Input ~ 0
+Text GLabel 4350 3350 0    50   Input ~ 0
 A17
-Text GLabel 4100 3450 0    50   Input ~ 0
+Text GLabel 4350 3450 0    50   Input ~ 0
 VPA
 Text GLabel 7400 750  0    50   Input ~ 0
 GND
-Text GLabel 4100 3650 0    50   Input ~ 0
+Text GLabel 4350 3650 0    50   Input ~ 0
 E
-Text GLabel 4100 4250 0    50   Input ~ 0
+Text GLabel 4350 4250 0    50   Input ~ 0
 VMA
-Text GLabel 4100 3850 0    50   Input ~ 0
+Text GLabel 4350 3850 0    50   Input ~ 0
 A18
-Text GLabel 4100 4350 0    50   Input ~ 0
+Text GLabel 4350 4350 0    50   Input ~ 0
 RST
-Text GLabel 4100 3950 0    50   Input ~ 0
+Text GLabel 4350 3950 0    50   Input ~ 0
 A19
-Text GLabel 4100 4450 0    50   Input ~ 0
+Text GLabel 4350 4450 0    50   Input ~ 0
 HLT
-Text GLabel 4100 4050 0    50   Input ~ 0
+Text GLabel 4350 4050 0    50   Input ~ 0
 A20
-Text GLabel 4100 4550 0    50   Input ~ 0
+Text GLabel 4350 4550 0    50   Input ~ 0
 A22
-Text GLabel 4100 4150 0    50   Input ~ 0
+Text GLabel 4350 4150 0    50   Input ~ 0
 A21
-Text GLabel 4100 4650 0    50   Input ~ 0
+Text GLabel 4350 4650 0    50   Input ~ 0
 A23
-Text GLabel 5700 2050 0    50   Input ~ 0
+Text GLabel 5950 2050 0    50   Input ~ 0
 BR
-Text GLabel 5700 2150 0    50   Input ~ 0
+Text GLabel 5950 2150 0    50   Input ~ 0
 BGACK
-Text GLabel 5700 2950 0    50   Input ~ 0
+Text GLabel 5950 2950 0    50   Input ~ 0
 D15
-Text GLabel 5700 2250 0    50   Input ~ 0
+Text GLabel 5950 2250 0    50   Input ~ 0
 BG
-Text GLabel 5700 3050 0    50   Input ~ 0
+Text GLabel 5950 3050 0    50   Input ~ 0
 D14
-Text GLabel 5700 2350 0    50   Input ~ 0
+Text GLabel 5950 2350 0    50   Input ~ 0
 DTACK
-Text GLabel 5700 3150 0    50   Input ~ 0
+Text GLabel 5950 3150 0    50   Input ~ 0
 D13
-Text GLabel 5700 2450 0    50   Input ~ 0
+Text GLabel 5950 2450 0    50   Input ~ 0
 RW
-Text GLabel 5700 3250 0    50   Input ~ 0
+Text GLabel 5950 3250 0    50   Input ~ 0
 D12
-Text GLabel 5700 2550 0    50   Input ~ 0
+Text GLabel 5950 2550 0    50   Input ~ 0
 LDS
-Text GLabel 5700 3350 0    50   Input ~ 0
+Text GLabel 5950 3350 0    50   Input ~ 0
 D11
-Text GLabel 5700 2750 0    50   Input ~ 0
+Text GLabel 5950 2750 0    50   Input ~ 0
 UDS
-Text GLabel 5700 2850 0    50   Input ~ 0
+Text GLabel 5950 2850 0    50   Input ~ 0
 AS
-Text GLabel 5700 4250 0    50   BiDi ~ 0
+Text GLabel 5950 4250 0    50   BiDi ~ 0
 D0
-Text GLabel 5700 3450 0    50   Input ~ 0
+Text GLabel 5950 3450 0    50   Input ~ 0
 D10
-Text GLabel 5700 4350 0    50   BiDi ~ 0
+Text GLabel 5950 4350 0    50   BiDi ~ 0
 D1
-Text GLabel 5700 3650 0    50   Input ~ 0
+Text GLabel 5950 3650 0    50   Input ~ 0
 D9
-Text GLabel 5700 4450 0    50   BiDi ~ 0
+Text GLabel 5950 4450 0    50   BiDi ~ 0
 D2
-Text GLabel 5700 3850 0    50   Input ~ 0
+Text GLabel 5950 3850 0    50   Input ~ 0
 D8
-Text GLabel 5700 4550 0    50   BiDi ~ 0
+Text GLabel 5950 4550 0    50   BiDi ~ 0
 D3
-Text GLabel 5700 3950 0    50   Input ~ 0
+Text GLabel 5950 3950 0    50   Input ~ 0
 D7
-Text GLabel 5700 4650 0    50   BiDi ~ 0
+Text GLabel 5950 4650 0    50   BiDi ~ 0
 D4
-Text GLabel 5700 4050 0    50   Input ~ 0
+Text GLabel 5950 4050 0    50   Input ~ 0
 D6
-Text GLabel 5700 4150 0    50   Input ~ 0
+Text GLabel 5950 4150 0    50   Input ~ 0
 D5
 $Comp
 L SF2000:SN74CBT16211 U3
@@ -513,7 +513,7 @@ Wire Wire Line
 	1000 1750 1000 1650
 Wire Wire Line
 	1500 1750 1500 1650
-Text GLabel 1000 2150 0    50   Input ~ 0
+Text GLabel 1000 2150 0    50   Output ~ 0
 CFGIN
 Text Notes 1550 2000 0    50   ~ 0
 CLK7M
@@ -572,57 +572,57 @@ Wire Wire Line
 	7650 1050 7900 1050
 Text Notes 7550 700  0    50   ~ 0
 0805
-Text GLabel 5100 2650 2    50   Input ~ 0
+Text GLabel 5350 2650 2    50   Input ~ 0
 GND
-Text GLabel 5100 3750 2    50   Input ~ 0
+Text GLabel 5350 3750 2    50   Input ~ 0
 GND
-Text GLabel 4100 2650 0    50   Input ~ 0
+Text GLabel 4350 2650 0    50   Input ~ 0
 GND
-Text GLabel 4100 3750 0    50   Input ~ 0
+Text GLabel 4350 3750 0    50   Input ~ 0
 GND
-Text GLabel 5100 1950 2    50   Input ~ 0
+Text GLabel 5350 1950 2    50   Input ~ 0
 GND
 $Comp
 L SF2000:SN74CBT16211 U4
 U 1 1 61E37EBE
-P 4600 3250
-F 0 "U4" H 4600 4817 50  0000 C CNN
-F 1 "SN74CBT16211" H 4600 4726 50  0000 C CNN
-F 2 "Package_SO:TSSOP-56_6.1x14mm_P0.5mm" H 6250 3700 50  0001 C CNN
-F 3 "https://www.ti.com/lit/ds/symlink/sn74cbt16211a.pdf" H 6250 3700 50  0001 C CNN
-	1    4600 3250
+P 4850 3250
+F 0 "U4" H 4850 4817 50  0000 C CNN
+F 1 "SN74CBT16211" H 4850 4726 50  0000 C CNN
+F 2 "Package_SO:TSSOP-56_6.1x14mm_P0.5mm" H 6500 3700 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/sn74cbt16211a.pdf" H 6500 3700 50  0001 C CNN
+	1    4850 3250
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5100 2050 5100 1950
-Text GLabel 4100 3550 0    50   Input ~ 0
+	5350 2050 5350 1950
+Text GLabel 4350 3550 0    50   Input ~ 0
 4V3
-Text GLabel 6700 2650 2    50   Input ~ 0
+Text GLabel 6950 2650 2    50   Input ~ 0
 GND
-Text GLabel 6700 3750 2    50   Input ~ 0
+Text GLabel 6950 3750 2    50   Input ~ 0
 GND
-Text GLabel 5700 2650 0    50   Input ~ 0
+Text GLabel 5950 2650 0    50   Input ~ 0
 GND
-Text GLabel 5700 3750 0    50   Input ~ 0
+Text GLabel 5950 3750 0    50   Input ~ 0
 GND
-Text GLabel 6700 1950 2    50   Input ~ 0
+Text GLabel 6950 1950 2    50   Input ~ 0
 GND
 $Comp
 L SF2000:SN74CBT16211 U5
 U 1 1 61E45249
-P 6200 3250
-F 0 "U5" H 6200 4817 50  0000 C CNN
-F 1 "SN74CBT16211" H 6200 4726 50  0000 C CNN
-F 2 "Package_SO:TSSOP-56_6.1x14mm_P0.5mm" H 7850 3700 50  0001 C CNN
-F 3 "https://www.ti.com/lit/ds/symlink/sn74cbt16211a.pdf" H 7850 3700 50  0001 C CNN
-	1    6200 3250
+P 6450 3250
+F 0 "U5" H 6450 4817 50  0000 C CNN
+F 1 "SN74CBT16211" H 6450 4726 50  0000 C CNN
+F 2 "Package_SO:TSSOP-56_6.1x14mm_P0.5mm" H 8100 3700 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/sn74cbt16211a.pdf" H 8100 3700 50  0001 C CNN
+	1    6450 3250
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6700 2050 6700 1950
-Text GLabel 5700 3550 0    50   Input ~ 0
+	6950 2050 6950 1950
+Text GLabel 5950 3550 0    50   Input ~ 0
 4V3
-Text GLabel 2550 2250 0    50   Input ~ 0
+Text GLabel 2550 2250 0    50   Output ~ 0
 CFGOUT
 Text GLabel 2550 2950 0    50   Input ~ 0
 CDAC
@@ -727,7 +727,7 @@ L Device:R_Small R3
 U 1 1 61FB0B67
 P 2050 2350
 F 0 "R3" H 2109 2396 50  0000 L CNN
-F 1 "3k" H 2109 2305 50  0000 L CNN
+F 1 "10k" H 2109 2305 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2050 2350 50  0001 C CNN
 F 3 "~" H 2050 2350 50  0001 C CNN
 	1    2050 2350
@@ -781,4 +781,53 @@ Wire Wire Line
 Connection ~ 3600 950 
 Wire Wire Line
 	3600 950  3850 950 
+$Comp
+L SF2000:SN74AUP1T87DCKR U6
+U 1 1 62086554
+P 3050 5400
+F 0 "U6" H 3050 5915 50  0000 C CNN
+F 1 "SN74AUP1T87DCKR" H 3050 5824 50  0000 C CNN
+F 2 "SF2000:SOT-353_SC-70-5_Custom_Handsoldering" H 3550 6350 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/sn74lvc1g17-q1.pdf" H 3550 6350 50  0001 C CNN
+	1    3050 5400
+	1    0    0    -1  
+$EndComp
+Text GLabel 3500 5200 2    50   Input ~ 0
+3V3
+Text GLabel 3500 5600 2    50   Output ~ 0
+C7M_3V3
+Text GLabel 2600 5600 0    50   Input ~ 0
+GND
+Text GLabel 3550 2750 2    50   Output ~ 0
+CCKQ_3V3
+Text GLabel 3550 2850 2    50   Output ~ 0
+CCK_3V3
+Text GLabel 2600 5200 0    50   Input ~ 0
+CCKQ_3V3
+Text GLabel 2600 5400 0    50   Input ~ 0
+CCK_3V3
+Text GLabel 7400 1300 0    50   Input ~ 0
+GND
+Text GLabel 7400 1600 0    50   Input ~ 0
+3V3
+$Comp
+L Device:C C13
+U 1 1 620B176A
+P 7400 1450
+F 0 "C13" H 7450 1550 50  0000 L CNN
+F 1 "0.1uF" H 7400 1350 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7438 1300 50  0001 C CNN
+F 3 "~" H 7400 1450 50  0001 C CNN
+	1    7400 1450
+	1    0    0    -1  
+$EndComp
+Text Notes 7550 1250 0    50   ~ 0
+0805
+NoConn ~ 3550 2150
+NoConn ~ 3550 2250
+NoConn ~ 3550 2450
+Text GLabel 3550 2550 2    50   Output ~ 0
+CFGIN_3V3
+Text GLabel 3550 2350 2    50   Input ~ 0
+CFGOUT_3V3
 $EndSCHEMATC

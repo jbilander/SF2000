@@ -12,6 +12,12 @@ K 1.5A LDO linear voltage regulator adjustable positive
 F http://ww1.microchip.com/downloads/en/devicedoc/20005685a.pdf
 $ENDCMP
 #
+$CMP SN74AUP1T87DCKR
+D XNOR gate, Schmitt trigger, Partial power down (Ioff), 2-INPUT EXCLUSIVE-NOR GATE
+K XNOR gate, Schmitt trigger, Partial power down (Ioff), 2-INPUTEXCLUSIVE-NOR GATE
+F https://www.ti.com/lit/ds/symlink/sn74aup1t87.pdf
+$ENDCMP
+#
 $CMP SN74CBT16211
 D 24-bit FET bus switch with level shifter
 K bus
