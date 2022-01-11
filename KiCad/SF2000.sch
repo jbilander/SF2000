@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 1
+Sheet 1 2
 Title ""
 Date ""
 Rev ""
@@ -830,4 +830,10 @@ Text GLabel 3550 2550 2    50   Output ~ 0
 CFGIN_3V3
 Text GLabel 3550 2350 2    50   Input ~ 0
 CFGOUT_3V3
+$Sheet
+S 9250 800  800  500 
+U 620D263D
+F0 "SF2000_FPGA" 50
+F1 "SF2000_FPGA.sch" 50
+$EndSheet
 $EndSCHEMATC

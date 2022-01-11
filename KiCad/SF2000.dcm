@@ -1,5 +1,11 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP 10M04SCE144
+D Intel MAX 10 FPGA
+K Intel MAX 10 FPGA
+F https://www.mouser.se/datasheet/2/612/m10_overview-2401081.pdf
+$ENDCMP
+#
 $CMP Conn_2Rows-86Pins_even_odd
 D Generic connector, double row, 86 pins, even/odd pin numbering scheme (row 2 odd numbers, row 1 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)
 K connector
