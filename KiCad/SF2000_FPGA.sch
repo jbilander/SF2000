@@ -68,20 +68,17 @@ Wire Wire Line
 Connection ~ 4400 4500
 Wire Wire Line
 	4400 4500 4500 4500
-Text GLabel 1200 4850 0    50   Output ~ 0
-CLKCPU
-Text GLabel 1200 4350 0    50   Input ~ 0
+Text GLabel 1350 4850 0    50   Output ~ 0
+CLKCPU_3V3
+Text GLabel 1350 4350 0    50   Input ~ 0
 C7M_3V3
-Text GLabel 1200 4550 0    50   Input ~ 0
+Text GLabel 1350 4250 0    50   Input ~ 0
 CDAC_3V3
-NoConn ~ 1350 4250
-NoConn ~ 1350 4650
-NoConn ~ 1350 4750
-Text GLabel 1200 4450 0    50   Output ~ 0
+Text GLabel 1350 2500 0    50   Output ~ 0
 XRDY_3V3
-Text GLabel 1800 6100 3    50   Output ~ 0
+Text GLabel 1350 2600 0    50   Output ~ 0
 OVR_3V3
-Text GLabel 1900 6100 3    50   Output ~ 0
+Text GLabel 1350 2700 0    50   Output ~ 0
 INT2_3V3
 Wire Wire Line
 	2100 1100 2200 1100
@@ -172,9 +169,9 @@ Text GLabel 2000 6100 3    50   Input ~ 0
 A5_3V3
 Text GLabel 2100 6100 3    50   Input ~ 0
 A6_3V3
-Text GLabel 2200 6100 3    50   Output ~ 0
+Text GLabel 1350 2800 0    50   Output ~ 0
 BOSS_3V3
-Text GLabel 2300 6100 3    50   Output ~ 0
+Text GLabel 1350 2900 0    50   Output ~ 0
 INT6_3V3
 Text GLabel 2400 6100 3    50   Input ~ 0
 A4_3V3
@@ -188,11 +185,11 @@ Text GLabel 2800 6100 3    50   Input ~ 0
 A2_3V3
 Text GLabel 2900 6100 3    50   Input ~ 0
 A1_3V3
-Text GLabel 3000 6100 3    50   Input ~ 0
+Text GLabel 1350 4450 0    50   Input ~ 0
 FC0_3V3
-Text GLabel 3100 6100 3    50   Input ~ 0
+Text GLabel 1350 4550 0    50   Input ~ 0
 FC1_3V3
-Text GLabel 3200 6100 3    50   Input ~ 0
+Text GLabel 1350 4750 0    50   Input ~ 0
 FC2_3V3
 Text GLabel 3500 6100 3    50   Input ~ 0
 A11_3V3
@@ -224,4 +221,17 @@ Text GLabel 4900 6100 3    50   Input ~ 0
 VPA_3V3
 Text GLabel 5000 6100 3    50   BiDi ~ 0
 E_3V3
+Text GLabel 1350 3100 0    50   Input ~ 0
+TMS
+Text GLabel 1350 4650 0    50   Input ~ 0
+AS_CPU_3V3
+NoConn ~ 1350 3600
+NoConn ~ 1350 3000
+NoConn ~ 1350 3200
+NoConn ~ 1350 2200
+NoConn ~ 1350 2300
+NoConn ~ 1350 2400
+NoConn ~ 1350 3900
+NoConn ~ 1350 3800
+NoConn ~ 1350 3700
 $EndSCHEMATC
