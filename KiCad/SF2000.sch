@@ -180,11 +180,11 @@ Text GLabel 1000 4450 0    50   Input ~ 0
 A21
 Text GLabel 1500 4550 2    50   Input ~ 0
 A23
-Text GLabel 1000 4550 0    50   Input ~ 0
+Text GLabel 1000 4550 0    50   Output ~ 0
 BR
 Text GLabel 1500 4650 2    50   Input ~ 0
 GND
-Text GLabel 1000 4650 0    50   Input ~ 0
+Text GLabel 1000 4650 0    50   Output ~ 0
 BGACK
 Text GLabel 1500 4750 2    50   BiDi ~ 0
 D15
@@ -192,7 +192,7 @@ Text GLabel 1000 4750 0    50   Input ~ 0
 BG
 Text GLabel 1500 4850 2    50   BiDi ~ 0
 D14
-Text GLabel 1000 4850 0    50   Input ~ 0
+Text GLabel 1000 4850 0    50   Output ~ 0
 DTACK
 Text GLabel 1500 4950 2    50   BiDi ~ 0
 D13
@@ -324,49 +324,49 @@ Text GLabel 6250 2050 0    50   Input ~ 0
 BR
 Text GLabel 6250 2150 0    50   Input ~ 0
 BGACK
-Text GLabel 6250 2950 0    50   Input ~ 0
+Text GLabel 6250 2950 0    50   BiDi ~ 0
 D15
-Text GLabel 6250 2250 0    50   Input ~ 0
+Text GLabel 6250 2250 0    50   Output ~ 0
 BG
-Text GLabel 6250 3050 0    50   Input ~ 0
+Text GLabel 6250 3050 0    50   BiDi ~ 0
 D14
 Text GLabel 6250 2350 0    50   Input ~ 0
 DTACK
-Text GLabel 6250 3150 0    50   Input ~ 0
+Text GLabel 6250 3150 0    50   BiDi ~ 0
 D13
-Text GLabel 6250 2450 0    50   Input ~ 0
+Text GLabel 6250 2450 0    50   Output ~ 0
 RW
-Text GLabel 6250 3250 0    50   Input ~ 0
+Text GLabel 6250 3250 0    50   BiDi ~ 0
 D12
-Text GLabel 6250 2550 0    50   Input ~ 0
+Text GLabel 6250 2550 0    50   Output ~ 0
 LDS
-Text GLabel 6250 3350 0    50   Input ~ 0
+Text GLabel 6250 3350 0    50   BiDi ~ 0
 D11
-Text GLabel 6250 2750 0    50   Input ~ 0
+Text GLabel 6250 2750 0    50   Output ~ 0
 UDS
-Text GLabel 6250 2850 0    50   Input ~ 0
+Text GLabel 6250 2850 0    50   Output ~ 0
 AS
 Text GLabel 6250 4250 0    50   BiDi ~ 0
 D0
-Text GLabel 6250 3450 0    50   Input ~ 0
+Text GLabel 6250 3450 0    50   BiDi ~ 0
 D10
 Text GLabel 6250 4350 0    50   BiDi ~ 0
 D1
-Text GLabel 6250 3650 0    50   Input ~ 0
+Text GLabel 6250 3650 0    50   BiDi ~ 0
 D9
 Text GLabel 6250 4450 0    50   BiDi ~ 0
 D2
-Text GLabel 6250 3850 0    50   Input ~ 0
+Text GLabel 6250 3850 0    50   BiDi ~ 0
 D8
 Text GLabel 6250 4550 0    50   BiDi ~ 0
 D3
-Text GLabel 6250 3950 0    50   Input ~ 0
+Text GLabel 6250 3950 0    50   BiDi ~ 0
 D7
 Text GLabel 6250 4650 0    50   BiDi ~ 0
 D4
-Text GLabel 6250 4050 0    50   Input ~ 0
+Text GLabel 6250 4050 0    50   BiDi ~ 0
 D6
-Text GLabel 6250 4150 0    50   Input ~ 0
+Text GLabel 6250 4150 0    50   BiDi ~ 0
 D5
 $Comp
 L SF2000:SN74CBT16211 U3
@@ -920,4 +920,56 @@ Text GLabel 5350 4650 2    50   Input ~ 0
 A23_3V3
 Text GLabel 5350 4250 2    50   Input ~ 0
 VMA_3V3
+Text GLabel 5350 4350 2    50   BiDi ~ 0
+RST_3V3
+Text GLabel 5350 4450 2    50   BiDi ~ 0
+HLT_3V3
+Text GLabel 7250 2350 2    50   Input ~ 0
+BG_3V3
+Text GLabel 7250 2150 2    50   Output ~ 0
+BR_3V3
+Text GLabel 7250 2250 2    50   Output ~ 0
+BGACK_3V3
+Text GLabel 7250 2550 2    50   Input ~ 0
+RW_3V3
+Text GLabel 7250 2450 2    50   Output ~ 0
+DTACK_MB_3V3
+Text GLabel 7250 4250 2    50   BiDi ~ 0
+D0_3V3
+Text GLabel 7250 4350 2    50   BiDi ~ 0
+D1_3V3
+Text GLabel 7250 4450 2    50   BiDi ~ 0
+D2_3V3
+Text GLabel 7250 4550 2    50   BiDi ~ 0
+D3_3V3
+Text GLabel 7250 4650 2    50   BiDi ~ 0
+D4_3V3
+Text GLabel 7250 4150 2    50   BiDi ~ 0
+D5_3V3
+Text GLabel 7250 4050 2    50   BiDi ~ 0
+D6_3V3
+Text GLabel 7250 3950 2    50   BiDi ~ 0
+D7_3V3
+Text GLabel 7250 3850 2    50   BiDi ~ 0
+D8_3V3
+Text GLabel 7250 3650 2    50   BiDi ~ 0
+D9_3V3
+Text GLabel 7250 3550 2    50   BiDi ~ 0
+D10_3V3
+Text GLabel 7250 3450 2    50   BiDi ~ 0
+D11_3V3
+Text GLabel 7250 3350 2    50   BiDi ~ 0
+D12_3V3
+Text GLabel 7250 3250 2    50   BiDi ~ 0
+D13_3V3
+Text GLabel 7250 3150 2    50   BiDi ~ 0
+D14_3V3
+Text GLabel 7250 3050 2    50   BiDi ~ 0
+D15_3V3
+Text GLabel 7250 2950 2    50   Input ~ 0
+AS_MB_3V3
+Text GLabel 7250 2850 2    50   Input ~ 0
+UDS_3V3
+Text GLabel 7250 2750 2    50   Input ~ 0
+LDS_3V3
 $EndSCHEMATC

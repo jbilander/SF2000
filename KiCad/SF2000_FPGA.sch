@@ -68,20 +68,20 @@ Wire Wire Line
 Connection ~ 4400 4500
 Wire Wire Line
 	4400 4500 4500 4500
-Text GLabel 1350 4850 0    50   Output ~ 0
+Text GLabel 1200 4850 0    50   Output ~ 0
 CLKCPU
-Text GLabel 1350 4350 0    50   Input ~ 0
+Text GLabel 1200 4350 0    50   Input ~ 0
 C7M_3V3
-Text GLabel 1350 4550 0    50   Input ~ 0
+Text GLabel 1200 4550 0    50   Input ~ 0
 CDAC_3V3
 NoConn ~ 1350 4250
 NoConn ~ 1350 4650
 NoConn ~ 1350 4750
-Text GLabel 1350 4450 0    50   Output ~ 0
+Text GLabel 1200 4450 0    50   Output ~ 0
 XRDY_3V3
-Text GLabel 1800 6000 3    50   Output ~ 0
+Text GLabel 1800 6100 3    50   Output ~ 0
 OVR_3V3
-Text GLabel 1900 6000 3    50   Output ~ 0
+Text GLabel 1900 6100 3    50   Output ~ 0
 INT2_3V3
 Wire Wire Line
 	2100 1100 2200 1100
@@ -168,60 +168,60 @@ Wire Wire Line
 	5000 1100 5100 1100
 Text GLabel 3300 1100 1    50   Input ~ 0
 3V3
-Text GLabel 2000 6000 3    50   Input ~ 0
+Text GLabel 2000 6100 3    50   Input ~ 0
 A5_3V3
-Text GLabel 2100 6000 3    50   Input ~ 0
+Text GLabel 2100 6100 3    50   Input ~ 0
 A6_3V3
-Text GLabel 2200 6000 3    50   Output ~ 0
+Text GLabel 2200 6100 3    50   Output ~ 0
 BOSS_3V3
-Text GLabel 2300 6000 3    50   Output ~ 0
+Text GLabel 2300 6100 3    50   Output ~ 0
 INT6_3V3
-Text GLabel 2400 6000 3    50   Input ~ 0
+Text GLabel 2400 6100 3    50   Input ~ 0
 A4_3V3
-Text GLabel 2500 6000 3    50   Input ~ 0
+Text GLabel 2500 6100 3    50   Input ~ 0
 A3_3V3
-Text GLabel 2600 6000 3    50   Input ~ 0
+Text GLabel 2600 6100 3    50   Input ~ 0
 A7_3V3
-Text GLabel 2700 6000 3    50   Input ~ 0
+Text GLabel 2700 6100 3    50   Input ~ 0
 A8_3V3
-Text GLabel 2800 6000 3    50   Input ~ 0
+Text GLabel 2800 6100 3    50   Input ~ 0
 A2_3V3
-Text GLabel 2900 6000 3    50   Input ~ 0
+Text GLabel 2900 6100 3    50   Input ~ 0
 A1_3V3
-Text GLabel 3000 6000 3    50   Input ~ 0
+Text GLabel 3000 6100 3    50   Input ~ 0
 FC0_3V3
-Text GLabel 3100 6000 3    50   Input ~ 0
+Text GLabel 3100 6100 3    50   Input ~ 0
 FC1_3V3
-Text GLabel 3200 6000 3    50   Input ~ 0
+Text GLabel 3200 6100 3    50   Input ~ 0
 FC2_3V3
-Text GLabel 3500 6000 3    50   Input ~ 0
+Text GLabel 3500 6100 3    50   Input ~ 0
 A11_3V3
-Text GLabel 3300 6000 3    50   Input ~ 0
+Text GLabel 3300 6100 3    50   Input ~ 0
 A9_3V3
-Text GLabel 3400 6000 3    50   Input ~ 0
+Text GLabel 3400 6100 3    50   Input ~ 0
 A10_3V3
-Text GLabel 3750 6000 3    50   Input ~ 0
+Text GLabel 3750 6100 3    50   Input ~ 0
 A12_3V3
-Text GLabel 3850 6000 3    50   Input ~ 0
+Text GLabel 3850 6100 3    50   Input ~ 0
 IPL0_3V3
-Text GLabel 3950 6000 3    50   Input ~ 0
+Text GLabel 3950 6100 3    50   Input ~ 0
 IPL1_3V3
-Text GLabel 4050 6000 3    50   Input ~ 0
+Text GLabel 4050 6100 3    50   Input ~ 0
 IPL2_3V3
-Text GLabel 4150 6000 3    50   Input ~ 0
+Text GLabel 4150 6100 3    50   Input ~ 0
 BERR_3V3
-Text GLabel 4250 6000 3    50   Input ~ 0
+Text GLabel 4250 6100 3    50   Input ~ 0
 A13_3V3
-Text GLabel 4350 6000 3    50   Input ~ 0
+Text GLabel 4350 6100 3    50   Input ~ 0
 A14_3V3
-Text GLabel 4600 6000 3    50   Input ~ 0
+Text GLabel 4600 6100 3    50   Input ~ 0
 A15_3V3
-Text GLabel 4700 6000 3    50   Input ~ 0
+Text GLabel 4700 6100 3    50   Input ~ 0
 A16_3V3
-Text GLabel 4800 6000 3    50   Input ~ 0
+Text GLabel 4800 6100 3    50   Input ~ 0
 A17_3V3
-Text GLabel 4900 6000 3    50   Input ~ 0
+Text GLabel 4900 6100 3    50   Input ~ 0
 VPA_3V3
-Text GLabel 5000 6000 3    50   BiDi ~ 0
+Text GLabel 5000 6100 3    50   BiDi ~ 0
 E_3V3
 $EndSCHEMATC
