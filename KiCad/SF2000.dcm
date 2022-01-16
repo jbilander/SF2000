@@ -18,6 +18,12 @@ K connector
 F ~
 $ENDCMP
 #
+$CMP IS61WV20488FBLL-10TLI
+D 2Mx8 HIGH-SPEED ASYNCHRONOUS, CMOS STATIC RAM WITH 3.3V/1.8V SUPPLY, 10ns, TSOP II-44
+K SRAM MEMORY
+F https://www.mouser.se/datasheet/2/198/61-64WV20488FALL-FBLL-1518520.pdf
+$ENDCMP
+#
 $CMP LD29150PTR
 D 1.5A low dropout linear regulator, adjustable output, TO-252
 K 1.5A LDO linear voltage regulator adjustable positive
