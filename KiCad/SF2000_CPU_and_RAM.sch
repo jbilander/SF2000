@@ -129,9 +129,9 @@ Wire Wire Line
 Text GLabel 1500 4700 0    50   Input ~ 0
 AVEC_3V3
 Text GLabel 1500 4800 0    50   BiDi ~ 0
-RESET_3V3
+RST_3V3
 Text GLabel 1500 4900 0    50   BiDi ~ 0
-HALT_3V3
+HLT_3V3
 Text GLabel 1500 2450 0    50   Input ~ 0
 BR_3V3
 Text GLabel 1500 2250 0    50   Input ~ 0
@@ -257,21 +257,21 @@ Wire Wire Line
 	8000 6300 8200 6300
 Wire Wire Line
 	5350 6300 5550 6300
-Text GLabel 8700 1000 2    50   BiDi ~ 0
-D0_3V3
-Text GLabel 8700 1100 2    50   BiDi ~ 0
-D1_3V3
-Text GLabel 8700 1200 2    50   BiDi ~ 0
-D2_3V3
-Text GLabel 8700 1300 2    50   BiDi ~ 0
-D3_3V3
-Text GLabel 8700 1400 2    50   BiDi ~ 0
-D4_3V3
-Text GLabel 8700 1500 2    50   BiDi ~ 0
-D5_3V3
-Text GLabel 8700 1600 2    50   BiDi ~ 0
-D6_3V3
 Text GLabel 8700 1700 2    50   BiDi ~ 0
+D0_3V3
+Text GLabel 8700 1600 2    50   BiDi ~ 0
+D1_3V3
+Text GLabel 8700 1500 2    50   BiDi ~ 0
+D2_3V3
+Text GLabel 8700 1400 2    50   BiDi ~ 0
+D3_3V3
+Text GLabel 8700 1000 2    50   BiDi ~ 0
+D4_3V3
+Text GLabel 8700 1100 2    50   BiDi ~ 0
+D5_3V3
+Text GLabel 8700 1200 2    50   BiDi ~ 0
+D6_3V3
+Text GLabel 8700 1300 2    50   BiDi ~ 0
 D7_3V3
 Text GLabel 8700 3900 2    50   BiDi ~ 0
 D0_3V3
@@ -305,84 +305,64 @@ Text GLabel 6050 4400 2    50   BiDi ~ 0
 D14_3V3
 Text GLabel 6050 4300 2    50   BiDi ~ 0
 D15_3V3
-Text GLabel 6050 1000 2    50   BiDi ~ 0
-D8_3V3
-Text GLabel 6050 1100 2    50   BiDi ~ 0
-D9_3V3
-Text GLabel 6050 1200 2    50   BiDi ~ 0
-D10_3V3
-Text GLabel 6050 1300 2    50   BiDi ~ 0
-D11_3V3
-Text GLabel 6050 1400 2    50   BiDi ~ 0
-D12_3V3
-Text GLabel 6050 1500 2    50   BiDi ~ 0
-D13_3V3
-Text GLabel 6050 1600 2    50   BiDi ~ 0
-D14_3V3
 Text GLabel 6050 1700 2    50   BiDi ~ 0
+D8_3V3
+Text GLabel 6050 1600 2    50   BiDi ~ 0
+D9_3V3
+Text GLabel 6050 1500 2    50   BiDi ~ 0
+D10_3V3
+Text GLabel 6050 1400 2    50   BiDi ~ 0
+D11_3V3
+Text GLabel 6050 1000 2    50   BiDi ~ 0
+D12_3V3
+Text GLabel 6050 1100 2    50   BiDi ~ 0
+D13_3V3
+Text GLabel 6050 1200 2    50   BiDi ~ 0
+D14_3V3
+Text GLabel 6050 1300 2    50   BiDi ~ 0
 D15_3V3
-Text GLabel 4850 1900 0    50   Input ~ 0
-A1_3V3
-Text GLabel 4850 1800 0    50   Input ~ 0
-A2_3V3
-Text GLabel 4850 1700 0    50   Input ~ 0
-A3_3V3
-Text GLabel 4850 1600 0    50   Input ~ 0
-A4_3V3
-Text GLabel 4850 1500 0    50   Input ~ 0
-A5_3V3
-Text GLabel 4850 1400 0    50   Input ~ 0
-A6_3V3
-Text GLabel 4850 1300 0    50   Input ~ 0
-A7_3V3
-Text GLabel 4850 1200 0    50   Input ~ 0
-A8_3V3
-Text GLabel 4850 1100 0    50   Input ~ 0
-A9_3V3
-Text GLabel 4850 1000 0    50   Input ~ 0
-A10_3V3
 Text GLabel 4850 2900 0    50   Input ~ 0
-A11_3V3
+A1_3V3
 Text GLabel 4850 2000 0    50   Input ~ 0
-A12_3V3
+A2_3V3
 Text GLabel 4850 2100 0    50   Input ~ 0
-A13_3V3
+A3_3V3
 Text GLabel 4850 2200 0    50   Input ~ 0
-A14_3V3
+A4_3V3
 Text GLabel 4850 2300 0    50   Input ~ 0
+A5_3V3
+Text GLabel 4850 2500 0    50   Input ~ 0
+A6_3V3
+Text GLabel 4850 2600 0    50   Input ~ 0
+A7_3V3
+Text GLabel 4850 2700 0    50   Input ~ 0
+A8_3V3
+Text GLabel 4850 2800 0    50   Input ~ 0
+A9_3V3
+Text GLabel 4850 3000 0    50   Input ~ 0
+A10_3V3
+Text GLabel 4850 1900 0    50   Input ~ 0
+A11_3V3
+Text GLabel 4850 1800 0    50   Input ~ 0
+A12_3V3
+Text GLabel 4850 1700 0    50   Input ~ 0
+A13_3V3
+Text GLabel 4850 1600 0    50   Input ~ 0
+A14_3V3
+Text GLabel 4850 1500 0    50   Input ~ 0
 A15_3V3
 Text GLabel 4850 2400 0    50   Input ~ 0
 A16_3V3
-Text GLabel 4850 2500 0    50   Input ~ 0
+Text GLabel 4850 1400 0    50   Input ~ 0
 A17_3V3
-Text GLabel 4850 2600 0    50   Input ~ 0
+Text GLabel 4850 1300 0    50   Input ~ 0
 A18_3V3
-Text GLabel 4850 2700 0    50   Input ~ 0
+Text GLabel 4850 1200 0    50   Input ~ 0
 A19_3V3
-Text GLabel 4850 2800 0    50   Input ~ 0
+Text GLabel 4850 1100 0    50   Input ~ 0
 A20_3V3
-Text GLabel 4850 3000 0    50   Input ~ 0
+Text GLabel 4850 1000 0    50   Input ~ 0
 A21_3V3
-Text GLabel 7500 1900 0    50   Input ~ 0
-A1_3V3
-Text GLabel 7500 1800 0    50   Input ~ 0
-A2_3V3
-Text GLabel 7500 1700 0    50   Input ~ 0
-A3_3V3
-Text GLabel 7500 1600 0    50   Input ~ 0
-A4_3V3
-Text GLabel 7500 1500 0    50   Input ~ 0
-A5_3V3
-Text GLabel 7500 1400 0    50   Input ~ 0
-A6_3V3
-Text GLabel 7500 1300 0    50   Input ~ 0
-A7_3V3
-Text GLabel 7500 1200 0    50   Input ~ 0
-A8_3V3
-Text GLabel 7500 1100 0    50   Input ~ 0
-A9_3V3
-Text GLabel 7500 1000 0    50   Input ~ 0
-A10_3V3
 Text GLabel 4850 4800 0    50   Input ~ 0
 A1_3V3
 Text GLabel 4850 4700 0    50   Input ~ 0
@@ -423,28 +403,6 @@ Text GLabel 7500 4000 0    50   Input ~ 0
 A9_3V3
 Text GLabel 7500 3900 0    50   Input ~ 0
 A10_3V3
-Text GLabel 7500 2900 0    50   Input ~ 0
-A11_3V3
-Text GLabel 7500 2000 0    50   Input ~ 0
-A12_3V3
-Text GLabel 7500 2100 0    50   Input ~ 0
-A13_3V3
-Text GLabel 7500 2200 0    50   Input ~ 0
-A14_3V3
-Text GLabel 7500 2300 0    50   Input ~ 0
-A15_3V3
-Text GLabel 7500 2400 0    50   Input ~ 0
-A16_3V3
-Text GLabel 7500 2500 0    50   Input ~ 0
-A17_3V3
-Text GLabel 7500 2600 0    50   Input ~ 0
-A18_3V3
-Text GLabel 7500 2700 0    50   Input ~ 0
-A19_3V3
-Text GLabel 7500 2800 0    50   Input ~ 0
-A20_3V3
-Text GLabel 7500 3000 0    50   Input ~ 0
-A21_3V3
 Text GLabel 7500 5800 0    50   Input ~ 0
 A11_3V3
 Text GLabel 7500 4900 0    50   Input ~ 0
@@ -488,5 +446,47 @@ A19_3V3
 Text GLabel 4850 5700 0    50   Input ~ 0
 A20_3V3
 Text GLabel 4850 5900 0    50   Input ~ 0
+A21_3V3
+Text GLabel 7500 2900 0    50   Input ~ 0
+A1_3V3
+Text GLabel 7500 2000 0    50   Input ~ 0
+A2_3V3
+Text GLabel 7500 2100 0    50   Input ~ 0
+A3_3V3
+Text GLabel 7500 2200 0    50   Input ~ 0
+A4_3V3
+Text GLabel 7500 2300 0    50   Input ~ 0
+A5_3V3
+Text GLabel 7500 2500 0    50   Input ~ 0
+A6_3V3
+Text GLabel 7500 2600 0    50   Input ~ 0
+A7_3V3
+Text GLabel 7500 2700 0    50   Input ~ 0
+A8_3V3
+Text GLabel 7500 2800 0    50   Input ~ 0
+A9_3V3
+Text GLabel 7500 3000 0    50   Input ~ 0
+A10_3V3
+Text GLabel 7500 1900 0    50   Input ~ 0
+A11_3V3
+Text GLabel 7500 1800 0    50   Input ~ 0
+A12_3V3
+Text GLabel 7500 1700 0    50   Input ~ 0
+A13_3V3
+Text GLabel 7500 1600 0    50   Input ~ 0
+A14_3V3
+Text GLabel 7500 1500 0    50   Input ~ 0
+A15_3V3
+Text GLabel 7500 2400 0    50   Input ~ 0
+A16_3V3
+Text GLabel 7500 1400 0    50   Input ~ 0
+A17_3V3
+Text GLabel 7500 1300 0    50   Input ~ 0
+A18_3V3
+Text GLabel 7500 1200 0    50   Input ~ 0
+A19_3V3
+Text GLabel 7500 1100 0    50   Input ~ 0
+A20_3V3
+Text GLabel 7500 1000 0    50   Input ~ 0
 A21_3V3
 $EndSCHEMATC
