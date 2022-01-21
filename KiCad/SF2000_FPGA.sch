@@ -234,4 +234,8 @@ NoConn ~ 1350 2400
 NoConn ~ 1350 3900
 NoConn ~ 1350 3800
 NoConn ~ 1350 3700
+Text GLabel 6250 1500 2    50   Input ~ 0
+CFGIN_3V3
+Text GLabel 6250 1600 2    50   Output ~ 0
+CFGOUT_3V3
 $EndSCHEMATC
