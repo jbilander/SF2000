@@ -1291,4 +1291,38 @@ Connection ~ 4500 7150
 Wire Wire Line
 	4500 7450 4800 7450
 Connection ~ 4500 7450
+$Comp
+L Device:C C33
+U 1 1 62559B16
+P 5100 7300
+F 0 "C33" H 5150 7400 50  0000 L CNN
+F 1 "0.01uF" H 5100 7200 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5138 7150 50  0001 C CNN
+F 3 "~" H 5100 7300 50  0001 C CNN
+	1    5100 7300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C34
+U 1 1 6255AB6E
+P 5400 7300
+F 0 "C34" H 5450 7400 50  0000 L CNN
+F 1 "0.01uF" H 5400 7200 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5438 7150 50  0001 C CNN
+F 3 "~" H 5400 7300 50  0001 C CNN
+	1    5400 7300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 7150 5100 7150
+Connection ~ 4800 7150
+Connection ~ 5100 7150
+Wire Wire Line
+	5100 7150 5400 7150
+Wire Wire Line
+	5400 7450 5100 7450
+Connection ~ 4800 7450
+Connection ~ 5100 7450
+Wire Wire Line
+	5100 7450 4800 7450
 $EndSCHEMATC

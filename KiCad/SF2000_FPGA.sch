@@ -165,25 +165,25 @@ Wire Wire Line
 	5000 1100 5100 1100
 Text GLabel 3300 1100 1    50   Input ~ 0
 3V3
-Text GLabel 2000 6100 3    50   Input ~ 0
+Text GLabel 3950 6100 3    50   Input ~ 0
 A5_3V3
-Text GLabel 2100 6100 3    50   Input ~ 0
+Text GLabel 4050 6100 3    50   Input ~ 0
 A6_3V3
 Text GLabel 1350 2800 0    50   Output ~ 0
 BOSS_3V3
 Text GLabel 1350 2900 0    50   Output ~ 0
 INT6_3V3
-Text GLabel 2400 6100 3    50   Input ~ 0
+Text GLabel 3400 6700 3    50   Input ~ 0
 A4_3V3
-Text GLabel 2500 6100 3    50   Input ~ 0
+Text GLabel 3500 6700 3    50   Input ~ 0
 A3_3V3
-Text GLabel 2600 6100 3    50   Input ~ 0
+Text GLabel 3600 6700 3    50   Input ~ 0
 A7_3V3
-Text GLabel 2700 6100 3    50   Input ~ 0
+Text GLabel 3700 6700 3    50   Input ~ 0
 A8_3V3
-Text GLabel 2800 6100 3    50   Input ~ 0
+Text GLabel 3800 6700 3    50   Input ~ 0
 A2_3V3
-Text GLabel 2900 6100 3    50   Input ~ 0
+Text GLabel 3900 6700 3    50   Input ~ 0
 A1_3V3
 Text GLabel 1350 4450 0    50   Input ~ 0
 FC0_3V3
@@ -199,13 +199,13 @@ Text GLabel 3400 6100 3    50   Input ~ 0
 A10_3V3
 Text GLabel 3750 6100 3    50   Input ~ 0
 A12_3V3
-Text GLabel 3850 6100 3    50   Input ~ 0
+Text GLabel 1800 6000 3    50   Input ~ 0
 IPL0_3V3
-Text GLabel 3950 6100 3    50   Input ~ 0
+Text GLabel 1900 6000 3    50   Input ~ 0
 IPL1_3V3
-Text GLabel 4050 6100 3    50   Input ~ 0
+Text GLabel 2000 6000 3    50   Input ~ 0
 IPL2_3V3
-Text GLabel 4150 6100 3    50   Input ~ 0
+Text GLabel 2100 6000 3    50   Input ~ 0
 BERR_3V3
 Text GLabel 4250 6100 3    50   Input ~ 0
 A13_3V3
@@ -238,4 +238,22 @@ Text GLabel 6250 1500 2    50   Input ~ 0
 CFGIN_3V3
 Text GLabel 6250 1600 2    50   Output ~ 0
 CFGOUT_3V3
+Text GLabel 2200 6000 3    50   Output ~ 0
+AVEC_3V3
+Text GLabel 2300 6000 3    50   Input ~ 0
+RST_3V3
+Text GLabel 2400 6000 3    50   Input ~ 0
+HLT_3V3
+Text GLabel 2500 6000 3    50   Input ~ 0
+BR_3V3
+Text GLabel 2600 6000 3    50   Input ~ 0
+BG_3V3
+Text GLabel 2700 6000 3    50   Output ~ 0
+DTACK_CPU_3V3
+Text GLabel 2800 6000 3    50   Input ~ 0
+DTACK_MB_3V3
+Text GLabel 2900 6000 3    50   Input ~ 0
+BGACK_3V3
+Text GLabel 3000 6000 3    50   Output ~ 0
+AS_MB_3V3
 $EndSCHEMATC
