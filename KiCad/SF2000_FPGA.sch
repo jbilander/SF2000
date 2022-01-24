@@ -227,13 +227,8 @@ Text GLabel 1350 4650 0    50   Input ~ 0
 AS_CPU_3V3
 NoConn ~ 1350 3600
 NoConn ~ 1350 3000
-NoConn ~ 1350 3200
 NoConn ~ 1350 2200
 NoConn ~ 1350 2300
-NoConn ~ 1350 2400
-NoConn ~ 1350 3900
-NoConn ~ 1350 3800
-NoConn ~ 1350 3700
 Text GLabel 6250 1500 2    50   Input ~ 0
 CFGIN_3V3
 Text GLabel 6250 1600 2    50   Output ~ 0
@@ -256,4 +251,170 @@ Text GLabel 2900 6000 3    50   Input ~ 0
 BGACK_3V3
 Text GLabel 3000 6000 3    50   Output ~ 0
 AS_MB_3V3
+$Comp
+L Connector_Generic:Conn_02x05_Odd_Even JTAG1
+U 1 1 625BCAC6
+P 7750 1650
+F 0 "JTAG1" H 7800 1225 50  0000 C CNN
+F 1 "Conn_02x05_Odd_Even" H 7800 1316 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical" H 7750 1650 50  0001 C CNN
+F 3 "~" H 7750 1650 50  0001 C CNN
+	1    7750 1650
+	-1   0    0    1   
+$EndComp
+Text GLabel 7450 1450 0    50   Input ~ 0
+GND
+Text GLabel 7450 1850 0    50   Input ~ 0
+GND
+Text GLabel 7450 1750 0    50   Input ~ 0
+3V3
+Text GLabel 7950 1850 2    50   Input ~ 0
+TCK
+Text GLabel 7950 1750 2    50   Input ~ 0
+TDO
+Text GLabel 7950 1450 2    50   Input ~ 0
+TDI
+Text GLabel 7950 1650 2    50   Input ~ 0
+TMS
+NoConn ~ 7450 1650
+NoConn ~ 7950 1550
+Text GLabel 1350 3300 0    50   Input ~ 0
+TCK
+Text GLabel 1350 3500 0    50   Input ~ 0
+TDO
+Text GLabel 1350 3400 0    50   Input ~ 0
+TDI
+Text GLabel 6250 1800 2    50   Input ~ 0
+nSTATUS
+Text GLabel 6250 1700 2    50   Input ~ 0
+CONF_DONE
+Text GLabel 6250 2600 2    50   Input ~ 0
+CONFIG_SEL
+Text GLabel 1350 2400 0    50   Input ~ 0
+JP5
+Text GLabel 7450 1550 0    50   Input ~ 0
+JP5
+$Comp
+L Device:R_Pack04 RN1
+U 1 1 625F56E7
+P 8700 1100
+F 0 "RN1" H 8888 1146 50  0000 L CNN
+F 1 "R_Pack04" H 8888 1055 50  0000 L CNN
+F 2 "SF2000:RESCAF80P320X160X60-8N" V 8975 1100 50  0001 C CNN
+F 3 "~" H 8700 1100 50  0001 C CNN
+	1    8700 1100
+	1    0    0    -1  
+$EndComp
+Text GLabel 8500 900  1    50   Input ~ 0
+3V3
+Text GLabel 8500 1300 3    50   Input ~ 0
+TDI
+Text GLabel 8600 1300 3    50   Input ~ 0
+TCK
+Text GLabel 8800 1300 3    50   Input ~ 0
+TMS
+Text GLabel 8700 1300 3    50   Input ~ 0
+JP1
+Text GLabel 8400 2600 3    50   Input ~ 0
+JP5
+Text GLabel 8600 900  1    50   Input ~ 0
+GND
+Text GLabel 1350 3700 0    50   Input ~ 0
+JP2
+Text GLabel 8700 900  1    50   Input ~ 0
+3V3
+Wire Wire Line
+	8700 900  8800 900 
+$Comp
+L Device:R_Pack04 RN2
+U 1 1 6265DCDE
+P 9600 1100
+F 0 "RN2" H 9788 1146 50  0000 L CNN
+F 1 "R_Pack04" H 9788 1055 50  0000 L CNN
+F 2 "SF2000:RESCAF80P320X160X60-8N" V 9875 1100 50  0001 C CNN
+F 3 "~" H 9600 1100 50  0001 C CNN
+	1    9600 1100
+	1    0    0    -1  
+$EndComp
+Text GLabel 9400 900  1    50   Input ~ 0
+3V3
+Wire Wire Line
+	9400 900  9500 900 
+Connection ~ 9500 900 
+Wire Wire Line
+	9500 900  9600 900 
+Connection ~ 9600 900 
+Wire Wire Line
+	9600 900  9700 900 
+Text GLabel 10600 1000 3    50   Input ~ 0
+nSTATUS
+Text GLabel 10700 1000 3    50   Input ~ 0
+CONF_DONE
+Text GLabel 9400 1300 3    50   Input ~ 0
+JP4
+Text GLabel 9500 1300 3    50   Input ~ 0
+JP3
+$Comp
+L Device:R_Small R?
+U 1 1 62693A5F
+P 8400 2500
+AR Path="/62693A5F" Ref="R?"  Part="1" 
+AR Path="/620D263D/62693A5F" Ref="R4"  Part="1" 
+F 0 "R4" H 8459 2546 50  0000 L CNN
+F 1 "10k" H 8459 2455 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 8400 2500 50  0001 C CNN
+F 3 "~" H 8400 2500 50  0001 C CNN
+	1    8400 2500
+	1    0    0    -1  
+$EndComp
+Text GLabel 8400 2400 1    50   Input ~ 0
+3V3
+$Comp
+L Connector_Generic:Conn_02x03_Odd_Even J3
+U 1 1 62704BD7
+P 7750 2500
+F 0 "J3" H 7800 2150 50  0000 C CNN
+F 1 "Conn_02x03_Odd_Even" H 7800 2250 50  0000 C CNN
+F 2 "Connector_PinHeader_2.00mm:PinHeader_2x03_P2.00mm_Vertical" H 7750 2500 50  0001 C CNN
+F 3 "~" H 7750 2500 50  0001 C CNN
+	1    7750 2500
+	-1   0    0    1   
+$EndComp
+Text GLabel 7450 2500 0    50   Input ~ 0
+JP3
+Text GLabel 7450 2600 0    50   Input ~ 0
+JP2
+Text GLabel 7450 2400 0    50   Input ~ 0
+JP4
+Wire Wire Line
+	7950 2400 7950 2500
+Connection ~ 7950 2500
+Wire Wire Line
+	7950 2500 7950 2600
+NoConn ~ 9700 1300
+Text GLabel 7950 2400 2    50   Input ~ 0
+GND
+Text GLabel 1350 3800 0    50   Input ~ 0
+JP3
+Text GLabel 1350 3900 0    50   Input ~ 0
+JP4
+$Comp
+L Connector_Generic:Conn_02x01 J4
+U 1 1 6276C760
+P 7750 3100
+F 0 "J4" H 7800 2850 50  0000 C CNN
+F 1 "Conn_02x01" H 7800 2950 50  0000 C CNN
+F 2 "Connector_PinHeader_2.00mm:PinHeader_2x01_P2.00mm_Vertical" H 7750 3100 50  0001 C CNN
+F 3 "~" H 7750 3100 50  0001 C CNN
+	1    7750 3100
+	-1   0    0    1   
+$EndComp
+Text GLabel 7950 3100 2    50   Input ~ 0
+GND
+Text GLabel 7450 3100 0    50   Input ~ 0
+JP1
+Text GLabel 1350 3200 0    50   Input ~ 0
+JP1
+Text GLabel 9600 1300 3    50   Input ~ 0
+JP2
 $EndSCHEMATC
