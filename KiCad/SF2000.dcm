@@ -12,6 +12,12 @@ K 68000 Microprocessor CPU
 F https://www.nxp.com/docs/en/reference-manual/MC68000UM.pdf
 $ENDCMP
 #
+$CMP 74LVC245A
+D Octal BUS Transceivers, 3-State outputs
+K TTL BUS 3State 8-bit transceiver with 3-state outputs
+F https://www.mouser.se/datasheet/2/916/74LVC_LVCH245A-1389000.pdf
+$ENDCMP
+#
 $CMP Conn_2Rows-86Pins_even_odd
 D Generic connector, double row, 86 pins, even/odd pin numbering scheme (row 2 odd numbers, row 1 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)
 K connector
@@ -30,6 +36,11 @@ K 1.5A LDO linear voltage regulator adjustable positive
 F http://ww1.microchip.com/downloads/en/devicedoc/20005685a.pdf
 $ENDCMP
 #
+$CMP Micro_SD_Card_Socket
+D Micro SD Card Socket
+K connector SD microsd
+$ENDCMP
+#
 $CMP SN74AUP1T87DCKR
 D XNOR gate, Schmitt trigger, Partial power down (Ioff), 2-INPUT EXCLUSIVE-NOR GATE
 K XNOR gate, Schmitt trigger, Partial power down (Ioff), 2-INPUTEXCLUSIVE-NOR GATE
@@ -40,6 +51,17 @@ $CMP SN74CBT16211
 D 24-bit FET bus switch with level shifter
 K bus
 F https://www.ti.com/lit/ds/symlink/sn74cbtd16211.pdf
+$ENDCMP
+#
+$CMP SST39LF040
+D 512K X 8 Bit, NOR-flash 3.0 to 3.6V 4Mbit Multi-Purpose Flash, 55 ns
+K EEPROM NOR FLASH 512K x 8 Bit
+F https://www.mouser.se/datasheet/2/268/01360A-709051.pdf
+$ENDCMP
+#
+$CMP SST39LF802C-55-4C-EKE
+D NOR-flash 3.0 to 3.6V 8Mbit Multi-Purpose Flash
+K NOR-flash 3.0 to 3.6V 8Mbit Multi-Purpose Flash
 $ENDCMP
 #
 #End Doc Library
