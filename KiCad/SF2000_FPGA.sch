@@ -416,4 +416,44 @@ Text GLabel 9600 1300 3    50   Input ~ 0
 JP2
 Text GLabel 1350 2300 0    50   Output ~ 0
 VMA_3V3
+Text GLabel 3200 6000 3    50   BiDi ~ 0
+D9_3V3
+Text GLabel 3300 6000 3    50   BiDi ~ 0
+D10_3V3
+Text GLabel 3400 6000 3    50   BiDi ~ 0
+D11_3V3
+Text GLabel 3500 6000 3    50   BiDi ~ 0
+D12_3V3
+Text GLabel 3750 6000 3    50   BiDi ~ 0
+D13_3V3
+Text GLabel 3850 6000 3    50   BiDi ~ 0
+D14_3V3
+Text GLabel 3950 6000 3    50   BiDi ~ 0
+D15_3V3
+Text GLabel 3100 6000 3    50   BiDi ~ 0
+D8_3V3
+Text GLabel 3000 6000 3    50   Output ~ 0
+FLASH_OE
+Text GLabel 4350 6000 3    50   Output ~ 0
+FLASH_WE
+Text GLabel 4250 6000 3    50   Output ~ 0
+FLASH_RST
+Text GLabel 4150 6000 3    50   Output ~ 0
+FLASH_WP
+Text GLabel 4050 6000 3    50   Input ~ 0
+FLASH_BUSY
+Text GLabel 5000 6000 3    50   BiDi ~ 0
+SD_D0
+Text GLabel 5100 6000 3    50   BiDi ~ 0
+SD_D1
+Text GLabel 4600 6000 3    50   BiDi ~ 0
+SD_D2
+Text GLabel 4700 6000 3    50   BiDi ~ 0
+SD_D3
+Text GLabel 4800 6000 3    50   Output ~ 0
+SD_CMD
+Text GLabel 4900 6000 3    50   Output ~ 0
+SD_CLK
+Text GLabel 5200 6000 3    50   Input ~ 0
+SD_CD
 $EndSCHEMATC

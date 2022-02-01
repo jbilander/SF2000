@@ -24,4 +24,24 @@ F 3 "" H 5700 3600 50  0001 C CNN
 	1    5700 3600
 	1    0    0    -1  
 $EndComp
+Text GLabel 4800 3900 0    50   BiDi ~ 0
+SD_D0
+Text GLabel 4800 4000 0    50   BiDi ~ 0
+SD_D1
+Text GLabel 4800 3300 0    50   BiDi ~ 0
+SD_D2
+Text GLabel 4800 3400 0    50   BiDi ~ 0
+SD_D3
+Text GLabel 4800 3500 0    50   Input ~ 0
+SD_CMD
+Text GLabel 4800 3600 0    50   Input ~ 0
+3V3
+Text GLabel 4800 3800 0    50   Input ~ 0
+GND
+Text GLabel 6500 4200 2    50   Input ~ 0
+GND
+Text GLabel 4800 3700 0    50   Input ~ 0
+SD_CLK
+Text GLabel 4800 4200 0    50   Output ~ 0
+SD_CD
 $EndSCHEMATC
