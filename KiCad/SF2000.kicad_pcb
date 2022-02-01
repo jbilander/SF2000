@@ -36,7 +36,7 @@
   )
 
   (setup
-    (last_trace_width 0.2032)
+    (last_trace_width 0.127)
     (user_trace_width 0.127)
     (user_trace_width 0.1524)
     (user_trace_width 0.2032)
@@ -1625,6 +1625,11 @@
       (net 251 JP3))
     (pad 1 smd rect (at -0.875 -1.2 315) (size 0.97 0.53) (layers F.Cu F.Paste F.Mask)
       (net 250 JP4))
+    (model ${KIPRJMOD}/packages3d/cay16-103j4lf.step
+      (offset (xyz 0 -1.6 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 90 0 0))
+    )
   )
 
   (module Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder (layer F.Cu) (tedit 5B36C52B) (tstamp 6238ED2B)
@@ -1698,6 +1703,11 @@
       (net 243 TCK))
     (pad 1 smd rect (at -0.875 -1.2 315) (size 0.97 0.53) (layers F.Cu F.Paste F.Mask)
       (net 239 TDI))
+    (model ${KIPRJMOD}/packages3d/cay16-103j4lf.step
+      (offset (xyz 0 -1.6 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 90 0 0))
+    )
   )
 
   (module Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical (layer F.Cu) (tedit 59FED5CC) (tstamp 622FF03F)
