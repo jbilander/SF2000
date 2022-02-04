@@ -165,26 +165,10 @@ Wire Wire Line
 	5000 1100 5100 1100
 Text GLabel 3300 1100 1    50   Input ~ 0
 3V3
-Text GLabel 3600 6700 3    50   Input ~ 0
-A5_3V3
-Text GLabel 3700 6700 3    50   Input ~ 0
-A6_3V3
 Text GLabel 1350 2800 0    50   Output ~ 0
 BOSS_3V3
 Text GLabel 1350 2900 0    50   Output ~ 0
 INT6_3V3
-Text GLabel 3500 6700 3    50   Input ~ 0
-A4_3V3
-Text GLabel 3400 6700 3    50   Input ~ 0
-A3_3V3
-Text GLabel 3800 6700 3    50   Input ~ 0
-A7_3V3
-Text GLabel 3900 6700 3    50   Input ~ 0
-A8_3V3
-Text GLabel 3300 6700 3    50   Input ~ 0
-A2_3V3
-Text GLabel 3200 6700 3    50   Input ~ 0
-A1_3V3
 Text GLabel 1350 4450 0    50   Input ~ 0
 FC0_3V3
 Text GLabel 1350 4550 0    50   Input ~ 0
@@ -442,9 +426,9 @@ Text GLabel 4150 6000 3    50   Output ~ 0
 FLASH_WP
 Text GLabel 4050 6000 3    50   Input ~ 0
 FLASH_BUSY
-Text GLabel 5000 6000 3    50   BiDi ~ 0
+Text GLabel 5400 6000 3    50   BiDi ~ 0
 SD_D0
-Text GLabel 5100 6000 3    50   BiDi ~ 0
+Text GLabel 5500 6000 3    50   BiDi ~ 0
 SD_D1
 Text GLabel 4600 6000 3    50   BiDi ~ 0
 SD_D2
@@ -452,8 +436,42 @@ Text GLabel 4700 6000 3    50   BiDi ~ 0
 SD_D3
 Text GLabel 4800 6000 3    50   Output ~ 0
 SD_CMD
-Text GLabel 4900 6000 3    50   Output ~ 0
+Text GLabel 5000 6000 3    50   Output ~ 0
 SD_CLK
-Text GLabel 5200 6000 3    50   Input ~ 0
+Text GLabel 5600 6000 3    50   Input ~ 0
 SD_CD
+Text GLabel 6250 4000 2    50   BiDi ~ 0
+D0_3V3
+Text GLabel 6250 4100 2    50   BiDi ~ 0
+D1_3V3
+Text GLabel 6250 4300 2    50   BiDi ~ 0
+D2_3V3
+Text GLabel 6250 4600 2    50   BiDi ~ 0
+D3_3V3
+Text GLabel 6250 4800 2    50   BiDi ~ 0
+D4_3V3
+Text GLabel 6250 5000 2    50   BiDi ~ 0
+D5_3V3
+Text GLabel 6250 5200 2    50   BiDi ~ 0
+D6_3V3
+Text GLabel 6250 5300 2    50   BiDi ~ 0
+D7_3V3
+Text GLabel 6250 4900 2    50   Input ~ 0
+A5_3V3
+Text GLabel 6250 3850 2    50   Input ~ 0
+A6_3V3
+Text GLabel 6250 4700 2    50   Input ~ 0
+A4_3V3
+Text GLabel 6250 4500 2    50   Input ~ 0
+A3_3V3
+Text GLabel 6250 3750 2    50   Input ~ 0
+A7_3V3
+Text GLabel 6250 3650 2    50   Input ~ 0
+A8_3V3
+Text GLabel 6250 4400 2    50   Input ~ 0
+A2_3V3
+Text GLabel 6250 4200 2    50   Input ~ 0
+A1_3V3
+Text GLabel 6250 5100 2    50   Input ~ 0
+A0_3V3
 $EndSCHEMATC

@@ -44,4 +44,60 @@ Text GLabel 4800 3700 0    50   Input ~ 0
 SD_CLK
 Text GLabel 4800 4200 0    50   Output ~ 0
 SD_CD
+$Comp
+L Device:R_Pack04 RN3
+U 1 1 61FDB219
+P 2200 3000
+F 0 "RN3" H 2388 3046 50  0000 L CNN
+F 1 "R_Pack04" H 2388 2955 50  0000 L CNN
+F 2 "SF2000:RESCAF80P320X160X60-8N" V 2475 3000 50  0001 C CNN
+F 3 "~" H 2200 3000 50  0001 C CNN
+	1    2200 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Pack04 RN4
+U 1 1 61FDC27F
+P 3150 3000
+F 0 "RN4" H 3338 3046 50  0000 L CNN
+F 1 "R_Pack04" H 3338 2955 50  0000 L CNN
+F 2 "SF2000:RESCAF80P320X160X60-8N" V 3425 3000 50  0001 C CNN
+F 3 "~" H 3150 3000 50  0001 C CNN
+	1    3150 3000
+	1    0    0    -1  
+$EndComp
+Text GLabel 2000 2800 0    50   Input ~ 0
+3V3
+Wire Wire Line
+	2000 2800 2100 2800
+Connection ~ 2100 2800
+Wire Wire Line
+	2100 2800 2200 2800
+Connection ~ 2200 2800
+Wire Wire Line
+	2200 2800 2300 2800
+Connection ~ 2300 2800
+Wire Wire Line
+	2300 2800 2950 2800
+Connection ~ 2950 2800
+Wire Wire Line
+	2950 2800 3050 2800
+Connection ~ 3050 2800
+Wire Wire Line
+	3050 2800 3150 2800
+Connection ~ 3150 2800
+Wire Wire Line
+	3150 2800 3250 2800
+Text GLabel 2300 3200 3    50   BiDi ~ 0
+SD_D2
+Text GLabel 2200 3200 3    50   BiDi ~ 0
+SD_D3
+Text GLabel 2100 3200 3    50   Input ~ 0
+SD_CMD
+Text GLabel 3250 3200 3    50   BiDi ~ 0
+SD_D0
+Text GLabel 3150 3200 3    50   BiDi ~ 0
+SD_D1
+Text GLabel 3050 3200 3    50   Input ~ 0
+SD_CD
 $EndSCHEMATC
