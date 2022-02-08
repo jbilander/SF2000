@@ -83,7 +83,7 @@ A17_3V3
 Text GLabel 8550 3200 0    50   Input ~ 0
 A18_3V3
 Text GLabel 8550 3100 0    50   Input ~ 0
-A19_3V3
+FLASH_A19
 Text GLabel 9550 1800 2    50   Input ~ 0
 GND
 Text GLabel 9550 3700 2    50   Input ~ 0

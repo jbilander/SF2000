@@ -100,4 +100,6 @@ Text GLabel 3150 3200 3    50   BiDi ~ 0
 SD_D1
 Text GLabel 3050 3200 3    50   Input ~ 0
 SD_CD
+Text GLabel 2000 3200 3    50   Input ~ 0
+FLASH_BUSY
 $EndSCHEMATC

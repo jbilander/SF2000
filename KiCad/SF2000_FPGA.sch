@@ -452,9 +452,9 @@ Text GLabel 6250 4800 2    50   BiDi ~ 0
 D4_3V3
 Text GLabel 6250 5000 2    50   BiDi ~ 0
 D5_3V3
-Text GLabel 6250 5200 2    50   BiDi ~ 0
+Text GLabel 6250 5100 2    50   BiDi ~ 0
 D6_3V3
-Text GLabel 6250 5300 2    50   BiDi ~ 0
+Text GLabel 6250 5200 2    50   BiDi ~ 0
 D7_3V3
 Text GLabel 6250 4900 2    50   Input ~ 0
 A5_3V3
@@ -472,6 +472,14 @@ Text GLabel 6250 4400 2    50   Input ~ 0
 A2_3V3
 Text GLabel 6250 4200 2    50   Input ~ 0
 A1_3V3
-Text GLabel 6250 5100 2    50   Input ~ 0
-A0_3V3
+Text GLabel 5300 6000 3    50   Input ~ 0
+IDE_IOW_3V3
+Text GLabel 5200 6000 3    50   Input ~ 0
+IDE_IOR_3V3
+Text GLabel 5100 6000 3    50   Input ~ 0
+IDE_CS1_3V3
+Text GLabel 4900 6000 3    50   Input ~ 0
+IDE_CS0_3V3
+Text GLabel 5700 6000 3    50   Output ~ 0
+FLASH_A19
 $EndSCHEMATC
