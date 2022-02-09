@@ -482,4 +482,8 @@ Text GLabel 4900 6000 3    50   Input ~ 0
 IDE_CS0_3V3
 Text GLabel 5700 6000 3    50   Output ~ 0
 FLASH_A19
+Text GLabel 6250 5400 2    50   Input ~ 0
+OSC_CLK
+Text GLabel 6250 5300 2    50   Output ~ 0
+ROM_WE
 $EndSCHEMATC

@@ -100,6 +100,28 @@ Text GLabel 3150 3200 3    50   BiDi ~ 0
 SD_D1
 Text GLabel 3050 3200 3    50   Input ~ 0
 SD_CD
-Text GLabel 2000 3200 3    50   Input ~ 0
-FLASH_BUSY
+$Comp
+L Oscillator:SG-8002CA X1
+U 1 1 620EE0AB
+P 2850 4500
+F 0 "X1" H 3200 4750 50  0000 L CNN
+F 1 "Oscillator_7.0x5.0mm" H 3200 4650 50  0000 L CNN
+F 2 "Oscillator:Oscillator_SMD_SeikoEpson_SG8002CA-4Pin_7.0x5.0mm" H 3550 4150 50  0001 C CNN
+F 3 "" H 2750 4500 50  0001 C CNN
+	1    2850 4500
+	1    0    0    -1  
+$EndComp
+Text GLabel 2850 4200 1    50   Input ~ 0
+3V3
+Text GLabel 2850 4800 3    50   Input ~ 0
+GND
+Wire Wire Line
+	2850 4250 2550 4250
+Wire Wire Line
+	2550 4250 2550 4500
+Text GLabel 3150 4500 2    50   Output ~ 0
+OSC_CLK
+Text GLabel 2950 3200 3    50   Input ~ 0
+ROM_WE
+NoConn ~ 2000 3200
 $EndSCHEMATC
