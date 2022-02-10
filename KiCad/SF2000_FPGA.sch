@@ -175,13 +175,13 @@ Text GLabel 1350 4550 0    50   Input ~ 0
 FC1_3V3
 Text GLabel 1350 4750 0    50   Input ~ 0
 FC2_3V3
-Text GLabel 4200 6700 3    50   Input ~ 0
-A11_3V3
-Text GLabel 4000 6700 3    50   Input ~ 0
-A9_3V3
-Text GLabel 4100 6700 3    50   Input ~ 0
-A10_3V3
-Text GLabel 4300 6700 3    50   Input ~ 0
+Text GLabel 6250 2200 2    50   Input ~ 0
+A20_3V3
+Text GLabel 6250 2000 2    50   Input ~ 0
+A22_3V3
+Text GLabel 6250 2100 2    50   Input ~ 0
+A21_3V3
+Text GLabel 6250 3100 2    50   Input ~ 0
 A12_3V3
 Text GLabel 1800 6000 3    50   Input ~ 0
 IPL0_3V3
@@ -191,15 +191,15 @@ Text GLabel 2000 6000 3    50   Input ~ 0
 IPL2_3V3
 Text GLabel 2100 6000 3    50   Input ~ 0
 BERR_3V3
-Text GLabel 4400 6700 3    50   Input ~ 0
+Text GLabel 6250 2900 2    50   Input ~ 0
 A13_3V3
-Text GLabel 4500 6700 3    50   Input ~ 0
-A14_3V3
-Text GLabel 4600 6700 3    50   Input ~ 0
-A15_3V3
-Text GLabel 4700 6700 3    50   Input ~ 0
+Text GLabel 6250 2500 2    50   Input ~ 0
+A18_3V3
+Text GLabel 6250 2300 2    50   Input ~ 0
+A19_3V3
+Text GLabel 6250 2800 2    50   Input ~ 0
 A16_3V3
-Text GLabel 4800 6700 3    50   Input ~ 0
+Text GLabel 6250 2700 2    50   Input ~ 0
 A17_3V3
 Text GLabel 1350 2200 0    50   Input ~ 0
 VPA_3V3
@@ -209,28 +209,25 @@ Text GLabel 1350 3100 0    50   Input ~ 0
 TMS
 Text GLabel 1350 4650 0    50   Input ~ 0
 AS_CPU_3V3
-NoConn ~ 1350 3000
 Text GLabel 6250 1500 2    50   Input ~ 0
 CFGIN_3V3
 Text GLabel 6250 1600 2    50   Output ~ 0
 CFGOUT_3V3
-Text GLabel 2200 6000 3    50   Output ~ 0
-AVEC_3V3
 Text GLabel 6250 3000 2    50   Input ~ 0
 RST_3V3
-Text GLabel 2300 6000 3    50   Input ~ 0
+Text GLabel 2200 6000 3    50   Input ~ 0
 HLT_3V3
-Text GLabel 2400 6000 3    50   Input ~ 0
+Text GLabel 2300 6000 3    50   Input ~ 0
 BR_3V3
-Text GLabel 2500 6000 3    50   Input ~ 0
+Text GLabel 2400 6000 3    50   Input ~ 0
 BG_3V3
-Text GLabel 2600 6000 3    50   Output ~ 0
+Text GLabel 2500 6000 3    50   Output ~ 0
 DTACK_CPU_3V3
-Text GLabel 2700 6000 3    50   Input ~ 0
+Text GLabel 2600 6000 3    50   Input ~ 0
 DTACK_MB_3V3
-Text GLabel 2800 6000 3    50   Input ~ 0
+Text GLabel 2700 6000 3    50   Input ~ 0
 BGACK_3V3
-Text GLabel 2900 6000 3    50   Output ~ 0
+Text GLabel 2800 6000 3    50   Output ~ 0
 AS_MB_3V3
 $Comp
 L Connector_Generic:Conn_02x05_Odd_Even JTAG1
@@ -327,9 +324,9 @@ Wire Wire Line
 Connection ~ 9600 900 
 Wire Wire Line
 	9600 900  9700 900 
-Text GLabel 10600 1000 3    50   Input ~ 0
+Text GLabel 9400 2250 3    50   Input ~ 0
 nSTATUS
-Text GLabel 10700 1000 3    50   Input ~ 0
+Text GLabel 9500 2250 3    50   Input ~ 0
 CONF_DONE
 Text GLabel 9400 1300 3    50   Input ~ 0
 JP4
@@ -400,31 +397,27 @@ Text GLabel 9600 1300 3    50   Input ~ 0
 JP2
 Text GLabel 1350 2300 0    50   Output ~ 0
 VMA_3V3
-Text GLabel 3200 6000 3    50   BiDi ~ 0
+Text GLabel 3000 6000 3    50   BiDi ~ 0
 D9_3V3
-Text GLabel 3300 6000 3    50   BiDi ~ 0
-D10_3V3
-Text GLabel 3400 6000 3    50   BiDi ~ 0
-D11_3V3
-Text GLabel 3500 6000 3    50   BiDi ~ 0
-D12_3V3
-Text GLabel 3750 6000 3    50   BiDi ~ 0
-D13_3V3
-Text GLabel 3850 6000 3    50   BiDi ~ 0
-D14_3V3
-Text GLabel 3950 6000 3    50   BiDi ~ 0
-D15_3V3
 Text GLabel 3100 6000 3    50   BiDi ~ 0
+D10_3V3
+Text GLabel 3200 6000 3    50   BiDi ~ 0
+D11_3V3
+Text GLabel 3300 6000 3    50   BiDi ~ 0
+D12_3V3
+Text GLabel 3400 6000 3    50   BiDi ~ 0
+D13_3V3
+Text GLabel 3500 6000 3    50   BiDi ~ 0
+D14_3V3
+Text GLabel 3750 6000 3    50   BiDi ~ 0
+D15_3V3
+Text GLabel 2900 6000 3    50   BiDi ~ 0
 D8_3V3
-Text GLabel 3000 6000 3    50   Output ~ 0
-FLASH_OE
-Text GLabel 4350 6000 3    50   Output ~ 0
-FLASH_WE
-Text GLabel 4250 6000 3    50   Output ~ 0
-FLASH_RST
 Text GLabel 4150 6000 3    50   Output ~ 0
-FLASH_WP
-Text GLabel 4050 6000 3    50   Input ~ 0
+FLASH_WE
+Text GLabel 4050 6000 3    50   Output ~ 0
+FLASH_RST
+Text GLabel 3950 6000 3    50   Input ~ 0
 FLASH_BUSY
 Text GLabel 5400 6000 3    50   BiDi ~ 0
 SD_D0
@@ -458,16 +451,14 @@ Text GLabel 6250 5200 2    50   BiDi ~ 0
 D7_3V3
 Text GLabel 6250 4900 2    50   Input ~ 0
 A5_3V3
-Text GLabel 6250 3850 2    50   Input ~ 0
+Text GLabel 6250 3250 2    50   Input ~ 0
 A6_3V3
 Text GLabel 6250 4700 2    50   Input ~ 0
 A4_3V3
 Text GLabel 6250 4500 2    50   Input ~ 0
 A3_3V3
-Text GLabel 6250 3750 2    50   Input ~ 0
-A7_3V3
-Text GLabel 6250 3650 2    50   Input ~ 0
-A8_3V3
+Text GLabel 6250 1900 2    50   Input ~ 0
+A23_3V3
 Text GLabel 6250 4400 2    50   Input ~ 0
 A2_3V3
 Text GLabel 6250 4200 2    50   Input ~ 0
@@ -484,6 +475,79 @@ Text GLabel 5700 6000 3    50   Output ~ 0
 FLASH_A19
 Text GLabel 6250 5400 2    50   Input ~ 0
 OSC_CLK
-Text GLabel 6250 5300 2    50   Output ~ 0
-ROM_WE
+Text GLabel 6250 3750 2    50   Input ~ 0
+OE_BANK1
+Text GLabel 6250 3350 2    50   Input ~ 0
+WE_BANK1_EVEN
+Text GLabel 6250 3850 2    50   Input ~ 0
+WE_BANK1_ODD
+Text GLabel 6250 3450 2    50   Input ~ 0
+OE_BANK0
+Text GLabel 6250 3550 2    50   Input ~ 0
+WE_BANK0_EVEN
+Text GLabel 6250 3650 2    50   Input ~ 0
+WE_BANK0_ODD
+$Comp
+L Device:R_Pack04 RN5
+U 1 1 62107318
+P 9600 2050
+F 0 "RN5" H 9788 2096 50  0000 L CNN
+F 1 "R_Pack04" H 9788 2005 50  0000 L CNN
+F 2 "SF2000:RESCAF80P320X160X60-8N" V 9875 2050 50  0001 C CNN
+F 3 "~" H 9600 2050 50  0001 C CNN
+	1    9600 2050
+	1    0    0    -1  
+$EndComp
+Text GLabel 9700 2250 3    50   Input ~ 0
+CONFIG_SEL
+NoConn ~ 9600 1850
+NoConn ~ 9600 2250
+Text GLabel 9400 1850 1    50   Input ~ 0
+3V3
+Wire Wire Line
+	9400 1850 9500 1850
+Text GLabel 9700 1850 1    50   Input ~ 0
+GND
+Text GLabel 6250 2400 2    50   Input ~ 0
+JP6
+$Comp
+L Connector_Generic:Conn_02x01 J8
+U 1 1 62127717
+P 7750 3500
+F 0 "J8" H 7800 3250 50  0000 C CNN
+F 1 "Conn_02x01" H 7800 3350 50  0000 C CNN
+F 2 "Connector_PinHeader_2.00mm:PinHeader_2x01_P2.00mm_Vertical" H 7750 3500 50  0001 C CNN
+F 3 "~" H 7750 3500 50  0001 C CNN
+	1    7750 3500
+	-1   0    0    1   
+$EndComp
+Text GLabel 7950 3500 2    50   Input ~ 0
+GND
+Text GLabel 7450 3500 0    50   Input ~ 0
+JP6
+$Comp
+L Connector_Generic:Conn_02x01 J9
+U 1 1 62132436
+P 7750 3900
+F 0 "J9" H 7800 3650 50  0000 C CNN
+F 1 "Conn_02x01" H 7800 3750 50  0000 C CNN
+F 2 "Connector_PinHeader_2.00mm:PinHeader_2x01_P2.00mm_Vertical" H 7750 3900 50  0001 C CNN
+F 3 "~" H 7750 3900 50  0001 C CNN
+	1    7750 3900
+	-1   0    0    1   
+$EndComp
+Text GLabel 7950 3900 2    50   Input ~ 0
+GND
+Text GLabel 7450 3900 0    50   Input ~ 0
+JP7
+Text GLabel 6250 5300 2    50   Input ~ 0
+JP7
+Text GLabel 3850 6000 3    50   Output ~ 0
+FLASH_OE
+Text GLabel 1350 3000 0    50   Output ~ 0
+ROM_OE
+Text GLabel 4250 6000 3    50   Output ~ 0
+ROM_B1
+Text GLabel 4350 6000 3    50   Output ~ 0
+ROM_B2
 $EndSCHEMATC

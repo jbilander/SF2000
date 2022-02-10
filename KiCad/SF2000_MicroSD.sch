@@ -121,7 +121,7 @@ Wire Wire Line
 	2550 4250 2550 4500
 Text GLabel 3150 4500 2    50   Output ~ 0
 OSC_CLK
-Text GLabel 2950 3200 3    50   Input ~ 0
-ROM_WE
 NoConn ~ 2000 3200
+Text GLabel 2950 3200 3    50   Input ~ 0
+JP7
 $EndSCHEMATC

@@ -27,12 +27,12 @@ $EndComp
 $Comp
 L SF2000:SST39LF040 U13
 U 1 1 627D2ECC
-P 6750 2600
-F 0 "U13" H 6750 2600 50  0000 C CNN
-F 1 "SST39LF040" V 6750 2200 50  0000 C CNN
-F 2 "SF2000:PLCC-32_11.4x14.0mm_P1.27mm" H 6750 2600 50  0001 C CNN
-F 3 "https://ww1.microchip.com/downloads/en/DeviceDoc/20005023B.pdf" H 6750 2700 50  0001 C CNN
-	1    6750 2600
+P 6100 2600
+F 0 "U13" H 6100 2600 50  0000 C CNN
+F 1 "SST39LF040" V 6100 2200 50  0000 C CNN
+F 2 "SF2000:PLCC-32_11.4x14.0mm_P1.27mm" H 6100 2600 50  0001 C CNN
+F 3 "https://ww1.microchip.com/downloads/en/DeviceDoc/20005023B.pdf" H 6100 2700 50  0001 C CNN
+	1    6100 2600
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -90,40 +90,40 @@ Text GLabel 9550 3700 2    50   Input ~ 0
 GND
 Text GLabel 9550 2700 2    50   Input ~ 0
 3V3
-Text GLabel 6300 2100 0    50   Input ~ 0
+Text GLabel 5650 2100 0    50   Input ~ 0
 A5_3V3
-Text GLabel 6300 2200 0    50   Input ~ 0
+Text GLabel 5650 2200 0    50   Input ~ 0
 A6_3V3
-Text GLabel 6300 2000 0    50   Input ~ 0
+Text GLabel 5650 2000 0    50   Input ~ 0
 A4_3V3
-Text GLabel 6300 1900 0    50   Input ~ 0
+Text GLabel 5650 1900 0    50   Input ~ 0
 A3_3V3
-Text GLabel 6300 2300 0    50   Input ~ 0
+Text GLabel 5650 2300 0    50   Input ~ 0
 A7_3V3
-Text GLabel 6300 2400 0    50   Input ~ 0
+Text GLabel 5650 2400 0    50   Input ~ 0
 A8_3V3
-Text GLabel 6300 1800 0    50   Input ~ 0
+Text GLabel 5650 1800 0    50   Input ~ 0
 A2_3V3
-Text GLabel 6300 1700 0    50   Input ~ 0
+Text GLabel 5650 1700 0    50   Input ~ 0
 A1_3V3
-Text GLabel 6300 2700 0    50   Input ~ 0
+Text GLabel 5650 2700 0    50   Input ~ 0
 A11_3V3
-Text GLabel 6300 2500 0    50   Input ~ 0
+Text GLabel 5650 2500 0    50   Input ~ 0
 A9_3V3
-Text GLabel 6300 2600 0    50   Input ~ 0
+Text GLabel 5650 2600 0    50   Input ~ 0
 A10_3V3
-Text GLabel 6300 2800 0    50   Input ~ 0
+Text GLabel 5650 2800 0    50   Input ~ 0
 A12_3V3
-Text GLabel 6300 2900 0    50   Input ~ 0
+Text GLabel 5650 2900 0    50   Input ~ 0
 A13_3V3
-Text GLabel 6300 3000 0    50   Input ~ 0
+Text GLabel 5650 3000 0    50   Input ~ 0
 A14_3V3
-Text GLabel 6300 3100 0    50   Input ~ 0
+Text GLabel 5650 3100 0    50   Input ~ 0
 A15_3V3
-Text GLabel 6300 3200 0    50   Input ~ 0
-A16_3V3
-Text GLabel 6300 3300 0    50   Input ~ 0
-A17_3V3
+Text GLabel 5650 3200 0    50   Input ~ 0
+ROM_B1
+Text GLabel 5650 3300 0    50   Input ~ 0
+ROM_B2
 Text GLabel 9550 3500 2    50   BiDi ~ 0
 D0_3V3
 Text GLabel 9550 3300 2    50   BiDi ~ 0
@@ -164,39 +164,31 @@ Text GLabel 8550 2600 0    50   Input ~ 0
 FLASH_WE
 Text GLabel 8550 2700 0    50   Input ~ 0
 FLASH_RST
-Text GLabel 8550 2900 0    50   Input ~ 0
-FLASH_WP
 Text GLabel 7700 3000 0    50   Output ~ 0
 FLASH_BUSY
-Text GLabel 7200 2800 2    50   Input ~ 0
-ROM_WE
-Text GLabel 7200 2700 2    50   Input ~ 0
+Text GLabel 6550 2700 2    50   Input ~ 0
 ROM_OE
-Text GLabel 7200 2600 2    50   Input ~ 0
+Text GLabel 6550 2600 2    50   Input ~ 0
 GND
-Text GLabel 6750 3700 3    50   Input ~ 0
+Text GLabel 6100 3700 3    50   Input ~ 0
 GND
-Text GLabel 6750 1500 1    50   Input ~ 0
+Text GLabel 6100 1500 1    50   Input ~ 0
 3V3
-Text GLabel 6300 3400 0    50   Input ~ 0
-A18_3V3
-Text GLabel 6300 3500 0    50   Input ~ 0
-A19_3V3
-Text GLabel 7200 1700 2    50   BiDi ~ 0
+Text GLabel 6550 1700 2    50   BiDi ~ 0
 D0_3V3
-Text GLabel 7200 1800 2    50   BiDi ~ 0
+Text GLabel 6550 1800 2    50   BiDi ~ 0
 D1_3V3
-Text GLabel 7200 1900 2    50   BiDi ~ 0
+Text GLabel 6550 1900 2    50   BiDi ~ 0
 D2_3V3
-Text GLabel 7200 2000 2    50   BiDi ~ 0
+Text GLabel 6550 2000 2    50   BiDi ~ 0
 D3_3V3
-Text GLabel 7200 2100 2    50   BiDi ~ 0
+Text GLabel 6550 2100 2    50   BiDi ~ 0
 D4_3V3
-Text GLabel 7200 2200 2    50   BiDi ~ 0
+Text GLabel 6550 2200 2    50   BiDi ~ 0
 D5_3V3
-Text GLabel 7200 2300 2    50   BiDi ~ 0
+Text GLabel 6550 2300 2    50   BiDi ~ 0
 D6_3V3
-Text GLabel 7200 2400 2    50   BiDi ~ 0
+Text GLabel 6550 2400 2    50   BiDi ~ 0
 D7_3V3
 Text GLabel 4400 4950 0    50   BiDi ~ 0
 D0_3V3
@@ -461,4 +453,14 @@ Wire Wire Line
 	7850 3000 8550 3000
 Text GLabel 7850 2800 1    50   Input ~ 0
 3V3
+Wire Wire Line
+	6100 3700 5650 3700
+Wire Wire Line
+	5650 3700 5650 3500
+Connection ~ 5650 3500
+Wire Wire Line
+	5650 3500 5650 3400
+Text GLabel 6550 2800 2    50   Input ~ 0
+3V3
+NoConn ~ 8550 2900
 $EndSCHEMATC
