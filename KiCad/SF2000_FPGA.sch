@@ -183,14 +183,14 @@ Text GLabel 6250 2100 2    50   Input ~ 0
 A21_3V3
 Text GLabel 6250 3100 2    50   Input ~ 0
 A12_3V3
+Text GLabel 3850 6000 3    50   Input ~ 0
+UDS_3V3
+Text GLabel 3750 6000 3    50   Input ~ 0
+LDS_3V3
+Text GLabel 2300 6000 3    50   Input ~ 0
+RW_3V3
 Text GLabel 1800 6000 3    50   Input ~ 0
-IPL0_3V3
-Text GLabel 1900 6000 3    50   Input ~ 0
-IPL1_3V3
-Text GLabel 2000 6000 3    50   Input ~ 0
-IPL2_3V3
-Text GLabel 2100 6000 3    50   Input ~ 0
-BERR_3V3
+AVEC_3V3
 Text GLabel 6250 2900 2    50   Input ~ 0
 A13_3V3
 Text GLabel 6250 2500 2    50   Input ~ 0
@@ -215,19 +215,19 @@ Text GLabel 6250 1600 2    50   Output ~ 0
 CFGOUT_3V3
 Text GLabel 6250 3000 2    50   Input ~ 0
 RST_3V3
-Text GLabel 2200 6000 3    50   Input ~ 0
+Text GLabel 1900 6000 3    50   Input ~ 0
 HLT_3V3
-Text GLabel 2300 6000 3    50   Input ~ 0
+Text GLabel 2000 6000 3    50   Input ~ 0
 BR_3V3
-Text GLabel 2400 6000 3    50   Input ~ 0
+Text GLabel 2100 6000 3    50   Input ~ 0
 BG_3V3
-Text GLabel 2500 6000 3    50   Output ~ 0
+Text GLabel 2200 6000 3    50   Output ~ 0
 DTACK_CPU_3V3
-Text GLabel 2600 6000 3    50   Input ~ 0
+Text GLabel 2400 6000 3    50   Input ~ 0
 DTACK_MB_3V3
-Text GLabel 2700 6000 3    50   Input ~ 0
+Text GLabel 2500 6000 3    50   Input ~ 0
 BGACK_3V3
-Text GLabel 2800 6000 3    50   Output ~ 0
+Text GLabel 2600 6000 3    50   Output ~ 0
 AS_MB_3V3
 $Comp
 L Connector_Generic:Conn_02x05_Odd_Even JTAG1
@@ -397,21 +397,21 @@ Text GLabel 9600 1300 3    50   Input ~ 0
 JP2
 Text GLabel 1350 2300 0    50   Output ~ 0
 VMA_3V3
-Text GLabel 3000 6000 3    50   BiDi ~ 0
+Text GLabel 2800 6000 3    50   BiDi ~ 0
 D9_3V3
-Text GLabel 3100 6000 3    50   BiDi ~ 0
-D10_3V3
-Text GLabel 3200 6000 3    50   BiDi ~ 0
-D11_3V3
-Text GLabel 3300 6000 3    50   BiDi ~ 0
-D12_3V3
-Text GLabel 3400 6000 3    50   BiDi ~ 0
-D13_3V3
-Text GLabel 3500 6000 3    50   BiDi ~ 0
-D14_3V3
-Text GLabel 3750 6000 3    50   BiDi ~ 0
-D15_3V3
 Text GLabel 2900 6000 3    50   BiDi ~ 0
+D10_3V3
+Text GLabel 3000 6000 3    50   BiDi ~ 0
+D11_3V3
+Text GLabel 3100 6000 3    50   BiDi ~ 0
+D12_3V3
+Text GLabel 3200 6000 3    50   BiDi ~ 0
+D13_3V3
+Text GLabel 3300 6000 3    50   BiDi ~ 0
+D14_3V3
+Text GLabel 3400 6000 3    50   BiDi ~ 0
+D15_3V3
+Text GLabel 2700 6000 3    50   BiDi ~ 0
 D8_3V3
 Text GLabel 4150 6000 3    50   Output ~ 0
 FLASH_WE
@@ -488,10 +488,10 @@ WE_BANK0_EVEN
 Text GLabel 6250 3650 2    50   Input ~ 0
 WE_BANK0_ODD
 $Comp
-L Device:R_Pack04 RN5
+L Device:R_Pack04 RN6
 U 1 1 62107318
 P 9600 2050
-F 0 "RN5" H 9788 2096 50  0000 L CNN
+F 0 "RN6" H 9788 2096 50  0000 L CNN
 F 1 "R_Pack04" H 9788 2005 50  0000 L CNN
 F 2 "SF2000:RESCAF80P320X160X60-8N" V 9875 2050 50  0001 C CNN
 F 3 "~" H 9600 2050 50  0001 C CNN
@@ -542,7 +542,7 @@ Text GLabel 7450 3900 0    50   Input ~ 0
 JP7
 Text GLabel 6250 5300 2    50   Input ~ 0
 JP7
-Text GLabel 3850 6000 3    50   Output ~ 0
+Text GLabel 3500 6000 3    50   Output ~ 0
 FLASH_OE
 Text GLabel 1350 3000 0    50   Output ~ 0
 ROM_OE
