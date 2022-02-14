@@ -1355,20 +1355,54 @@ F0 "SF2000_MicroSD" 50
 F1 "SF2000_MicroSD.sch" 50
 $EndSheet
 $Comp
-L Device:C C36
+L Device:C C40
 U 1 1 628C0969
-P 4550 6600
-F 0 "C36" H 4600 6700 50  0000 L CNN
-F 1 "10uF" H 4550 6500 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 4588 6450 50  0001 C CNN
-F 3 "~" H 4550 6600 50  0001 C CNN
-	1    4550 6600
+P 5100 6600
+F 0 "C40" H 5150 6700 50  0000 L CNN
+F 1 "10uF" H 5100 6500 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 5138 6450 50  0001 C CNN
+F 3 "~" H 5100 6600 50  0001 C CNN
+	1    5100 6600
 	1    0    0    -1  
 $EndComp
-Text GLabel 4550 6450 0    50   Input ~ 0
+Text GLabel 5100 6450 0    50   Input ~ 0
 GND
-Text GLabel 4550 6750 0    50   Input ~ 0
+Text GLabel 5100 6750 0    50   Input ~ 0
 +5VDC
-Text Notes 4600 6400 0    50   ~ 0
+Text Notes 5150 6400 0    50   ~ 0
 1206
+$Comp
+L Device:C C41
+U 1 1 620E9DC4
+P 4050 6600
+F 0 "C41" H 4100 6700 50  0000 L CNN
+F 1 "0.1uF" H 4050 6500 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4088 6450 50  0001 C CNN
+F 3 "~" H 4050 6600 50  0001 C CNN
+	1    4050 6600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 6450 4050 6450
+Connection ~ 3800 6450
+Wire Wire Line
+	3800 6750 4050 6750
+Connection ~ 3800 6750
+$Comp
+L Device:C C36
+U 1 1 62106B38
+P 6000 7300
+F 0 "C36" H 6050 7400 50  0000 L CNN
+F 1 "0.01uF" H 6000 7200 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6038 7150 50  0001 C CNN
+F 3 "~" H 6000 7300 50  0001 C CNN
+	1    6000 7300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 7150 6000 7150
+Connection ~ 5700 7150
+Wire Wire Line
+	5700 7450 6000 7450
+Connection ~ 5700 7450
 $EndSCHEMATC
