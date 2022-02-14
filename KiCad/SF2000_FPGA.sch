@@ -500,8 +500,6 @@ F 3 "~" H 9600 2050 50  0001 C CNN
 $EndComp
 Text GLabel 9700 2250 3    50   Input ~ 0
 CONFIG_SEL
-NoConn ~ 9600 1850
-NoConn ~ 9600 2250
 Text GLabel 9400 1850 1    50   Input ~ 0
 3V3
 Wire Wire Line
@@ -550,4 +548,9 @@ Text GLabel 4250 6000 3    50   Output ~ 0
 ROM_B1
 Text GLabel 4350 6000 3    50   Output ~ 0
 ROM_B2
+Wire Wire Line
+	9500 1850 9600 1850
+Connection ~ 9500 1850
+Text GLabel 9600 2250 3    50   Input ~ 0
+JP6
 $EndSCHEMATC
