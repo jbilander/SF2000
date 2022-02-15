@@ -442,8 +442,6 @@ Wire Wire Line
 Connection ~ 5650 3500
 Wire Wire Line
 	5650 3500 5650 3400
-Text GLabel 6550 2800 2    50   Input ~ 0
-3V3
 NoConn ~ 8550 2900
 $Comp
 L Device:R_Pack04 RN?
@@ -476,4 +474,6 @@ Text GLabel 7550 3000 3    50   Input ~ 0
 FLASH_BUSY
 Text GLabel 7650 3000 3    50   Input ~ 0
 FLASH_OE
+Text GLabel 6550 2800 2    50   Input ~ 0
+ROM_WE
 $EndSCHEMATC

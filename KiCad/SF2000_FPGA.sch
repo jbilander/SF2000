@@ -75,7 +75,7 @@ C7M_3V3
 Text GLabel 1350 4250 0    50   Input ~ 0
 CDAC_3V3
 Text GLabel 1350 2500 0    50   Output ~ 0
-XRDY_3V3
+ROM_WE
 Text GLabel 1350 2600 0    50   Output ~ 0
 OVR_3V3
 Text GLabel 1350 2700 0    50   Output ~ 0
