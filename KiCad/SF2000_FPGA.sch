@@ -189,8 +189,6 @@ Text GLabel 3750 6000 3    50   Input ~ 0
 LDS_3V3
 Text GLabel 2300 6000 3    50   Input ~ 0
 RW_3V3
-Text GLabel 1800 6000 3    50   Input ~ 0
-AVEC_3V3
 Text GLabel 6250 2900 2    50   Input ~ 0
 A13_3V3
 Text GLabel 6250 2500 2    50   Input ~ 0
@@ -369,7 +367,6 @@ Wire Wire Line
 Connection ~ 7950 2500
 Wire Wire Line
 	7950 2500 7950 2600
-NoConn ~ 9700 1300
 Text GLabel 7950 2400 2    50   Input ~ 0
 GND
 Text GLabel 1350 3800 0    50   Input ~ 0
@@ -509,23 +506,8 @@ GND
 Text GLabel 6250 2400 2    50   Input ~ 0
 JP7
 $Comp
-L Connector_Generic:Conn_02x01 J8
-U 1 1 62127717
-P 7750 3500
-F 0 "J8" H 7800 3250 50  0000 C CNN
-F 1 "Conn_02x01" H 7800 3350 50  0000 C CNN
-F 2 "Connector_PinHeader_2.00mm:PinHeader_2x01_P2.00mm_Vertical" H 7750 3500 50  0001 C CNN
-F 3 "~" H 7750 3500 50  0001 C CNN
-	1    7750 3500
-	-1   0    0    1   
-$EndComp
-Text GLabel 7950 3500 2    50   Input ~ 0
-GND
-Text GLabel 7450 3500 0    50   Input ~ 0
-JP7
-$Comp
 L Connector_Generic:Conn_02x01 J9
-U 1 1 62132436
+U 1 1 62127717
 P 7750 3900
 F 0 "J9" H 7800 3650 50  0000 C CNN
 F 1 "Conn_02x01" H 7800 3750 50  0000 C CNN
@@ -537,6 +519,21 @@ $EndComp
 Text GLabel 7950 3900 2    50   Input ~ 0
 GND
 Text GLabel 7450 3900 0    50   Input ~ 0
+JP7
+$Comp
+L Connector_Generic:Conn_02x01 J10
+U 1 1 62132436
+P 7750 4300
+F 0 "J10" H 7800 4050 50  0000 C CNN
+F 1 "Conn_02x01" H 7800 4150 50  0000 C CNN
+F 2 "Connector_PinHeader_2.00mm:PinHeader_2x01_P2.00mm_Vertical" H 7750 4300 50  0001 C CNN
+F 3 "~" H 7750 4300 50  0001 C CNN
+	1    7750 4300
+	-1   0    0    1   
+$EndComp
+Text GLabel 7950 4300 2    50   Input ~ 0
+GND
+Text GLabel 7450 4300 0    50   Input ~ 0
 JP8
 Text GLabel 6250 5300 2    50   Input ~ 0
 JP8
@@ -553,4 +550,23 @@ Wire Wire Line
 Connection ~ 9500 1850
 Text GLabel 9600 2250 3    50   Input ~ 0
 JP7
+Text GLabel 7450 3500 0    50   Input ~ 0
+JP6
+$Comp
+L Connector_Generic:Conn_02x01 J8
+U 1 1 621772F2
+P 7750 3500
+F 0 "J8" H 7800 3250 50  0000 C CNN
+F 1 "Conn_02x01" H 7800 3350 50  0000 C CNN
+F 2 "Connector_PinHeader_2.00mm:PinHeader_2x01_P2.00mm_Vertical" H 7750 3500 50  0001 C CNN
+F 3 "~" H 7750 3500 50  0001 C CNN
+	1    7750 3500
+	-1   0    0    1   
+$EndComp
+Text GLabel 7950 3500 2    50   Input ~ 0
+GND
+Text GLabel 9700 1300 3    50   Input ~ 0
+JP6
+Text GLabel 1800 6000 3    50   Input ~ 0
+JP6
 $EndSCHEMATC
