@@ -1405,4 +1405,21 @@ Connection ~ 5700 7150
 Wire Wire Line
 	5700 7450 6000 7450
 Connection ~ 5700 7450
+$Comp
+L Device:C C37
+U 1 1 621C2B09
+P 6300 7300
+F 0 "C37" H 6350 7400 50  0000 L CNN
+F 1 "0.01uF" H 6300 7200 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6338 7150 50  0001 C CNN
+F 3 "~" H 6300 7300 50  0001 C CNN
+	1    6300 7300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 7150 6300 7150
+Connection ~ 6000 7150
+Wire Wire Line
+	6000 7450 6300 7450
+Connection ~ 6000 7450
 $EndSCHEMATC
