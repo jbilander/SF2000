@@ -269,8 +269,8 @@ CONF_DONE
 Text GLabel 6250 2600 2    50   Input ~ 0
 CONFIG_SEL
 Text GLabel 1350 2400 0    50   Input ~ 0
-JP5
-Text GLabel 7450 1550 0    50   Input ~ 0
+SW1
+Text GLabel 7450 3100 0    50   Input ~ 0
 JP5
 $Comp
 L Device:R_Pack04 RN1
@@ -291,9 +291,9 @@ Text GLabel 8600 1300 3    50   Input ~ 0
 TCK
 Text GLabel 8800 1300 3    50   Input ~ 0
 TMS
-Text GLabel 8700 1300 3    50   Input ~ 0
-JP1
 Text GLabel 8400 2600 3    50   Input ~ 0
+SW1
+Text GLabel 8700 1300 3    50   Input ~ 0
 JP5
 Text GLabel 8600 900  1    50   Input ~ 0
 GND
@@ -389,10 +389,10 @@ F 3 "~" H 7750 3100 50  0001 C CNN
 $EndComp
 Text GLabel 7950 3100 2    50   Input ~ 0
 GND
-Text GLabel 7450 3100 0    50   Input ~ 0
-JP1
+Text GLabel 7450 1550 0    50   Input ~ 0
+SW1
 Text GLabel 1350 3200 0    50   Input ~ 0
-JP1
+JP5
 Text GLabel 9600 1300 3    50   Input ~ 0
 JP2
 Text GLabel 1350 2300 0    50   Output ~ 0
@@ -507,7 +507,7 @@ Wire Wire Line
 Text GLabel 9700 1850 1    50   Input ~ 0
 GND
 Text GLabel 6250 2400 2    50   Input ~ 0
-JP6
+JP7
 $Comp
 L Connector_Generic:Conn_02x01 J8
 U 1 1 62127717
@@ -522,7 +522,7 @@ $EndComp
 Text GLabel 7950 3500 2    50   Input ~ 0
 GND
 Text GLabel 7450 3500 0    50   Input ~ 0
-JP6
+JP7
 $Comp
 L Connector_Generic:Conn_02x01 J9
 U 1 1 62132436
@@ -537,9 +537,9 @@ $EndComp
 Text GLabel 7950 3900 2    50   Input ~ 0
 GND
 Text GLabel 7450 3900 0    50   Input ~ 0
-JP7
+JP8
 Text GLabel 6250 5300 2    50   Input ~ 0
-JP7
+JP8
 Text GLabel 3500 6000 3    50   Output ~ 0
 FLASH_OE
 Text GLabel 1350 3000 0    50   Output ~ 0
@@ -552,5 +552,5 @@ Wire Wire Line
 	9500 1850 9600 1850
 Connection ~ 9500 1850
 Text GLabel 9600 2250 3    50   Input ~ 0
-JP6
+JP7
 $EndSCHEMATC

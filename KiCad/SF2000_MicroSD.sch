@@ -123,5 +123,5 @@ Text GLabel 3150 4500 2    50   Output ~ 0
 OSC_CLK
 NoConn ~ 2000 3200
 Text GLabel 2950 3200 3    50   Input ~ 0
-JP7
+JP8
 $EndSCHEMATC
