@@ -1507,4 +1507,21 @@ Wire Wire Line
 Connection ~ 4300 6750
 Wire Wire Line
 	4300 6750 4550 6750
+$Comp
+L Device:C C39
+U 1 1 6230281C
+P 6600 7300
+F 0 "C39" H 6650 7400 50  0000 L CNN
+F 1 "0.01uF" H 6600 7200 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6638 7150 50  0001 C CNN
+F 3 "~" H 6600 7300 50  0001 C CNN
+	1    6600 7300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6600 7150 6300 7150
+Connection ~ 6300 7150
+Wire Wire Line
+	6600 7450 6300 7450
+Connection ~ 6300 7450
 $EndSCHEMATC

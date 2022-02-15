@@ -188,37 +188,37 @@ Text GLabel 6550 2300 2    50   BiDi ~ 0
 D6_3V3
 Text GLabel 6550 2400 2    50   BiDi ~ 0
 D7_3V3
-Text GLabel 4400 4950 0    50   BiDi ~ 0
+Text GLabel 6050 4950 0    50   BiDi ~ 0
 D0_3V3
-Text GLabel 4400 5150 0    50   BiDi ~ 0
+Text GLabel 6050 5150 0    50   BiDi ~ 0
 D1_3V3
-Text GLabel 4400 5350 0    50   BiDi ~ 0
+Text GLabel 6050 5350 0    50   BiDi ~ 0
 D2_3V3
-Text GLabel 4400 5550 0    50   BiDi ~ 0
+Text GLabel 6050 5550 0    50   BiDi ~ 0
 D3_3V3
-Text GLabel 6300 4950 0    50   BiDi ~ 0
+Text GLabel 4150 4950 0    50   BiDi ~ 0
 D4_3V3
-Text GLabel 6300 5150 0    50   BiDi ~ 0
+Text GLabel 4150 5150 0    50   BiDi ~ 0
 D5_3V3
-Text GLabel 6300 5350 0    50   BiDi ~ 0
+Text GLabel 4150 5350 0    50   BiDi ~ 0
 D6_3V3
-Text GLabel 6300 5550 0    50   BiDi ~ 0
+Text GLabel 4150 5550 0    50   BiDi ~ 0
 D7_3V3
-Text GLabel 6300 5450 0    50   BiDi ~ 0
+Text GLabel 4150 5450 0    50   BiDi ~ 0
 D8_3V3
-Text GLabel 6300 5250 0    50   BiDi ~ 0
+Text GLabel 4150 5250 0    50   BiDi ~ 0
 D9_3V3
-Text GLabel 6300 5050 0    50   BiDi ~ 0
+Text GLabel 4150 5050 0    50   BiDi ~ 0
 D10_3V3
-Text GLabel 6300 4850 0    50   BiDi ~ 0
+Text GLabel 4150 4850 0    50   BiDi ~ 0
 D11_3V3
-Text GLabel 4400 5450 0    50   BiDi ~ 0
+Text GLabel 6050 5450 0    50   BiDi ~ 0
 D12_3V3
-Text GLabel 4400 5250 0    50   BiDi ~ 0
+Text GLabel 6050 5250 0    50   BiDi ~ 0
 D13_3V3
-Text GLabel 4400 5050 0    50   BiDi ~ 0
+Text GLabel 6050 5050 0    50   BiDi ~ 0
 D14_3V3
-Text GLabel 4400 4850 0    50   BiDi ~ 0
+Text GLabel 6050 4850 0    50   BiDi ~ 0
 D15_3V3
 Text GLabel 2200 4850 0    50   Input ~ 0
 RST_3V3
@@ -332,104 +332,104 @@ IDE_CS0_3V3
 Text GLabel 3200 5550 2    50   Output ~ 0
 IDE_CS0
 $Comp
-L SF2000:74LVC245A U16
+L SF2000:74LVC245A U17
 U 1 1 628E9EE2
-P 4900 5350
-F 0 "U16" H 4900 5200 50  0000 C CNN
-F 1 "74LVC245A" H 4550 6100 50  0000 C CNN
-F 2 "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm" H 4900 5350 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74HC245" H 4900 5350 50  0001 C CNN
-	1    4900 5350
+P 6550 5350
+F 0 "U17" H 6550 5200 50  0000 C CNN
+F 1 "74LVC245A" H 6200 6100 50  0000 C CNN
+F 2 "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm" H 6550 5350 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74HC245" H 6550 5350 50  0001 C CNN
+	1    6550 5350
 	1    0    0    -1  
 $EndComp
-Text GLabel 4900 4550 1    50   Input ~ 0
+Text GLabel 6550 4550 1    50   Input ~ 0
 3V3
-Text GLabel 4900 6150 3    50   Input ~ 0
+Text GLabel 6550 6150 3    50   Input ~ 0
 GND
-Text GLabel 4400 5850 0    50   Input ~ 0
+Text GLabel 6050 5850 0    50   Input ~ 0
 GND
 $Comp
-L SF2000:74LVC245A U17
+L SF2000:74LVC245A U16
 U 1 1 628ED6C8
-P 6800 5350
-F 0 "U17" H 6800 5200 50  0000 C CNN
-F 1 "74LVC245A" H 6450 6100 50  0000 C CNN
-F 2 "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm" H 6800 5350 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74HC245" H 6800 5350 50  0001 C CNN
-	1    6800 5350
+P 4650 5350
+F 0 "U16" H 4650 5200 50  0000 C CNN
+F 1 "74LVC245A" H 4300 6100 50  0000 C CNN
+F 2 "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm" H 4650 5350 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74HC245" H 4650 5350 50  0001 C CNN
+	1    4650 5350
 	1    0    0    -1  
 $EndComp
-Text GLabel 6800 4550 1    50   Input ~ 0
+Text GLabel 4650 4550 1    50   Input ~ 0
 3V3
-Text GLabel 6800 6150 3    50   Input ~ 0
+Text GLabel 4650 6150 3    50   Input ~ 0
 GND
-Text GLabel 6300 5850 0    50   Input ~ 0
+Text GLabel 4150 5850 0    50   Input ~ 0
 GND
-Text GLabel 6300 5750 0    50   Input ~ 0
+Text GLabel 4150 5750 0    50   Input ~ 0
 IDE_IOR_3V3
-Text GLabel 4400 5750 0    50   Input ~ 0
+Text GLabel 6050 5750 0    50   Input ~ 0
 IDE_IOR_3V3
-Text GLabel 5400 4850 2    50   BiDi ~ 0
+Text GLabel 7050 4850 2    50   BiDi ~ 0
 IDE_D7
 Text GLabel 2300 1850 0    50   BiDi ~ 0
 IDE_D7
-Text GLabel 5400 4950 2    50   BiDi ~ 0
+Text GLabel 7050 4950 2    50   BiDi ~ 0
 IDE_D8
 Text GLabel 3100 1850 2    50   BiDi ~ 0
 IDE_D8
-Text GLabel 5400 5050 2    50   BiDi ~ 0
+Text GLabel 7050 5050 2    50   BiDi ~ 0
 IDE_D6
 Text GLabel 2300 1950 0    50   BiDi ~ 0
 IDE_D6
-Text GLabel 5400 5150 2    50   BiDi ~ 0
+Text GLabel 7050 5150 2    50   BiDi ~ 0
 IDE_D9
 Text GLabel 3100 1950 2    50   BiDi ~ 0
 IDE_D9
-Text GLabel 5400 5250 2    50   BiDi ~ 0
+Text GLabel 7050 5250 2    50   BiDi ~ 0
 IDE_D5
 Text GLabel 2300 2050 0    50   BiDi ~ 0
 IDE_D5
-Text GLabel 5400 5350 2    50   BiDi ~ 0
+Text GLabel 7050 5350 2    50   BiDi ~ 0
 IDE_D10
 Text GLabel 3100 2050 2    50   BiDi ~ 0
 IDE_D10
-Text GLabel 5400 5450 2    50   BiDi ~ 0
+Text GLabel 7050 5450 2    50   BiDi ~ 0
 IDE_D4
 Text GLabel 2300 2150 0    50   BiDi ~ 0
 IDE_D4
-Text GLabel 5400 5550 2    50   BiDi ~ 0
+Text GLabel 7050 5550 2    50   BiDi ~ 0
 IDE_D11
 Text GLabel 3100 2150 2    50   BiDi ~ 0
 IDE_D11
-Text GLabel 7300 4850 2    50   BiDi ~ 0
+Text GLabel 5150 4850 2    50   BiDi ~ 0
 IDE_D3
 Text GLabel 2300 2250 0    50   BiDi ~ 0
 IDE_D3
-Text GLabel 7300 4950 2    50   BiDi ~ 0
+Text GLabel 5150 4950 2    50   BiDi ~ 0
 IDE_D12
 Text GLabel 3100 2250 2    50   BiDi ~ 0
 IDE_D12
-Text GLabel 7300 5050 2    50   BiDi ~ 0
+Text GLabel 5150 5050 2    50   BiDi ~ 0
 IDE_D2
 Text GLabel 2300 2350 0    50   BiDi ~ 0
 IDE_D2
-Text GLabel 7300 5150 2    50   BiDi ~ 0
+Text GLabel 5150 5150 2    50   BiDi ~ 0
 IDE_D13
 Text GLabel 3100 2350 2    50   BiDi ~ 0
 IDE_D13
-Text GLabel 7300 5250 2    50   BiDi ~ 0
+Text GLabel 5150 5250 2    50   BiDi ~ 0
 IDE_D1
 Text GLabel 2300 2450 0    50   BiDi ~ 0
 IDE_D1
-Text GLabel 7300 5350 2    50   BiDi ~ 0
+Text GLabel 5150 5350 2    50   BiDi ~ 0
 IDE_D14
 Text GLabel 3100 2450 2    50   BiDi ~ 0
 IDE_D14
-Text GLabel 7300 5450 2    50   BiDi ~ 0
+Text GLabel 5150 5450 2    50   BiDi ~ 0
 IDE_D0
 Text GLabel 2300 2550 0    50   BiDi ~ 0
 IDE_D0
-Text GLabel 7300 5550 2    50   BiDi ~ 0
+Text GLabel 5150 5550 2    50   BiDi ~ 0
 IDE_D15
 Text GLabel 3100 2550 2    50   BiDi ~ 0
 IDE_D15
