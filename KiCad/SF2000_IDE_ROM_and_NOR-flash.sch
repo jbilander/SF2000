@@ -172,8 +172,6 @@ Text GLabel 6550 2600 2    50   Input ~ 0
 GND
 Text GLabel 6100 3700 3    50   Input ~ 0
 GND
-Text GLabel 6100 1500 1    50   Input ~ 0
-3V3
 Text GLabel 6550 1700 2    50   BiDi ~ 0
 D0_3V3
 Text GLabel 6550 1800 2    50   BiDi ~ 0
@@ -476,4 +474,6 @@ Text GLabel 7650 3000 3    50   Input ~ 0
 FLASH_OE
 Text GLabel 6550 2800 2    50   Input ~ 0
 ROM_WE
+Text GLabel 6100 1500 1    50   Input ~ 0
+3V3
 $EndSCHEMATC
