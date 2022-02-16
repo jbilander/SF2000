@@ -239,10 +239,10 @@ Text GLabel 2300 2950 0    50   Input ~ 0
 IDE_IOR
 NoConn ~ 3100 3050
 NoConn ~ 2300 2750
-Text GLabel 2300 3050 0    50   Output ~ 0
+Text GLabel 1450 3050 0    50   Output ~ 0
 IDE_IORDY
 NoConn ~ 2300 3150
-Text GLabel 2300 3250 0    50   Output ~ 0
+Text GLabel 1450 3250 0    50   Output ~ 0
 IDE_IRQ
 Text GLabel 2200 5150 0    50   Input ~ 0
 A10_3V3
@@ -475,5 +475,47 @@ FLASH_OE
 Text GLabel 6550 2800 2    50   Input ~ 0
 ROM_WE
 Text GLabel 6100 1500 1    50   Input ~ 0
+3V3
+$Comp
+L Device:R_Small R?
+U 1 1 62340B55
+P 1550 2950
+AR Path="/62340B55" Ref="R?"  Part="1" 
+AR Path="/620D263D/62340B55" Ref="R?"  Part="1" 
+AR Path="/627A6500/62340B55" Ref="R5"  Part="1" 
+F 0 "R5" H 1609 2996 50  0000 L CNN
+F 1 "4.7k" H 1609 2905 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1550 2950 50  0001 C CNN
+F 3 "~" H 1550 2950 50  0001 C CNN
+	1    1550 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 62340D58
+P 1550 3350
+AR Path="/62340D58" Ref="R?"  Part="1" 
+AR Path="/620D263D/62340D58" Ref="R?"  Part="1" 
+AR Path="/627A6500/62340D58" Ref="R6"  Part="1" 
+F 0 "R6" H 1609 3396 50  0000 L CNN
+F 1 "1k" H 1609 3305 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1550 3350 50  0001 C CNN
+F 3 "~" H 1550 3350 50  0001 C CNN
+	1    1550 3350
+	1    0    0    -1  
+$EndComp
+Text GLabel 1550 3450 3    50   Input ~ 0
+GND
+Connection ~ 1550 3250
+Wire Wire Line
+	1550 3250 1450 3250
+Wire Wire Line
+	1550 3250 2300 3250
+Wire Wire Line
+	2300 3050 1550 3050
+Connection ~ 1550 3050
+Wire Wire Line
+	1550 3050 1450 3050
+Text GLabel 1550 2850 1    50   Input ~ 0
 3V3
 $EndSCHEMATC
