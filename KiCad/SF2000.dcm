@@ -18,6 +18,12 @@ K TTL BUS 3State 8-bit transceiver with 3-state outputs
 F https://www.mouser.se/datasheet/2/916/74LVC_LVCH245A-1389000.pdf
 $ENDCMP
 #
+$CMP 74LVC2G14
+D Dual inverting Schmitt trigger
+K Dual inverting Schmitt trigger
+F https://assets.nexperia.com/documents/data-sheet/74LVC2G14.pdf
+$ENDCMP
+#
 $CMP Conn_2Rows-86Pins_even_odd
 D Generic connector, double row, 86 pins, even/odd pin numbering scheme (row 2 odd numbers, row 1 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)
 K connector

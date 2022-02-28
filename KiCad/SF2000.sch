@@ -1529,8 +1529,8 @@ L Connector_Generic:Conn_02x01 J?
 U 1 1 62359ABC
 P 2300 950
 AR Path="/620D263D/62359ABC" Ref="J?"  Part="1" 
-AR Path="/62359ABC" Ref="J?"  Part="1" 
-F 0 "J?" H 2350 700 50  0000 C CNN
+AR Path="/62359ABC" Ref="J7"  Part="1" 
+F 0 "J7" H 2350 700 50  0000 C CNN
 F 1 "Conn_02x01" H 2350 800 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_2x01_P2.54mm_Vertical" H 2300 950 50  0001 C CNN
 F 3 "~" H 2300 950 50  0001 C CNN
