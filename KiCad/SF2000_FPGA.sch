@@ -18,8 +18,8 @@ L SF2000:10M04SCE144 U7
 U 1 1 62146C83
 P 3800 3550
 AR Path="/62146C83" Ref="U7"  Part="1" 
-AR Path="/620D263D/62146C83" Ref="U7"  Part="1" 
-F 0 "U7" H 3000 3550 60  0000 R CNN
+AR Path="/620D263D/62146C83" Ref="U8"  Part="1" 
+F 0 "U8" H 3000 3550 60  0000 R CNN
 F 1 "10M04SCE144" H 3250 3400 60  0000 R CNN
 F 2 "SF2000:EQFP-144-1EP_20x20mm_P0.5mm_EP5x5mm_TH_GND_pad" H 3800 3900 60  0001 C CNN
 F 3 "https://www.mouser.se/datasheet/2/612/m10_overview-2401081.pdf" H 5250 4750 60  0001 C CNN
@@ -273,60 +273,60 @@ JP5
 $Comp
 L Device:R_Pack04 RN1
 U 1 1 625F56E7
-P 9300 3350
-F 0 "RN1" H 9488 3396 50  0000 L CNN
-F 1 "10k_Pack04" H 9488 3305 50  0000 L CNN
-F 2 "SF2000:RESCAF80P320X160X60-8N" V 9575 3350 50  0001 C CNN
-F 3 "~" H 9300 3350 50  0001 C CNN
-	1    9300 3350
+P 9300 4250
+F 0 "RN1" H 9488 4296 50  0000 L CNN
+F 1 "10k_Pack04" H 9488 4205 50  0000 L CNN
+F 2 "SF2000:RESCAF80P320X160X60-8N" V 9575 4250 50  0001 C CNN
+F 3 "~" H 9300 4250 50  0001 C CNN
+	1    9300 4250
 	1    0    0    -1  
 $EndComp
-Text GLabel 9100 3150 1    50   Input ~ 0
+Text GLabel 9100 4050 1    50   Input ~ 0
 3V3
-Text GLabel 9100 3550 3    50   Input ~ 0
+Text GLabel 9100 4450 3    50   Input ~ 0
 TDI
-Text GLabel 9200 3550 3    50   Input ~ 0
+Text GLabel 9200 4450 3    50   Input ~ 0
 TCK
-Text GLabel 9400 3550 3    50   Input ~ 0
+Text GLabel 9400 4450 3    50   Input ~ 0
 TMS
-Text GLabel 9300 3550 3    50   Input ~ 0
+Text GLabel 9300 4450 3    50   Input ~ 0
 JP5
-Text GLabel 9200 3150 1    50   Input ~ 0
+Text GLabel 9200 4050 1    50   Input ~ 0
 GND
 Text GLabel 1350 3700 0    50   Input ~ 0
 JP2
-Text GLabel 9300 3150 1    50   Input ~ 0
+Text GLabel 9300 4050 1    50   Input ~ 0
 3V3
 Wire Wire Line
-	9300 3150 9400 3150
+	9300 4050 9400 4050
 $Comp
 L Device:R_Pack04 RN2
 U 1 1 6265DCDE
-P 10400 3350
-F 0 "RN2" H 10588 3396 50  0000 L CNN
-F 1 "10k_Pack04" H 10588 3305 50  0000 L CNN
-F 2 "SF2000:RESCAF80P320X160X60-8N" V 10675 3350 50  0001 C CNN
-F 3 "~" H 10400 3350 50  0001 C CNN
-	1    10400 3350
+P 10400 4250
+F 0 "RN2" H 10588 4296 50  0000 L CNN
+F 1 "10k_Pack04" H 10588 4205 50  0000 L CNN
+F 2 "SF2000:RESCAF80P320X160X60-8N" V 10675 4250 50  0001 C CNN
+F 3 "~" H 10400 4250 50  0001 C CNN
+	1    10400 4250
 	1    0    0    -1  
 $EndComp
-Text GLabel 10200 3150 1    50   Input ~ 0
+Text GLabel 10200 4050 1    50   Input ~ 0
 3V3
 Wire Wire Line
-	10200 3150 10300 3150
-Connection ~ 10300 3150
+	10200 4050 10300 4050
+Connection ~ 10300 4050
 Wire Wire Line
-	10300 3150 10400 3150
-Connection ~ 10400 3150
+	10300 4050 10400 4050
+Connection ~ 10400 4050
 Wire Wire Line
-	10400 3150 10500 3150
-Text GLabel 10200 4500 3    50   Input ~ 0
+	10400 4050 10500 4050
+Text GLabel 10200 5400 3    50   Input ~ 0
 nSTATUS
-Text GLabel 10300 4500 3    50   Input ~ 0
+Text GLabel 10300 5400 3    50   Input ~ 0
 CONF_DONE
-Text GLabel 10200 3550 3    50   Input ~ 0
+Text GLabel 10200 4450 3    50   Input ~ 0
 JP4
-Text GLabel 10300 3550 3    50   Input ~ 0
+Text GLabel 10300 4450 3    50   Input ~ 0
 JP3
 Text GLabel 7500 1650 1    50   Input ~ 0
 3V3
@@ -375,7 +375,7 @@ Text GLabel 9700 2050 2    50   Output ~ 0
 SW1
 Text GLabel 1350 3200 0    50   Input ~ 0
 JP5
-Text GLabel 10400 3550 3    50   Input ~ 0
+Text GLabel 10400 4450 3    50   Input ~ 0
 JP2
 Text GLabel 1350 2300 0    50   Output ~ 0
 VMA_3V3
@@ -472,21 +472,21 @@ WE_BANK0_ODD
 $Comp
 L Device:R_Pack04 RN6
 U 1 1 62107318
-P 10400 4300
-F 0 "RN6" H 10588 4346 50  0000 L CNN
-F 1 "10k_Pack04" H 10588 4255 50  0000 L CNN
-F 2 "SF2000:RESCAF80P320X160X60-8N" V 10675 4300 50  0001 C CNN
-F 3 "~" H 10400 4300 50  0001 C CNN
-	1    10400 4300
+P 10400 5200
+F 0 "RN6" H 10588 5246 50  0000 L CNN
+F 1 "10k_Pack04" H 10588 5155 50  0000 L CNN
+F 2 "SF2000:RESCAF80P320X160X60-8N" V 10675 5200 50  0001 C CNN
+F 3 "~" H 10400 5200 50  0001 C CNN
+	1    10400 5200
 	1    0    0    -1  
 $EndComp
-Text GLabel 10500 4500 3    50   Input ~ 0
+Text GLabel 10500 5400 3    50   Input ~ 0
 CONFIG_SEL
-Text GLabel 10200 4100 1    50   Input ~ 0
+Text GLabel 10200 5000 1    50   Input ~ 0
 3V3
 Wire Wire Line
-	10200 4100 10300 4100
-Text GLabel 10500 4100 1    50   Input ~ 0
+	10200 5000 10300 5000
+Text GLabel 10500 5000 1    50   Input ~ 0
 GND
 Text GLabel 6250 2400 2    50   Input ~ 0
 JP7
@@ -531,9 +531,9 @@ ROM_B1
 Text GLabel 4350 6000 3    50   Output ~ 0
 ROM_B2
 Wire Wire Line
-	10300 4100 10400 4100
-Connection ~ 10300 4100
-Text GLabel 10400 4500 3    50   Input ~ 0
+	10300 5000 10400 5000
+Connection ~ 10300 5000
+Text GLabel 10400 5400 3    50   Input ~ 0
 JP7
 Text GLabel 7900 5250 0    50   Input ~ 0
 JP6
@@ -550,35 +550,27 @@ F 3 "~" H 8200 5250 50  0001 C CNN
 $EndComp
 Text GLabel 8400 5250 2    50   Input ~ 0
 GND
-Text GLabel 10500 3550 3    50   Input ~ 0
+Text GLabel 10500 4450 3    50   Input ~ 0
 JP6
 Text GLabel 1800 6000 3    50   Input ~ 0
 JP6
 $Comp
-L SF2000:74LVC2G14 U18
+L SF2000:74LVC2G14 U3
 U 1 1 623FD973
 P 9250 2250
-F 0 "U18" H 9250 2765 50  0000 C CNN
+F 0 "U3" H 9250 2765 50  0000 C CNN
 F 1 "74LVC2G14" H 9250 2674 50  0000 C CNN
 F 2 "Package_SO:TSOP-6_1.65x3.05mm_P0.95mm" H 9750 3200 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/74LVC2G14.pdf" H 9750 3200 50  0001 C CNN
 	1    9250 2250
 	1    0    0    -1  
 $EndComp
-NoConn ~ 9700 2450
 Text GLabel 8450 2350 3    50   Input ~ 0
 GND
-Wire Wire Line
-	8800 2250 8800 2350
 Text GLabel 10150 2250 2    50   Input ~ 0
 3V3
 Wire Wire Line
 	8450 2050 8800 2050
-Wire Wire Line
-	8450 2350 8800 2350
-Connection ~ 8800 2350
-Wire Wire Line
-	8800 2350 8800 2450
 $Comp
 L Device:C C?
 U 1 1 624A6DA8
@@ -652,4 +644,68 @@ Wire Wire Line
 Wire Wire Line
 	8100 2050 8450 2050
 Connection ~ 8450 2050
+Wire Wire Line
+	8450 2350 8700 2350
+Wire Wire Line
+	8700 2350 8700 2250
+Wire Wire Line
+	8700 2250 8800 2250
+Text GLabel 8650 2700 0    50   Input ~ 0
+ACTIVE
+Wire Wire Line
+	8800 2450 8700 2450
+Wire Wire Line
+	8700 2450 8700 2700
+Wire Wire Line
+	8700 2700 8650 2700
+$Comp
+L Device:R_Small R?
+U 1 1 625C5BBC
+P 9900 3050
+AR Path="/625C5BBC" Ref="R?"  Part="1" 
+AR Path="/620D263D/625C5BBC" Ref="R8"  Part="1" 
+F 0 "R8" V 10000 3000 50  0000 L CNN
+F 1 "220" V 9800 3000 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 9900 3050 50  0001 C CNN
+F 3 "~" H 9900 3050 50  0001 C CNN
+	1    9900 3050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9700 2450 9700 3050
+Wire Wire Line
+	9700 3050 9800 3050
+$Comp
+L Connector_Generic:Conn_02x01 J11
+U 1 1 625CA23F
+P 10450 3050
+F 0 "J11" H 10500 2800 50  0000 C CNN
+F 1 "Conn_02x01" H 10500 2900 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x01_P2.54mm_Vertical" H 10450 3050 50  0001 C CNN
+F 3 "~" H 10450 3050 50  0001 C CNN
+	1    10450 3050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	10000 3050 10150 3050
+Text GLabel 10650 3050 2    50   Input ~ 0
+GND
+Text Label 10150 3050 3    50   ~ 0
+IDE_LED
+$Comp
+L Connector_Generic:Conn_01x01 J12
+U 1 1 62602244
+P 9000 2900
+F 0 "J12" H 9080 2942 50  0000 L CNN
+F 1 "Conn_01x01" H 9080 2851 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 9000 2900 50  0001 C CNN
+F 3 "~" H 9000 2900 50  0001 C CNN
+	1    9000 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8700 2700 8700 2900
+Wire Wire Line
+	8700 2900 8800 2900
+Connection ~ 8700 2700
 $EndSCHEMATC
