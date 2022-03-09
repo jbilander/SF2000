@@ -707,10 +707,10 @@ Wire Wire Line
 	8700 2900 8800 2900
 Connection ~ 8700 2700
 $Comp
-L Connector_Generic:Conn_02x01 J?
+L Connector_Generic:Conn_02x01 J13
 U 1 1 6268BA13
 P 8200 6300
-F 0 "J?" H 8250 6050 50  0000 C CNN
+F 0 "J13" H 8250 6050 50  0000 C CNN
 F 1 "Conn_02x01" H 8250 6150 50  0000 C CNN
 F 2 "Connector_PinHeader_2.00mm:PinHeader_2x01_P2.00mm_Vertical" H 8200 6300 50  0001 C CNN
 F 3 "~" H 8200 6300 50  0001 C CNN
@@ -728,8 +728,8 @@ L Device:R_Small R?
 U 1 1 626987D6
 P 9000 6100
 AR Path="/626987D6" Ref="R?"  Part="1" 
-AR Path="/620D263D/626987D6" Ref="R?"  Part="1" 
-F 0 "R?" V 9100 6050 50  0000 L CNN
+AR Path="/620D263D/626987D6" Ref="R9"  Part="1" 
+F 0 "R9" V 9100 6050 50  0000 L CNN
 F 1 "10k" V 8900 6050 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 9000 6100 50  0001 C CNN
 F 3 "~" H 9000 6100 50  0001 C CNN
