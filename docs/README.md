@@ -107,7 +107,7 @@ Pin  | Type   | Bank | True LVDS | CFG |  Pin  | Type   | Bank | True LVDS | CFG
 100 (IOR6A) | I/O | 1 | Yes | | 100 (IOR8A)| I/O | 1 | Yes | |
 101 (IOR4B) | I/O | 1 | Yes | RPLL_C_FB | 101 (IOR6B)| I/O | 1 | Yes | RPLL_C_FB |
 102 (IOR4A) | I/O | 1 | Yes | RPLL_T_FB | 102 (IOR6A)| I/O | 1 | Yes | RPLL_T_FB |
-103 (VCCX)  | POWER | | | | 77 (VCCO1) | POWER | | | | 
+103 (VCCX)  | POWER | | | | 103 (VCCO1) | POWER | | | | 
 104 (IOR3B) | I/O | 1 | No | RPLL_C_IN | 104 (IOR5B)| I/O | 1 | No | RPLL_C_IN |
 105 (VSS)  | GROUND | | | | | | | | | 
 106 (IOR3A) | I/O | 1 | No | RPLL_T_IN | 106 (IOR5A)| I/O | 1 | No | RPLL_T_IN |
