@@ -121,7 +121,7 @@ Pin  | Type   | Bank | True LVDS | CFG |  Pin  | Type   | Bank | True LVDS | CFG
 114 (IOT33B) | I/O | 0 | No | | 114 (IOT39B)| I/O | 1 | No | |
 115 (IOT33A) | I/O | 0 | No | | 115 (IOT39A)| I/O | 1 | No | |
 116 (IOT30B) | I/O | 0 | No | | 116 (IOT37B)| I/O | 1 | No | |
-117 (IOT30B) | I/O | 0 | No | | 117 (IOT37A)| I/O | 1 | No | |
+117 (IOT30A) | I/O | 0 | No | | 117 (IOT37A)| I/O | 1 | No | |
 118 (IOT26B) | I/O | 0 | No | | 118 (IOT34B)| I/O | 0 | No | |
 119 (IOT26A) | I/O | 0 | No | | 119 (IOT34A)| I/O | 0 | No | |
 120 (IOT24B) | I/O | 0 | No | | 120 (IOT32B)| I/O | 0 | No | |
