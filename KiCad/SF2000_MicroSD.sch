@@ -88,11 +88,11 @@ Wire Wire Line
 Connection ~ 3150 2800
 Wire Wire Line
 	3150 2800 3250 2800
-Text GLabel 2300 3200 3    50   BiDi ~ 0
+Text GLabel 2100 3200 3    50   BiDi ~ 0
 SD_D2
 Text GLabel 2200 3200 3    50   BiDi ~ 0
 SD_D3
-Text GLabel 2100 3200 3    50   Input ~ 0
+Text GLabel 2300 3200 3    50   Input ~ 0
 SD_CMD
 Text GLabel 3250 3200 3    50   BiDi ~ 0
 SD_D0
@@ -121,8 +121,8 @@ Wire Wire Line
 	2550 4250 2550 4500
 Text GLabel 3150 4500 2    50   Output ~ 0
 OSC_CLK
-Text GLabel 2950 3200 3    50   Input ~ 0
-JP8
 Text GLabel 2000 3200 3    50   Input ~ 0
-ROM_WE
+JP8
+Text GLabel 2950 3200 3    50   Input ~ 0
+JP7
 $EndSCHEMATC
