@@ -17,9 +17,9 @@ Text GLabel 3400 4450 3    50   Input ~ 0
 GND
 Text GLabel 1350 5250 0    50   Output ~ 0
 CLKCPU_3V3
-Text GLabel 1350 4350 0    50   Input ~ 0
-C7M_3V3
 Text GLabel 1350 4250 0    50   Input ~ 0
+C7M_3V3
+Text GLabel 1350 3150 0    50   Input ~ 0
 CDAC_3V3
 Text GLabel 5000 6000 3    50   Output ~ 0
 ROM_WE
@@ -29,7 +29,7 @@ Text GLabel 1350 3050 0    50   Output ~ 0
 INT2_3V3
 Text GLabel 3100 1100 1    50   Input ~ 0
 3V3
-Text GLabel 1350 3150 0    50   Output ~ 0
+Text GLabel 1350 3250 0    50   Output ~ 0
 BOSS_3V3
 Text GLabel 1350 4750 0    50   Input ~ 0
 FC0_3V3
@@ -215,7 +215,7 @@ Text GLabel 9150 4850 2    50   Input ~ 0
 GND
 Text GLabel 9700 2050 2    50   Output ~ 0
 SW1
-Text GLabel 1350 3250 0    50   Input ~ 0
+Text GLabel 1350 4350 0    50   Input ~ 0
 JP5
 Text GLabel 10350 5100 3    50   Input ~ 0
 JP2
@@ -297,7 +297,7 @@ Text GLabel 5100 6000 3    50   Input ~ 0
 IDE_CS0_3V3
 Text GLabel 4300 6000 3    50   Output ~ 0
 FLASH_A19
-Text GLabel 6250 5200 2    50   Input ~ 0
+Text GLabel 6250 5100 2    50   Input ~ 0
 OSC_CLK
 Text GLabel 6250 2850 2    50   Input ~ 0
 OE_BANK1
@@ -614,7 +614,7 @@ Text GLabel 4150 1100 1    50   Input ~ 0
 SPI_MISO
 Text GLabel 4050 1100 1    50   Output ~ 0
 SPI_MOSI
-Text GLabel 6250 5100 2    50   Output ~ 0
+Text GLabel 6250 5200 2    50   Output ~ 0
 SPI_CLK
 $Comp
 L Device:R_Small R?
