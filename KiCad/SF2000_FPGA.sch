@@ -67,7 +67,7 @@ Text GLabel 1350 4050 0    50   BiDi ~ 0
 E_3V3
 Text GLabel 1350 3350 0    50   Input ~ 0
 TMS
-Text GLabel 1350 4950 0    50   Input ~ 0
+Text GLabel 3500 6000 3    50   Input ~ 0
 AS_CPU_3V3
 Text GLabel 3650 1100 1    50   Input ~ 0
 CFGIN_3V3
@@ -225,15 +225,15 @@ Text GLabel 3200 6000 3    50   BiDi ~ 0
 D9_3V3
 Text GLabel 3350 6000 3    50   BiDi ~ 0
 D10_3V3
-Text GLabel 3500 6000 3    50   BiDi ~ 0
-D11_3V3
 Text GLabel 3600 6000 3    50   BiDi ~ 0
-D12_3V3
+D11_3V3
 Text GLabel 3700 6000 3    50   BiDi ~ 0
-D13_3V3
+D12_3V3
 Text GLabel 3800 6000 3    50   BiDi ~ 0
-D14_3V3
+D13_3V3
 Text GLabel 3900 6000 3    50   BiDi ~ 0
+D14_3V3
+Text GLabel 4000 6000 3    50   BiDi ~ 0
 D15_3V3
 Text GLabel 3100 6000 3    50   BiDi ~ 0
 D8_3V3
@@ -345,7 +345,7 @@ Text GLabel 8650 6050 0    50   Input ~ 0
 JP8
 Text GLabel 6250 5300 2    50   Input ~ 0
 JP8
-Text GLabel 4000 6000 3    50   Output ~ 0
+Text GLabel 1350 4950 0    50   Output ~ 0
 FLASH_OE
 Text GLabel 4900 6000 3    50   Output ~ 0
 ROM_OE
