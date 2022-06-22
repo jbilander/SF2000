@@ -440,37 +440,6 @@ Connection ~ 5650 3500
 Wire Wire Line
 	5650 3500 5650 3400
 NoConn ~ 8550 2900
-$Comp
-L Device:R_Pack04 RN?
-U 1 1 6206820D
-P 7550 2800
-AR Path="/620D263D/6206820D" Ref="RN?"  Part="1" 
-AR Path="/627A6500/6206820D" Ref="RN5"  Part="1" 
-F 0 "RN5" H 7738 2846 50  0000 L CNN
-F 1 "R_Pack04" H 7738 2755 50  0000 L CNN
-F 2 "SF2000:RESCAF80P320X160X60-8N" V 7825 2800 50  0001 C CNN
-F 3 "~" H 7550 2800 50  0001 C CNN
-	1    7550 2800
-	1    0    0    -1  
-$EndComp
-Text GLabel 7350 2600 1    50   Input ~ 0
-3V3
-Wire Wire Line
-	7350 2600 7450 2600
-Connection ~ 7450 2600
-Wire Wire Line
-	7450 2600 7550 2600
-Connection ~ 7550 2600
-Wire Wire Line
-	7550 2600 7650 2600
-Text GLabel 7350 3000 3    50   Input ~ 0
-FLASH_WE
-Text GLabel 7450 3000 3    50   Input ~ 0
-FLASH_RST
-Text GLabel 7550 3000 3    50   Input ~ 0
-FLASH_BUSY
-Text GLabel 7650 3000 3    50   Input ~ 0
-FLASH_OE
 Text GLabel 6550 2800 2    50   Input ~ 0
 ROM_WE
 Text GLabel 6100 1500 1    50   Input ~ 0

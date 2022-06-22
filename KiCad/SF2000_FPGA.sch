@@ -571,23 +571,6 @@ Text GLabel 2000 6000 3    50   Input ~ 0
 IPL1_3V3
 Text GLabel 2100 6000 3    50   Input ~ 0
 IPL2_3V3
-Text GLabel 9950 4050 3    50   Input ~ 0
-ROM_WE
-$Comp
-L Device:R_Small R?
-U 1 1 62D6D820
-P 9950 3950
-AR Path="/62D6D820" Ref="R?"  Part="1" 
-AR Path="/620D263D/62D6D820" Ref="R10"  Part="1" 
-F 0 "R10" V 10050 3900 50  0000 L CNN
-F 1 "10k" V 9850 3900 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 9950 3950 50  0001 C CNN
-F 3 "~" H 9950 3950 50  0001 C CNN
-	1    9950 3950
-	1    0    0    -1  
-$EndComp
-Text GLabel 9950 3850 1    50   Input ~ 0
-3V3
 Text GLabel 6250 2350 2    50   Input ~ 0
 A7_3V3
 Text GLabel 6250 2250 2    50   Input ~ 0
@@ -621,8 +604,8 @@ L Device:R_Small R?
 U 1 1 63029549
 P 10300 3950
 AR Path="/63029549" Ref="R?"  Part="1" 
-AR Path="/620D263D/63029549" Ref="R11"  Part="1" 
-F 0 "R11" V 10400 3900 50  0000 L CNN
+AR Path="/620D263D/63029549" Ref="R10"  Part="1" 
+F 0 "R10" V 10400 3900 50  0000 L CNN
 F 1 "1k" V 10200 3900 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 10300 3950 50  0001 C CNN
 F 3 "~" H 10300 3950 50  0001 C CNN
@@ -634,8 +617,8 @@ L Device:R_Small R?
 U 1 1 6302BBCE
 P 10600 3950
 AR Path="/6302BBCE" Ref="R?"  Part="1" 
-AR Path="/620D263D/6302BBCE" Ref="R12"  Part="1" 
-F 0 "R12" V 10700 3900 50  0000 L CNN
+AR Path="/620D263D/6302BBCE" Ref="R11"  Part="1" 
+F 0 "R11" V 10700 3900 50  0000 L CNN
 F 1 "1k" V 10500 3900 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 10600 3950 50  0001 C CNN
 F 3 "~" H 10600 3950 50  0001 C CNN
