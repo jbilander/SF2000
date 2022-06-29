@@ -90,8 +90,6 @@ Text GLabel 1500 2150 2    50   Input ~ 0
 CFGOUT
 Text GLabel 1000 2250 0    50   Output ~ 0
 CCKQ
-Text GLabel 1500 2350 2    50   Output ~ 0
-CDAC
 Text GLabel 1000 2350 0    50   Output ~ 0
 CCK
 Text GLabel 1500 2450 2    50   Input ~ 0
@@ -624,8 +622,6 @@ Text GLabel 6550 3550 0    50   Input ~ 0
 4V3
 Text GLabel 2850 2250 0    50   Output ~ 0
 CFGOUT
-Text GLabel 2850 2850 0    50   Input ~ 0
-CDAC
 Text GLabel 2850 3050 0    50   Output ~ 0
 OVR
 Text GLabel 2850 3150 0    50   Output ~ 0
@@ -737,8 +733,6 @@ NoConn ~ 1500 1950
 NoConn ~ 1500 2050
 Text GLabel 2850 2050 0    50   Input ~ 0
 GND
-Wire Wire Line
-	2850 2050 2850 2150
 $Comp
 L Device:CP C5
 U 1 1 62051709
@@ -813,8 +807,6 @@ U 620D263D
 F0 "SF2000_FPGA" 50
 F1 "SF2000_FPGA.sch" 50
 $EndSheet
-Text GLabel 3850 2950 2    50   Output ~ 0
-CDAC_3V3
 Text GLabel 3850 3050 2    50   Input ~ 0
 XRDY_3V3
 Text GLabel 3850 3150 2    50   Input ~ 0
@@ -1522,4 +1514,12 @@ Text GLabel 5600 6450 0    50   Input ~ 0
 GND
 Text GLabel 5600 6750 0    50   Input ~ 0
 3V3
+Text GLabel 2850 2850 0    50   Input ~ 0
+GND
+NoConn ~ 3850 2950
+Text Notes 1550 2400 0    50   ~ 0
+CDAC
+NoConn ~ 1500 2350
+Wire Wire Line
+	2850 2050 2850 2150
 $EndSCHEMATC

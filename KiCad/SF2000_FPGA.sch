@@ -19,8 +19,6 @@ Text GLabel 1350 5250 0    50   Output ~ 0
 CLKCPU_3V3
 Text GLabel 1350 4250 0    50   Input ~ 0
 C7M_3V3
-Text GLabel 1350 3150 0    50   Input ~ 0
-CDAC_3V3
 Text GLabel 5000 6000 3    50   Output ~ 0
 ROM_WE
 Text GLabel 1350 2950 0    50   Output ~ 0
@@ -63,7 +61,7 @@ Text GLabel 4850 1100 1    50   Input ~ 0
 A17_3V3
 Text GLabel 1350 2650 0    50   Input ~ 0
 VPA_3V3
-Text GLabel 1350 4050 0    50   BiDi ~ 0
+Text GLabel 1350 3150 0    50   BiDi ~ 0
 E_3V3
 Text GLabel 1350 3350 0    50   Input ~ 0
 TMS
@@ -748,4 +746,5 @@ Text GLabel 1350 3950 0    50   Output ~ 0
 SPI_CS
 Text GLabel 7750 4900 2    50   BiDi ~ 0
 IOT27A
+NoConn ~ 1350 4050
 $EndSCHEMATC

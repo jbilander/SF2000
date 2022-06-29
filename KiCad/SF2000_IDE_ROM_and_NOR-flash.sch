@@ -488,4 +488,14 @@ Text GLabel 1550 2850 1    50   Input ~ 0
 3V3
 Text GLabel 2300 3650 0    50   Input ~ 0
 ACTIVE
+Wire Notes Line
+	750  2550 1800 2550
+Wire Notes Line
+	1800 2550 1800 3650
+Wire Notes Line
+	1800 3650 750  3650
+Wire Notes Line
+	750  3650 750  2550
+Text Notes 850  2650 0    50   ~ 0
+NOT CURRENTLY USED
 $EndSCHEMATC

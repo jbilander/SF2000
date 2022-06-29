@@ -88,8 +88,6 @@ Text GLabel 3500 3800 2    50   Output ~ 0
 A23_3V3
 Text GLabel 1500 2350 0    50   Output ~ 0
 BG_3V3
-Text GLabel 3500 1500 2    50   Output ~ 0
-A0_3V3
 Text GLabel 3500 3950 2    50   BiDi ~ 0
 D0_3V3
 Text GLabel 3500 4050 2    50   BiDi ~ 0
@@ -126,8 +124,6 @@ Text GLabel 2500 1300 1    50   Input ~ 0
 3V3
 Wire Wire Line
 	2500 1300 2600 1300
-Text GLabel 1500 4700 0    50   Input ~ 0
-AVEC_3V3
 Text GLabel 1500 4800 0    50   BiDi ~ 0
 RST_3V3
 Text GLabel 1500 4900 0    50   BiDi ~ 0
@@ -489,4 +485,6 @@ Text GLabel 7500 1100 0    50   Input ~ 0
 A20_3V3
 Text GLabel 7500 1000 0    50   Input ~ 0
 A21_3V3
+NoConn ~ 1500 4700
+NoConn ~ 3500 1500
 $EndSCHEMATC
