@@ -746,5 +746,6 @@ Text GLabel 1350 3950 0    50   Output ~ 0
 SPI_CS
 Text GLabel 7750 4900 2    50   BiDi ~ 0
 IOT27A
-NoConn ~ 1350 4050
+Text GLabel 1350 4050 0    50   Input ~ 0
+DONE
 $EndSCHEMATC

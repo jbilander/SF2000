@@ -439,7 +439,6 @@ Wire Wire Line
 Connection ~ 5650 3500
 Wire Wire Line
 	5650 3500 5650 3400
-NoConn ~ 8550 2900
 Text GLabel 6550 2800 2    50   Input ~ 0
 ROM_WE
 Text GLabel 6100 1500 1    50   Input ~ 0
@@ -498,4 +497,6 @@ Wire Notes Line
 	750  3650 750  2550
 Text Notes 850  2650 0    50   ~ 0
 NOT CURRENTLY USED
+Text GLabel 8550 2900 0    50   Input ~ 0
+WP
 $EndSCHEMATC
