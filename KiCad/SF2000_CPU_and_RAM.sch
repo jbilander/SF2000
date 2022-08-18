@@ -87,7 +87,7 @@ A22_3V3
 Text GLabel 3500 3800 2    50   Output ~ 0
 A23_3V3
 Text GLabel 1500 2350 0    50   Output ~ 0
-BG_3V3
+BG_CPU_3V3
 Text GLabel 3500 3950 2    50   BiDi ~ 0
 D0_3V3
 Text GLabel 3500 4050 2    50   BiDi ~ 0
@@ -129,7 +129,7 @@ RST_3V3
 Text GLabel 1500 4900 0    50   BiDi ~ 0
 HLT_3V3
 Text GLabel 1500 2450 0    50   Input ~ 0
-BR_3V3
+BR_CPU_3V3
 Text GLabel 1500 2250 0    50   Input ~ 0
 DTACK_CPU_3V3
 Text GLabel 2600 6100 3    50   Input ~ 0

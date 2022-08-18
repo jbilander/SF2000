@@ -73,10 +73,10 @@ Text GLabel 3750 1100 1    50   Output ~ 0
 CFGOUT_3V3
 Text GLabel 2300 6000 3    50   Input ~ 0
 HLT_3V3
-Text GLabel 2400 6000 3    50   Input ~ 0
-BR_3V3
+Text GLabel 2400 6000 3    50   Output ~ 0
+BR_CPU_3V3
 Text GLabel 2500 6000 3    50   Input ~ 0
-BG_3V3
+BG_CPU_3V3
 Text GLabel 2600 6000 3    50   Output ~ 0
 DTACK_CPU_3V3
 Text GLabel 2800 6000 3    50   Input ~ 0
@@ -549,8 +549,8 @@ Wire Wire Line
 	10250 5700 10350 5700
 Wire Wire Line
 	10250 6100 10350 6100
-Text GLabel 1350 2400 0    50   Output ~ 0
-XRDY_3V3
+Text GLabel 1350 2400 0    50   BiDi ~ 0
+BG_3V3
 Text GLabel 7400 3300 0    50   Input ~ 0
 GND
 Text GLabel 7900 3300 2    50   Input ~ 0
@@ -583,8 +583,6 @@ Text GLabel 6250 1650 2    50   Input ~ 0
 A14_3V3
 Text GLabel 6250 1550 2    50   Input ~ 0
 A15_3V3
-Text GLabel 3850 1100 1    50   Output ~ 0
-INT6_3V3
 Text GLabel 3350 1100 1    50   Input ~ 0
 MODE0
 Text GLabel 3450 1100 1    50   Input ~ 0
@@ -748,4 +746,6 @@ Text GLabel 7750 4900 2    50   BiDi ~ 0
 IOT27A
 Text GLabel 1350 4050 0    50   Input ~ 0
 DONE
+Text GLabel 3850 1100 1    50   BiDi ~ 0
+BR_3V3
 $EndSCHEMATC

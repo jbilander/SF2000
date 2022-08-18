@@ -94,16 +94,12 @@ Text GLabel 1000 2350 0    50   Output ~ 0
 CCK
 Text GLabel 1500 2450 2    50   Input ~ 0
 OVR
-Text GLabel 1000 2450 0    50   Input ~ 0
-XRDY
 Text GLabel 1500 2550 2    50   Input ~ 0
 INT2
 Text GLabel 1000 2550 0    50   Input ~ 0
 BOSS
 Text GLabel 1500 2650 2    50   Input ~ 0
 A5
-Text GLabel 1000 2650 0    50   Input ~ 0
-INT6
 Text GLabel 1500 2750 2    50   Input ~ 0
 A6
 Text GLabel 1000 2750 0    50   Input ~ 0
@@ -246,8 +242,6 @@ Text GLabel 2850 3250 0    50   Output ~ 0
 BOSS
 Text GLabel 2850 4350 0    50   Output ~ 0
 A5
-Text GLabel 2850 3350 0    50   Output ~ 0
-INT6
 Text GLabel 2850 4450 0    50   Output ~ 0
 A6
 Text GLabel 2850 4250 0    50   Output ~ 0
@@ -318,13 +312,11 @@ Text GLabel 4650 4150 0    50   Output ~ 0
 A21
 Text GLabel 4650 4650 0    50   Output ~ 0
 A23
-Text GLabel 6550 2550 0    50   Input ~ 0
-BR
 Text GLabel 6550 2150 0    50   Input ~ 0
 BGACK
 Text GLabel 6550 2950 0    50   BiDi ~ 0
 D15
-Text GLabel 6550 2450 0    50   Output ~ 0
+Text GLabel 2850 2950 0    50   BiDi ~ 0
 BG
 Text GLabel 6550 3050 0    50   BiDi ~ 0
 D14
@@ -332,7 +324,7 @@ Text GLabel 6550 2250 0    50   Input ~ 0
 DTACK
 Text GLabel 6550 3150 0    50   BiDi ~ 0
 D13
-Text GLabel 6550 2350 0    50   Output ~ 0
+Text GLabel 6550 2550 0    50   Output ~ 0
 RW
 Text GLabel 6550 3250 0    50   BiDi ~ 0
 D12
@@ -630,10 +622,8 @@ Text GLabel 2850 2550 0    50   Input ~ 0
 CCKQ
 Text GLabel 2850 2750 0    50   Input ~ 0
 CCK
-Text GLabel 2850 2950 0    50   Output ~ 0
-XRDY
-Text GLabel 2850 3450 0    50   Input ~ 0
-GND
+Text GLabel 2850 3350 0    50   BiDi ~ 0
+BR
 $Comp
 L Connector_Generic:Conn_01x02 J2
 U 1 1 61F3F2F9
@@ -807,8 +797,6 @@ U 620D263D
 F0 "SF2000_FPGA" 50
 F1 "SF2000_FPGA.sch" 50
 $EndSheet
-Text GLabel 3850 3050 2    50   Input ~ 0
-XRDY_3V3
 Text GLabel 3850 3150 2    50   Input ~ 0
 OVR_3V3
 Text GLabel 3850 3250 2    50   Input ~ 0
@@ -819,8 +807,6 @@ Text GLabel 3850 4450 2    50   Input ~ 0
 A6_3V3
 Text GLabel 3850 3350 2    50   Input ~ 0
 BOSS_3V3
-Text GLabel 3850 3450 2    50   Input ~ 0
-INT6_3V3
 Text GLabel 3850 4250 2    50   Input ~ 0
 A4_3V3
 Text GLabel 3850 4150 2    50   Input ~ 0
@@ -893,13 +879,11 @@ Text GLabel 5650 4350 2    50   BiDi ~ 0
 RST_3V3
 Text GLabel 5650 4450 2    50   BiDi ~ 0
 HLT_3V3
-Text GLabel 7550 2550 2    50   Input ~ 0
+Text GLabel 3850 3050 2    50   Input ~ 0
 BG_3V3
-Text GLabel 7550 2750 2    50   Output ~ 0
-BR_3V3
 Text GLabel 7550 2250 2    50   Output ~ 0
 BGACK_3V3
-Text GLabel 7550 2450 2    50   Input ~ 0
+Text GLabel 7550 2750 2    50   Input ~ 0
 RW_3V3
 Text GLabel 7550 2350 2    50   Output ~ 0
 DTACK_MB_3V3
@@ -941,7 +925,6 @@ Text GLabel 7550 2950 2    50   Input ~ 0
 UDS_3V3
 Text GLabel 7550 2850 2    50   Input ~ 0
 LDS_3V3
-NoConn ~ 3850 3550
 Text Notes 2500 6400 0    50   ~ 0
 0805
 Text GLabel 900  7450 0    50   Input ~ 0
@@ -1522,4 +1505,21 @@ CDAC
 NoConn ~ 1500 2350
 Wire Wire Line
 	2850 2050 2850 2150
+Text GLabel 3850 3450 2    50   BiDi ~ 0
+BR_3V3
+Text GLabel 2850 3450 0    50   Input ~ 0
+GND
+NoConn ~ 3850 3550
+Text Notes 800  2700 0    50   ~ 0
+INT6
+NoConn ~ 1000 2650
+Text GLabel 6550 2350 0    50   Input ~ 0
+GND
+Wire Wire Line
+	6550 2350 6550 2450
+NoConn ~ 7550 2450
+NoConn ~ 7550 2550
+Text Notes 750  2500 0    50   ~ 0
+XRDY
+NoConn ~ 1000 2450
 $EndSCHEMATC
