@@ -598,36 +598,36 @@ SPI_CLK
 $Comp
 L Device:R_Small R?
 U 1 1 63029549
-P 10300 3950
+P 10600 3950
 AR Path="/63029549" Ref="R?"  Part="1" 
 AR Path="/620D263D/63029549" Ref="R10"  Part="1" 
-F 0 "R10" V 10400 3900 50  0000 L CNN
-F 1 "1k" V 10200 3900 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 10300 3950 50  0001 C CNN
-F 3 "~" H 10300 3950 50  0001 C CNN
-	1    10300 3950
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small R?
-U 1 1 6302BBCE
-P 10600 3950
-AR Path="/6302BBCE" Ref="R?"  Part="1" 
-AR Path="/620D263D/6302BBCE" Ref="R11"  Part="1" 
-F 0 "R11" V 10700 3900 50  0000 L CNN
+F 0 "R10" V 10700 3900 50  0000 L CNN
 F 1 "1k" V 10500 3900 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 10600 3950 50  0001 C CNN
 F 3 "~" H 10600 3950 50  0001 C CNN
 	1    10600 3950
 	1    0    0    -1  
 $EndComp
-Text GLabel 10300 3850 1    50   Input ~ 0
-GND
+$Comp
+L Device:R_Small R?
+U 1 1 6302BBCE
+P 10900 3950
+AR Path="/6302BBCE" Ref="R?"  Part="1" 
+AR Path="/620D263D/6302BBCE" Ref="R11"  Part="1" 
+F 0 "R11" V 11000 3900 50  0000 L CNN
+F 1 "1k" V 10800 3900 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 10900 3950 50  0001 C CNN
+F 3 "~" H 10900 3950 50  0001 C CNN
+	1    10900 3950
+	1    0    0    -1  
+$EndComp
 Text GLabel 10600 3850 1    50   Input ~ 0
 GND
-Text GLabel 10300 4050 3    50   Input ~ 0
-MODE0
+Text GLabel 10900 3850 1    50   Input ~ 0
+GND
 Text GLabel 10600 4050 3    50   Input ~ 0
+MODE0
+Text GLabel 10900 4050 3    50   Input ~ 0
 MODE1
 Text GLabel 3550 1100 1    50   Input ~ 0
 RST_3V3
@@ -748,4 +748,21 @@ Text GLabel 1350 4050 0    50   Input ~ 0
 DONE
 Text GLabel 3850 1100 1    50   BiDi ~ 0
 BR_3V3
+$Comp
+L Device:R_Small R?
+U 1 1 6314ED20
+P 9950 3950
+AR Path="/6314ED20" Ref="R?"  Part="1" 
+AR Path="/620D263D/6314ED20" Ref="R12"  Part="1" 
+F 0 "R12" V 10050 3900 50  0000 L CNN
+F 1 "10k" V 9850 3900 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 9950 3950 50  0001 C CNN
+F 3 "~" H 9950 3950 50  0001 C CNN
+	1    9950 3950
+	1    0    0    -1  
+$EndComp
+Text GLabel 9950 4050 3    50   Input ~ 0
+SPI_CS
+Text GLabel 9950 3850 1    50   Input ~ 0
+3V3
 $EndSCHEMATC
