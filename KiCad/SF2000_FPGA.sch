@@ -765,4 +765,21 @@ Text GLabel 9950 4050 3    50   Input ~ 0
 SPI_CS
 Text GLabel 9950 3850 1    50   Input ~ 0
 3V3
+$Comp
+L Device:R_Small R?
+U 1 1 63189641
+P 10250 3950
+AR Path="/63189641" Ref="R?"  Part="1" 
+AR Path="/620D263D/63189641" Ref="R13"  Part="1" 
+F 0 "R13" V 10350 3900 50  0000 L CNN
+F 1 "10k" V 10150 3900 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 10250 3950 50  0001 C CNN
+F 3 "~" H 10250 3950 50  0001 C CNN
+	1    10250 3950
+	1    0    0    -1  
+$EndComp
+Text GLabel 10250 3850 1    50   Input ~ 0
+3V3
+Text GLabel 10250 4050 3    50   Input ~ 0
+ACTIVE
 $EndSCHEMATC
