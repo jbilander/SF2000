@@ -19,7 +19,7 @@ U 1 1 621E09D7
 P 2500 3700
 F 0 "U9" H 2500 3800 50  0000 C CNN
 F 1 "68000D" H 2500 3700 50  0000 C CNN
-F 2 "Package_QFP:LQFP-64_14x14mm_P0.8mm" H 2500 3700 50  0001 C CNN
+F 2 "SF2000:QFP-64_14x14mm_Pitch0.8mm" H 2500 3700 50  0001 C CNN
 F 3 "https://www.nxp.com/docs/en/reference-manual/MC68000UM.pdf" H 2500 3700 50  0001 C CNN
 	1    2500 3700
 	1    0    0    -1  
