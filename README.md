@@ -17,5 +17,7 @@ U9 | Motorola CPU MC68SEC000AA20 | QFP-64 | MPU 32-bit 20MHz <br /> Contact Erio
 U10,U11 | SRAM ISSI IS61WV20488FBLL-10TLI  | TSOP-44 | First 4 MB SRAM <br />High-Speed, Async, 2Mbx8, 10ns, 2.4v-3.6v, 44 Pin TSOP II, RoHS <br /> * [61W20488FBLL10TI](https://eu.mouser.com/ProductDetail/870-61W20488FBLL10TI)
 U12,U13 | SRAM ISSI IS61WV20488FBLL-10TLI  | TSOP-44 | Second 4 MB (Optional) --"-- <br />
 U14 | NOR Flash SST39LF040-55-4C-NHE-T | PLCC-32 | NOR Flash 3.0 to 3.6V (For Oktagon/Oktapus. IDE-driver) <br /> * [SST39LF040554CN](https://www.mouser.com/ProductDetail/579-SST39LF040554CN) <br /> (or 39LF020, 39LF010)
-U15 | SST39LF802C-55-4C-EKE | TSOP-48 | NOR Flash NOR Flash 3.0 to 3.6V 8Mbit Multi-Purpose Flash (for Kickstart) <br /> * [S39LF802C554CEKE](https://www.mouser.com/ProductDetail/579-S39LF802C554CEKE)
+U15 | SST39LF802C-55-4C-EKE | TSOP-48 | NOR Flash 3.0 to 3.6V 8Mbit Multi-Purpose Flash (for Kickstart) <br /> * [S39LF802C554CEKE](https://www.mouser.com/ProductDetail/579-S39LF802C554CEKE)
 U16,U17,U18 | Bus Transceiver 74LVC245APW,118  | TSSOP-20 | * [74LVC245APW-T](https://www.mouser.com/ProductDetail/771-74LVC245APW-T)
+J1 | Goldfingers on PCB | ENIG | Order PCB with Goldfingers, ENIG and 45 degrees chamfered edge (or chamfer the edge yourself)
+J2 | JTAG-header | Dual row 2.54mm (2 x 5) Pin Male Header Strip | <a href="images/SF2000_JTAG_pinout.jpg"><img src="images/SF2000_JTAG_pinout.jpg" width="201" height="166"></a>
