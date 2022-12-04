@@ -21,3 +21,8 @@ U15 | SST39LF802C-55-4C-EKE | TSOP-48 | NOR Flash 3.0 to 3.6V 8Mbit Multi-Purpos
 U16,U17,U18 | Bus Transceiver 74LVC245APW,118  | TSSOP-20 | * [74LVC245APW-T](https://www.mouser.com/ProductDetail/771-74LVC245APW-T)
 J1 | Goldfingers on PCB | ENIG | Order PCB with Goldfingers, ENIG and 45 degrees chamfered edge (or chamfer the edge yourself)
 J2 | JTAG-header | Dual row 2.54mm (2 x 5) Pin Male Header Strip | <a href="images/SF2000_JTAG_pinout.jpg"><img src="images/SF2000_JTAG_pinout.jpg" width="201" height="166"></a>
+J3 | JP-header JP2,JP3,JP4 | Dual row 2.00mm (2 x 3) Pin Male Header Strip | Turbo speed selector
+J4 | JP-header JP5 | 2.00mm (2 x 1) Pin Male Header Strip | Generate E-CLK (if internal 68k is removed from socket)
+J5 | IDE/ATA-header | 2.00mm 44-Pin (2x22 Pin) Straight Male Shrouded PCB Box header IDC Socket | For A2000: <br /> * [Shrouded header](https://www.aliexpress.com/item/1720053014.html) <br />For A500 internal mount a right angled female header can be used (2x25 and cut down to 2x22): <br /> * [Right Angle Female Connector](https://www.aliexpress.com/item/4001286548060.html)
+J6 | Sunrom Micro SD Card Holder | 9-pin Micro SD card slot connector | * [Sunrom Micro-SD card holder](https://www.aliexpress.com/item/32802051702.html)
+J7 | VCC/GND Two-Pin Header 2.54mm pitch | 2.54mm pitch | VIN +5V <br /> used when programming FPGA standalone (card not installed in the Amiga). Be careful with orientation, check polarity BEFORE plugging-in a phone charger or similar here.
