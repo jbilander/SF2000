@@ -59,6 +59,80 @@ J13 | Pmod Type 2A (SPI) Female header, 12-Pin (2x6) | 2.54mm pitch | <a href="i
 
 ***
 
+### Ordering details (JLCPCB):
+
+<a href="images/SF2000_JLCPCB_ordering_pic1.png">
+<img src="images/SF2000_JLCPCB_ordering_pic1.png" width="574" height="442">
+</a>
+<br />
+<a href="images/SF2000_JLCPCB_ordering_pic2.png">
+<img src="images/SF2000_JLCPCB_ordering_pic2.png" width="386" height="220">
+</a>
+<a href="images/SF2000_pic5.png">
+<img src="images/SF2000_pic5.png" width="357" height="220">
+</a>
+
+***
+### MC68SEC000 
+
+The SF2000 is based on the MC68SEC000 CPU <br />
+https://www.nxp.com/docs/en/product-brief/MC68SEC000.pdf <br />
+<a href="images/SF2000_pic6.jpg">
+<img src="images/SF2000_pic6.jpg" width="512" height="384">
+</a>
+<br />
+You can contact Eriond, https://github.com/eriond (over at A314 or Retro Tinkering or SUGA (Swedish User Group Amiga) discord) to buy a NOS MC68SEC000 for a reasonable price.
+
+***
+
+### Installing in A500 or A2000:
+
+Internal A500 installation with this adapter: <br />
+https://github.com/jbilander/A500_Edge_Expansion_adapter
+<br />
+<a href="images/SF2000_pic7.jpg">
+<img src="images/SF2000_pic7.jpg" width="512" height="384">
+</a>
+<br />
+<a href="images/SF2000_pic8.jpg">
+<img src="images/SF2000_pic8.jpg" width="256" height="192">
+</a>
+<a href="images/SF2000_pic9.jpg">
+<img src="images/SF2000_pic9.jpg" width="256" height="192">
+</a>
+<br />
+<a href="images/SF2000_pic10.jpg">
+<img src="images/SF2000_pic10.jpg" width="256" height="192">
+</a>
+<a href="images/SF2000_pic11.jpg">
+<img src="images/SF2000_pic11.jpg" width="256" height="192">
+</a>
+
+External A500 installation with this adapter: <br />
+https://github.com/jbilander/POC86
+<br />
+<a href="images/SF2000_pic12.jpg">
+<img src="images/SF2000_pic12.jpg" width="512" height="384">
+</a>
+<br />
+<a href="images/SF2000_pic14.jpg">
+<img src="images/SF2000_pic14.jpg" width="512" height="384">
+</a>
+<br />
+<a href="images/SF2000_pic15.jpg">
+<img src="images/SF2000_pic15.jpg" width="256" height="192">
+</a>
+<a href="images/SF2000_pic16.jpg">
+<img src="images/SF2000_pic16.jpg" width="256" height="192">
+</a>
+
+### A2000 Co-pro slot:<br />
+<a href="images/SF2000_pic13.jpg">
+<img src="images/SF2000_pic13.jpg" width="512" height="384">
+</a>
+
+***
+
 Happy Hackin' 
 
 ***
