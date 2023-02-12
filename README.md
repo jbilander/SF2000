@@ -1,5 +1,30 @@
 # SF2000
-Spitfire 2000
+Spitfire 2000, A low-end 42 MHz Amiga Accelerator based on the Motorola 68SEC000 CPU
+
+***
+
+This is WORK IN PROGRESS, a DIY hobby project. If you are going to make and sell these boards you are also the one doing the customer support. Also if you are going to build boards and sell for profit, you will need a consent from Matthias Heinrichs (Matze) and also from Oliver Kastl if you are going to bundle this software http://aminet.net/package/disk/misc/oktapus with the hardware (ROM-chip, U14).
+
+***
+
+Revision 1B
+<br />
+<a href="images/SF2000_pic1.png">
+<img src="images/SF2000_pic1.png" width="360" height="264">
+</a>
+<a href="images/SF2000_pic2.png">
+<img src="images/SF2000_pic2.png" width="360" height="264">
+</a>
+
+***
+
+<a href="images/SF2000_pic3.jpg">
+<img src="images/SF2000_pic3.jpg" width="360" height="270">
+</a>
+<a href="images/SF2000_pic4.jpg">
+<img src="images/SF2000_pic4.jpg" width="360" height="270">
+</a>
+
 
 ***
 
@@ -31,3 +56,20 @@ J9,J10 | JP-header JP7,JP8 | 2.00mm (2 x 2) Pin Male Header | JP7 Autoboot IDE O
 J11 | LED Two-Pin Header 2.54mm pitch | 2.54mm pitch | Driven by U3 inverter buffer when /Active on IDE is being asserted. Connect to here to drive an external HDD-LED
 J12 | /Active signal, Single-Pin Header 2.54mm | 2.54mm pitch | /Active signal from IDE. Connect from here to a <br /> * [LED-board](https://github.com/jbilander/A500_IDE_LED_board) 
 J13 | Pmod Type 2A (SPI) Female header, 12-Pin (2x6) | 2.54mm pitch | <a href="images/SF2000_Pmod_pinout.jpg"><img src="images/SF2000_Pmod_pinout.jpg" width="177" height="125"></a> For connecting SPI peripherals. <br /> * [Right-Angled](https://www.aliexpress.com/item/1005003223096006.html) (A2000) or <br /> * [Straight](https://www.aliexpress.com/item/1005003335405213.html) (A500) to not interfere with [RGBtoHDMI-adapter](https://github.com/jbilander/A500_RGBtoHDMI) inside A500 
+
+***
+
+Happy Hackin' 
+
+***
+
+[![CC BY-SA 4.0][cc-by-sa-shield]][cc-by-sa]
+
+This work is licensed under a
+[Creative Commons Attribution-ShareAlike 4.0 International License][cc-by-sa].
+
+[![CC BY-SA 4.0][cc-by-sa-image]][cc-by-sa]
+
+[cc-by-sa]: http://creativecommons.org/licenses/by-sa/4.0/
+[cc-by-sa-image]: https://licensebuttons.net/l/by-sa/4.0/88x31.png
+[cc-by-sa-shield]: https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg
