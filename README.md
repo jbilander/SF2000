@@ -3,7 +3,12 @@ Spitfire 2000, A low-end 42 MHz Amiga Accelerator based on the Motorola 68SEC000
 
 ***
 
-This is WORK IN PROGRESS, a DIY hobby project. If you are going to make and sell these boards you are also the one doing the customer support. Also if you are going to build boards and sell for profit, you will need a consent from Matthias Heinrichs (Matze) and also from Oliver Kastl if you are going to bundle this software http://aminet.net/package/disk/misc/oktapus with the hardware (ROM-chip, U14).
+This is WORK IN PROGRESS, a DIY hobby project. If you are going to make and sell boards you are also the one doing the customer support. Also if you are going to build boards and sell for profit, you will need a consent from Matthias Heinrichs (Matze) and also from Oliver Kastl if you are going to bundle this software http://aminet.net/package/disk/misc/oktapus with the hardware (ROM-chip, U14).
+
+***
+
+The firmware for this board is in a separate repository available here: <br />
+https://github.com/jbilander/SF2000-FW
 
 ***
 
@@ -56,6 +61,11 @@ J9,J10 | JP-header JP7,JP8 | 2.00mm (2 x 2) Pin Male Header | JP7 Autoboot IDE O
 J11 | LED Two-Pin Header 2.54mm pitch | 2.54mm pitch | Driven by U3 inverter buffer when /Active on IDE is being asserted. Connect to here to drive an external HDD-LED
 J12 | /Active signal, Single-Pin Header 2.54mm | 2.54mm pitch | /Active signal from IDE. Connect from here to a <br /> * [LED-board](https://github.com/jbilander/A500_IDE_LED_board) 
 J13 | Pmod Type 2A (SPI) Female header, 12-Pin (2x6) | 2.54mm pitch | <a href="images/SF2000_Pmod_pinout.jpg"><img src="images/SF2000_Pmod_pinout.jpg" width="177" height="125"></a> For connecting SPI peripherals. <br /> * [Right-Angled](https://www.aliexpress.com/item/1005003223096006.html) (A2000) or <br /> * [Straight](https://www.aliexpress.com/item/1005003335405213.html) (A500) to not interfere with [RGBtoHDMI-adapter](https://github.com/jbilander/A500_RGBtoHDMI) inside A500 
+
+***
+
+A SF2000 shared shopping cart with most of the stuff in the list, no 3V3-regulator though and not all birdseed (passives):
+https://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=fdb374e26b
 
 ***
 
@@ -186,6 +196,11 @@ Some MC68SEC000 can be overclocked to 42 MHz and running with only one wait stat
 </a>
 <br />
 Flashing a ROM (in this case 3.1.4) to the FlashROM chip U15 (using LIV2's excellent sfflash-tool) and closing JP9 even better performance can be achieved:
+<br />
+<br />
+Demo video: <br />
+https://drive.google.com/file/d/1dCBK24LUC5VLB2dshrW_5n82D2emHB5-/view?usp=sharing
+<br />
 <br />
 <a href="images/SF2000_pic27.jpg">
 <img src="images/SF2000_pic27.jpg" width="256" height="192">
