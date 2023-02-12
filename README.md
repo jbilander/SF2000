@@ -81,7 +81,7 @@ https://www.nxp.com/docs/en/product-brief/MC68SEC000.pdf <br />
 <img src="images/SF2000_pic6.jpg" width="512" height="384">
 </a>
 <br />
-You can contact Eriond, https://github.com/eriond (over at A314 or Retro Tinkering or SUGA (Swedish User Group Amiga) discord) to buy a NOS MC68SEC000 for a reasonable price.
+You can contact Eriond, https://github.com/eriond (over at A314 or Retro Tinkering or SUGA (Swedish User Group Amiga) discord) to buy a NOS MC68SEC000 at a reasonable price.
 
 ***
 
@@ -129,6 +129,84 @@ https://github.com/jbilander/POC86
 ### A2000 Co-pro slot:<br />
 <a href="images/SF2000_pic13.jpg">
 <img src="images/SF2000_pic13.jpg" width="512" height="384">
+</a>
+
+***
+
+### Building
+
+Follow the dots to get the correct orientation of the chips when soldering, don't rely on the silkscreen text.
+<br />
+<a href="images/SF2000_pic17.jpg">
+<img src="images/SF2000_pic17.jpg" width="375" height="345">
+</a>
+<br />
+You can solder the 3V3 LDO and the FPGA first and then check that you can communicate via JTAG programming a simple LED-blink example or similar. +5V you can take from a USB phone-charger or similar, check polarity before you plug it in.
+<br />
+<a href="images/SF2000_pic18.jpg">
+<img src="images/SF2000_pic18.jpg" width="512" height="384">
+</a>
+<br />
+Make sure you populate the 4V3 LDO like this if you are using `TPS73643DBVR` or `ABLIC S-1200B43-M5T1U`, populating R1,R2,C7 is only for a ADJ-regulator to achieve 4V3.
+<br />
+<a href="images/SF2000_pic19.jpg">
+<img src="images/SF2000_pic19.jpg" width="512" height="384">
+</a>
+<a href="images/SF2000_pic20.jpg">
+<img src="images/SF2000_pic20.jpg" width="512" height="384">
+</a>
+<br />
+<a href="images/SF2000_pic21.jpg">
+<img src="images/SF2000_pic21.jpg" width="256" height="192">
+</a>
+<a href="images/SF2000_pic22.jpg">
+<img src="images/SF2000_pic22.jpg" width="256" height="192">
+</a>
+<br />
+For A2000 and ribbon cable use you can solder a 44 pin IDE-header like this:
+<br />
+<a href="images/SF2000_pic23.jpg">
+<img src="images/SF2000_pic23.jpg" width="256" height="192">
+</a>
+<a href="images/SF2000_pic24.jpg">
+<img src="images/SF2000_pic24.jpg" width="256" height="192">
+</a>
+
+***
+
+### Performance
+
+Some MC68SEC000 can be overclocked to 42 MHz and running with only one wait state for the IDE/ATA interface we can reach really good performance:
+<br />
+<a href="images/SF2000_pic25.jpg">
+<img src="images/SF2000_pic25.jpg" width="256" height="192">
+</a>
+<a href="images/SF2000_pic26.jpg">
+<img src="images/SF2000_pic26.jpg" width="256" height="192">
+</a>
+<br />
+Flashing a ROM (in this case 3.1.4) to the FlashROM chip U15 (using LIV2's excellent sfflash-tool) and closing JP9 even better performance can be achieved:
+<br />
+<a href="images/SF2000_pic27.jpg">
+<img src="images/SF2000_pic27.jpg" width="256" height="192">
+</a>
+<a href="images/SF2000_pic28.jpg">
+<img src="images/SF2000_pic28.jpg" width="256" height="192">
+</a>
+<br />
+<a href="images/SF2000_pic29.jpg">
+<img src="images/SF2000_pic29.jpg" width="256" height="192">
+</a>
+<a href="images/SF2000_pic30.jpg">
+<img src="images/SF2000_pic30.jpg" width="256" height="192">
+</a>
+<br />
+But for running more stable a few wait states can be added to the IDE/ATA, <br /> 
+https://github.com/jbilander/SF2000-FW/blob/main/rtl/ata.v#L56 <br />
+resulting in a bit slower IDE:
+<br />
+<a href="images/SF2000_pic31.jpg">
+<img src="images/SF2000_pic31.jpg" width="256" height="192">
 </a>
 
 ***
