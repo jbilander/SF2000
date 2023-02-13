@@ -9,6 +9,10 @@ This is WORK IN PROGRESS, a DIY hobby project. If you are going to make and sell
 
 The firmware for this board is in a separate repository available here: <br />
 https://github.com/jbilander/SF2000-FW
+<br />
+<br />
+The ROM image to burn to the 39LF040-chip (U14) can be downloaded from here: <br />
+https://gitlab.com/MHeinrichs/CDTV-RAM-IDE/-/blob/master/Prog/ATOKTACOMBINED.rom-512.bin
 
 ***
 
@@ -66,6 +70,14 @@ J13 | Pmod Type 2A (SPI) Female header, 12-Pin (2x6) | 2.54mm pitch | <a href="i
 
 A SF2000 shared shopping cart with most of the stuff in the list, no 3V3-regulator though and not all birdseed (passives):
 https://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=fdb374e26b
+
+***
+
+The FPGA used in this Accelerator board, please note it has to be the Voltage `UV` version because of 3.3V is being used for all VCC/VCCIO on the Accelerator:
+<br />
+<a href="images/SF2000_FPGA_GW1N-UV9LQ144.png">
+<img src="images/SF2000_FPGA_GW1N-UV9LQ144.png" width="640" height="270">
+</a>
 
 ***
 
@@ -216,13 +228,23 @@ https://drive.google.com/file/d/1dCBK24LUC5VLB2dshrW_5n82D2emHB5-/view?usp=shari
 <img src="images/SF2000_pic30.jpg" width="256" height="192">
 </a>
 <br />
+<br />
 But for running more stable a few wait states can be added to the IDE/ATA, <br /> 
 https://github.com/jbilander/SF2000-FW/blob/main/rtl/ata.v#L56 <br />
 resulting in a bit slower IDE:
 <br />
+<br />
 <a href="images/SF2000_pic31.jpg">
-<img src="images/SF2000_pic31.jpg" width="256" height="192">
+<img src="images/SF2000_pic31.jpg" width="512" height="384">
 </a>
+<br />
+<br />
+JTAG-header description:
+<br />
+<a href="images/SF2000_JTAG_pinout_desciption.jpg">
+<img src="images/SF2000_JTAG_pinout_desciption.jpg" width="505" height="303">
+</a>
+
 
 ***
 
