@@ -64,7 +64,22 @@ J8 | JP-header JP6 | 2.00mm (2 x 1) Pin Male Header | 4/8 MB SRAM Config
 J9,J10 | JP-header JP7,JP8 | 2.00mm (2 x 2) Pin Male Header | JP7 Autoboot IDE OFF/ON Selector, JP8 Oktagon/Oktapus. IDE-driver Selector
 J11 | LED Two-Pin Header 2.54mm pitch | 2.54mm pitch | Driven by U3 inverter buffer when /Active on IDE is being asserted. Connect to here to drive an external HDD-LED
 J12 | /Active signal, Single-Pin Header 2.54mm | 2.54mm pitch | /Active signal from IDE. Connect from here to a <br /> * [LED-board](https://github.com/jbilander/A500_IDE_LED_board) 
-J13 | Pmod Type 2A (SPI) Female header, 12-Pin (2x6) | 2.54mm pitch | <a href="images/SF2000_Pmod_pinout.jpg"><img src="images/SF2000_Pmod_pinout.jpg" width="177" height="125"></a> For connecting SPI peripherals. <br /> * [Right-Angled](https://www.aliexpress.com/item/1005003223096006.html) (A2000) or <br /> * [Straight](https://www.aliexpress.com/item/1005003335405213.html) (A500) to not interfere with [RGBtoHDMI-adapter](https://github.com/jbilander/A500_RGBtoHDMI) inside A500 
+J13 | Pmod Type 2A (SPI) Female header, 12-Pin (2x6) | 2.54mm pitch | <a href="images/SF2000_Pmod_pinout.jpg"><img src="images/SF2000_Pmod_pinout.jpg" width="177" height="125"></a> For connecting SPI peripherals. <br /> * [Right-Angled](https://www.aliexpress.com/item/1005003223096006.html) (A2000) or <br /> * [Straight](https://www.aliexpress.com/item/1005003335405213.html) (A500) to not interfere with [RGBtoHDMI-adapter](https://github.com/jbilander/A500_RGBtoHDMI) inside A500
+R1 | 3k Ω Resistor | 0805 | Feedback resistor, Only populate if U2 is of ADJ-ustable type (e.g. MIC5205YM5-TR)
+R2 | 1.2k Ω Resistor | 0805 | Feedback resistor, Only populate if U2 is of ADJ-ustable type (e.g. MIC5205YM5-TR)
+R3 | 10k Ω Resistor | 0805 | Pull-up resistor for /CFGIN (5V-side)
+R4 | 10k Ω Resistor | 0805 | Pull-up resistor in RC-debounce circuit
+R5 | 10k Ω Resistor | 0805 | Series resistor in RC-debounce circuit
+R6 | ~220 Ω Resistor | 0805, 200 mW | Series resistor for IDE-LED header J11, adjust R-value to your type of LED and preferred brightness
+R7 | 1k Ω Resistor | 0805 | Pull-down resistor for IDE_IRQ
+R8 | 4.7k Ω Resistor | 0805 | Pull-up resistor for IDE_IORDY
+R9 | 10k Ω Resistor | 0805 | Pull-up resistor for JP6
+R10 | 1k Ω Resistor | 0805 | Pull-down resistor for MODE0 (Gowin FPGA boot/configure from embFlash)
+R11 | 1k Ω Resistor | 0805 | Pull-down resistor for MODE1 (Gowin FPGA boot/configure from embFlash)
+R12 | 10k Ω Resistor | 0805 | Pull-up resistor for RECONFIG_N (Gowin FPGA) and /SPI_CS (in J13 Pmod-header)
+R13 | 10k Ω Resistor | 0805 | Pull-up resistor for /ACTIVE (IDE)
+RN1-RN2,RN5 | Resistor pack 10k Ω (CAY16-103J4LF) | 1206 | [CAY16-103J4LF](https://www.mouser.com/ProductDetail/652-CAY16-103J4LF) Pull-up resistors.
+RN3-RN4 | Resistor pack 10k Ω (CAY16-103J4LF) or 4.7k (CAY16-4701F4LF) | 1206 | [CAY16-4701F4LF](https://www.mouser.com/ProductDetail/652-CAY16A-4701F4LF) Pull-up resistors for SD0-SD3,SD_CD,SD_CMD,JP7,JP8
 
 ***
 
