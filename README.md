@@ -82,8 +82,8 @@ RN1-RN2,RN5 | Resistor pack 10k Ω (CAY16-103J4LF) | 1206 | * [CAY16-103J4LF](ht
 RN3-RN4 | Resistor pack 10k Ω (CAY16-103J4LF) or 4.7k (CAY16-4701F4LF) | 1206 | * [CAY16-4701F4LF](https://www.mouser.com/ProductDetail/652-CAY16A-4701F4LF) Pull-up resistors for SD0-SD3,SD_CD,SD_CMD,JP7,JP8
 C1-C2 | Capacitor 10uF | 1206 |
 C3 | Capacitor 0.1uF = 100nF | 0805 |
-C4 | Polarized Capacitor 100uF | CP_Elec_6.3x7.7 | * [Wurth SMD WCAP-AS5H 100uF](https://www.mouser.se/ProductDetail/710-865230245004)
-C5 | Polarized Capacitor 22uF | CP_Elec_5x5.8 | * [Wurth SMD WCAP-AS5H 22uF](https://www.mouser.se/ProductDetail/710-865230342002)
+C4 | Polarized Capacitor 100uF | CP_Elec_6.3x7.7 | * [Wurth SMD WCAP-AS5H 100uF](https://www.mouser.com/ProductDetail/710-865230245004)
+C5 | Polarized Capacitor 22uF | CP_Elec_5x5.8 | * [Wurth SMD WCAP-AS5H 22uF](https://www.mouser.com/ProductDetail/710-865230342002)
 C6 | Capacitor 10uF to 0.22uF | 1206 | Check datasheet for U2 what is suitable here.
 C7 | Capacitor 0.33uF = 330nF | 1206 | (Not needed if U2 is TPS73643DBVR, check your U2-datasheet)
 C8 | Capacitor 10uF | 1206 |
