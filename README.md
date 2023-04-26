@@ -78,8 +78,18 @@ R10 | 1k Ω Resistor | 0805 | Pull-down resistor for MODE0 (Gowin FPGA boot/conf
 R11 | 1k Ω Resistor | 0805 | Pull-down resistor for MODE1 (Gowin FPGA boot/configure from embFlash)
 R12 | 10k Ω Resistor | 0805 | Pull-up resistor for RECONFIG_N (Gowin FPGA) and /SPI_CS (in J13 Pmod-header)
 R13 | 10k Ω Resistor | 0805 | Pull-up resistor for /ACTIVE (IDE)
-RN1-RN2,RN5 | Resistor pack 10k Ω (CAY16-103J4LF) | 1206 | [CAY16-103J4LF](https://www.mouser.com/ProductDetail/652-CAY16-103J4LF) Pull-up resistors.
-RN3-RN4 | Resistor pack 10k Ω (CAY16-103J4LF) or 4.7k (CAY16-4701F4LF) | 1206 | [CAY16-4701F4LF](https://www.mouser.com/ProductDetail/652-CAY16A-4701F4LF) Pull-up resistors for SD0-SD3,SD_CD,SD_CMD,JP7,JP8
+RN1-RN2,RN5 | Resistor pack 10k Ω (CAY16-103J4LF) | 1206 | * [CAY16-103J4LF](https://www.mouser.com/ProductDetail/652-CAY16-103J4LF) Pull-up resistors.
+RN3-RN4 | Resistor pack 10k Ω (CAY16-103J4LF) or 4.7k (CAY16-4701F4LF) | 1206 | * [CAY16-4701F4LF](https://www.mouser.com/ProductDetail/652-CAY16A-4701F4LF) Pull-up resistors for SD0-SD3,SD_CD,SD_CMD,JP7,JP8
+C1-C2 | Capacitor 10uF | 1206 |
+C3 | Capacitor 0.1uF = 100nF | 0805 |
+C4 | Polarized Capacitor 100uF | CP_Elec_6.3x7.7 | * [Wurth SMD WCAP-AS5H 100uF](https://www.mouser.se/ProductDetail/710-865230245004)
+C5 | Polarized Capacitor 22uF | CP_Elec_5x5.8 | * [Wurth SMD WCAP-AS5H 22uF](https://www.mouser.se/ProductDetail/710-865230342002)
+C6 | Capacitor 10uF to 0.22uF | 1206 | Check datasheet for U2 what is suitable here.
+C7 | Capacitor 0.33uF = 330nF | 1206 | (Not needed if U2 is TPS73643DBVR, check your U2-datasheet)
+C8 | Capacitor 10uF | 1206 |
+C9-C25 | Capacitor 0.1uF = 100nF | 0805 | C24 capacitor in RC-debounce circuit
+C26-C27 | Capacitor 10uF | 1206 |
+C28-C46 | Capacitor 0.01uF = 10nF | 0805 |
 
 ***
 
