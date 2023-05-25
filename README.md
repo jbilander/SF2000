@@ -65,8 +65,8 @@ J9,J10 | JP-header JP7,JP8 | 2.00mm (2 x 2) Pin Male Header | JP7 Autoboot IDE O
 J11 | LED Two-Pin Header 2.54mm pitch | 2.54mm pitch | Driven by U3 inverter buffer when /Active on IDE is being asserted. Connect to here to drive an external HDD-LED
 J12 | /Active signal, Single-Pin Header 2.54mm | 2.54mm pitch | /Active signal from IDE. Connect from here to a <br /> * [LED-board](https://github.com/jbilander/A500_IDE_LED_board) 
 J13 | Pmod Type 2A (SPI) Female header, 12-Pin (2x6) | 2.54mm pitch | <a href="images/SF2000_Pmod_pinout.jpg"><img src="images/SF2000_Pmod_pinout.jpg" width="177" height="125"></a> For connecting SPI peripherals. <br /> * [Right-Angled](https://www.aliexpress.com/item/1005003223096006.html) (A2000) or <br /> * [Straight](https://www.aliexpress.com/item/1005003335405213.html) (A500) to not interfere with [RGBtoHDMI-adapter](https://github.com/jbilander/A500_RGBtoHDMI) inside A500
-R1 | 3k Ω Resistor | 0805 | Feedback resistor, Only populate if U2 is of ADJ-ustable type (e.g. MIC5205YM5-TR)
-R2 | 1.2k Ω Resistor | 0805 | Feedback resistor, Only populate if U2 is of ADJ-ustable type (e.g. MIC5205YM5-TR)
+R1 | 1.2k Ω Resistor | 0805 | Feedback resistor, Only populate if U2 is of ADJ-ustable type (e.g. MIC5205YM5-TR)
+R2 | 3k Ω Resistor | 0805 | Feedback resistor, Only populate if U2 is of ADJ-ustable type (e.g. MIC5205YM5-TR)
 R3 | 10k Ω Resistor | 0805 | Pull-up resistor for /CFGIN (5V-side)
 R4 | 10k Ω Resistor | 0805 | Pull-up resistor in RC-debounce circuit
 R5 | 10k Ω Resistor | 0805 | Series resistor in RC-debounce circuit
