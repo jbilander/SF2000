@@ -378,7 +378,7 @@ Text GLabel 5850 950  0    50   Input ~ 0
 Text GLabel 6350 1350 3    50   Input ~ 0
 GND
 $Comp
-L Regulator_Linear:LM1117-3.3 U1
+L SF2000:LM1117-3.3-Regulator_Linear U1
 U 1 1 61D7BC02
 P 3650 950
 F 0 "U1" H 3650 1192 50  0000 C CNN
