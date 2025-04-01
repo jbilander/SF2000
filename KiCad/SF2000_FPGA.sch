@@ -693,10 +693,10 @@ Wire Wire Line
 	2400 1100 2300 1100
 Connection ~ 2400 1100
 $Comp
-L SF2000:GW1N-UV9LQ144 U8
+L SF2000:GW1N-UV9LQ144 U28
 U 1 1 6290D788
 P 3800 3550
-F 0 "U8" H 3850 3550 60  0000 R CNN
+F 0 "U28" H 3850 3550 60  0000 R CNN
 F 1 "GW1N-UV9LQ144" H 4200 3450 60  0000 R CNN
 F 2 "Package_QFP:LQFP-144_20x20mm_P0.5mm" H 3800 3650 60  0001 C CNN
 F 3 "https://www.mouser.com/datasheet/2/1033/GW1N_series_of_FPGA_Products_Data_Sheet-1830682.pdf" H 5250 4750 60  0001 C CNN
@@ -782,4 +782,47 @@ Text GLabel 10250 3850 1    50   Input ~ 0
 3V3
 Text GLabel 10250 4050 3    50   Input ~ 0
 ACTIVE
+Text GLabel -6750 1700 0    50   Input ~ 0
+GND
+Text GLabel -6750 2100 0    50   Input ~ 0
+GND
+Text GLabel -6750 2500 0    50   Input ~ 0
+GND
+Text GLabel -5650 5850 3    50   Input ~ 0
+GND
+Text GLabel -4950 5850 3    50   Input ~ 0
+GND
+Text GLabel -4350 5850 3    50   Input ~ 0
+GND
+Text GLabel -2950 5850 3    50   Input ~ 0
+GND
+Text GLabel -900 3100 2    50   Input ~ 0
+GND
+Text GLabel -900 2100 2    50   Input ~ 0
+GND
+Text GLabel -900 1700 2    50   Input ~ 0
+GND
+Text GLabel -3250 1000 1    50   Input ~ 0
+GND
+Text GLabel -3350 1000 1    50   Input ~ 0
+GND
+Text GLabel -3850 1000 1    50   Input ~ 0
+GND
+Text GLabel -3950 1000 1    50   Input ~ 0
+GND
+Text GLabel -4150 1000 1    50   Input ~ 0
+GND
+Text GLabel -4550 1000 1    50   Input ~ 0
+GND
+$Comp
+L SF2000:T8Q144C3 U8
+U 1 1 68A02718
+P -3950 3400
+F 0 "U8" H -4000 3450 60  0000 L CNN
+F 1 "T8Q144C3" H -4150 3350 60  0000 L CNN
+F 2 "Package_QFP:LQFP-144_20x20mm_P0.5mm" H -3950 3350 60  0001 C CNN
+F 3 "" H -7200 5100 60  0001 C CNN
+	1    -3950 3400
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
