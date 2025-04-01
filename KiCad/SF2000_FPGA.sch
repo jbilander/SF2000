@@ -61,7 +61,7 @@ Text GLabel 4850 1100 1    50   Input ~ 0
 A17_3V3
 Text GLabel 1350 2650 0    50   Input ~ 0
 VPA_3V3
-Text GLabel 1350 3150 0    50   BiDi ~ 0
+Text GLabel -6750 3000 0    50   BiDi ~ 0
 E_3V3
 Text GLabel 1350 3350 0    50   Input ~ 0
 TMS
