@@ -847,4 +847,30 @@ Text GLabel -4250 1000 1    50   Input ~ 0
 1V2
 Text GLabel -3750 1000 1    50   Input ~ 0
 1V2
+Text GLabel -6750 2800 0    50   Input ~ 0
+3V3
+Text GLabel -6750 3700 0    50   Input ~ 0
+3V3
+Text GLabel -6750 3900 0    50   Input ~ 0
+3V3
+Text GLabel -4250 5850 3    50   Input ~ 0
+3V3
+Text GLabel -3650 5850 3    50   Input ~ 0
+1V2
+Text GLabel -4150 5850 3    50   Input ~ 0
+3V3
+Text GLabel -3150 5850 3    50   Input ~ 0
+3V3
+Text GLabel -3050 5850 3    50   Input ~ 0
+3V3
+Text GLabel -900 3700 2    50   Input ~ 0
+3V3
+Text GLabel -900 3400 2    50   Input ~ 0
+3V3
+Text GLabel -900 3000 2    50   Input ~ 0
+3V3
+Text GLabel -3450 1000 1    50   Input ~ 0
+3V3
+Text GLabel -5550 1000 1    50   Input ~ 0
+3V3
 $EndSCHEMATC
