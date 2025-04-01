@@ -63,7 +63,7 @@ Text GLabel -7050 2250 0    50   Input ~ 0
 VPA_3V3
 Text GLabel -6750 2700 0    50   BiDi ~ 0
 E_3V3
-Text GLabel 1350 3350 0    50   Input ~ 0
+Text GLabel -6750 4100 0    50   Input ~ 0
 TMS
 Text GLabel 3500 6000 3    50   Input ~ 0
 AS_CPU_3V3
@@ -110,11 +110,11 @@ Text GLabel 7400 3100 0    50   Output ~ 0
 TDI
 Text GLabel 7400 3400 0    50   Output ~ 0
 TMS
-Text GLabel 1350 3450 0    50   Input ~ 0
+Text GLabel -6750 4200 0    50   Input ~ 0
 TCK
-Text GLabel 1350 3800 0    50   Output ~ 0
+Text GLabel -6750 4000 0    50   Output ~ 0
 TDO
-Text GLabel 1350 3650 0    50   Input ~ 0
+Text GLabel -6750 4300 0    50   Input ~ 0
 TDI
 Text GLabel 1350 2850 0    50   Input ~ 0
 SW1
