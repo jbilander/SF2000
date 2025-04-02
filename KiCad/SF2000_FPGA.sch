@@ -597,37 +597,20 @@ Text GLabel 6250 5200 2    50   Output ~ 0
 SPI_CLK
 $Comp
 L Device:R_Small R?
-U 1 1 63029549
-P 10600 3950
-AR Path="/63029549" Ref="R?"  Part="1" 
-AR Path="/620D263D/63029549" Ref="R10"  Part="1" 
-F 0 "R10" V 10700 3900 50  0000 L CNN
-F 1 "1k" V 10500 3900 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 10600 3950 50  0001 C CNN
-F 3 "~" H 10600 3950 50  0001 C CNN
-	1    10600 3950
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small R?
 U 1 1 6302BBCE
-P 10900 3950
+P 11000 3950
 AR Path="/6302BBCE" Ref="R?"  Part="1" 
 AR Path="/620D263D/6302BBCE" Ref="R11"  Part="1" 
-F 0 "R11" V 11000 3900 50  0000 L CNN
-F 1 "1k" V 10800 3900 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 10900 3950 50  0001 C CNN
-F 3 "~" H 10900 3950 50  0001 C CNN
-	1    10900 3950
+F 0 "R11" V 11100 3900 50  0000 L CNN
+F 1 "33Ω" V 10900 3900 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 11000 3950 50  0001 C CNN
+F 3 "~" H 11000 3950 50  0001 C CNN
+	1    11000 3950
 	1    0    0    -1  
 $EndComp
-Text GLabel 10600 3850 1    50   Input ~ 0
+Text GLabel 11000 3850 1    50   Input ~ 0
 GND
-Text GLabel 10900 3850 1    50   Input ~ 0
-GND
-Text GLabel 10600 4050 3    50   Input ~ 0
-MODE0
-Text GLabel 10900 4050 3    50   Input ~ 0
+Text GLabel 11000 4050 3    50   Input ~ 0
 MODE1
 Text GLabel 3550 1100 1    50   Input ~ 0
 RST_3V3
@@ -862,10 +845,6 @@ Text GLabel -3450 1000 1    50   Input ~ 0
 3V3
 Text GLabel -5550 1000 1    50   Input ~ 0
 3V3
-Text GLabel -900 5000 2    50   Input ~ 0
-OSC_CLK
-Text GLabel -4450 1000 1    50   Input ~ 0
-OSC_CLK
 Text GLabel -3650 1000 1    50   Input ~ 0
 OSC_CLK
 $EndSCHEMATC

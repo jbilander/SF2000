@@ -104,8 +104,8 @@ $Comp
 L Oscillator:SG-8002CA X1
 U 1 1 620EE0AB
 P 2850 4500
-F 0 "X1" H 3200 4750 50  0000 L CNN
-F 1 "Oscillator_7.0x5.0mm" H 3200 4650 50  0000 L CNN
+F 0 "X1" H 3100 4850 50  0000 L CNN
+F 1 "Oscillator_7.0x5.0mm" H 3100 4750 50  0000 L CNN
 F 2 "Oscillator:Oscillator_SMD_SeikoEpson_SG8002CA-4Pin_7.0x5.0mm" H 3550 4150 50  0001 C CNN
 F 3 "" H 2750 4500 50  0001 C CNN
 	1    2850 4500
@@ -115,7 +115,7 @@ Text GLabel 2850 4200 1    50   Input ~ 0
 3V3
 Text GLabel 2850 4800 3    50   Input ~ 0
 GND
-Text GLabel 3150 4500 2    50   Output ~ 0
+Text GLabel 3550 4500 2    50   Output ~ 0
 OSC_CLK
 Text GLabel 2000 3200 3    50   Input ~ 0
 JP8
@@ -123,4 +123,24 @@ Text GLabel 2950 3200 3    50   Input ~ 0
 JP7
 Text GLabel 2550 4500 0    50   Input ~ 0
 3V3
+$Comp
+L Device:R_Small R?
+U 1 1 68B856DF
+P 3350 4500
+AR Path="/68B856DF" Ref="R?"  Part="1" 
+AR Path="/620D263D/68B856DF" Ref="R?"  Part="1" 
+AR Path="/62892CF3/68B856DF" Ref="R10"  Part="1" 
+F 0 "R10" V 3450 4450 50  0000 L CNN
+F 1 "33Ω" V 3250 4450 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 3350 4500 50  0001 C CNN
+F 3 "~" H 3350 4500 50  0001 C CNN
+	1    3350 4500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3550 4500 3450 4500
+Wire Wire Line
+	3250 4500 3150 4500
+Text Label 3200 4500 3    50   ~ 0
+OSC
 $EndSCHEMATC
