@@ -21,13 +21,13 @@ Text GLabel -6750 3000 0    50   Input ~ 0
 C7M_3V3
 Text GLabel 5000 6000 3    50   Output ~ 0
 ROM_WE
-Text GLabel 1350 2950 0    50   Output ~ 0
+Text GLabel -6750 2300 0    50   Output ~ 0
 OVR_3V3
-Text GLabel 1350 3050 0    50   Output ~ 0
+Text GLabel -6750 2400 0    50   Output ~ 0
 INT2_3V3
 Text GLabel 3100 1100 1    50   Input ~ 0
 3V3
-Text GLabel 1350 3250 0    50   Output ~ 0
+Text GLabel -6750 2600 0    50   Output ~ 0
 BOSS_3V3
 Text GLabel 1350 4750 0    50   Input ~ 0
 FC0_3V3
@@ -59,7 +59,7 @@ Text GLabel 4950 1100 1    50   Input ~ 0
 A16_3V3
 Text GLabel 4850 1100 1    50   Input ~ 0
 A17_3V3
-Text GLabel -7050 2250 0    50   Input ~ 0
+Text GLabel -6750 1900 0    50   Input ~ 0
 VPA_3V3
 Text GLabel -6750 2700 0    50   BiDi ~ 0
 E_3V3
@@ -217,7 +217,7 @@ Text GLabel 1350 4350 0    50   Input ~ 0
 JP5
 Text GLabel 10350 5100 3    50   Input ~ 0
 JP2
-Text GLabel 1350 2750 0    50   Output ~ 0
+Text GLabel -6750 2200 0    50   Output ~ 0
 VMA_3V3
 Text GLabel 3200 6000 3    50   BiDi ~ 0
 D9_3V3
@@ -549,7 +549,7 @@ Wire Wire Line
 	10250 5700 10350 5700
 Wire Wire Line
 	10250 6100 10350 6100
-Text GLabel 1350 2400 0    50   BiDi ~ 0
+Text GLabel -6750 2000 0    50   BiDi ~ 0
 BG_3V3
 Text GLabel 7400 3300 0    50   Input ~ 0
 GND
@@ -705,17 +705,6 @@ F 3 "https://www.mouser.com/datasheet/2/1033/GW1N_series_of_FPGA_Products_Data_S
 $EndComp
 Text GLabel 7750 4700 2    50   Input ~ 0
 RST_3V3
-$Comp
-L Connector_Generic:Conn_02x06_Top_Bottom J13
-U 1 1 630B9DBE
-P 7450 4800
-F 0 "J13" H 7500 5217 50  0000 C CNN
-F 1 "Conn_02x06_Top_Bottom" H 7500 5126 50  0000 C CNN
-F 2 "SF2000:Pmod_Interface_Type_2A_SPI_PinSocket_2x06_P2.54mm_Horizontal" H 7450 4800 50  0001 C CNN
-F 3 "~" H 7450 4800 50  0001 C CNN
-	1    7450 4800
-	1    0    0    -1  
-$EndComp
 Text GLabel 7250 5000 0    50   Input ~ 0
 GND
 Text GLabel 7750 5000 2    50   Input ~ 0
@@ -873,4 +862,10 @@ Text GLabel -3450 1000 1    50   Input ~ 0
 3V3
 Text GLabel -5550 1000 1    50   Input ~ 0
 3V3
+Text GLabel -900 5000 2    50   Input ~ 0
+OSC_CLK
+Text GLabel -4450 1000 1    50   Input ~ 0
+OSC_CLK
+Text GLabel -3650 1000 1    50   Input ~ 0
+OSC_CLK
 $EndSCHEMATC
