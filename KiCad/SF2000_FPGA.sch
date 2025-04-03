@@ -88,23 +88,23 @@ AS_MB_3V3
 $Comp
 L Connector_Generic:Conn_02x05_Odd_Even JTAG1
 U 1 1 625BCAC6
-P 7600 3200
-F 0 "JTAG1" H 7650 2775 50  0000 C CNN
-F 1 "Conn_02x05_Odd_Even" H 7650 2866 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical" H 7600 3200 50  0001 C CNN
-F 3 "~" H 7600 3200 50  0001 C CNN
-	1    7600 3200
+P 7450 3200
+F 0 "JTAG1" H 7500 2775 50  0000 C CNN
+F 1 "Conn_02x05_Odd_Even" H 7500 2866 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical" H 7450 3200 50  0001 C CNN
+F 3 "~" H 7450 3200 50  0001 C CNN
+	1    7450 3200
 	1    0    0    -1  
 $EndComp
-Text GLabel 7900 3400 2    50   Input ~ 0
+Text GLabel 7750 3400 2    50   Input ~ 0
 GND
-Text GLabel 7400 3000 0    50   Output ~ 0
+Text GLabel 7250 3000 0    50   Output ~ 0
 TCK
-Text GLabel 7400 3200 0    50   Input ~ 0
+Text GLabel 7250 3200 0    50   Input ~ 0
 TDO
-Text GLabel 7400 3100 0    50   Output ~ 0
+Text GLabel 7250 3100 0    50   Output ~ 0
 TDI
-Text GLabel 7400 3300 0    50   Output ~ 0
+Text GLabel 7250 3300 0    50   Output ~ 0
 TMS
 Text GLabel -6750 4200 0    50   Input ~ 0
 TCK
@@ -119,24 +119,18 @@ JP5
 $Comp
 L Device:R_Pack04 RN1
 U 1 1 625F56E7
-P 10350 5900
-F 0 "RN1" H 10538 5946 50  0000 L CNN
-F 1 "10k_Pack04" H 10538 5855 50  0000 L CNN
-F 2 "SF2000:RESCAF80P320X160X60-8N" V 10625 5900 50  0001 C CNN
-F 3 "~" H 10350 5900 50  0001 C CNN
-	1    10350 5900
+P 10350 5800
+F 0 "RN1" H 10538 5846 50  0000 L CNN
+F 1 "10k_Pack04" H 10538 5755 50  0000 L CNN
+F 2 "SF2000:RESCAF80P320X160X60-8N" V 10625 5800 50  0001 C CNN
+F 3 "~" H 10350 5800 50  0001 C CNN
+	1    10350 5800
 	1    0    0    -1  
 $EndComp
-Text GLabel 10150 5700 1    50   Input ~ 0
+Text GLabel 10150 5600 1    50   Input ~ 0
 3V3
-Text GLabel 10250 6100 3    50   Input ~ 0
-TCK
-Text GLabel 10450 6100 3    50   Input ~ 0
+Text GLabel 10450 6000 3    50   Input ~ 0
 JP5
-Text GLabel 10250 5700 1    50   Input ~ 0
-GND
-Text GLabel 10450 5700 1    50   Input ~ 0
-3V3
 $Comp
 L Device:R_Pack04 RN2
 U 1 1 6265DCDE
@@ -493,24 +487,18 @@ Wire Wire Line
 Wire Wire Line
 	8700 2900 8800 2900
 Connection ~ 8700 2700
-Text GLabel 10150 6100 3    50   Input ~ 0
+Text GLabel 10150 6000 3    50   Input ~ 0
 JP9
 Text GLabel 1350 3550 0    50   Input ~ 0
 JP9
 Wire Wire Line
-	8200 2600 7500 2600
-Wire Wire Line
 	7500 2600 7500 2050
 Connection ~ 7500 2050
-Wire Wire Line
-	10250 5700 10350 5700
-Wire Wire Line
-	10250 6100 10350 6100
 Text GLabel -6750 2000 0    50   BiDi ~ 0
 BG_3V3
-Text GLabel 7400 3400 0    50   Input ~ 0
+Text GLabel 7250 3400 0    50   Input ~ 0
 GND
-Text GLabel 7900 3100 2    50   Input ~ 0
+Text GLabel 7750 3100 2    50   Input ~ 0
 SS
 Text GLabel 1800 6000 3    50   Input ~ 0
 JP6
@@ -536,12 +524,6 @@ Text GLabel 6250 1650 2    50   Input ~ 0
 A14_3V3
 Text GLabel 6250 1550 2    50   Input ~ 0
 A15_3V3
-Text GLabel 3350 1100 1    50   Input ~ 0
-MODE0
-Text GLabel 3450 1100 1    50   Input ~ 0
-MODE1
-Text GLabel 1350 2500 0    50   Output ~ 0
-IOL5A
 Text GLabel 4150 1100 1    50   Input ~ 0
 SPI_MISO
 Text GLabel 4050 1100 1    50   Output ~ 0
@@ -565,7 +547,7 @@ Text GLabel 11000 3850 1    50   Input ~ 0
 GND
 Text GLabel 11000 4050 3    50   Input ~ 0
 MODE1
-Text GLabel 3550 1100 1    50   Input ~ 0
+Text GLabel -6750 3100 0    50   Input ~ 0
 RST_3V3
 Connection ~ 2500 1100
 Connection ~ 4000 4450
@@ -639,14 +621,12 @@ F 3 "https://www.mouser.com/datasheet/2/1033/GW1N_series_of_FPGA_Products_Data_S
 	1    3800 3550
 	1    0    0    -1  
 $EndComp
-Text GLabel 7750 4700 2    50   Input ~ 0
+Text GLabel 10250 6000 3    50   Input ~ 0
 RST_3V3
 Text GLabel 5150 1100 1    50   Input ~ 0
 IOT27A
 Text GLabel 3950 1100 1    50   Output ~ 0
 SPI_INT
-Text GLabel 1350 3950 0    50   Output ~ 0
-SPI_CS
 Text GLabel 1350 4050 0    50   Input ~ 0
 DONE
 Text GLabel 3850 1100 1    50   BiDi ~ 0
@@ -752,9 +732,7 @@ Text GLabel 10450 5100 3    50   Input ~ 0
 TDO
 Text GLabel 10150 5100 3    50   Input ~ 0
 TDI
-Wire Wire Line
-	7900 3300 8200 3300
-NoConn ~ 7900 3200
+NoConn ~ 7750 3200
 Text GLabel 9100 3550 3    50   Input ~ 0
 ACTIVE
 Text GLabel 9100 3350 1    50   Input ~ 0
@@ -812,8 +790,8 @@ U 1 1 68C712CB
 P 9550 3950
 AR Path="/68C712CB" Ref="R?"  Part="1" 
 AR Path="/620D263D/68C712CB" Ref="R1"  Part="1" 
-F 0 "R1" H 9609 3996 50  0000 L CNN
-F 1 "100k" H 9609 3905 50  0000 L CNN
+F 0 "R1" V 9650 3900 50  0000 L CNN
+F 1 "100k" V 9450 3850 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 9550 3950 50  0001 C CNN
 F 3 "~" H 9550 3950 50  0001 C CNN
 	1    9550 3950
@@ -825,6 +803,20 @@ Text GLabel 9550 4050 3    50   Input ~ 0
 CRESET_N
 Text GLabel -6750 5100 0    50   Input ~ 0
 CRESET_N
-Text GLabel 7900 3000 2    50   Input ~ 0
+Text GLabel 7750 3000 2    50   Input ~ 0
 CRESET_N
+Wire Wire Line
+	8250 2600 8250 3300
+Wire Wire Line
+	7500 2600 8250 2600
+Wire Wire Line
+	7750 3300 8250 3300
+Wire Wire Line
+	10450 5600 10350 5600
+Connection ~ 10250 5600
+Wire Wire Line
+	10250 5600 10150 5600
+Connection ~ 10350 5600
+Wire Wire Line
+	10350 5600 10250 5600
 $EndSCHEMATC
