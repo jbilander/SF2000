@@ -467,23 +467,12 @@ GND
 $Comp
 L Device:R_Small R2
 U 1 1 61DA2771
-P 7000 1250
-F 0 "R2" H 7059 1296 50  0000 L CNN
-F 1 "3k" H 7059 1205 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7000 1250 50  0001 C CNN
-F 3 "~" H 7000 1250 50  0001 C CNN
-	1    7000 1250
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small R1
-U 1 1 61DA6A29
-P 7000 1050
-F 0 "R1" H 7059 1096 50  0000 L CNN
-F 1 "1.2k" H 7059 1005 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7000 1050 50  0001 C CNN
-F 3 "~" H 7000 1050 50  0001 C CNN
-	1    7000 1050
+P 8600 1500
+F 0 "R2" H 8659 1546 50  0000 L CNN
+F 1 "3k" H 8659 1455 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 8600 1500 50  0001 C CNN
+F 3 "~" H 8600 1500 50  0001 C CNN
+	1    8600 1500
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -667,8 +656,6 @@ F 3 "~" H 6800 1150 50  0001 C CNN
 	1    6800 1150
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	6750 950  7000 950 
 Connection ~ 7500 950 
 Wire Wire Line
 	7500 950  7650 950 
@@ -687,22 +674,8 @@ Wire Wire Line
 	6350 1350 6800 1350
 Wire Wire Line
 	6800 1350 6800 1250
-Connection ~ 7000 950 
-Wire Wire Line
-	7000 950  7200 950 
-Wire Wire Line
-	7000 1150 6900 1150
-Wire Wire Line
-	6900 1150 6900 1050
-Wire Wire Line
-	6900 1050 6800 1050
-Connection ~ 7000 1150
-Connection ~ 6800 1050
 Wire Wire Line
 	6800 1050 6750 1050
-Wire Wire Line
-	6800 1350 7000 1350
-Connection ~ 6800 1350
 $Comp
 L Device:R_Small R3
 U 1 1 61FB0B67
@@ -1522,4 +1495,6 @@ NoConn ~ 7550 2550
 Text Notes 750  2500 0    50   ~ 0
 XRDY
 NoConn ~ 1000 2450
+Wire Wire Line
+	6750 950  7200 950 
 $EndSCHEMATC
