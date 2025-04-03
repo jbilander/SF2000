@@ -15,7 +15,7 @@ Comment4 ""
 $EndDescr
 Text GLabel 3400 4450 3    50   Input ~ 0
 GND
-Text GLabel 1350 5250 0    50   Output ~ 0
+Text GLabel -6750 4400 0    50   Output ~ 0
 CLKCPU_3V3
 Text GLabel -6750 3000 0    50   Input ~ 0
 C7M_3V3
@@ -29,11 +29,11 @@ Text GLabel 3100 1100 1    50   Input ~ 0
 3V3
 Text GLabel -6750 2600 0    50   Output ~ 0
 BOSS_3V3
-Text GLabel 1350 4750 0    50   Input ~ 0
+Text GLabel -6750 3200 0    50   Input ~ 0
 FC0_3V3
-Text GLabel 1350 4850 0    50   Input ~ 0
+Text GLabel -6750 3300 0    50   Input ~ 0
 FC1_3V3
-Text GLabel 1350 5100 0    50   Input ~ 0
+Text GLabel -6750 3400 0    50   Input ~ 0
 FC2_3V3
 Text GLabel 4550 1100 1    50   Input ~ 0
 A20_3V3
@@ -315,7 +315,7 @@ Text GLabel 8650 6050 0    50   Input ~ 0
 JP8
 Text GLabel 6250 5300 2    50   Input ~ 0
 JP8
-Text GLabel 1350 4950 0    50   Output ~ 0
+Text GLabel -6750 3500 0    50   Output ~ 0
 FLASH_OE
 Text GLabel 4900 6000 3    50   Output ~ 0
 ROM_OE
