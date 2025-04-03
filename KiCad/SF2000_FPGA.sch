@@ -810,4 +810,6 @@ Wire Wire Line
 Wire Wire Line
 	8200 2600 8200 3300
 NoConn ~ 7900 3200
+Text GLabel -6750 5100 0    50   Input ~ 0
+CRST
 $EndSCHEMATC
