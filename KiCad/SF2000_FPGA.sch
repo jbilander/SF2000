@@ -96,19 +96,17 @@ F 3 "~" H 7600 3200 50  0001 C CNN
 	1    7600 3200
 	1    0    0    -1  
 $EndComp
-Text GLabel 7900 3000 2    50   Input ~ 0
-GND
 Text GLabel 7900 3400 2    50   Input ~ 0
 GND
-Text GLabel 7900 3200 2    50   Input ~ 0
-3V3
+Text GLabel 7900 3000 2    50   Input ~ 0
+CRST
 Text GLabel 7400 3000 0    50   Output ~ 0
 TCK
 Text GLabel 7400 3200 0    50   Input ~ 0
 TDO
 Text GLabel 7400 3100 0    50   Output ~ 0
 TDI
-Text GLabel 7400 3400 0    50   Output ~ 0
+Text GLabel 7400 3300 0    50   Output ~ 0
 TMS
 Text GLabel -6750 4200 0    50   Input ~ 0
 TCK
@@ -519,10 +517,6 @@ $EndComp
 Text GLabel 9650 3850 1    50   Input ~ 0
 3V3
 Wire Wire Line
-	7900 3100 8200 3100
-Wire Wire Line
-	8200 3100 8200 2600
-Wire Wire Line
 	8200 2600 7500 2600
 Wire Wire Line
 	7500 2600 7500 2050
@@ -533,10 +527,10 @@ Wire Wire Line
 	10250 6100 10350 6100
 Text GLabel -6750 2000 0    50   BiDi ~ 0
 BG_3V3
-Text GLabel 7400 3300 0    50   Input ~ 0
+Text GLabel 7400 3400 0    50   Input ~ 0
 GND
-Text GLabel 7900 3300 2    50   Input ~ 0
-JP9
+Text GLabel 7900 3100 2    50   Input ~ 0
+SS
 Text GLabel 1800 6000 3    50   Input ~ 0
 JP6
 Text GLabel 2200 6000 3    50   Input ~ 0
@@ -811,4 +805,9 @@ Text GLabel 10450 5100 3    50   Input ~ 0
 TDO
 Text GLabel 10150 5100 3    50   Input ~ 0
 TDI
+Wire Wire Line
+	7900 3300 8200 3300
+Wire Wire Line
+	8200 2600 8200 3300
+NoConn ~ 7900 3200
 $EndSCHEMATC
