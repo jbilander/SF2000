@@ -139,8 +139,6 @@ Text GLabel 10450 6100 3    50   Input ~ 0
 JP5
 Text GLabel 10250 5700 1    50   Input ~ 0
 GND
-Text GLabel 1350 4450 0    50   Input ~ 0
-JP2
 Text GLabel 10450 5700 1    50   Input ~ 0
 3V3
 $Comp
@@ -164,10 +162,6 @@ Wire Wire Line
 Connection ~ 10350 4700
 Wire Wire Line
 	10350 4700 10450 4700
-Text GLabel 10150 5100 3    50   Input ~ 0
-JP4
-Text GLabel 10250 5100 3    50   Input ~ 0
-JP3
 Text GLabel 7500 1650 1    50   Input ~ 0
 3V3
 $Comp
@@ -181,12 +175,6 @@ F 3 "~" H 8950 4300 50  0001 C CNN
 	1    8950 4300
 	-1   0    0    1   
 $EndComp
-Text GLabel 8650 4300 0    50   Input ~ 0
-JP3
-Text GLabel 8650 4400 0    50   Input ~ 0
-JP2
-Text GLabel 8650 4200 0    50   Input ~ 0
-JP4
 Wire Wire Line
 	9150 4200 9150 4300
 Connection ~ 9150 4300
@@ -194,10 +182,6 @@ Wire Wire Line
 	9150 4300 9150 4400
 Text GLabel 9150 4200 2    50   Input ~ 0
 GND
-Text GLabel 1350 4550 0    50   Input ~ 0
-JP3
-Text GLabel 1350 4650 0    50   Input ~ 0
-JP4
 $Comp
 L Connector_Generic:Conn_02x01 J4
 U 1 1 6276C760
@@ -215,8 +199,6 @@ Text GLabel 9700 2050 2    50   Output ~ 0
 SW1
 Text GLabel 1350 4350 0    50   Input ~ 0
 JP5
-Text GLabel 10350 5100 3    50   Input ~ 0
-JP2
 Text GLabel -6750 2200 0    50   Output ~ 0
 VMA_3V3
 Text GLabel 3200 6000 3    50   BiDi ~ 0
@@ -555,10 +537,6 @@ Text GLabel 7400 3300 0    50   Input ~ 0
 GND
 Text GLabel 7900 3300 2    50   Input ~ 0
 JP9
-Text GLabel 1350 4150 0    50   Input ~ 0
-READY
-Text GLabel 10450 5100 3    50   Input ~ 0
-READY
 Text GLabel 1800 6000 3    50   Input ~ 0
 JP6
 Text GLabel 2200 6000 3    50   Input ~ 0
@@ -688,34 +666,12 @@ F 3 "https://www.mouser.com/datasheet/2/1033/GW1N_series_of_FPGA_Products_Data_S
 $EndComp
 Text GLabel 7750 4700 2    50   Input ~ 0
 RST_3V3
-Text GLabel 7250 5000 0    50   Input ~ 0
-GND
-Text GLabel 7750 5000 2    50   Input ~ 0
-GND
-Text GLabel 7250 5100 0    50   Input ~ 0
-3V3
-Text GLabel 7750 5100 2    50   Input ~ 0
-3V3
-Text GLabel 7250 4900 0    50   Input ~ 0
-SPI_CLK
-Text GLabel 7250 4800 0    50   Output ~ 0
-SPI_MISO
-Text GLabel 7250 4700 0    50   Input ~ 0
-SPI_MOSI
-Text GLabel 7750 4800 2    50   BiDi ~ 0
-IOL5A
-Text GLabel 7250 4600 0    50   Input ~ 0
-SPI_CS
 Text GLabel 5150 1100 1    50   Input ~ 0
 IOT27A
 Text GLabel 3950 1100 1    50   Output ~ 0
 SPI_INT
-Text GLabel 7750 4600 2    50   Input ~ 0
-SPI_INT
 Text GLabel 1350 3950 0    50   Output ~ 0
 SPI_CS
-Text GLabel 7750 4900 2    50   BiDi ~ 0
-IOT27A
 Text GLabel 1350 4050 0    50   Input ~ 0
 DONE
 Text GLabel 3850 1100 1    50   BiDi ~ 0
@@ -847,4 +803,12 @@ Text GLabel -5550 1000 1    50   Input ~ 0
 3V3
 Text GLabel -3650 1000 1    50   Input ~ 0
 OSC_CLK
+Text GLabel 10350 5100 3    50   Input ~ 0
+TMS
+Text GLabel 10250 5100 3    50   Input ~ 0
+TCK
+Text GLabel 10450 5100 3    50   Input ~ 0
+TDO
+Text GLabel 10150 5100 3    50   Input ~ 0
+TDI
 $EndSCHEMATC
