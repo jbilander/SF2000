@@ -67,9 +67,9 @@ Text GLabel -6750 4100 0    50   Input ~ 0
 TMS
 Text GLabel 3500 6000 3    50   Input ~ 0
 AS_CPU_3V3
-Text GLabel 3650 1100 1    50   Input ~ 0
+Text GLabel -5650 1000 1    50   Input ~ 0
 CFGIN_3V3
-Text GLabel 3750 1100 1    50   Output ~ 0
+Text GLabel -5450 1000 1    50   Output ~ 0
 CFGOUT_3V3
 Text GLabel 2300 6000 3    50   Input ~ 0
 HLT_3V3
@@ -629,7 +629,7 @@ Text GLabel 3950 1100 1    50   Output ~ 0
 SPI_INT
 Text GLabel -6750 5000 0    50   Input ~ 0
 CDONE
-Text GLabel 3850 1100 1    50   BiDi ~ 0
+Text GLabel -5350 1000 1    50   BiDi ~ 0
 BR_3V3
 Text GLabel -6750 1700 0    50   Input ~ 0
 GND
@@ -820,4 +820,5 @@ F 3 "~" H 9850 3950 50  0001 C CNN
 	1    9850 3950
 	1    0    0    -1  
 $EndComp
+NoConn ~ -3550 1000
 $EndSCHEMATC
