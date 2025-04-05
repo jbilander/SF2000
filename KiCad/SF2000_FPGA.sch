@@ -15,7 +15,7 @@ Comment4 ""
 $EndDescr
 Text GLabel 3400 4450 3    50   Input ~ 0
 GND
-Text GLabel -6750 4400 0    50   Output ~ 0
+Text GLabel -6750 4900 0    50   Output ~ 0
 CLKCPU_3V3
 Text GLabel -6750 3000 0    50   Input ~ 0
 C7M_3V3
@@ -187,7 +187,7 @@ Text GLabel 9150 4850 2    50   Input ~ 0
 GND
 Text GLabel 9700 2050 2    50   Output ~ 0
 SW1
-Text GLabel 1350 4350 0    50   Input ~ 0
+Text GLabel -6750 3600 0    50   Input ~ 0
 JP5
 Text GLabel -6750 2200 0    50   Output ~ 0
 VMA_3V3
@@ -627,8 +627,8 @@ Text GLabel 5150 1100 1    50   Input ~ 0
 IOT27A
 Text GLabel 3950 1100 1    50   Output ~ 0
 SPI_INT
-Text GLabel 1350 4050 0    50   Input ~ 0
-DONE
+Text GLabel -6750 5000 0    50   Input ~ 0
+CDONE
 Text GLabel 3850 1100 1    50   BiDi ~ 0
 BR_3V3
 Text GLabel -6750 1700 0    50   Input ~ 0
@@ -819,4 +819,5 @@ Wire Wire Line
 Connection ~ 10350 5600
 Wire Wire Line
 	10350 5600 10250 5600
+NoConn ~ -6750 5200
 $EndSCHEMATC
