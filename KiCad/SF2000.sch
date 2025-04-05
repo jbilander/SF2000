@@ -467,13 +467,13 @@ GND
 $Comp
 L Device:R_Small R2
 U 1 1 61DA2771
-P 8600 1500
-F 0 "R2" H 8659 1546 50  0000 L CNN
-F 1 "3k" H 8659 1455 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 8600 1500 50  0001 C CNN
-F 3 "~" H 8600 1500 50  0001 C CNN
-	1    8600 1500
-	1    0    0    -1  
+P 4000 5600
+F 0 "R2" V 3900 5550 50  0000 L CNN
+F 1 "33Ω" V 4100 5500 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4000 5600 50  0001 C CNN
+F 3 "~" H 4000 5600 50  0001 C CNN
+	1    4000 5600
+	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:C_Small C9
@@ -746,7 +746,7 @@ F 3 "https://www.ti.com/lit/ds/symlink/sn74lvc1g17-q1.pdf" H 3850 6350 50  0001 
 $EndComp
 Text GLabel 3800 5200 2    50   Input ~ 0
 3V3
-Text GLabel 3800 5600 2    50   Output ~ 0
+Text GLabel 4200 5600 2    50   Output ~ 0
 C7M_3V3
 Text GLabel 2900 5600 0    50   Input ~ 0
 GND
@@ -1497,4 +1497,8 @@ XRDY
 NoConn ~ 1000 2450
 Wire Wire Line
 	6750 950  7200 950 
+Wire Wire Line
+	4200 5600 4100 5600
+Wire Wire Line
+	3900 5600 3800 5600
 $EndSCHEMATC
