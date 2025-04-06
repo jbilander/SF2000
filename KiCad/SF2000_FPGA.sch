@@ -195,15 +195,15 @@ Text GLabel -3350 5850 3    50   BiDi ~ 0
 D9_3V3
 Text GLabel -3250 5850 3    50   BiDi ~ 0
 D10_3V3
-Text GLabel 3600 6000 3    50   BiDi ~ 0
+Text GLabel -2850 5850 3    50   BiDi ~ 0
 D11_3V3
-Text GLabel 3700 6000 3    50   BiDi ~ 0
+Text GLabel -2750 5850 3    50   BiDi ~ 0
 D12_3V3
-Text GLabel 3800 6000 3    50   BiDi ~ 0
+Text GLabel -2650 5850 3    50   BiDi ~ 0
 D13_3V3
-Text GLabel 3900 6000 3    50   BiDi ~ 0
+Text GLabel -2550 5850 3    50   BiDi ~ 0
 D14_3V3
-Text GLabel 4000 6000 3    50   BiDi ~ 0
+Text GLabel -2450 5850 3    50   BiDi ~ 0
 D15_3V3
 Text GLabel -3450 5850 3    50   BiDi ~ 0
 D8_3V3
@@ -221,11 +221,11 @@ Text GLabel 6250 5400 2    50   BiDi ~ 0
 SD_D2
 Text GLabel 6250 5500 2    50   BiDi ~ 0
 SD_D3
-Text GLabel 6250 5600 2    50   Output ~ 0
+Text GLabel 6250 5600 3    50   Output ~ 0
 SD_CMD
-Text GLabel 6250 5000 2    50   Output ~ 0
+Text GLabel -2250 5850 3    50   Output ~ 0
 SD_CLK
-Text GLabel 6250 4700 2    50   Input ~ 0
+Text GLabel -2150 5850 3    50   Input ~ 0
 SD_CD
 Text GLabel 6250 3100 2    50   BiDi ~ 0
 D0_3V3
@@ -265,7 +265,7 @@ Text GLabel 5250 6000 3    50   Input ~ 0
 IDE_CS1_3V3
 Text GLabel 5100 6000 3    50   Input ~ 0
 IDE_CS0_3V3
-Text GLabel 4300 6000 3    50   Output ~ 0
+Text GLabel -2350 5850 3    50   Output ~ 0
 FLASH_A19
 Text GLabel 6250 5100 2    50   Input ~ 0
 OSC_CLK
@@ -528,8 +528,6 @@ Text GLabel 4150 1100 1    50   Input ~ 0
 SPI_MISO
 Text GLabel 4050 1100 1    50   Output ~ 0
 SPI_MOSI
-Text GLabel 6250 5200 2    50   Output ~ 0
-SPI_CLK
 $Comp
 L Device:R_Small R?
 U 1 1 6302BBCE
