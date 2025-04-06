@@ -1121,12 +1121,12 @@ Connection ~ 2800 6750
 $Comp
 L Device:C C17
 U 1 1 62446240
-P 3300 6600
-F 0 "C17" H 3350 6700 50  0000 L CNN
-F 1 "0.1uF" H 3300 6500 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3338 6450 50  0001 C CNN
-F 3 "~" H 3300 6600 50  0001 C CNN
-	1    3300 6600
+P 6150 5500
+F 0 "C17" H 6200 5600 50  0000 L CNN
+F 1 "0.1uF" H 6150 5400 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6188 5350 50  0001 C CNN
+F 3 "~" H 6150 5500 50  0001 C CNN
+	1    6150 5500
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1151,15 +1151,9 @@ F 3 "~" H 2800 6600 50  0001 C CNN
 	1    2800 6600
 	1    0    0    -1  
 $EndComp
-Connection ~ 3300 6450
-Wire Wire Line
-	3300 6450 3550 6450
 Connection ~ 3550 6450
 Wire Wire Line
 	3550 6450 3800 6450
-Connection ~ 3300 6750
-Wire Wire Line
-	3300 6750 3550 6750
 Connection ~ 3550 6750
 Wire Wire Line
 	3550 6750 3800 6750
@@ -1492,9 +1486,15 @@ Wire Wire Line
 Wire Wire Line
 	5550 5350 5850 5350
 Wire Wire Line
-	2800 6450 3300 6450
-Wire Wire Line
-	2800 6750 3300 6750
-Wire Wire Line
 	5550 5650 5850 5650
+Wire Wire Line
+	5850 5350 6150 5350
+Wire Wire Line
+	2800 6450 3550 6450
+Wire Wire Line
+	2800 6750 3550 6750
+Connection ~ 5850 5350
+Wire Wire Line
+	5850 5650 6150 5650
+Connection ~ 5850 5650
 $EndSCHEMATC

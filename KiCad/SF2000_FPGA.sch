@@ -43,11 +43,11 @@ Text GLabel 4450 1100 1    50   Input ~ 0
 A21_3V3
 Text GLabel 6250 1850 2    50   Input ~ 0
 A12_3V3
-Text GLabel 4200 6000 3    50   Input ~ 0
+Text GLabel -4050 5850 3    50   Input ~ 0
 UDS_3V3
-Text GLabel 4100 6000 3    50   Input ~ 0
+Text GLabel -3950 5850 3    50   Input ~ 0
 LDS_3V3
-Text GLabel 2700 6000 3    50   Input ~ 0
+Text GLabel -4650 5850 3    50   Input ~ 0
 RW_3V3
 Text GLabel 6250 1750 2    50   Input ~ 0
 A13_3V3
@@ -65,25 +65,25 @@ Text GLabel -6750 2700 0    50   BiDi ~ 0
 E_3V3
 Text GLabel -6750 4100 0    50   Input ~ 0
 TMS
-Text GLabel 3500 6000 3    50   Input ~ 0
+Text GLabel -3850 5850 3    50   Input ~ 0
 AS_CPU_3V3
 Text GLabel -5650 1000 1    50   Input ~ 0
 CFGIN_3V3
 Text GLabel -5450 1000 1    50   Output ~ 0
 CFGOUT_3V3
-Text GLabel 2300 6000 3    50   Input ~ 0
+Text GLabel -5150 5850 3    50   Input ~ 0
 HLT_3V3
-Text GLabel 2400 6000 3    50   Output ~ 0
+Text GLabel -5050 5850 3    50   Output ~ 0
 BR_CPU_3V3
-Text GLabel 2500 6000 3    50   Input ~ 0
+Text GLabel -4850 5850 3    50   Input ~ 0
 BG_CPU_3V3
-Text GLabel 2600 6000 3    50   Output ~ 0
+Text GLabel -4750 5850 3    50   Output ~ 0
 DTACK_CPU_3V3
-Text GLabel 2800 6000 3    50   Input ~ 0
+Text GLabel -4550 5850 3    50   Input ~ 0
 DTACK_MB_3V3
-Text GLabel 2900 6000 3    50   Input ~ 0
+Text GLabel -3750 5850 3    50   Input ~ 0
 BGACK_3V3
-Text GLabel 3000 6000 3    50   Output ~ 0
+Text GLabel -3550 5850 3    50   Output ~ 0
 AS_MB_3V3
 $Comp
 L Connector_Generic:Conn_02x05_Odd_Even JTAG1
@@ -191,9 +191,9 @@ Text GLabel -6750 3300 0    50   Input ~ 0
 JP2
 Text GLabel -6750 2200 0    50   Output ~ 0
 VMA_3V3
-Text GLabel 3200 6000 3    50   BiDi ~ 0
+Text GLabel -3350 5850 3    50   BiDi ~ 0
 D9_3V3
-Text GLabel 3350 6000 3    50   BiDi ~ 0
+Text GLabel -3250 5850 3    50   BiDi ~ 0
 D10_3V3
 Text GLabel 3600 6000 3    50   BiDi ~ 0
 D11_3V3
@@ -205,7 +205,7 @@ Text GLabel 3900 6000 3    50   BiDi ~ 0
 D14_3V3
 Text GLabel 4000 6000 3    50   BiDi ~ 0
 D15_3V3
-Text GLabel 3100 6000 3    50   BiDi ~ 0
+Text GLabel -3450 5850 3    50   BiDi ~ 0
 D8_3V3
 Text GLabel 4600 6000 3    50   Output ~ 0
 FLASH_WE
@@ -502,13 +502,13 @@ Text GLabel 7750 3100 2    50   Input ~ 0
 SS
 Text GLabel 1800 6000 3    50   Input ~ 0
 JP6
-Text GLabel 2200 6000 3    50   Input ~ 0
+Text GLabel -5250 5850 3    50   Input ~ 0
 BERR_3V3
-Text GLabel 1900 6000 3    50   Input ~ 0
+Text GLabel -5550 5850 3    50   Input ~ 0
 IPL0_3V3
-Text GLabel 2000 6000 3    50   Input ~ 0
+Text GLabel -5450 5850 3    50   Input ~ 0
 IPL1_3V3
-Text GLabel 2100 6000 3    50   Input ~ 0
+Text GLabel -5350 5850 3    50   Input ~ 0
 IPL2_3V3
 Text GLabel 6250 2350 2    50   Input ~ 0
 A7_3V3
@@ -821,4 +821,12 @@ F 3 "~" H 9850 3950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 NoConn ~ -3550 1000
+Text GLabel -6750 4700 0    50   Output ~ 0
+SPI_SS
+Text GLabel -6750 4400 0    50   Input ~ 0
+DO
+Text GLabel -6750 4500 0    50   Output ~ 0
+DI
+Text GLabel -6750 4600 0    50   Output ~ 0
+SCLK
 $EndSCHEMATC
