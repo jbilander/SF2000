@@ -15,8 +15,8 @@ Comment4 ""
 $EndDescr
 Text GLabel 3400 4450 3    50   Input ~ 0
 GND
-Text GLabel -6750 4900 0    50   Output ~ 0
-CLKCPU_3V3
+Text GLabel -7350 5050 3    50   Output ~ 0
+CLKCPU
 Text GLabel -6750 3000 0    50   Input ~ 0
 C7M_3V3
 Text GLabel 5000 6000 3    50   Output ~ 0
@@ -529,20 +529,16 @@ SPI_MOSI
 $Comp
 L Device:R_Small R?
 U 1 1 6302BBCE
-P 11000 3950
+P -7250 4900
 AR Path="/6302BBCE" Ref="R?"  Part="1" 
-AR Path="/620D263D/6302BBCE" Ref="R11"  Part="1" 
-F 0 "R11" V 11100 3900 50  0000 L CNN
-F 1 "33Ω" V 10900 3900 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 11000 3950 50  0001 C CNN
-F 3 "~" H 11000 3950 50  0001 C CNN
-	1    11000 3950
-	1    0    0    -1  
+AR Path="/620D263D/6302BBCE" Ref="R1"  Part="1" 
+F 0 "R1" V -7350 4800 50  0000 L CNN
+F 1 "33Ω" V -7150 4850 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H -7250 4900 50  0001 C CNN
+F 3 "~" H -7250 4900 50  0001 C CNN
+	1    -7250 4900
+	0    1    1    0   
 $EndComp
-Text GLabel 11000 3850 1    50   Input ~ 0
-GND
-Text GLabel 11000 4050 3    50   Input ~ 0
-MODE1
 Text GLabel -6750 3100 0    50   Input ~ 0
 RST_3V3
 Connection ~ 2500 1100
@@ -770,8 +766,8 @@ L Device:R_Small R?
 U 1 1 68C712CB
 P 9550 3950
 AR Path="/68C712CB" Ref="R?"  Part="1" 
-AR Path="/620D263D/68C712CB" Ref="R1"  Part="1" 
-F 0 "R1" V 9650 3900 50  0000 L CNN
+AR Path="/620D263D/68C712CB" Ref="R11"  Part="1" 
+F 0 "R11" V 9650 3900 50  0000 L CNN
 F 1 "100k" V 9450 3850 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 9550 3950 50  0001 C CNN
 F 3 "~" H 9550 3950 50  0001 C CNN
@@ -825,4 +821,8 @@ Text GLabel -6750 4500 0    50   Output ~ 0
 DI
 Text GLabel -6750 4600 0    50   Output ~ 0
 SCLK
+Wire Wire Line
+	-6750 4900 -7150 4900
+Wire Wire Line
+	-7350 4900 -7350 5050
 $EndSCHEMATC

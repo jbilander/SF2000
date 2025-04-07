@@ -25,7 +25,7 @@ F 3 "https://www.nxp.com/docs/en/reference-manual/MC68000UM.pdf" H 2500 3700 50 
 	1    0    0    -1  
 $EndComp
 Text GLabel 1500 1500 0    50   Input ~ 0
-CLKCPU_3V3
+CLKCPU
 Text GLabel 3500 2000 2    50   Output ~ 0
 A5_3V3
 Text GLabel 3500 2100 2    50   Output ~ 0
