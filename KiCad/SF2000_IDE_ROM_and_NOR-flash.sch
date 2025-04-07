@@ -162,8 +162,6 @@ Text GLabel 9550 3600 2    50   Input ~ 0
 FLASH_OE
 Text GLabel 8550 2600 0    50   Input ~ 0
 FLASH_WE
-Text GLabel 8550 2700 0    50   Input ~ 0
-FLASH_RST
 Text GLabel 6550 2700 2    50   Input ~ 0
 ROM_OE
 Text GLabel 6550 2600 2    50   Input ~ 0
@@ -497,4 +495,6 @@ Text Notes 850  2650 0    50   ~ 0
 NOT CURRENTLY USED
 NoConn ~ 8550 3000
 NoConn ~ 8550 2900
+Text GLabel 8550 2700 0    50   Input ~ 0
+RST_3V3
 $EndSCHEMATC
