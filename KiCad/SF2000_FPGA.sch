@@ -211,8 +211,6 @@ Text GLabel 4600 6000 3    50   Output ~ 0
 FLASH_WE
 Text GLabel 4500 6000 3    50   Output ~ 0
 FLASH_RST
-Text GLabel 4400 6000 3    50   Input ~ 0
-FLASH_BUSY
 Text GLabel 6250 4900 2    50   BiDi ~ 0
 SD_D0
 Text GLabel 6250 4800 2    50   BiDi ~ 0

@@ -164,8 +164,6 @@ Text GLabel 8550 2600 0    50   Input ~ 0
 FLASH_WE
 Text GLabel 8550 2700 0    50   Input ~ 0
 FLASH_RST
-Text GLabel 8550 3000 0    50   Output ~ 0
-FLASH_BUSY
 Text GLabel 6550 2700 2    50   Input ~ 0
 ROM_OE
 Text GLabel 6550 2600 2    50   Input ~ 0
@@ -497,6 +495,6 @@ Wire Notes Line
 	750  3650 750  2550
 Text Notes 850  2650 0    50   ~ 0
 NOT CURRENTLY USED
-Text GLabel 8550 2900 0    50   Input ~ 0
-WP
+NoConn ~ 8550 3000
+NoConn ~ 8550 2900
 $EndSCHEMATC
