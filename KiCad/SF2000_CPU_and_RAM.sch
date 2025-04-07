@@ -509,9 +509,9 @@ Wire Wire Line
 	1150 5450 1250 5450
 Text GLabel 1500 4700 0    50   Input ~ 0
 AVEC
-Text GLabel 1050 5850 3    50   Input ~ 0
-AVEC
 Text GLabel 1150 5850 3    50   Input ~ 0
+AVEC
+Text GLabel 1050 5850 3    50   Input ~ 0
 CDONE
 Text GLabel 950  5850 3    50   Input ~ 0
 FLASH_WE
