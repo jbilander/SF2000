@@ -465,17 +465,6 @@ $EndComp
 Text GLabel 5900 750  1    50   Input ~ 0
 GND
 $Comp
-L Device:R_Small R1
-U 1 1 61DA2771
-P 4000 5600
-F 0 "R1" V 3900 5550 50  0000 L CNN
-F 1 "33Ω" V 4100 5500 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4000 5600 50  0001 C CNN
-F 3 "~" H 4000 5600 50  0001 C CNN
-	1    4000 5600
-	0    -1   -1   0   
-$EndComp
-$Comp
 L Device:C_Small C9
 U 1 1 61DA7AE4
 P 7500 850
@@ -677,10 +666,10 @@ Wire Wire Line
 Wire Wire Line
 	6800 1050 6750 1050
 $Comp
-L Device:R_Small R3
+L Device:R_Small R7
 U 1 1 61FB0B67
 P 2350 2250
-F 0 "R3" H 2409 2296 50  0000 L CNN
+F 0 "R7" H 2400 2300 50  0000 L CNN
 F 1 "10k" H 2409 2205 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2350 2250 50  0001 C CNN
 F 3 "~" H 2350 2250 50  0001 C CNN
@@ -1497,4 +1486,15 @@ Connection ~ 5850 5350
 Wire Wire Line
 	5850 5650 6150 5650
 Connection ~ 5850 5650
+$Comp
+L Device:R_Small R2
+U 1 1 61DA2771
+P 4000 5600
+F 0 "R2" V 3900 5550 50  0000 L CNN
+F 1 "33" V 4000 5550 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4000 5600 50  0001 C CNN
+F 3 "~" H 4000 5600 50  0001 C CNN
+	1    4000 5600
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC

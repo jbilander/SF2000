@@ -391,8 +391,8 @@ L Device:R_Small R?
 U 1 1 62517BB4
 P 7500 1850
 AR Path="/62517BB4" Ref="R?"  Part="1" 
-AR Path="/620D263D/62517BB4" Ref="R4"  Part="1" 
-F 0 "R4" H 7559 1896 50  0000 L CNN
+AR Path="/620D263D/62517BB4" Ref="R8"  Part="1" 
+F 0 "R8" H 7559 1896 50  0000 L CNN
 F 1 "10k" H 7559 1805 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7500 1850 50  0001 C CNN
 F 3 "~" H 7500 1850 50  0001 C CNN
@@ -404,8 +404,8 @@ L Device:R_Small R?
 U 1 1 62519236
 P 8000 2050
 AR Path="/62519236" Ref="R?"  Part="1" 
-AR Path="/620D263D/62519236" Ref="R5"  Part="1" 
-F 0 "R5" V 8100 2000 50  0000 L CNN
+AR Path="/620D263D/62519236" Ref="R9"  Part="1" 
+F 0 "R9" V 8100 2000 50  0000 L CNN
 F 1 "10k" V 7900 2000 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 8000 2050 50  0001 C CNN
 F 3 "~" H 8000 2050 50  0001 C CNN
@@ -440,9 +440,9 @@ L Device:R_Small R?
 U 1 1 625C5BBC
 P 9900 3050
 AR Path="/625C5BBC" Ref="R?"  Part="1" 
-AR Path="/620D263D/625C5BBC" Ref="R6"  Part="1" 
-F 0 "R6" V 10000 3000 50  0000 L CNN
-F 1 "220" V 9800 3000 50  0000 L CNN
+AR Path="/620D263D/625C5BBC" Ref="R4"  Part="1" 
+F 0 "R4" V 10000 3000 50  0000 L CNN
+F 1 "330" V 9800 3000 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 9900 3050 50  0001 C CNN
 F 3 "~" H 9900 3050 50  0001 C CNN
 	1    9900 3050
@@ -529,9 +529,9 @@ L Device:R_Small R?
 U 1 1 6302BBCE
 P -7250 4900
 AR Path="/6302BBCE" Ref="R?"  Part="1" 
-AR Path="/620D263D/6302BBCE" Ref="R2"  Part="1" 
-F 0 "R2" V -7350 4800 50  0000 L CNN
-F 1 "33Ω" V -7150 4850 50  0000 L CNN
+AR Path="/620D263D/6302BBCE" Ref="R3"  Part="1" 
+F 0 "R3" V -7350 4800 50  0000 L CNN
+F 1 "33" V -7250 4850 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H -7250 4900 50  0001 C CNN
 F 3 "~" H -7250 4900 50  0001 C CNN
 	1    -7250 4900
@@ -723,56 +723,30 @@ TDO
 Text GLabel 10150 5100 3    50   Input ~ 0
 TDI
 NoConn ~ 7750 3200
-Text GLabel 10300 4050 3    50   Input ~ 0
+Text GLabel 10750 4050 3    50   Input ~ 0
 ACTIVE
-Text GLabel 10300 3850 1    50   Input ~ 0
+Text GLabel 10750 3850 1    50   Input ~ 0
 3V3
-$Comp
-L Device:R_Small R?
-U 1 1 63189641
-P 10300 3950
-AR Path="/63189641" Ref="R?"  Part="1" 
-AR Path="/620D263D/63189641" Ref="R13"  Part="1" 
-F 0 "R13" V 10400 3900 50  0000 L CNN
-F 1 "10k" V 10200 3900 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 10300 3950 50  0001 C CNN
-F 3 "~" H 10300 3950 50  0001 C CNN
-	1    10300 3950
-	1    0    0    -1  
-$EndComp
-Text GLabel 9950 3850 1    50   Input ~ 0
+Text GLabel 9700 3850 1    50   Input ~ 0
 3V3
 $Comp
 L Device:R_Small R?
 U 1 1 6314ED20
-P 9950 3950
+P 9700 3950
 AR Path="/6314ED20" Ref="R?"  Part="1" 
-AR Path="/620D263D/6314ED20" Ref="R12"  Part="1" 
-F 0 "R12" V 10050 3900 50  0000 L CNN
-F 1 "10k" V 9850 3900 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 9950 3950 50  0001 C CNN
-F 3 "~" H 9950 3950 50  0001 C CNN
-	1    9950 3950
+AR Path="/620D263D/6314ED20" Ref="R5"  Part="1" 
+F 0 "R5" V 9800 3900 50  0000 L CNN
+F 1 "10k" V 9600 3900 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 9700 3950 50  0001 C CNN
+F 3 "~" H 9700 3950 50  0001 C CNN
+	1    9700 3950
 	1    0    0    -1  
 $EndComp
-Text GLabel 9600 3850 1    50   Input ~ 0
+Text GLabel 10050 3850 1    50   Input ~ 0
 3V3
-$Comp
-L Device:R_Small R?
-U 1 1 68C712CB
-P 10650 3950
-AR Path="/68C712CB" Ref="R?"  Part="1" 
-AR Path="/620D263D/68C712CB" Ref="R11"  Part="1" 
-F 0 "R11" V 10750 3900 50  0000 L CNN
-F 1 "100k" V 10550 3850 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 10650 3950 50  0001 C CNN
-F 3 "~" H 10650 3950 50  0001 C CNN
-	1    10650 3950
-	1    0    0    -1  
-$EndComp
-Text GLabel 10650 3850 1    50   Input ~ 0
+Text GLabel 10400 3850 1    50   Input ~ 0
 3V3
-Text GLabel 10650 4050 3    50   Input ~ 0
+Text GLabel 10400 4050 3    50   Input ~ 0
 CRESET_N
 Text GLabel -6750 5100 0    50   Input ~ 0
 CRESET_N
@@ -793,19 +767,19 @@ Connection ~ 10350 5600
 Wire Wire Line
 	10350 5600 10250 5600
 NoConn ~ -6750 5200
-Text GLabel 9600 4050 3    50   Input ~ 0
+Text GLabel 10050 4050 3    50   Input ~ 0
 JP2
 $Comp
 L Device:R_Small R?
 U 1 1 626987D6
-P 9600 3950
+P 10050 3950
 AR Path="/626987D6" Ref="R?"  Part="1" 
-AR Path="/620D263D/626987D6" Ref="R9"  Part="1" 
-F 0 "R9" V 9700 3900 50  0000 L CNN
-F 1 "10k" V 9500 3900 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 9600 3950 50  0001 C CNN
-F 3 "~" H 9600 3950 50  0001 C CNN
-	1    9600 3950
+AR Path="/620D263D/626987D6" Ref="R6"  Part="1" 
+F 0 "R6" V 10150 3900 50  0000 L CNN
+F 1 "10k" V 9950 3900 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 10050 3950 50  0001 C CNN
+F 3 "~" H 10050 3950 50  0001 C CNN
+	1    10050 3950
 	1    0    0    -1  
 $EndComp
 NoConn ~ -3550 1000
@@ -821,8 +795,34 @@ Wire Wire Line
 	-6750 4900 -7150 4900
 Wire Wire Line
 	-7350 4900 -7350 5050
-Text GLabel 9950 4050 3    50   Input ~ 0
+Text GLabel 9700 4050 3    50   Input ~ 0
 SPI_SS
 Text GLabel 7750 3100 2    50   Input ~ 0
 SPI_SS
+$Comp
+L Device:R_Small R?
+U 1 1 63189641
+P 10750 3950
+AR Path="/63189641" Ref="R?"  Part="1" 
+AR Path="/620D263D/63189641" Ref="R11"  Part="1" 
+F 0 "R11" V 10850 3900 50  0000 L CNN
+F 1 "10k" V 10650 3900 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 10750 3950 50  0001 C CNN
+F 3 "~" H 10750 3950 50  0001 C CNN
+	1    10750 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 68C712CB
+P 10400 3950
+AR Path="/68C712CB" Ref="R?"  Part="1" 
+AR Path="/620D263D/68C712CB" Ref="R10"  Part="1" 
+F 0 "R10" V 10500 3900 50  0000 L CNN
+F 1 "100k" V 10300 3850 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 10400 3950 50  0001 C CNN
+F 3 "~" H 10400 3950 50  0001 C CNN
+	1    10400 3950
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
