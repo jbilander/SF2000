@@ -432,10 +432,10 @@ Connection ~ 4000 950
 Wire Wire Line
 	4000 950  4050 950 
 $Comp
-L Device:C_Small C3
+L Device:C_Small C26
 U 1 1 61D97053
 P 4050 1050
-F 0 "C3" H 4100 850 50  0000 L CNN
+F 0 "C26" H 4100 850 50  0000 L CNN
 F 1 "0.1uF" H 4100 950 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4050 1050 50  0001 C CNN
 F 3 "~" H 4050 1050 50  0001 C CNN
@@ -1283,10 +1283,10 @@ Text GLabel 6300 6750 0    50   Input ~ 0
 Text Notes 6350 6400 0    50   ~ 0
 1206
 $Comp
-L Device:C C26
+L Device:C C3
 U 1 1 620E9DC4
 P 5600 6600
-F 0 "C26" H 5650 6700 50  0000 L CNN
+F 0 "C3" H 5650 6700 50  0000 L CNN
 F 1 "10uF" H 5600 6500 50  0000 L CNN
 F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 5638 6450 50  0001 C CNN
 F 3 "~" H 5600 6600 50  0001 C CNN
@@ -1431,8 +1431,6 @@ Text GLabel 2500 950  2    50   Input ~ 0
 GND
 Text GLabel 5600 6450 0    50   Input ~ 0
 GND
-Text GLabel 5600 6750 0    50   Input ~ 0
-3V3
 Text GLabel 2850 2850 0    50   Input ~ 0
 GND
 NoConn ~ 3850 2950
@@ -1497,4 +1495,6 @@ F 3 "~" H 4000 5600 50  0001 C CNN
 	1    4000 5600
 	0    -1   -1   0   
 $EndComp
+Text GLabel 5600 6750 0    50   Output ~ 0
+CRESET_N
 $EndSCHEMATC
