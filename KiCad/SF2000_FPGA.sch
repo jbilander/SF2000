@@ -207,7 +207,7 @@ Text GLabel -2450 5850 3    50   BiDi ~ 0
 D15_3V3
 Text GLabel -3450 5850 3    50   BiDi ~ 0
 D8_3V3
-Text GLabel 4600 6000 3    50   Output ~ 0
+Text GLabel -900 5100 2    50   Output ~ 0
 FLASH_WE
 Text GLabel 4500 6000 3    50   Output ~ 0
 FLASH_RST

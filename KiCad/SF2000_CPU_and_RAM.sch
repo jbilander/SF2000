@@ -517,4 +517,6 @@ Text GLabel 1050 5850 3    50   Input ~ 0
 AVEC
 Text GLabel 1150 5850 3    50   Input ~ 0
 CDONE
+Text GLabel 950  5850 3    50   Input ~ 0
+FLASH_WE
 $EndSCHEMATC
