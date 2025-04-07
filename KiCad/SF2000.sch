@@ -465,10 +465,10 @@ $EndComp
 Text GLabel 5900 750  1    50   Input ~ 0
 GND
 $Comp
-L Device:R_Small R2
+L Device:R_Small R1
 U 1 1 61DA2771
 P 4000 5600
-F 0 "R2" V 3900 5550 50  0000 L CNN
+F 0 "R1" V 3900 5550 50  0000 L CNN
 F 1 "33Ω" V 4100 5500 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4000 5600 50  0001 C CNN
 F 3 "~" H 4000 5600 50  0001 C CNN
