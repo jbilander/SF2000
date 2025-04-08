@@ -86,10 +86,10 @@ BGACK_3V3
 Text GLabel -3550 5850 3    50   Output ~ 0
 AS_MB_3V3
 $Comp
-L Connector_Generic:Conn_02x05_Odd_Even JTAG1
+L Connector_Generic:Conn_02x05_Odd_Even J3
 U 1 1 625BCAC6
 P 7450 3200
-F 0 "JTAG1" H 7500 2775 50  0000 C CNN
+F 0 "J3" H 7500 2775 50  0000 C CNN
 F 1 "Conn_02x05_Odd_Even" H 7500 2866 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical" H 7450 3200 50  0001 C CNN
 F 3 "~" H 7450 3200 50  0001 C CNN
@@ -155,24 +155,6 @@ Wire Wire Line
 Text GLabel 7500 1650 1    50   Input ~ 0
 3V3
 $Comp
-L Connector_Generic:Conn_02x03_Odd_Even J3
-U 1 1 62704BD7
-P 8950 3700
-F 0 "J3" H 9000 3350 50  0000 C CNN
-F 1 "Conn_02x03_Odd_Even" H 9000 3450 50  0000 C CNN
-F 2 "Connector_PinHeader_2.00mm:PinHeader_2x03_P2.00mm_Vertical" H 8950 3700 50  0001 C CNN
-F 3 "~" H 8950 3700 50  0001 C CNN
-	1    8950 3700
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	9150 3600 9150 3700
-Connection ~ 9150 3700
-Wire Wire Line
-	9150 3700 9150 3800
-Text GLabel 9150 3600 2    50   Input ~ 0
-GND
-$Comp
 L Connector_Generic:Conn_02x01 J4
 U 1 1 6276C760
 P 9350 4850
@@ -209,8 +191,6 @@ Text GLabel -3450 5850 3    50   BiDi ~ 0
 D8_3V3
 Text GLabel -900 5100 2    50   Output ~ 0
 FLASH_WE
-Text GLabel 4500 6000 3    50   Output ~ 0
-FLASH_RST
 Text GLabel 6250 4900 2    50   BiDi ~ 0
 SD_D0
 Text GLabel 6250 4800 2    50   BiDi ~ 0
@@ -520,10 +500,6 @@ Text GLabel 6250 1650 2    50   Input ~ 0
 A14_3V3
 Text GLabel 6250 1550 2    50   Input ~ 0
 A15_3V3
-Text GLabel 4150 1100 1    50   Input ~ 0
-SPI_MISO
-Text GLabel 4050 1100 1    50   Output ~ 0
-SPI_MOSI
 $Comp
 L Device:R_Small R?
 U 1 1 6302BBCE
@@ -615,8 +591,6 @@ Text GLabel 10250 6000 3    50   Input ~ 0
 RST_3V3
 Text GLabel 5150 1100 1    50   Input ~ 0
 IOT27A
-Text GLabel 3950 1100 1    50   Output ~ 0
-SPI_INT
 Text GLabel -6750 5000 0    50   Input ~ 0
 CDONE
 Text GLabel -5350 1000 1    50   BiDi ~ 0
@@ -826,10 +800,10 @@ F 3 "~" H 10400 3950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Memory_Flash:AT25SF081-SSHD-X U?
+L Memory_Flash:AT25SF081-SSHD-X U20
 U 1 1 6925ADB2
 P 7850 4550
-F 0 "U?" H 7800 4600 50  0000 L CNN
+F 0 "U20" H 7800 4600 50  0000 L CNN
 F 1 "AT25SF081B-SSH" H 7050 5000 50  0000 L CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 7850 3950 50  0001 C CNN
 F 3 "https://www.mouser.com/ProductDetail/988-AT25SF081-SSH-B" H 7850 4550 50  0001 C CNN
