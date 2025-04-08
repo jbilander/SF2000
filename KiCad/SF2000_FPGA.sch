@@ -17,7 +17,7 @@ Text GLabel -3650 4450 3    50   Input ~ 0
 GND
 Text GLabel 600  5150 3    50   Output ~ 0
 CLKCPU
-Text GLabel 1200 3100 0    50   Input ~ 0
+Text GLabel 1200 3200 0    50   Input ~ 0
 C7M_3V3
 Text GLabel -2050 6000 3    50   Output ~ 0
 ROM_WE
@@ -61,7 +61,7 @@ Text GLabel -2200 1100 1    50   Input ~ 0
 A17_3V3
 Text GLabel 1200 2000 0    50   Input ~ 0
 VPA_3V3
-Text GLabel 1200 2800 0    50   BiDi ~ 0
+Text GLabel 1200 3100 0    50   BiDi ~ 0
 E_3V3
 Text GLabel 1200 4200 0    50   Input ~ 0
 TMS
@@ -119,18 +119,16 @@ JP2
 $Comp
 L Device:R_Pack04 RN1
 U 1 1 625F56E7
-P 10350 5800
-F 0 "RN1" H 10538 5846 50  0000 L CNN
-F 1 "10k_Pack04" H 10538 5755 50  0000 L CNN
-F 2 "SF2000:RESCAF80P320X160X60-8N" V 10625 5800 50  0001 C CNN
-F 3 "~" H 10350 5800 50  0001 C CNN
-	1    10350 5800
+P 9050 2000
+F 0 "RN1" H 9238 2046 50  0000 L CNN
+F 1 "10k_Pack04" H 9238 1955 50  0000 L CNN
+F 2 "SF2000:RESCAF80P320X160X60-8N" V 9325 2000 50  0001 C CNN
+F 3 "~" H 9050 2000 50  0001 C CNN
+	1    9050 2000
 	1    0    0    -1  
 $EndComp
-Text GLabel 10150 5600 1    50   Input ~ 0
+Text GLabel 8850 1800 1    50   Input ~ 0
 3V3
-Text GLabel 10450 6000 3    50   Input ~ 0
-JP5
 $Comp
 L Device:R_Pack04 RN2
 U 1 1 6265DCDE
@@ -152,7 +150,7 @@ Wire Wire Line
 Connection ~ 10350 4700
 Wire Wire Line
 	10350 4700 10450 4700
-Text GLabel 7950 950  1    50   Input ~ 0
+Text GLabel 10450 2300 1    50   Input ~ 0
 3V3
 $Comp
 L Connector_Generic:Conn_02x01 J4
@@ -167,7 +165,7 @@ F 3 "~" H 9350 4850 50  0001 C CNN
 $EndComp
 Text GLabel 9550 4850 2    50   Input ~ 0
 GND
-Text GLabel 9250 1350 2    50   Output ~ 0
+Text GLabel 10150 1800 2    50   Output ~ 0
 JP1
 Text GLabel 1200 3400 0    50   Input ~ 0
 JP2
@@ -316,80 +314,78 @@ F 3 "~" H 9350 5250 50  0001 C CNN
 $EndComp
 Text GLabel 9550 5250 2    50   Input ~ 0
 GND
-Text GLabel 8900 1650 3    50   Input ~ 0
+Text GLabel 9800 2100 3    50   Input ~ 0
 GND
-Text GLabel 10400 1600 2    50   Input ~ 0
+Text GLabel 10900 2950 2    50   Input ~ 0
 3V3
 Wire Wire Line
-	8900 1350 9250 1350
+	9800 1800 10150 1800
 $Comp
 L Device:C C?
 U 1 1 624A6DA8
-P 8900 1500
+P 9800 1950
 AR Path="/624A6DA8" Ref="C?"  Part="1" 
 AR Path="/620D263D/624A6DA8" Ref="C24"  Part="1" 
-F 0 "C24" H 8950 1600 50  0000 L CNN
-F 1 "0.1uF" H 8900 1400 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 8938 1350 50  0001 C CNN
-F 3 "~" H 8900 1500 50  0001 C CNN
-	1    8900 1500
+F 0 "C24" H 9850 2050 50  0000 L CNN
+F 1 "0.1uF" H 9800 1850 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 9838 1800 50  0001 C CNN
+F 3 "~" H 9800 1950 50  0001 C CNN
+	1    9800 1950
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C?
 U 1 1 624B4CFC
-P 10150 1750
+P 10650 3100
 AR Path="/624B4CFC" Ref="C?"  Part="1" 
 AR Path="/620D263D/624B4CFC" Ref="C25"  Part="1" 
-F 0 "C25" H 10200 1850 50  0000 L CNN
-F 1 "0.1uF" H 10150 1650 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 10188 1600 50  0001 C CNN
-F 3 "~" H 10150 1750 50  0001 C CNN
-	1    10150 1750
+F 0 "C25" H 10700 3200 50  0000 L CNN
+F 1 "0.1uF" H 10650 3000 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 10688 2950 50  0001 C CNN
+F 3 "~" H 10650 3100 50  0001 C CNN
+	1    10650 3100
 	1    0    0    -1  
 $EndComp
-Text GLabel 10150 1900 3    50   Input ~ 0
+Text GLabel 10650 3250 3    50   Input ~ 0
 GND
 Wire Wire Line
-	9950 1600 10150 1600
-Connection ~ 10150 1600
+	10450 2950 10650 2950
+Connection ~ 10650 2950
 Wire Wire Line
-	10150 1600 10400 1600
+	10650 2950 10900 2950
 $Comp
 L Device:R_Small R?
 U 1 1 62517BB4
-P 7950 1150
+P 10450 2500
 AR Path="/62517BB4" Ref="R?"  Part="1" 
 AR Path="/620D263D/62517BB4" Ref="R8"  Part="1" 
-F 0 "R8" H 8009 1196 50  0000 L CNN
-F 1 "10k" H 8009 1105 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7950 1150 50  0001 C CNN
-F 3 "~" H 7950 1150 50  0001 C CNN
-	1    7950 1150
+F 0 "R8" H 10509 2546 50  0000 L CNN
+F 1 "10k" H 10509 2455 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 10450 2500 50  0001 C CNN
+F 3 "~" H 10450 2500 50  0001 C CNN
+	1    10450 2500
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R_Small R?
 U 1 1 62519236
-P 8450 1350
+P 10950 2700
 AR Path="/62519236" Ref="R?"  Part="1" 
 AR Path="/620D263D/62519236" Ref="R9"  Part="1" 
-F 0 "R9" V 8550 1300 50  0000 L CNN
-F 1 "10k" V 8350 1300 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 8450 1350 50  0001 C CNN
-F 3 "~" H 8450 1350 50  0001 C CNN
-	1    8450 1350
+F 0 "R9" V 11050 2650 50  0000 L CNN
+F 1 "10k" V 10850 2650 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 10950 2700 50  0001 C CNN
+F 3 "~" H 10950 2700 50  0001 C CNN
+	1    10950 2700
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	7950 1050 7950 950 
+	10450 2400 10450 2300
 Wire Wire Line
-	7950 1250 7950 1350
+	10450 2600 10450 2700
 Wire Wire Line
-	8350 1350 7950 1350
-Wire Wire Line
-	8550 1350 8900 1350
-Connection ~ 8900 1350
+	10850 2700 10450 2700
+Connection ~ 9800 1800
 $Comp
 L Device:R_Small R?
 U 1 1 625C5BBC
@@ -420,13 +416,8 @@ Text GLabel 8400 5100 2    50   Input ~ 0
 GND
 Text Label 7900 5100 3    50   ~ 0
 SD_LED
-Text GLabel 10150 6000 3    50   Input ~ 0
-JP9
 Text GLabel -5700 3550 0    50   Input ~ 0
 JP9
-Wire Wire Line
-	7950 1900 7950 1350
-Connection ~ 7950 1350
 Text GLabel 1200 2100 0    50   BiDi ~ 0
 BG_3V3
 Text GLabel 7700 2700 0    50   Input ~ 0
@@ -468,7 +459,7 @@ F 3 "~" H 700 5000 50  0001 C CNN
 	1    700  5000
 	0    1    1    0   
 $EndComp
-Text GLabel 1200 3200 0    50   Input ~ 0
+Text GLabel 1200 2800 0    50   Input ~ 0
 RST_3V3
 Connection ~ -4550 1100
 Connection ~ -3050 4450
@@ -542,7 +533,7 @@ F 3 "https://www.mouser.com/datasheet/2/1033/GW1N_series_of_FPGA_Products_Data_S
 	1    -3250 3550
 	1    0    0    -1  
 $EndComp
-Text GLabel 10250 6000 3    50   Input ~ 0
+Text GLabel 8850 2200 3    50   Input ~ 0
 RST_3V3
 Text GLabel -1900 1100 1    50   Input ~ 0
 IOT27A
@@ -679,20 +670,11 @@ Text GLabel 1200 5200 0    50   Input ~ 0
 CRESET_N
 Text GLabel 8200 2300 2    50   Input ~ 0
 CRESET_N
+Connection ~ 8950 1800
 Wire Wire Line
-	8700 1900 8700 2600
+	8950 1800 8850 1800
 Wire Wire Line
-	7950 1900 8700 1900
-Wire Wire Line
-	8200 2600 8700 2600
-Wire Wire Line
-	10450 5600 10350 5600
-Connection ~ 10250 5600
-Wire Wire Line
-	10250 5600 10150 5600
-Connection ~ 10350 5600
-Wire Wire Line
-	10350 5600 10250 5600
+	9050 1800 8950 1800
 NoConn ~ 1200 5300
 Text GLabel 10050 4050 3    50   Input ~ 0
 JP2
@@ -722,7 +704,7 @@ Wire Wire Line
 	1200 5000 800  5000
 Wire Wire Line
 	600  5000 600  5150
-Text GLabel 9700 4050 3    50   Input ~ 0
+Text GLabel 8950 2200 3    50   Input ~ 0
 SPI_SS
 Text GLabel 8200 2400 2    50   Input ~ 0
 SPI_SS
@@ -779,4 +761,19 @@ Text GLabel 8900 3650 2    50   Output ~ 0
 DO
 Wire Wire Line
 	7050 5100 7550 5100
+Wire Wire Line
+	9050 2200 9050 2300
+Wire Wire Line
+	9050 2300 9150 2300
+Wire Wire Line
+	9150 2300 9150 2200
+Connection ~ 9050 2300
+Wire Wire Line
+	9050 2300 9050 2600
+Wire Wire Line
+	9150 1800 9800 1800
+Wire Wire Line
+	8200 2600 9050 2600
+Text GLabel 9700 4050 3    50   Input ~ 0
+FLASH_OE
 $EndSCHEMATC
