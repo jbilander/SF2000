@@ -375,7 +375,7 @@ Text GLabel 2850 3550 0    50   Input ~ 0
 4V3
 Text GLabel 5850 950  0    50   Input ~ 0
 +5VDC
-Text GLabel 6350 1350 3    50   Input ~ 0
+Text GLabel 6450 1350 2    50   Input ~ 0
 GND
 $Comp
 L SF2000:LM1117-3.3-Regulator_Linear U1
@@ -615,17 +615,6 @@ F 3 "~" H 2150 2450 50  0001 C CNN
 $EndComp
 Text GLabel 2350 2450 3    50   Input ~ 0
 CFGIN
-$Comp
-L Regulator_Linear:TPS73643DBV U2
-U 1 1 61F6B37B
-P 6350 1050
-F 0 "U2" H 6350 1100 50  0000 C CNN
-F 1 "ABLIC S-1132B43-M5T1U" H 6550 1350 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-5" H 6350 1375 50  0001 C CIN
-F 3 "https://www.mouser.com/datasheet/2/1490/S1132_E-3430731.pdf" H 6350 1000 50  0001 C CNN
-	1    6350 1050
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5850 950  5900 950 
 Connection ~ 5900 950 
@@ -637,13 +626,13 @@ Connection ~ 5950 950
 $Comp
 L Device:C_Small C7
 U 1 1 61F7EF31
-P 5100 6100
-F 0 "C7" H 5150 6050 50  0000 L CNN
-F 1 "0.33uF" H 4950 6200 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 5100 6100 50  0001 C CNN
-F 3 "~" H 5100 6100 50  0001 C CNN
-	1    5100 6100
-	-1   0    0    1   
+P 8350 850
+F 0 "C7" H 8150 1000 50  0000 L CNN
+F 1 "2.2uF" H 8050 900 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 8350 850 50  0001 C CNN
+F 3 "~" H 8350 850 50  0001 C CNN
+	1    8350 850 
+	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C_Small C8
@@ -1492,4 +1481,72 @@ Wire Wire Line
 	7400 950  7650 950 
 Wire Wire Line
 	7100 950  7400 950 
+$Comp
+L Regulator_Linear:TLV73312PDBV U3
+U 1 1 691DDB1F
+P 8700 1050
+F 0 "U3" H 8700 1392 50  0000 C CNN
+F 1 "TLV74312PDBV" H 8700 1300 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 8700 1375 50  0001 C CIN
+F 3 "https://www.ti.com/lit/ds/symlink/tlv743p.pdf?ts=1744052905730" H 8700 1050 50  0001 C CNN
+	1    8700 1050
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	2850 500  2850 1500
+Wire Notes Line
+	5450 1500 5450 500 
+Text Notes 4650 1300 0    100  ~ 0
+3V3
+Wire Notes Line
+	7900 500  7900 1500
+Wire Wire Line
+	6350 1350 6450 1350
+Text Notes 7100 1300 0    100  ~ 0
+4V3
+Text GLabel 8300 950  0    50   Input ~ 0
++5VDC
+Text GLabel 8350 750  1    50   Input ~ 0
+GND
+Wire Wire Line
+	8300 950  8350 950 
+Connection ~ 8350 950 
+Wire Wire Line
+	8350 950  8400 950 
+Wire Wire Line
+	8400 1050 8400 950 
+Connection ~ 8400 950 
+Text GLabel 8800 1350 2    50   Input ~ 0
+GND
+Wire Wire Line
+	8700 1350 8800 1350
+Text GLabel 9900 950  2    50   Output ~ 0
+1V2
+Wire Wire Line
+	9900 950  9000 950 
+$Comp
+L Regulator_Linear:TPS73643DBV U2
+U 1 1 61F6B37B
+P 6350 1050
+F 0 "U2" H 6350 1450 50  0000 C CNN
+F 1 "ABLIC S-1132B43-M5T1U" H 6500 1350 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 6350 1375 50  0001 C CIN
+F 3 "https://www.mouser.com/datasheet/2/1490/S1132_E-3430731.pdf" H 6350 1000 50  0001 C CNN
+	1    6350 1050
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	10150 1500 10150 500 
+Wire Notes Line
+	2850 1500 10150 1500
+Wire Notes Line
+	2850 500  10150 500 
+Text Notes 9400 1300 0    100  ~ 0
+1V2
+Text Notes 4350 1400 0    50   ~ 0
+Supply to FPGA I/O LVTTL
+Text Notes 6750 1400 0    50   ~ 0
+Supply to FET level shifters
+Text Notes 9150 1400 0    50   ~ 0
+Supply to FPGA Core
 $EndSCHEMATC
