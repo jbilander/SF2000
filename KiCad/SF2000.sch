@@ -456,7 +456,7 @@ L Device:C_Small C6
 U 1 1 61D9D5AB
 P 5900 850
 F 0 "C6" H 5700 1000 50  0000 L CNN
-F 1 "0.33uF" H 5550 900 50  0000 L CNN
+F 1 "0.47uF" H 5550 900 50  0000 L CNN
 F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 5900 850 50  0001 C CNN
 F 3 "~" H 5900 850 50  0001 C CNN
 	1    5900 850 
@@ -467,15 +467,15 @@ GND
 $Comp
 L Device:C_Small C9
 U 1 1 61DA7AE4
-P 7500 850
-F 0 "C9" H 7600 1000 50  0000 L CNN
-F 1 "0.1uF" H 7600 900 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7500 850 50  0001 C CNN
-F 3 "~" H 7500 850 50  0001 C CNN
-	1    7500 850 
+P 7400 850
+F 0 "C9" H 7500 1000 50  0000 L CNN
+F 1 "0.1uF" H 7500 900 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7400 850 50  0001 C CNN
+F 3 "~" H 7400 850 50  0001 C CNN
+	1    7400 850 
 	1    0    0    -1  
 $EndComp
-Text GLabel 7500 750  1    50   Input ~ 0
+Text GLabel 7400 750  1    50   Input ~ 0
 GND
 Wire Wire Line
 	1000 1750 1000 1650
@@ -619,10 +619,10 @@ $Comp
 L Regulator_Linear:TPS73643DBV U2
 U 1 1 61F6B37B
 P 6350 1050
-F 0 "U2" H 6350 1392 50  0000 C CNN
-F 1 "MIC5205YM5-TR" H 6350 1301 50  0000 C CNN
+F 0 "U2" H 6350 1100 50  0000 C CNN
+F 1 "ABLIC S-1132B43-M5T1U" H 6550 1350 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-23-5" H 6350 1375 50  0001 C CIN
-F 3 "https://www.mouser.com/ProductDetail/998-MIC5205YM5TR" H 6350 1000 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/1490/S1132_E-3430731.pdf" H 6350 1000 50  0001 C CNN
 	1    6350 1050
 	1    0    0    -1  
 $EndComp
@@ -637,34 +637,25 @@ Connection ~ 5950 950
 $Comp
 L Device:C_Small C7
 U 1 1 61F7EF31
-P 6800 1150
-F 0 "C7" H 6850 1100 50  0000 L CNN
-F 1 "0.33uF" H 6650 1250 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 6800 1150 50  0001 C CNN
-F 3 "~" H 6800 1150 50  0001 C CNN
-	1    6800 1150
+P 5100 6100
+F 0 "C7" H 5150 6050 50  0000 L CNN
+F 1 "0.33uF" H 4950 6200 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 5100 6100 50  0001 C CNN
+F 3 "~" H 5100 6100 50  0001 C CNN
+	1    5100 6100
 	-1   0    0    1   
 $EndComp
-Connection ~ 7500 950 
-Wire Wire Line
-	7500 950  7650 950 
 $Comp
 L Device:C_Small C8
 U 1 1 61F832C2
-P 7200 850
-F 0 "C8" H 7250 1000 50  0000 L CNN
-F 1 "10uF" H 7250 900 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 7200 850 50  0001 C CNN
-F 3 "~" H 7200 850 50  0001 C CNN
-	1    7200 850 
+P 7100 850
+F 0 "C8" H 7150 1000 50  0000 L CNN
+F 1 "10uF" H 7150 900 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 7100 850 50  0001 C CNN
+F 3 "~" H 7100 850 50  0001 C CNN
+	1    7100 850 
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6350 1350 6800 1350
-Wire Wire Line
-	6800 1350 6800 1250
-Wire Wire Line
-	6800 1050 6750 1050
 $Comp
 L Device:R_Small R7
 U 1 1 61FB0B67
@@ -1163,11 +1154,8 @@ Connection ~ 3600 7150
 Wire Wire Line
 	3600 7450 3900 7450
 Connection ~ 3600 7450
-Connection ~ 7200 950 
 Wire Wire Line
-	7200 950  7500 950 
-Wire Wire Line
-	7200 750  7500 750 
+	7100 750  7400 750 
 $Comp
 L Device:C C39
 U 1 1 624EB4DA
@@ -1457,7 +1445,7 @@ Text Notes 750  2500 0    50   ~ 0
 XRDY
 NoConn ~ 1000 2450
 Wire Wire Line
-	6750 950  7200 950 
+	6750 950  7100 950 
 Wire Wire Line
 	4200 5600 4100 5600
 Wire Wire Line
@@ -1497,4 +1485,11 @@ F 3 "~" H 4000 5600 50  0001 C CNN
 $EndComp
 Text GLabel 5600 6750 0    50   Output ~ 0
 CRESET_N
+NoConn ~ 6750 1050
+Connection ~ 7100 950 
+Connection ~ 7400 950 
+Wire Wire Line
+	7400 950  7650 950 
+Wire Wire Line
+	7100 950  7400 950 
 $EndSCHEMATC
