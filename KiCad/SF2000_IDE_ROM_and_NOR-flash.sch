@@ -481,8 +481,6 @@ Wire Wire Line
 	1550 3050 1450 3050
 Text GLabel 1550 2850 1    50   Input ~ 0
 3V3
-Text GLabel 2300 3650 0    50   Input ~ 0
-ACTIVE
 Wire Notes Line
 	750  2550 1800 2550
 Wire Notes Line
