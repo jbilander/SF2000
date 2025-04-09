@@ -150,7 +150,7 @@ Wire Wire Line
 Connection ~ 10350 4700
 Wire Wire Line
 	10350 4700 10450 4700
-Text GLabel 10450 2300 1    50   Input ~ 0
+Text GLabel 7450 850  1    50   Input ~ 0
 3V3
 $Comp
 L Connector_Generic:Conn_02x01 J4
@@ -316,7 +316,7 @@ Text GLabel 9550 5250 2    50   Input ~ 0
 GND
 Text GLabel 9800 2100 3    50   Input ~ 0
 GND
-Text GLabel 10900 2950 2    50   Input ~ 0
+Text GLabel 8750 750  2    50   Input ~ 0
 3V3
 Wire Wire Line
 	9800 1800 10150 1800
@@ -336,55 +336,55 @@ $EndComp
 $Comp
 L Device:C C?
 U 1 1 624B4CFC
-P 10650 3100
+P 8500 900
 AR Path="/624B4CFC" Ref="C?"  Part="1" 
 AR Path="/620D263D/624B4CFC" Ref="C25"  Part="1" 
-F 0 "C25" H 10700 3200 50  0000 L CNN
-F 1 "0.1uF" H 10650 3000 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 10688 2950 50  0001 C CNN
-F 3 "~" H 10650 3100 50  0001 C CNN
-	1    10650 3100
+F 0 "C25" H 8550 1000 50  0000 L CNN
+F 1 "0.1uF" H 8500 800 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 8538 750 50  0001 C CNN
+F 3 "~" H 8500 900 50  0001 C CNN
+	1    8500 900 
 	1    0    0    -1  
 $EndComp
-Text GLabel 10650 3250 3    50   Input ~ 0
+Text GLabel 8500 1050 3    50   Input ~ 0
 GND
 Wire Wire Line
-	10450 2950 10650 2950
-Connection ~ 10650 2950
+	8300 750  8500 750 
+Connection ~ 8500 750 
 Wire Wire Line
-	10650 2950 10900 2950
+	8500 750  8750 750 
 $Comp
 L Device:R_Small R?
 U 1 1 62517BB4
-P 10450 2500
+P 7450 1050
 AR Path="/62517BB4" Ref="R?"  Part="1" 
 AR Path="/620D263D/62517BB4" Ref="R8"  Part="1" 
-F 0 "R8" H 10509 2546 50  0000 L CNN
-F 1 "10k" H 10509 2455 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 10450 2500 50  0001 C CNN
-F 3 "~" H 10450 2500 50  0001 C CNN
-	1    10450 2500
+F 0 "R8" H 7509 1096 50  0000 L CNN
+F 1 "10k" H 7509 1005 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7450 1050 50  0001 C CNN
+F 3 "~" H 7450 1050 50  0001 C CNN
+	1    7450 1050
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R_Small R?
 U 1 1 62519236
-P 10950 2700
+P 7950 1250
 AR Path="/62519236" Ref="R?"  Part="1" 
 AR Path="/620D263D/62519236" Ref="R9"  Part="1" 
-F 0 "R9" V 11050 2650 50  0000 L CNN
-F 1 "10k" V 10850 2650 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 10950 2700 50  0001 C CNN
-F 3 "~" H 10950 2700 50  0001 C CNN
-	1    10950 2700
+F 0 "R9" V 8050 1200 50  0000 L CNN
+F 1 "10k" V 7850 1200 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7950 1250 50  0001 C CNN
+F 3 "~" H 7950 1250 50  0001 C CNN
+	1    7950 1250
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	10450 2400 10450 2300
+	7450 950  7450 850 
 Wire Wire Line
-	10450 2600 10450 2700
+	7450 1150 7450 1250
 Wire Wire Line
-	10850 2700 10450 2700
+	7850 1250 7450 1250
 Connection ~ 9800 1800
 $Comp
 L Device:R_Small R?
@@ -449,14 +449,14 @@ A15_3V3
 $Comp
 L Device:R_Small R?
 U 1 1 6302BBCE
-P 700 5000
+P 800 5000
 AR Path="/6302BBCE" Ref="R?"  Part="1" 
 AR Path="/620D263D/6302BBCE" Ref="R3"  Part="1" 
-F 0 "R3" V 600 4900 50  0000 L CNN
-F 1 "33" V 700 4950 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 700 5000 50  0001 C CNN
-F 3 "~" H 700 5000 50  0001 C CNN
-	1    700  5000
+F 0 "R3" V 700 4900 50  0000 L CNN
+F 1 "33" V 800 4950 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 800 5000 50  0001 C CNN
+F 3 "~" H 800 5000 50  0001 C CNN
+	1    800  5000
 	0    1    1    0   
 $EndComp
 Text GLabel 1200 2800 0    50   Input ~ 0
@@ -701,8 +701,6 @@ DI
 Text GLabel 1200 4700 0    50   Output ~ 0
 SCLK
 Wire Wire Line
-	1200 5000 800  5000
-Wire Wire Line
 	600  5000 600  5150
 Text GLabel 8950 2200 3    50   Input ~ 0
 SPI_SS
@@ -778,4 +776,40 @@ Text GLabel 1200 4900 0    50   Output ~ 0
 AVEC
 Text GLabel 9700 4050 3    50   Input ~ 0
 AVEC
+Text GLabel 2700 1100 1    50   Output ~ 0
+INT6_3V3
+Wire Wire Line
+	900  5000 1200 5000
+Wire Wire Line
+	700  5000 600  5000
+Text GLabel 10200 2550 1    50   Input ~ 0
+3V3
+$Comp
+L Device:R_Pack04 RN?
+U 1 1 67FCD62D
+P 10400 2750
+AR Path="/62892CF3/67FCD62D" Ref="RN?"  Part="1" 
+AR Path="/621DFEC4/67FCD62D" Ref="RN?"  Part="1" 
+AR Path="/620D263D/67FCD62D" Ref="RN5"  Part="1" 
+F 0 "RN5" H 10588 2796 50  0000 L CNN
+F 1 "R_Pack04" H 10588 2705 50  0000 L CNN
+F 2 "SF2000:RESCAF80P320X160X60-8N" V 10675 2750 50  0001 C CNN
+F 3 "~" H 10400 2750 50  0001 C CNN
+	1    10400 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10200 2550 10300 2550
+Connection ~ 10300 2550
+Wire Wire Line
+	10300 2550 10400 2550
+Connection ~ 10400 2550
+Wire Wire Line
+	10400 2550 10500 2550
+Text GLabel 10300 2950 3    50   Input ~ 0
+CDONE
+Text GLabel 10200 2950 3    50   Input ~ 0
+FLASH_WE
+Text GLabel 10400 2950 3    50   Input ~ 0
+FLASH_OE
 $EndSCHEMATC

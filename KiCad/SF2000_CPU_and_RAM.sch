@@ -131,8 +131,6 @@ Text GLabel 3500 5800 2    50   Output ~ 0
 LDS_3V3
 Text GLabel 3500 5900 2    50   Output ~ 0
 RW_3V3
-Text GLabel 950  5450 1    50   Input ~ 0
-3V3
 $Comp
 L SF2000:IS61WV20488FBLL-10TLI U13
 U 1 1 61F186AC
@@ -470,33 +468,8 @@ A20_3V3
 Text GLabel 7500 1000 0    50   Input ~ 0
 A21_3V3
 NoConn ~ 3500 1500
-$Comp
-L Device:R_Pack04 RN?
-U 1 1 62C74D68
-P 1150 5650
-AR Path="/62892CF3/62C74D68" Ref="RN?"  Part="1" 
-AR Path="/621DFEC4/62C74D68" Ref="RN5"  Part="1" 
-F 0 "RN5" H 1338 5696 50  0000 L CNN
-F 1 "R_Pack04" H 1338 5605 50  0000 L CNN
-F 2 "SF2000:RESCAF80P320X160X60-8N" V 1425 5650 50  0001 C CNN
-F 3 "~" H 1150 5650 50  0001 C CNN
-	1    1150 5650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	950  5450 1050 5450
-Connection ~ 1050 5450
-Wire Wire Line
-	1050 5450 1150 5450
-Connection ~ 1150 5450
-Wire Wire Line
-	1150 5450 1250 5450
 Text GLabel 1500 4700 0    50   Input ~ 0
 AVEC
-Text GLabel 1050 5850 3    50   Input ~ 0
-CDONE
-Text GLabel 950  5850 3    50   Input ~ 0
-FLASH_WE
 NoConn ~ 1500 5000
 Wire Wire Line
 	2500 6100 2600 6100
@@ -514,6 +487,4 @@ F 3 "https://www.nxp.com/docs/en/reference-manual/MC68000UM.pdf" H 2500 3700 50 
 	1    2500 3700
 	1    0    0    -1  
 $EndComp
-Text GLabel 1150 5850 3    50   Input ~ 0
-FLASH_OE
 $EndSCHEMATC

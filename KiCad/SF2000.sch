@@ -1418,12 +1418,8 @@ Wire Wire Line
 	2850 2050 2850 2150
 Text GLabel 3850 3450 2    50   BiDi ~ 0
 BR_3V3
-Text GLabel 2850 3450 0    50   Input ~ 0
-GND
-NoConn ~ 3850 3550
-Text Notes 800  2700 0    50   ~ 0
+Text Notes 550  2450 0    50   ~ 0
 INT6
-NoConn ~ 1000 2650
 Text GLabel 6550 2350 0    50   Input ~ 0
 GND
 Wire Wire Line
@@ -1549,4 +1545,10 @@ Text Notes 6750 1400 0    50   ~ 0
 Supply to FET level shifters
 Text Notes 9150 1400 0    50   ~ 0
 Supply to FPGA Core
+Text GLabel 1000 2650 0    50   Input ~ 0
+INT6
+Text GLabel 2850 3450 0    50   Output ~ 0
+INT6
+Text GLabel 3850 3550 2    50   Input ~ 0
+INT6_3V3
 $EndSCHEMATC

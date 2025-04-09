@@ -310,17 +310,6 @@ Text GLabel 2200 5550 0    50   Input ~ 0
 IDE_CS0_3V3
 Text GLabel 3200 5550 2    50   Output ~ 0
 IDE_CS0
-$Comp
-L SF2000:74LVC245A U18
-U 1 1 628E9EE2
-P 6550 5350
-F 0 "U18" H 6550 5200 50  0000 C CNN
-F 1 "74LVC245A" H 6200 6100 50  0000 C CNN
-F 2 "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm" H 6550 5350 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74HC245" H 6550 5350 50  0001 C CNN
-	1    6550 5350
-	1    0    0    -1  
-$EndComp
 Text GLabel 6550 4550 1    50   Input ~ 0
 3V3
 Text GLabel 6550 6150 3    50   Input ~ 0
@@ -492,4 +481,12 @@ F 3 "~" H 4250 2850 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3100 2750 3100 2950
+Text GLabel 4050 2350 0    50   Input ~ 0
+GND
+Text GLabel 4550 2350 2    50   Input ~ 0
++5VDC
+Text GLabel 4050 3350 0    50   Input ~ 0
+GND
+Text GLabel 4550 3350 2    50   Input ~ 0
+IDE_RST
 $EndSCHEMATC
