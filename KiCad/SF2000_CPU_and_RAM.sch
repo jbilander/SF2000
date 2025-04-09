@@ -13,17 +13,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L SF2000:68SEC000 U9
-U 1 1 621E09D7
-P 2500 3700
-F 0 "U9" H 2500 3800 50  0000 C CNN
-F 1 "68000D" H 2500 3700 50  0000 C CNN
-F 2 "SF2000:QFP-64_14x14mm_Pitch0.8mm" H 2500 3700 50  0001 C CNN
-F 3 "https://www.nxp.com/docs/en/reference-manual/MC68000UM.pdf" H 2500 3700 50  0001 C CNN
-	1    2500 3700
-	1    0    0    -1  
-$EndComp
 Text GLabel 1500 1500 0    50   Input ~ 0
 CLKCPU
 Text GLabel 3500 2000 2    50   Output ~ 0
@@ -134,11 +123,6 @@ Text GLabel 1500 2250 0    50   Input ~ 0
 DTACK_CPU_3V3
 Text GLabel 2600 6100 3    50   Input ~ 0
 GND
-Wire Wire Line
-	2400 6100 2500 6100
-Connection ~ 2500 6100
-Wire Wire Line
-	2500 6100 2600 6100
 Text GLabel 3500 5600 2    50   Output ~ 0
 AS_CPU_3V3
 Text GLabel 3500 5700 2    50   Output ~ 0
@@ -509,11 +493,27 @@ Wire Wire Line
 	1150 5450 1250 5450
 Text GLabel 1500 4700 0    50   Input ~ 0
 AVEC
-Text GLabel 1150 5850 3    50   Input ~ 0
-AVEC
 Text GLabel 1050 5850 3    50   Input ~ 0
 CDONE
 Text GLabel 950  5850 3    50   Input ~ 0
 FLASH_WE
 NoConn ~ 1500 5000
+Wire Wire Line
+	2500 6100 2600 6100
+Wire Wire Line
+	2400 6100 2500 6100
+Connection ~ 2500 6100
+$Comp
+L SF2000:68SEC000 U9
+U 1 1 621E09D7
+P 2500 3700
+F 0 "U9" H 2500 3800 50  0000 C CNN
+F 1 "68000D" H 2500 3700 50  0000 C CNN
+F 2 "SF2000:QFP-64_14x14mm_Pitch0.8mm" H 2500 3700 50  0001 C CNN
+F 3 "https://www.nxp.com/docs/en/reference-manual/MC68000UM.pdf" H 2500 3700 50  0001 C CNN
+	1    2500 3700
+	1    0    0    -1  
+$EndComp
+Text GLabel 1150 5850 3    50   Input ~ 0
+FLASH_OE
 $EndSCHEMATC

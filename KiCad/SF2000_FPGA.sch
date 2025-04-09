@@ -201,7 +201,7 @@ Text GLabel -800 5600 3    50   Output ~ 0
 SD_CMD
 Text GLabel 5700 5950 3    50   Output ~ 0
 SD_CLK
-Text GLabel 5800 5950 3    50   Input ~ 0
+Text GLabel 7050 4500 2    50   Input ~ 0
 SD_CD
 Text GLabel -800 3100 2    50   BiDi ~ 0
 D0_3V3
@@ -291,7 +291,7 @@ Text GLabel 9050 6050 0    50   Input ~ 0
 JP8
 Text GLabel -800 5300 2    50   Input ~ 0
 JP8
-Text GLabel 1200 4900 0    50   Output ~ 0
+Text GLabel 5800 5950 3    50   Output ~ 0
 FLASH_OE
 Text GLabel -2150 6000 3    50   Output ~ 0
 ROM_OE
@@ -774,6 +774,8 @@ Wire Wire Line
 	9150 1800 9800 1800
 Wire Wire Line
 	8200 2600 9050 2600
+Text GLabel 1200 4900 0    50   Output ~ 0
+AVEC
 Text GLabel 9700 4050 3    50   Input ~ 0
-FLASH_OE
+AVEC
 $EndSCHEMATC

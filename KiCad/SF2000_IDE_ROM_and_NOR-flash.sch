@@ -14,17 +14,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L SF2000:IDE_ATA_44pin J5
-U 1 1 627D2366
-P 2700 2750
-F 0 "J5" H 2700 4015 50  0000 C CNN
-F 1 "IDE_ATA_44pin" H 2700 3924 50  0000 C CNN
-F 2 "SF2000:PinHeader_2x22_P2.00mm_Vertical" H 2700 2800 50  0001 C CNN
-F 3 "" H 2700 2800 50  0001 C CNN
-	1    2700 2750
-	1    0    0    -1  
-$EndComp
-$Comp
 L SF2000:SST39LF040 U14
 U 1 1 627D2ECC
 P 6100 2600
@@ -224,11 +213,6 @@ Text GLabel 3100 1750 2    50   Input ~ 0
 GND
 Text GLabel 3100 2750 2    50   Input ~ 0
 GND
-Wire Wire Line
-	3100 2750 3100 2850
-Connection ~ 3100 2850
-Wire Wire Line
-	3100 2850 3100 2950
 Text GLabel 2300 2850 0    50   Input ~ 0
 IDE_IOW
 Text GLabel 2300 2950 0    50   Input ~ 0
@@ -495,4 +479,17 @@ NoConn ~ 8550 3000
 NoConn ~ 8550 2900
 Text GLabel 8550 2700 0    50   Input ~ 0
 RST_3V3
+$Comp
+L Connector_Generic:Conn_02x11_Odd_Even J20
+U 1 1 694B1E3E
+P 4250 2850
+F 0 "J20" H 4300 3567 50  0000 C CNN
+F 1 "Conn_02x11_Odd_Even" H 4300 3476 50  0000 C CNN
+F 2 "Connector_PinHeader_2.00mm:PinHeader_2x11_P2.00mm_Vertical" H 4250 2850 50  0001 C CNN
+F 3 "~" H 4250 2850 50  0001 C CNN
+	1    4250 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 2750 3100 2950
 $EndSCHEMATC
