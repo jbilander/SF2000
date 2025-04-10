@@ -173,92 +173,22 @@ Text GLabel 6550 2300 2    50   BiDi ~ 0
 D6_3V3
 Text GLabel 6550 2400 2    50   BiDi ~ 0
 D7_3V3
-Text GLabel 6050 4950 0    50   BiDi ~ 0
-D0_3V3
-Text GLabel 6050 5150 0    50   BiDi ~ 0
-D1_3V3
-Text GLabel 6050 5350 0    50   BiDi ~ 0
-D2_3V3
-Text GLabel 6050 5550 0    50   BiDi ~ 0
-D3_3V3
-Text GLabel 4150 4950 0    50   BiDi ~ 0
-D4_3V3
-Text GLabel 4150 5150 0    50   BiDi ~ 0
-D5_3V3
-Text GLabel 4150 5350 0    50   BiDi ~ 0
-D6_3V3
 Text GLabel 4150 5550 0    50   BiDi ~ 0
-D7_3V3
-Text GLabel 4150 5450 0    50   BiDi ~ 0
-D8_3V3
-Text GLabel 4150 5250 0    50   BiDi ~ 0
-D9_3V3
-Text GLabel 4150 5050 0    50   BiDi ~ 0
-D10_3V3
+D0_3V3
 Text GLabel 4150 4850 0    50   BiDi ~ 0
-D11_3V3
-Text GLabel 6050 5450 0    50   BiDi ~ 0
-D12_3V3
-Text GLabel 6050 5250 0    50   BiDi ~ 0
-D13_3V3
-Text GLabel 6050 5050 0    50   BiDi ~ 0
-D14_3V3
-Text GLabel 6050 4850 0    50   BiDi ~ 0
-D15_3V3
-Text GLabel 2200 4850 0    50   Input ~ 0
+D7_3V3
+Text GLabel 3650 6500 0    50   Input ~ 0
 RST_3V3
-Text GLabel 2300 2650 0    50   Input ~ 0
-GND
-Text GLabel 3100 1750 2    50   Input ~ 0
-GND
-Text GLabel 3100 2750 2    50   Input ~ 0
-GND
-Text GLabel 2300 2850 0    50   Input ~ 0
-IDE_IOW
-Text GLabel 2300 2950 0    50   Input ~ 0
-IDE_IOR
-NoConn ~ 3100 3050
-NoConn ~ 2300 2750
 Text GLabel 1450 3050 0    50   Output ~ 0
 IDE_IORDY
-NoConn ~ 2300 3150
 Text GLabel 1450 3250 0    50   Output ~ 0
 IDE_IRQ
-Text GLabel 2200 5150 0    50   Input ~ 0
-A10_3V3
-Text GLabel 2200 5350 0    50   Input ~ 0
-A9_3V3
 Text GLabel 2200 5250 0    50   Input ~ 0
-A11_3V3
-Text GLabel 3100 3150 2    50   Input ~ 0
-GND
-Text GLabel 2300 3550 0    50   Input ~ 0
-IDE_CS0
-Text GLabel 3100 3550 2    50   Input ~ 0
-IDE_CS1
-Text GLabel 3100 3650 2    50   Input ~ 0
-GND
-Text GLabel 1900 3750 0    50   Input ~ 0
-+5VDC
-Text GLabel 2300 3850 0    50   Input ~ 0
-GND
-Text GLabel 3100 3850 2    50   Input ~ 0
-GND
-Wire Wire Line
-	2300 3750 2000 3750
-Wire Wire Line
-	3100 3750 3450 3750
-Wire Wire Line
-	3450 3750 3450 4100
-Wire Wire Line
-	3450 4100 2000 4100
-Wire Wire Line
-	2000 4100 2000 3750
-Connection ~ 2000 3750
-Wire Wire Line
-	2000 3750 1900 3750
-NoConn ~ 3100 3250
-NoConn ~ 3100 3350
+A5_3V3
+Text GLabel 2200 5450 0    50   Input ~ 0
+A3_3V3
+Text GLabel 2200 5350 0    50   Input ~ 0
+A4_3V3
 $Comp
 L SF2000:74LVC245A U16
 U 1 1 628D607F
@@ -278,44 +208,14 @@ Text GLabel 2200 5750 0    50   Input ~ 0
 3V3
 Text GLabel 2200 5850 0    50   Input ~ 0
 GND
-Text GLabel 3200 4850 2    50   Output ~ 0
-IDE_RST
-Text GLabel 2300 1750 0    50   Input ~ 0
-IDE_RST
+Text GLabel 3350 6350 2    50   Output ~ 0
+CP_RST
 Text GLabel 2200 4950 0    50   Input ~ 0
-IDE_IOW_3V3
-Text GLabel 3200 4950 2    50   Output ~ 0
-IDE_IOW
+CP_IOWR_3V3
 Text GLabel 2200 5050 0    50   Input ~ 0
-IDE_IOR_3V3
-Text GLabel 3200 5050 2    50   Output ~ 0
-IDE_IOR
-Text GLabel 3200 5150 2    50   Output ~ 0
-IDE_A1
-Text GLabel 2300 3350 0    50   Input ~ 0
-IDE_A1
-Text GLabel 3200 5250 2    50   Output ~ 0
-IDE_A2
-Text GLabel 3200 5350 2    50   Output ~ 0
-IDE_A0
-Text GLabel 3100 3450 2    50   Input ~ 0
-IDE_A2
-Text GLabel 2300 3450 0    50   Input ~ 0
-IDE_A0
-Text GLabel 2200 5450 0    50   Input ~ 0
-IDE_CS1_3V3
-Text GLabel 3200 5450 2    50   Output ~ 0
-IDE_CS1
-Text GLabel 2200 5550 0    50   Input ~ 0
-IDE_CS0_3V3
-Text GLabel 3200 5550 2    50   Output ~ 0
-IDE_CS0
-Text GLabel 6550 4550 1    50   Input ~ 0
-3V3
-Text GLabel 6550 6150 3    50   Input ~ 0
-GND
-Text GLabel 6050 5850 0    50   Input ~ 0
-GND
+CP_IORD_3V3
+Text GLabel 2200 4850 0    50   Input ~ 0
+CP_CS_3V3
 $Comp
 L SF2000:74LVC245A U17
 U 1 1 628ED6C8
@@ -333,74 +233,6 @@ Text GLabel 4650 6150 3    50   Input ~ 0
 GND
 Text GLabel 4150 5850 0    50   Input ~ 0
 GND
-Text GLabel 4150 5750 0    50   Input ~ 0
-IDE_IOR_3V3
-Text GLabel 6050 5750 0    50   Input ~ 0
-IDE_IOR_3V3
-Text GLabel 7050 4850 2    50   BiDi ~ 0
-IDE_D7
-Text GLabel 2300 1850 0    50   BiDi ~ 0
-IDE_D7
-Text GLabel 7050 4950 2    50   BiDi ~ 0
-IDE_D8
-Text GLabel 3100 1850 2    50   BiDi ~ 0
-IDE_D8
-Text GLabel 7050 5050 2    50   BiDi ~ 0
-IDE_D6
-Text GLabel 2300 1950 0    50   BiDi ~ 0
-IDE_D6
-Text GLabel 7050 5150 2    50   BiDi ~ 0
-IDE_D9
-Text GLabel 3100 1950 2    50   BiDi ~ 0
-IDE_D9
-Text GLabel 7050 5250 2    50   BiDi ~ 0
-IDE_D5
-Text GLabel 2300 2050 0    50   BiDi ~ 0
-IDE_D5
-Text GLabel 7050 5350 2    50   BiDi ~ 0
-IDE_D10
-Text GLabel 3100 2050 2    50   BiDi ~ 0
-IDE_D10
-Text GLabel 7050 5450 2    50   BiDi ~ 0
-IDE_D4
-Text GLabel 2300 2150 0    50   BiDi ~ 0
-IDE_D4
-Text GLabel 7050 5550 2    50   BiDi ~ 0
-IDE_D11
-Text GLabel 3100 2150 2    50   BiDi ~ 0
-IDE_D11
-Text GLabel 5150 4850 2    50   BiDi ~ 0
-IDE_D3
-Text GLabel 2300 2250 0    50   BiDi ~ 0
-IDE_D3
-Text GLabel 5150 4950 2    50   BiDi ~ 0
-IDE_D12
-Text GLabel 3100 2250 2    50   BiDi ~ 0
-IDE_D12
-Text GLabel 5150 5050 2    50   BiDi ~ 0
-IDE_D2
-Text GLabel 2300 2350 0    50   BiDi ~ 0
-IDE_D2
-Text GLabel 5150 5150 2    50   BiDi ~ 0
-IDE_D13
-Text GLabel 3100 2350 2    50   BiDi ~ 0
-IDE_D13
-Text GLabel 5150 5250 2    50   BiDi ~ 0
-IDE_D1
-Text GLabel 2300 2450 0    50   BiDi ~ 0
-IDE_D1
-Text GLabel 5150 5350 2    50   BiDi ~ 0
-IDE_D14
-Text GLabel 3100 2450 2    50   BiDi ~ 0
-IDE_D14
-Text GLabel 5150 5450 2    50   BiDi ~ 0
-IDE_D0
-Text GLabel 2300 2550 0    50   BiDi ~ 0
-IDE_D0
-Text GLabel 5150 5550 2    50   BiDi ~ 0
-IDE_D15
-Text GLabel 3100 2550 2    50   BiDi ~ 0
-IDE_D15
 Wire Wire Line
 	6100 3700 5650 3700
 Wire Wire Line
@@ -442,14 +274,8 @@ F 3 "~" H 1550 3350 50  0001 C CNN
 $EndComp
 Text GLabel 1550 3450 3    50   Input ~ 0
 GND
-Connection ~ 1550 3250
 Wire Wire Line
 	1550 3250 1450 3250
-Wire Wire Line
-	1550 3250 2300 3250
-Wire Wire Line
-	2300 3050 1550 3050
-Connection ~ 1550 3050
 Wire Wire Line
 	1550 3050 1450 3050
 Text GLabel 1550 2850 1    50   Input ~ 0
@@ -471,22 +297,108 @@ RST_3V3
 $Comp
 L Connector_Generic:Conn_02x11_Odd_Even J20
 U 1 1 694B1E3E
-P 4250 2850
-F 0 "J20" H 4300 3567 50  0000 C CNN
-F 1 "Conn_02x11_Odd_Even" H 4300 3476 50  0000 C CNN
-F 2 "Connector_PinHeader_2.00mm:PinHeader_2x11_P2.00mm_Vertical" H 4250 2850 50  0001 C CNN
-F 3 "~" H 4250 2850 50  0001 C CNN
-	1    4250 2850
+P 2650 3150
+F 0 "J20" H 2700 3867 50  0000 C CNN
+F 1 "Conn_02x11_Odd_Even" H 2700 3776 50  0000 C CNN
+F 2 "Connector_PinHeader_2.00mm:PinHeader_2x11_P2.00mm_Vertical" H 2650 3150 50  0001 C CNN
+F 3 "~" H 2650 3150 50  0001 C CNN
+	1    2650 3150
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3100 2750 3100 2950
-Text GLabel 4050 2350 0    50   Input ~ 0
+Text GLabel 2450 2650 0    50   Input ~ 0
 GND
-Text GLabel 4550 2350 2    50   Input ~ 0
+Text GLabel 2950 2650 2    50   Input ~ 0
 +5VDC
-Text GLabel 4050 3350 0    50   Input ~ 0
+Text GLabel 2450 3650 0    50   Input ~ 0
 GND
-Text GLabel 4550 3350 2    50   Input ~ 0
-IDE_RST
+Text GLabel 2950 3650 2    50   Input ~ 0
+CP_RST
+Text Notes 2500 2350 0    50   ~ 0
+CLOCKPORT
+Text GLabel 2950 3050 2    50   Input ~ 0
+CP_A4
+Text GLabel 2450 3150 0    50   Input ~ 0
+CP_A3
+Text GLabel 2950 3150 2    50   Input ~ 0
+CP_A2
+Text GLabel 2450 3050 0    50   Input ~ 0
+CP_A5
+Text GLabel 2950 3550 2    50   BiDi ~ 0
+CP_D0
+Text GLabel 2450 3550 0    50   BiDi ~ 0
+CP_D1
+Text GLabel 2950 3450 2    50   BiDi ~ 0
+CP_D2
+Text GLabel 2450 3450 0    50   BiDi ~ 0
+CP_D3
+Text GLabel 2950 3350 2    50   BiDi ~ 0
+CP_D4
+Text GLabel 2450 3250 0    50   BiDi ~ 0
+CP_D7
+Text GLabel 2950 3250 2    50   BiDi ~ 0
+CP_D6
+Text GLabel 2450 3350 0    50   BiDi ~ 0
+CP_D5
+Text GLabel 2450 2850 0    50   Input ~ 0
+CP_RTC_CS
+Text GLabel 2950 2850 2    50   Input ~ 0
+CP_RTC_DS
+Text GLabel 2450 2950 0    50   Input ~ 0
+CP_IORD
+Text GLabel 2950 2950 2    50   Input ~ 0
+CP_IOWR
+Text GLabel 5150 4850 2    50   BiDi ~ 0
+CP_D7
+Text GLabel 5150 5550 2    50   BiDi ~ 0
+CP_D0
+Text GLabel 2200 5550 0    50   Input ~ 0
+A2_3V3
+Text GLabel 3200 5350 2    50   Output ~ 0
+CP_A4
+Text GLabel 3200 5550 2    50   Output ~ 0
+CP_A2
+Text GLabel 3200 5450 2    50   Output ~ 0
+CP_A3
+Text GLabel 3200 5250 2    50   Output ~ 0
+CP_A5
+Text GLabel 3200 5050 2    50   Output ~ 0
+CP_IORD
+Text GLabel 3200 4950 2    50   Output ~ 0
+CP_IOWR
+Text GLabel 3200 4850 2    50   Output ~ 0
+CP_CS
+Text GLabel 4150 4950 0    50   BiDi ~ 0
+D6_3V3
+Text GLabel 4150 5050 0    50   BiDi ~ 0
+D5_3V3
+Text GLabel 4150 5750 0    50   Input ~ 0
+CP_IORD_3V3
+Text GLabel 5150 5350 2    50   BiDi ~ 0
+CP_D2
+Text GLabel 5150 5150 2    50   BiDi ~ 0
+CP_D4
+Text GLabel 5150 4950 2    50   BiDi ~ 0
+CP_D6
+Text GLabel 5150 5250 2    50   BiDi ~ 0
+CP_D3
+Text GLabel 5150 5050 2    50   BiDi ~ 0
+CP_D5
+Text GLabel 5150 5450 2    50   BiDi ~ 0
+CP_D1
+Text GLabel 4150 5450 0    50   BiDi ~ 0
+D1_3V3
+Text GLabel 4150 5350 0    50   BiDi ~ 0
+D2_3V3
+Text GLabel 4150 5250 0    50   BiDi ~ 0
+D3_3V3
+Text GLabel 4150 5150 0    50   BiDi ~ 0
+D4_3V3
+Text GLabel 2950 2750 2    50   Input ~ 0
+CP_CS
+Text GLabel 2450 2750 0    50   Output ~ 0
+CP_IRQ
+Text GLabel 3200 5150 2    50   Input ~ 0
+CP_IRQ
+Text GLabel 2200 5150 0    50   Output ~ 0
+CP_IRQ_3V3
 $EndSCHEMATC
