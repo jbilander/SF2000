@@ -1418,8 +1418,6 @@ Wire Wire Line
 	2850 2050 2850 2150
 Text GLabel 3850 3450 2    50   BiDi ~ 0
 BR_3V3
-Text Notes 550  2450 0    50   ~ 0
-INT6
 Text GLabel 6550 2350 0    50   Input ~ 0
 GND
 Wire Wire Line

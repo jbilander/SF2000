@@ -35,11 +35,11 @@ Text GLabel 1200 3600 0    50   Input ~ 0
 FC1_3V3
 Text GLabel 1200 3700 0    50   Input ~ 0
 FC2_3V3
-Text GLabel -2500 1100 1    50   Input ~ 0
+Text GLabel 3100 1100 1    50   Input ~ 0
 A20_3V3
-Text GLabel -2700 1100 1    50   Input ~ 0
+Text GLabel 2900 1100 1    50   Input ~ 0
 A22_3V3
-Text GLabel -2600 1100 1    50   Input ~ 0
+Text GLabel 3000 1100 1    50   Input ~ 0
 A21_3V3
 Text GLabel -800 1850 2    50   Input ~ 0
 A12_3V3
@@ -51,13 +51,13 @@ Text GLabel 3300 5950 3    50   Input ~ 0
 RW_3V3
 Text GLabel -800 1750 2    50   Input ~ 0
 A13_3V3
-Text GLabel -2300 1100 1    50   Input ~ 0
+Text GLabel 3300 1100 1    50   Input ~ 0
 A18_3V3
-Text GLabel -2400 1100 1    50   Input ~ 0
+Text GLabel 3200 1100 1    50   Input ~ 0
 A19_3V3
-Text GLabel -2100 1100 1    50   Input ~ 0
+Text GLabel 3600 1100 1    50   Input ~ 0
 A16_3V3
-Text GLabel -2200 1100 1    50   Input ~ 0
+Text GLabel 3500 1100 1    50   Input ~ 0
 A17_3V3
 Text GLabel 1200 2000 0    50   Input ~ 0
 VPA_3V3
@@ -227,7 +227,7 @@ Text GLabel -800 3900 2    50   Input ~ 0
 A4_3V3
 Text GLabel -800 3700 2    50   Input ~ 0
 A3_3V3
-Text GLabel -2800 1100 1    50   Input ~ 0
+Text GLabel 2800 1100 1    50   Input ~ 0
 A23_3V3
 Text GLabel -800 3600 2    50   Input ~ 0
 A2_3V3
@@ -247,7 +247,7 @@ Text GLabel -800 5100 2    50   Input ~ 0
 OSC_CLK
 Text GLabel -800 2850 2    50   Input ~ 0
 OE_BANK1
-Text GLabel -2000 1100 1    50   Input ~ 0
+Text GLabel 4800 1100 1    50   Input ~ 0
 WE_BANK1_EVEN
 Text GLabel -800 2950 2    50   Input ~ 0
 WE_BANK1_ODD
@@ -535,8 +535,6 @@ F 3 "https://www.mouser.com/datasheet/2/1033/GW1N_series_of_FPGA_Products_Data_S
 $EndComp
 Text GLabel 8850 2200 3    50   Input ~ 0
 RST_3V3
-Text GLabel -1900 1100 1    50   Input ~ 0
-IOT27A
 Text GLabel 1200 5100 0    50   Input ~ 0
 CDONE
 Text GLabel 2600 1100 1    50   BiDi ~ 0
