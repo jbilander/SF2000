@@ -173,22 +173,10 @@ Text GLabel 6550 2300 2    50   BiDi ~ 0
 D6_3V3
 Text GLabel 6550 2400 2    50   BiDi ~ 0
 D7_3V3
-Text GLabel 4150 5550 0    50   BiDi ~ 0
-D0_3V3
-Text GLabel 4150 4850 0    50   BiDi ~ 0
-D7_3V3
-Text GLabel 4750 4000 0    50   Input ~ 0
-RST_3V3
 Text GLabel 1450 3050 0    50   Output ~ 0
 IDE_IORDY
 Text GLabel 1450 3250 0    50   Output ~ 0
 IDE_IRQ
-Text GLabel 2200 5250 0    50   Input ~ 0
-A5_3V3
-Text GLabel 2200 5450 0    50   Input ~ 0
-A3_3V3
-Text GLabel 2200 5350 0    50   Input ~ 0
-A4_3V3
 $Comp
 L SF2000:74LVC245A U16
 U 1 1 628D607F
@@ -208,31 +196,12 @@ Text GLabel 2200 5750 0    50   Input ~ 0
 3V3
 Text GLabel 2200 5850 0    50   Input ~ 0
 GND
-Text GLabel 4450 3850 2    50   Output ~ 0
-CP_RST
 Text GLabel 2200 4850 0    50   Input ~ 0
-CP_IOWR_3V3
-Text GLabel 2200 5150 0    50   Input ~ 0
-CP_IORD_3V3
+CP_IOWR_FPGA
 Text GLabel 2200 4950 0    50   Input ~ 0
-CP_CS_3V3
-$Comp
-L SF2000:74LVC245A U17
-U 1 1 628ED6C8
-P 4650 5350
-F 0 "U17" H 4650 5200 50  0000 C CNN
-F 1 "74LVC245A" H 4300 6100 50  0000 C CNN
-F 2 "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm" H 4650 5350 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74HC245" H 4650 5350 50  0001 C CNN
-	1    4650 5350
-	1    0    0    -1  
-$EndComp
-Text GLabel 4650 4550 1    50   Input ~ 0
-3V3
-Text GLabel 4650 6150 3    50   Input ~ 0
-GND
-Text GLabel 4150 5850 0    50   Input ~ 0
-GND
+CP_IORD_FPGA
+Text GLabel 2200 5050 0    50   Input ~ 0
+CP_CS_FPGA
 Wire Wire Line
 	6100 3700 5650 3700
 Wire Wire Line
@@ -312,33 +281,33 @@ Text GLabel 2950 2650 2    50   Input ~ 0
 Text GLabel 2450 3650 0    50   Input ~ 0
 GND
 Text GLabel 2950 3650 2    50   Input ~ 0
-CP_RST
+RST
 Text Notes 2500 2350 0    50   ~ 0
 CLOCKPORT
 Text GLabel 2950 3050 2    50   Input ~ 0
-CP_A4
+A4
 Text GLabel 2450 3150 0    50   Input ~ 0
-CP_A3
+A3
 Text GLabel 2950 3150 2    50   Input ~ 0
-CP_A2
+A2
 Text GLabel 2450 3050 0    50   Input ~ 0
-CP_A5
+A5
 Text GLabel 2950 3550 2    50   BiDi ~ 0
-CP_D0
+D0
 Text GLabel 2450 3550 0    50   BiDi ~ 0
-CP_D1
+D1
 Text GLabel 2950 3450 2    50   BiDi ~ 0
-CP_D2
+D2
 Text GLabel 2450 3450 0    50   BiDi ~ 0
-CP_D3
+D3
 Text GLabel 2950 3350 2    50   BiDi ~ 0
-CP_D4
+D4
 Text GLabel 2450 3250 0    50   BiDi ~ 0
-CP_D7
+D7
 Text GLabel 2950 3250 2    50   BiDi ~ 0
-CP_D6
+D6
 Text GLabel 2450 3350 0    50   BiDi ~ 0
-CP_D5
+D5
 Text GLabel 2450 2850 0    50   Input ~ 0
 CP_RTC_CS
 Text GLabel 2950 2850 2    50   Input ~ 0
@@ -347,67 +316,27 @@ Text GLabel 2450 2950 0    50   Input ~ 0
 CP_IORD
 Text GLabel 2950 2950 2    50   Input ~ 0
 CP_IOWR
-Text GLabel 5150 4850 2    50   BiDi ~ 0
-CP_D7
-Text GLabel 5150 5550 2    50   BiDi ~ 0
-CP_D0
-Text GLabel 2200 5550 0    50   Input ~ 0
-A2_3V3
-Text GLabel 3200 5350 2    50   Output ~ 0
-CP_A4
-Text GLabel 3200 5550 2    50   Output ~ 0
-CP_A2
-Text GLabel 3200 5450 2    50   Output ~ 0
-CP_A3
-Text GLabel 3200 5250 2    50   Output ~ 0
-CP_A5
-Text GLabel 3200 5150 2    50   Output ~ 0
+Text GLabel 3200 4950 2    50   Output ~ 0
 CP_IORD
 Text GLabel 3200 4850 2    50   Output ~ 0
 CP_IOWR
-Text GLabel 3200 4950 2    50   Output ~ 0
+Text GLabel 3200 5050 2    50   Output ~ 0
 CP_CS
-Text GLabel 4150 4950 0    50   BiDi ~ 0
-D6_3V3
-Text GLabel 4150 5050 0    50   BiDi ~ 0
-D5_3V3
-Text GLabel 4150 5750 0    50   Input ~ 0
-CP_IORD_3V3
-Text GLabel 5150 5350 2    50   BiDi ~ 0
-CP_D2
-Text GLabel 5150 5150 2    50   BiDi ~ 0
-CP_D4
-Text GLabel 5150 4950 2    50   BiDi ~ 0
-CP_D6
-Text GLabel 5150 5250 2    50   BiDi ~ 0
-CP_D3
-Text GLabel 5150 5050 2    50   BiDi ~ 0
-CP_D5
-Text GLabel 5150 5450 2    50   BiDi ~ 0
-CP_D1
-Text GLabel 4150 5450 0    50   BiDi ~ 0
-D1_3V3
-Text GLabel 4150 5350 0    50   BiDi ~ 0
-D2_3V3
-Text GLabel 4150 5250 0    50   BiDi ~ 0
-D3_3V3
-Text GLabel 4150 5150 0    50   BiDi ~ 0
-D4_3V3
 Text GLabel 2950 2750 2    50   Input ~ 0
 CP_CS
 Text GLabel 2450 2750 0    50   Output ~ 0
 CP_IRQ
-Text GLabel 3200 5050 2    50   Input ~ 0
+Text GLabel 2200 5150 0    50   Input ~ 0
 CP_IRQ
-Text GLabel 2200 5050 0    50   Output ~ 0
-CP_IRQ_3V3
+Text GLabel 3200 5150 2    50   Output ~ 0
+CP_IRQ_FPGA
 Text GLabel 3800 2800 1    50   Input ~ 0
 +5VDC
-Text GLabel 3900 3200 3    50   Input ~ 0
-CP_IRQ
-Text GLabel 3800 3200 3    50   Input ~ 0
-CP_RTC_CS
 Text GLabel 4000 3200 3    50   Input ~ 0
+CP_IRQ
+Text GLabel 3900 3200 3    50   Input ~ 0
+CP_RTC_CS
+Text GLabel 4100 3200 3    50   Input ~ 0
 CP_RTC_DS
 $Comp
 L Device:R_Pack04 RN6
@@ -428,4 +357,16 @@ Connection ~ 3900 2800
 Connection ~ 4000 2800
 Wire Wire Line
 	4000 2800 4100 2800
+NoConn ~ 3200 5250
+NoConn ~ 3200 5350
+NoConn ~ 3200 5450
+NoConn ~ 3200 5550
+Text GLabel 2200 5250 0    50   Input ~ 0
+GND
+Text GLabel 2200 5350 0    50   Input ~ 0
+GND
+Text GLabel 2200 5450 0    50   Input ~ 0
+GND
+Text GLabel 2200 5550 0    50   Input ~ 0
+GND
 $EndSCHEMATC
