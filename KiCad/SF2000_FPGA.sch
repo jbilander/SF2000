@@ -41,7 +41,7 @@ Text GLabel 2900 1100 1    50   Input ~ 0
 A22_3V3
 Text GLabel 3000 1100 1    50   Input ~ 0
 A21_3V3
-Text GLabel -800 1850 2    50   Input ~ 0
+Text GLabel 5100 1100 1    50   Input ~ 0
 A12_3V3
 Text GLabel 3900 5950 3    50   Input ~ 0
 UDS_3V3
@@ -49,7 +49,7 @@ Text GLabel 4000 5950 3    50   Input ~ 0
 LDS_3V3
 Text GLabel 3300 5950 3    50   Input ~ 0
 RW_3V3
-Text GLabel -800 1750 2    50   Input ~ 0
+Text GLabel 5000 1100 1    50   Input ~ 0
 A13_3V3
 Text GLabel 3300 1100 1    50   Input ~ 0
 A18_3V3
@@ -221,7 +221,7 @@ Text GLabel -800 4400 2    50   BiDi ~ 0
 D7_3V3
 Text GLabel -800 4100 2    50   Input ~ 0
 A5_3V3
-Text GLabel -800 2450 2    50   Input ~ 0
+Text GLabel 5700 1100 1    50   Input ~ 0
 A6_3V3
 Text GLabel -800 3900 2    50   Input ~ 0
 A4_3V3
@@ -247,7 +247,7 @@ Text GLabel -800 5100 2    50   Input ~ 0
 OSC_CLK
 Text GLabel -800 2850 2    50   Input ~ 0
 OE_BANK1
-Text GLabel 4800 1100 1    50   Input ~ 0
+Text GLabel 4400 1100 1    50   Input ~ 0
 WE_BANK1_EVEN
 Text GLabel -800 2950 2    50   Input ~ 0
 WE_BANK1_ODD
@@ -432,19 +432,19 @@ Text GLabel 2500 5950 3    50   Input ~ 0
 IPL1_3V3
 Text GLabel 2600 5950 3    50   Input ~ 0
 IPL2_3V3
-Text GLabel -800 2350 2    50   Input ~ 0
+Text GLabel 5600 1100 1    50   Input ~ 0
 A7_3V3
-Text GLabel -800 2250 2    50   Input ~ 0
+Text GLabel 5500 1100 1    50   Input ~ 0
 A8_3V3
-Text GLabel -800 2150 2    50   Input ~ 0
+Text GLabel 5400 1100 1    50   Input ~ 0
 A9_3V3
-Text GLabel -800 2050 2    50   Input ~ 0
+Text GLabel 5300 1100 1    50   Input ~ 0
 A10_3V3
-Text GLabel -800 1950 2    50   Input ~ 0
+Text GLabel 5200 1100 1    50   Input ~ 0
 A11_3V3
-Text GLabel -800 1650 2    50   Input ~ 0
+Text GLabel 4900 1100 1    50   Input ~ 0
 A14_3V3
-Text GLabel -800 1550 2    50   Input ~ 0
+Text GLabel 4800 1100 1    50   Input ~ 0
 A15_3V3
 $Comp
 L Device:R_Small R?
@@ -689,7 +689,6 @@ F 3 "~" H 10050 3950 50  0001 C CNN
 	1    10050 3950
 	1    0    0    -1  
 $EndComp
-NoConn ~ 4400 1100
 Text GLabel 1200 4800 0    50   Output ~ 0
 SPI_SS
 Text GLabel 1200 4500 0    50   Input ~ 0
@@ -790,7 +789,7 @@ AR Path="/62892CF3/67FCD62D" Ref="RN?"  Part="1"
 AR Path="/621DFEC4/67FCD62D" Ref="RN?"  Part="1" 
 AR Path="/620D263D/67FCD62D" Ref="RN5"  Part="1" 
 F 0 "RN5" H 10588 2796 50  0000 L CNN
-F 1 "R_Pack04" H 10588 2705 50  0000 L CNN
+F 1 "10k_Pack04" H 10588 2705 50  0000 L CNN
 F 2 "SF2000:RESCAF80P320X160X60-8N" V 10675 2750 50  0001 C CNN
 F 3 "~" H 10400 2750 50  0001 C CNN
 	1    10400 2750

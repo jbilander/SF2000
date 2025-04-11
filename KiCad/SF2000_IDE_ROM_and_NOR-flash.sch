@@ -177,7 +177,7 @@ Text GLabel 4150 5550 0    50   BiDi ~ 0
 D0_3V3
 Text GLabel 4150 4850 0    50   BiDi ~ 0
 D7_3V3
-Text GLabel 3650 6500 0    50   Input ~ 0
+Text GLabel 4750 4000 0    50   Input ~ 0
 RST_3V3
 Text GLabel 1450 3050 0    50   Output ~ 0
 IDE_IORDY
@@ -208,7 +208,7 @@ Text GLabel 2200 5750 0    50   Input ~ 0
 3V3
 Text GLabel 2200 5850 0    50   Input ~ 0
 GND
-Text GLabel 3350 6350 2    50   Output ~ 0
+Text GLabel 4450 3850 2    50   Output ~ 0
 CP_RST
 Text GLabel 2200 4850 0    50   Input ~ 0
 CP_IOWR_3V3
@@ -401,4 +401,31 @@ Text GLabel 3200 5050 2    50   Input ~ 0
 CP_IRQ
 Text GLabel 2200 5050 0    50   Output ~ 0
 CP_IRQ_3V3
+Text GLabel 3800 2800 1    50   Input ~ 0
++5VDC
+Text GLabel 3900 3200 3    50   Input ~ 0
+CP_IRQ
+Text GLabel 3800 3200 3    50   Input ~ 0
+CP_RTC_CS
+Text GLabel 4000 3200 3    50   Input ~ 0
+CP_RTC_DS
+$Comp
+L Device:R_Pack04 RN6
+U 1 1 680E7107
+P 4000 3000
+F 0 "RN6" H 4188 3046 50  0000 L CNN
+F 1 "R_Pack04" H 4188 2955 50  0000 L CNN
+F 2 "SF2000:RESCAF80P320X160X60-8N" V 4275 3000 50  0001 C CNN
+F 3 "~" H 4000 3000 50  0001 C CNN
+	1    4000 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 2800 3900 2800
+Wire Wire Line
+	3900 2800 4000 2800
+Connection ~ 3900 2800
+Connection ~ 4000 2800
+Wire Wire Line
+	4000 2800 4100 2800
 $EndSCHEMATC
