@@ -210,11 +210,11 @@ Text GLabel 2200 5850 0    50   Input ~ 0
 GND
 Text GLabel 3350 6350 2    50   Output ~ 0
 CP_RST
-Text GLabel 2200 4950 0    50   Input ~ 0
-CP_IOWR_3V3
-Text GLabel 2200 5050 0    50   Input ~ 0
-CP_IORD_3V3
 Text GLabel 2200 4850 0    50   Input ~ 0
+CP_IOWR_3V3
+Text GLabel 2200 5150 0    50   Input ~ 0
+CP_IORD_3V3
+Text GLabel 2200 4950 0    50   Input ~ 0
 CP_CS_3V3
 $Comp
 L SF2000:74LVC245A U17
@@ -361,11 +361,11 @@ Text GLabel 3200 5450 2    50   Output ~ 0
 CP_A3
 Text GLabel 3200 5250 2    50   Output ~ 0
 CP_A5
-Text GLabel 3200 5050 2    50   Output ~ 0
+Text GLabel 3200 5150 2    50   Output ~ 0
 CP_IORD
-Text GLabel 3200 4950 2    50   Output ~ 0
-CP_IOWR
 Text GLabel 3200 4850 2    50   Output ~ 0
+CP_IOWR
+Text GLabel 3200 4950 2    50   Output ~ 0
 CP_CS
 Text GLabel 4150 4950 0    50   BiDi ~ 0
 D6_3V3
@@ -397,8 +397,8 @@ Text GLabel 2950 2750 2    50   Input ~ 0
 CP_CS
 Text GLabel 2450 2750 0    50   Output ~ 0
 CP_IRQ
-Text GLabel 3200 5150 2    50   Input ~ 0
+Text GLabel 3200 5050 2    50   Input ~ 0
 CP_IRQ
-Text GLabel 2200 5150 0    50   Output ~ 0
+Text GLabel 2200 5050 0    50   Output ~ 0
 CP_IRQ_3V3
 $EndSCHEMATC
