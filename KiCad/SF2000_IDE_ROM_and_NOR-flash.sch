@@ -173,16 +173,16 @@ Text GLabel 6550 2300 2    50   BiDi ~ 0
 D6_3V3
 Text GLabel 6550 2400 2    50   BiDi ~ 0
 D7_3V3
-Text GLabel 1450 3050 0    50   Output ~ 0
+Text GLabel 1300 3050 0    50   Output ~ 0
 IDE_IORDY
-Text GLabel 1450 3250 0    50   Output ~ 0
+Text GLabel 1300 3250 0    50   Output ~ 0
 IDE_IRQ
-Text GLabel 4050 4800 0    50   Input ~ 0
-CP_IOWR_FPGA
-Text GLabel 4050 5000 0    50   Input ~ 0
-CP_IORD_FPGA
-Text GLabel 5050 5000 2    50   Input ~ 0
-CP_CS_FPGA
+Text GLabel 2200 4350 0    50   Input ~ 0
+CP_IOWR_3V3
+Text GLabel 2200 4550 0    50   Input ~ 0
+CP_IORD_3V3
+Text GLabel 3200 4550 2    50   Input ~ 0
+CP_CS_3V3
 Wire Wire Line
 	6100 3700 5650 3700
 Wire Wire Line
@@ -197,48 +197,48 @@ Text GLabel 6100 1500 1    50   Input ~ 0
 $Comp
 L Device:R_Small R?
 U 1 1 62340B55
-P 1550 2950
+P 1400 2950
 AR Path="/62340B55" Ref="R?"  Part="1" 
 AR Path="/620D263D/62340B55" Ref="R?"  Part="1" 
 AR Path="/627A6500/62340B55" Ref="R13"  Part="1" 
-F 0 "R13" H 1609 2996 50  0000 L CNN
-F 1 "4.7k" H 1609 2905 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1550 2950 50  0001 C CNN
-F 3 "~" H 1550 2950 50  0001 C CNN
-	1    1550 2950
+F 0 "R13" H 1459 2996 50  0000 L CNN
+F 1 "4.7k" H 1459 2905 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1400 2950 50  0001 C CNN
+F 3 "~" H 1400 2950 50  0001 C CNN
+	1    1400 2950
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R_Small R?
 U 1 1 62340D58
-P 1550 3350
+P 1400 3350
 AR Path="/62340D58" Ref="R?"  Part="1" 
 AR Path="/620D263D/62340D58" Ref="R?"  Part="1" 
 AR Path="/627A6500/62340D58" Ref="R12"  Part="1" 
-F 0 "R12" H 1609 3396 50  0000 L CNN
-F 1 "1k" H 1609 3305 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1550 3350 50  0001 C CNN
-F 3 "~" H 1550 3350 50  0001 C CNN
-	1    1550 3350
+F 0 "R12" H 1459 3396 50  0000 L CNN
+F 1 "1k" H 1459 3305 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1400 3350 50  0001 C CNN
+F 3 "~" H 1400 3350 50  0001 C CNN
+	1    1400 3350
 	1    0    0    -1  
 $EndComp
-Text GLabel 1550 3450 3    50   Input ~ 0
+Text GLabel 1400 3450 3    50   Input ~ 0
 GND
 Wire Wire Line
-	1550 3250 1450 3250
+	1400 3250 1300 3250
 Wire Wire Line
-	1550 3050 1450 3050
-Text GLabel 1550 2850 1    50   Input ~ 0
+	1400 3050 1300 3050
+Text GLabel 1400 2850 1    50   Input ~ 0
 3V3
 Wire Notes Line
-	750  2550 1800 2550
+	600  2550 1650 2550
 Wire Notes Line
-	1800 2550 1800 3650
+	1650 2550 1650 3650
 Wire Notes Line
-	1800 3650 750  3650
+	1650 3650 600  3650
 Wire Notes Line
-	750  3650 750  2550
-Text Notes 850  2650 0    50   ~ 0
+	600  3650 600  2550
+Text Notes 700  2650 0    50   ~ 0
 NOT CURRENTLY USED
 NoConn ~ 8550 3000
 NoConn ~ 8550 2900
@@ -299,58 +299,64 @@ Text GLabel 2950 2950 2    50   Input ~ 0
 CP_IOWR
 Text GLabel 2950 2750 2    50   Input ~ 0
 CP_CS
-Text GLabel 2450 2750 0    50   Output ~ 0
-CP_IRQ
-Text GLabel 3050 4050 0    50   Input ~ 0
-CP_IRQ
-Text GLabel 3200 4050 2    50   Output ~ 0
-CP_IRQ_FPGA
-Text GLabel 3800 2800 1    50   Input ~ 0
+Text GLabel 4000 2800 1    50   Input ~ 0
 +5VDC
+Text GLabel 4300 3200 3    50   Input ~ 0
+INT6
 Text GLabel 4100 3200 3    50   Input ~ 0
-CP_IRQ
-Text GLabel 3900 3200 3    50   Input ~ 0
 CP_RTC_CS
-Text GLabel 4000 3200 3    50   Input ~ 0
+Text GLabel 4200 3200 3    50   Input ~ 0
 CP_RTC_DS
 $Comp
 L Device:R_Pack04 RN6
 U 1 1 680E7107
-P 4000 3000
-F 0 "RN6" H 4188 3046 50  0000 L CNN
-F 1 "R_Pack04" H 4188 2955 50  0000 L CNN
-F 2 "SF2000:RESCAF80P320X160X60-8N" V 4275 3000 50  0001 C CNN
-F 3 "~" H 4000 3000 50  0001 C CNN
-	1    4000 3000
+P 4200 3000
+F 0 "RN6" H 4388 3046 50  0000 L CNN
+F 1 "10k_Pack04" H 4388 2955 50  0000 L CNN
+F 2 "SF2000:RESCAF80P320X160X60-8N" V 4475 3000 50  0001 C CNN
+F 3 "~" H 4200 3000 50  0001 C CNN
+	1    4200 3000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3800 2800 3900 2800
-Wire Wire Line
-	3900 2800 4000 2800
-Connection ~ 3900 2800
-Connection ~ 4000 2800
-Wire Wire Line
 	4000 2800 4100 2800
+Wire Wire Line
+	4100 2800 4200 2800
+Connection ~ 4100 2800
+Connection ~ 4200 2800
+Wire Wire Line
+	4200 2800 4300 2800
 $Comp
 L SF2000:74AHCT3G14 U16
 U 1 1 681A2173
-P 4550 4950
-F 0 "U16" H 4550 5365 50  0000 C CNN
-F 1 "74AHCT3G14" H 4550 5274 50  0000 C CNN
-F 2 "Package_SO:TSSOP-8_3x3mm_P0.65mm" H 4900 5200 50  0001 L CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/74AHC_AHCT3G14.pdf" H 4900 5100 50  0001 L CNN
-	1    4550 4950
+P 2700 4500
+F 0 "U16" H 2700 4915 50  0000 C CNN
+F 1 "74AHCT3G14" H 2700 4824 50  0000 C CNN
+F 2 "Package_SO:TSSOP-8_3x3mm_P0.65mm" H 3050 4750 50  0001 L CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74AHC_AHCT3G14.pdf" H 3050 4650 50  0001 L CNN
+	1    2700 4500
 	1    0    0    -1  
 $EndComp
-Text GLabel 5050 4800 2    50   Input ~ 0
+Text GLabel 3200 4350 2    50   Input ~ 0
 +5VDC
-Text GLabel 4050 5100 0    50   Input ~ 0
+Text GLabel 2200 4650 0    50   Input ~ 0
 GND
-Text GLabel 4050 4900 0    50   Output ~ 0
+Text GLabel 2200 4450 0    50   Output ~ 0
 CP_CS
-Text GLabel 5050 4900 2    50   Output ~ 0
+Text GLabel 3200 4450 2    50   Output ~ 0
 CP_IOWR
-Text GLabel 5050 5100 2    50   Output ~ 0
+Text GLabel 3200 4650 2    50   Output ~ 0
 CP_IORD
+Text GLabel 2450 2750 0    50   Output ~ 0
+INT6
+Text Notes 1900 3850 0    50   ~ 0
+Caution: This header is +5V logic levels.
+Wire Notes Line
+	1800 2200 1800 3900
+Wire Notes Line
+	1800 3900 3600 3900
+Wire Notes Line
+	3600 3900 3600 2200
+Wire Notes Line
+	1800 2200 3600 2200
 $EndSCHEMATC
