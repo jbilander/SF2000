@@ -177,30 +177,11 @@ Text GLabel 1450 3050 0    50   Output ~ 0
 IDE_IORDY
 Text GLabel 1450 3250 0    50   Output ~ 0
 IDE_IRQ
-$Comp
-L SF2000:74LVC245A U16
-U 1 1 628D607F
-P 2700 5350
-F 0 "U16" H 2700 5200 50  0000 C CNN
-F 1 "74LVC245A" H 2350 6100 50  0000 C CNN
-F 2 "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm" H 2700 5350 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74HC245" H 2700 5350 50  0001 C CNN
-	1    2700 5350
-	1    0    0    -1  
-$EndComp
-Text GLabel 2700 4550 1    50   Input ~ 0
-3V3
-Text GLabel 2700 6150 3    50   Input ~ 0
-GND
-Text GLabel 2200 5750 0    50   Input ~ 0
-3V3
-Text GLabel 2200 5850 0    50   Input ~ 0
-GND
-Text GLabel 2200 4850 0    50   Input ~ 0
+Text GLabel 4050 4800 0    50   Input ~ 0
 CP_IOWR_FPGA
-Text GLabel 2200 4950 0    50   Input ~ 0
+Text GLabel 4050 5000 0    50   Input ~ 0
 CP_IORD_FPGA
-Text GLabel 2200 5050 0    50   Input ~ 0
+Text GLabel 5050 5000 2    50   Input ~ 0
 CP_CS_FPGA
 Wire Wire Line
 	6100 3700 5650 3700
@@ -316,27 +297,21 @@ Text GLabel 2450 2950 0    50   Input ~ 0
 CP_IORD
 Text GLabel 2950 2950 2    50   Input ~ 0
 CP_IOWR
-Text GLabel 3200 4950 2    50   Output ~ 0
-CP_IORD
-Text GLabel 3200 4850 2    50   Output ~ 0
-CP_IOWR
-Text GLabel 3200 5050 2    50   Output ~ 0
-CP_CS
 Text GLabel 2950 2750 2    50   Input ~ 0
 CP_CS
 Text GLabel 2450 2750 0    50   Output ~ 0
 CP_IRQ
-Text GLabel 2200 5150 0    50   Input ~ 0
+Text GLabel 3050 4050 0    50   Input ~ 0
 CP_IRQ
-Text GLabel 3200 5150 2    50   Output ~ 0
+Text GLabel 3200 4050 2    50   Output ~ 0
 CP_IRQ_FPGA
 Text GLabel 3800 2800 1    50   Input ~ 0
 +5VDC
-Text GLabel 4000 3200 3    50   Input ~ 0
+Text GLabel 4100 3200 3    50   Input ~ 0
 CP_IRQ
 Text GLabel 3900 3200 3    50   Input ~ 0
 CP_RTC_CS
-Text GLabel 4100 3200 3    50   Input ~ 0
+Text GLabel 4000 3200 3    50   Input ~ 0
 CP_RTC_DS
 $Comp
 L Device:R_Pack04 RN6
@@ -357,16 +332,25 @@ Connection ~ 3900 2800
 Connection ~ 4000 2800
 Wire Wire Line
 	4000 2800 4100 2800
-NoConn ~ 3200 5250
-NoConn ~ 3200 5350
-NoConn ~ 3200 5450
-NoConn ~ 3200 5550
-Text GLabel 2200 5250 0    50   Input ~ 0
+$Comp
+L SF2000:74AHCT3G14 U16
+U 1 1 681A2173
+P 4550 4950
+F 0 "U16" H 4550 5365 50  0000 C CNN
+F 1 "74AHCT3G14" H 4550 5274 50  0000 C CNN
+F 2 "Package_SO:TSSOP-8_3x3mm_P0.65mm" H 4900 5200 50  0001 L CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74AHC_AHCT3G14.pdf" H 4900 5100 50  0001 L CNN
+	1    4550 4950
+	1    0    0    -1  
+$EndComp
+Text GLabel 5050 4800 2    50   Input ~ 0
++5VDC
+Text GLabel 4050 5100 0    50   Input ~ 0
 GND
-Text GLabel 2200 5350 0    50   Input ~ 0
-GND
-Text GLabel 2200 5450 0    50   Input ~ 0
-GND
-Text GLabel 2200 5550 0    50   Input ~ 0
-GND
+Text GLabel 4050 4900 0    50   Output ~ 0
+CP_CS
+Text GLabel 5050 4900 2    50   Output ~ 0
+CP_IOWR
+Text GLabel 5050 5100 2    50   Output ~ 0
+CP_IORD
 $EndSCHEMATC
