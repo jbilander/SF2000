@@ -13,20 +13,16 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text GLabel -3650 4450 3    50   Input ~ 0
-GND
 Text GLabel 600  5150 3    50   Output ~ 0
 CLKCPU
 Text GLabel 1200 3200 0    50   Input ~ 0
 C7M_3V3
-Text GLabel -2050 6000 3    50   Output ~ 0
+Text GLabel 8250 5100 3    50   Output ~ 0
 ROM_WE
 Text GLabel 1200 2400 0    50   Output ~ 0
 OVR_3V3
 Text GLabel 1200 2500 0    50   Output ~ 0
 INT2_3V3
-Text GLabel -3950 1100 1    50   Input ~ 0
-3V3
 Text GLabel 1200 2700 0    50   Output ~ 0
 BOSS_3V3
 Text GLabel 1200 3500 0    50   Input ~ 0
@@ -88,23 +84,23 @@ AS_MB_3V3
 $Comp
 L Connector_Generic:Conn_02x05_Odd_Even J3
 U 1 1 625BCAC6
-P 7900 2500
-F 0 "J3" H 7950 2075 50  0000 C CNN
-F 1 "Conn_02x05_Odd_Even" H 7950 2166 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical" H 7900 2500 50  0001 C CNN
-F 3 "~" H 7900 2500 50  0001 C CNN
-	1    7900 2500
+P 8250 2500
+F 0 "J3" H 8300 2075 50  0000 C CNN
+F 1 "Conn_02x05_Odd_Even" H 8300 2166 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical" H 8250 2500 50  0001 C CNN
+F 3 "~" H 8250 2500 50  0001 C CNN
+	1    8250 2500
 	1    0    0    -1  
 $EndComp
-Text GLabel 8200 2700 2    50   Input ~ 0
+Text GLabel 8550 2700 2    50   Input ~ 0
 GND
-Text GLabel 7700 2300 0    50   Output ~ 0
+Text GLabel 8050 2300 0    50   Output ~ 0
 TCK
-Text GLabel 7700 2500 0    50   Input ~ 0
+Text GLabel 8050 2500 0    50   Input ~ 0
 TDO
-Text GLabel 7700 2400 0    50   Output ~ 0
+Text GLabel 8050 2400 0    50   Output ~ 0
 TDI
-Text GLabel 7700 2600 0    50   Output ~ 0
+Text GLabel 8050 2600 0    50   Output ~ 0
 TMS
 Text GLabel 1200 4300 0    50   Input ~ 0
 TCK
@@ -153,76 +149,64 @@ Text GLabel 4500 5950 3    50   BiDi ~ 0
 D8_3V3
 Text GLabel 7050 5200 2    50   Output ~ 0
 FLASH_WE
-Text GLabel -800 4900 2    50   BiDi ~ 0
+Text GLabel 7050 4400 2    50   BiDi ~ 0
 SD_D0
-Text GLabel -800 4800 2    50   BiDi ~ 0
+Text GLabel 7750 5650 2    50   BiDi ~ 0
 SD_D1
-Text GLabel -800 5400 2    50   BiDi ~ 0
+Text GLabel 7750 5750 2    50   BiDi ~ 0
 SD_D2
-Text GLabel -800 5500 2    50   BiDi ~ 0
+Text GLabel 7750 5850 2    50   BiDi ~ 0
 SD_D3
-Text GLabel -800 5600 3    50   Output ~ 0
+Text GLabel 7050 4600 2    50   Output ~ 0
 SD_CMD
 Text GLabel 5700 5950 3    50   Output ~ 0
 SD_CLK
 Text GLabel 7050 4500 2    50   Input ~ 0
 SD_CD
-Text GLabel -800 3100 2    50   BiDi ~ 0
+Text GLabel 7050 3300 2    50   BiDi ~ 0
 D0_3V3
-Text GLabel -800 3250 2    50   BiDi ~ 0
+Text GLabel 7050 3400 2    50   BiDi ~ 0
 D1_3V3
-Text GLabel -800 3500 2    50   BiDi ~ 0
+Text GLabel 7050 3600 2    50   BiDi ~ 0
 D2_3V3
-Text GLabel -800 3800 2    50   BiDi ~ 0
+Text GLabel 7050 3700 2    50   BiDi ~ 0
 D3_3V3
-Text GLabel -800 4000 2    50   BiDi ~ 0
+Text GLabel 7050 3900 2    50   BiDi ~ 0
 D4_3V3
-Text GLabel -800 4200 2    50   BiDi ~ 0
+Text GLabel 7050 4000 2    50   BiDi ~ 0
 D5_3V3
-Text GLabel -800 4300 2    50   BiDi ~ 0
+Text GLabel 7050 4200 2    50   BiDi ~ 0
 D6_3V3
-Text GLabel -800 4400 2    50   BiDi ~ 0
+Text GLabel 7050 4300 2    50   BiDi ~ 0
 D7_3V3
-Text GLabel -800 4100 2    50   Input ~ 0
+Text GLabel 7050 2900 2    50   Input ~ 0
 A5_3V3
 Text GLabel 5700 1100 1    50   Input ~ 0
 A6_3V3
-Text GLabel -800 3900 2    50   Input ~ 0
+Text GLabel 7050 2800 2    50   Input ~ 0
 A4_3V3
-Text GLabel -800 3700 2    50   Input ~ 0
+Text GLabel 7050 2700 2    50   Input ~ 0
 A3_3V3
 Text GLabel 2800 1100 1    50   Input ~ 0
 A23_3V3
-Text GLabel -800 3600 2    50   Input ~ 0
+Text GLabel 7050 2600 2    50   Input ~ 0
 A2_3V3
-Text GLabel -800 3400 2    50   Input ~ 0
+Text GLabel 7050 2500 2    50   Input ~ 0
 A1_3V3
-Text GLabel -1600 6000 3    50   Input ~ 0
-IDE_IOW_3V3
-Text GLabel -1700 6000 3    50   Input ~ 0
-IDE_IOR_3V3
-Text GLabel -1800 6000 3    50   Input ~ 0
-IDE_CS1_3V3
-Text GLabel -1950 6000 3    50   Input ~ 0
-IDE_CS0_3V3
 Text GLabel 5600 5950 3    50   Output ~ 0
 FLASH_A19
-Text GLabel -800 5100 2    50   Input ~ 0
-OSC_CLK
-Text GLabel -800 2850 2    50   Input ~ 0
+Text GLabel 7050 2100 2    50   Input ~ 0
 OE_BANK1
 Text GLabel 4400 1100 1    50   Input ~ 0
 WE_BANK1_EVEN
-Text GLabel -800 2950 2    50   Input ~ 0
+Text GLabel 7050 2400 2    50   Input ~ 0
 WE_BANK1_ODD
-Text GLabel -800 2550 2    50   Input ~ 0
+Text GLabel 5800 1100 1    50   Input ~ 0
 OE_BANK0
-Text GLabel -800 2650 2    50   Input ~ 0
+Text GLabel 7050 2300 2    50   Input ~ 0
 WE_BANK0_EVEN
-Text GLabel -800 2750 2    50   Input ~ 0
+Text GLabel 7050 2000 2    50   Input ~ 0
 WE_BANK0_ODD
-Text GLabel -800 4550 2    50   Input ~ 0
-JP7
 $Comp
 L Connector_Generic:Conn_02x01 J9
 U 1 1 62127717
@@ -253,15 +237,13 @@ Text GLabel 9550 6050 2    50   Input ~ 0
 GND
 Text GLabel 9050 6050 0    50   Input ~ 0
 JP8
-Text GLabel -800 5300 2    50   Input ~ 0
-JP8
 Text GLabel 5800 5950 3    50   Output ~ 0
 FLASH_OE
-Text GLabel -2150 6000 3    50   Output ~ 0
+Text GLabel 8150 5100 3    50   Output ~ 0
 ROM_OE
-Text GLabel -2350 6000 3    50   Output ~ 0
+Text GLabel 7950 5100 3    50   Output ~ 0
 ROM_B1
-Text GLabel -2250 6000 3    50   Output ~ 0
+Text GLabel 8050 5100 3    50   Output ~ 0
 ROM_B2
 Text GLabel 9050 5250 0    50   Input ~ 0
 JP6
@@ -310,14 +292,10 @@ Wire Wire Line
 	12000 4500 12000 4600
 Wire Wire Line
 	12400 4600 12000 4600
-Text GLabel -5700 3550 0    50   Input ~ 0
-JP9
 Text GLabel 1200 2100 0    50   BiDi ~ 0
 BG_3V3
-Text GLabel 7700 2700 0    50   Input ~ 0
+Text GLabel 8050 2700 0    50   Input ~ 0
 GND
-Text GLabel -5250 6000 3    50   Input ~ 0
-JP6
 Text GLabel 2700 5950 3    50   Input ~ 0
 BERR_3V3
 Text GLabel 2400 5950 3    50   Input ~ 0
@@ -355,78 +333,6 @@ F 3 "~" H 800 5000 50  0001 C CNN
 $EndComp
 Text GLabel 1200 2800 0    50   Input ~ 0
 RST_3V3
-Connection ~ -4550 1100
-Connection ~ -3050 4450
-Wire Wire Line
-	-5150 1100 -5250 1100
-Connection ~ -5150 1100
-Wire Wire Line
-	-3150 4450 -3050 4450
-Connection ~ -3150 4450
-Connection ~ -4150 1100
-Connection ~ -4850 1100
-Wire Wire Line
-	-3250 4450 -3150 4450
-Connection ~ -3250 4450
-Wire Wire Line
-	-4850 1100 -4950 1100
-Connection ~ -4950 1100
-Wire Wire Line
-	-4750 1100 -4850 1100
-Connection ~ -4750 1100
-Wire Wire Line
-	-4050 1100 -4150 1100
-Wire Wire Line
-	-3950 1100 -4050 1100
-Connection ~ -4050 1100
-Wire Wire Line
-	-3350 4450 -3250 4450
-Connection ~ -3350 4450
-Wire Wire Line
-	-3450 4450 -3350 4450
-Connection ~ -3450 4450
-Wire Wire Line
-	-4950 1100 -5050 1100
-Wire Wire Line
-	-5050 1100 -5150 1100
-Connection ~ -5050 1100
-Wire Wire Line
-	-3550 4450 -3450 4450
-Wire Wire Line
-	-3650 4450 -3550 4450
-Connection ~ -3550 4450
-Wire Wire Line
-	-4450 1100 -4550 1100
-Connection ~ -4450 1100
-Wire Wire Line
-	-4350 1100 -4450 1100
-Connection ~ -4350 1100
-Wire Wire Line
-	-4150 1100 -4250 1100
-Wire Wire Line
-	-4250 1100 -4350 1100
-Connection ~ -4250 1100
-Wire Wire Line
-	-2950 4450 -2850 4450
-Wire Wire Line
-	-3050 4450 -2950 4450
-Connection ~ -2950 4450
-Wire Wire Line
-	-4550 1100 -4650 1100
-Wire Wire Line
-	-4650 1100 -4750 1100
-Connection ~ -4650 1100
-$Comp
-L SF2000:GW1N-UV9LQ144 U28
-U 1 1 6290D788
-P -3250 3550
-F 0 "U28" H -3200 3550 60  0000 R CNN
-F 1 "GW1N-UV9LQ144" H -2850 3450 60  0000 R CNN
-F 2 "Package_QFP:LQFP-144_20x20mm_P0.5mm" H -3250 3650 60  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/1033/GW1N_series_of_FPGA_Products_Data_Sheet-1830682.pdf" H -1800 4750 60  0001 C CNN
-	1    -3250 3550
-	1    0    0    -1  
-$EndComp
 Text GLabel 1200 5100 0    50   Input ~ 0
 CDONE
 Text GLabel 2600 1100 1    50   BiDi ~ 0
@@ -524,10 +430,10 @@ Text GLabel 2400 1100 1    50   Input ~ 0
 3V3
 Text GLabel 4300 1100 1    50   Input ~ 0
 OSC_CLK
-NoConn ~ 8200 2500
+NoConn ~ 8550 2500
 Text GLabel 1200 5200 0    50   Input ~ 0
 CRESET_N
-Text GLabel 8400 2300 2    50   Input ~ 0
+Text GLabel 8850 2300 1    50   Input ~ 0
 CRESET_N
 NoConn ~ 1200 5300
 Text GLabel 1200 4800 0    50   Output ~ 0
@@ -540,32 +446,32 @@ Text GLabel 1200 4700 0    50   Output ~ 0
 SCLK
 Wire Wire Line
 	600  5000 600  5150
-Text GLabel 8200 2400 2    50   Input ~ 0
+Text GLabel 8550 2400 2    50   Input ~ 0
 SPI_SS
 $Comp
 L Memory_Flash:AT25SF081-SSHD-X U20
 U 1 1 6925ADB2
-P 8300 3850
-F 0 "U20" H 8250 3900 50  0000 L CNN
-F 1 "AT25SF081B-SSH" H 7500 4300 50  0000 L CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 8300 3250 50  0001 C CNN
-F 3 "https://www.mouser.com/ProductDetail/988-AT25SF081-SSH-B" H 8300 3850 50  0001 C CNN
-	1    8300 3850
+P 8400 3750
+F 0 "U20" H 8350 3800 50  0000 L CNN
+F 1 "AT25SF081B-SSH" H 7600 4200 50  0000 L CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 8400 3150 50  0001 C CNN
+F 3 "https://www.mouser.com/ProductDetail/988-AT25SF081-SSH-B" H 8400 3750 50  0001 C CNN
+	1    8400 3750
 	1    0    0    -1  
 $EndComp
-NoConn ~ 7700 3950
-NoConn ~ 7700 4050
-Text GLabel 8300 3350 1    50   Input ~ 0
+NoConn ~ 7800 3850
+NoConn ~ 7800 3950
+Text GLabel 8400 3250 1    50   Input ~ 0
 3V3
-Text GLabel 7700 3850 0    50   Input ~ 0
+Text GLabel 7800 3750 0    50   Input ~ 0
 SPI_SS
-Text GLabel 7700 3750 0    50   Input ~ 0
+Text GLabel 7800 3650 0    50   Input ~ 0
 SCLK
-Text GLabel 8300 4350 3    50   Input ~ 0
+Text GLabel 8400 4250 3    50   Input ~ 0
 GND
-Text GLabel 7700 3650 0    50   Input ~ 0
+Text GLabel 7800 3550 0    50   Input ~ 0
 DI
-Text GLabel 8900 3650 2    50   Output ~ 0
+Text GLabel 9000 3550 2    50   Output ~ 0
 DO
 Text GLabel 1200 4900 0    50   Output ~ 0
 AVEC
@@ -659,14 +565,14 @@ LED_ACTIVE_n
 $Comp
 L Device:R_Small R?
 U 1 1 68C712CB
-P 8300 2050
+P 8600 2050
 AR Path="/68C712CB" Ref="R?"  Part="1" 
 AR Path="/620D263D/68C712CB" Ref="R10"  Part="1" 
-F 0 "R10" V 8400 1950 50  0000 L CNN
-F 1 "100k" V 8200 1950 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 8300 2050 50  0001 C CNN
-F 3 "~" H 8300 2050 50  0001 C CNN
-	1    8300 2050
+F 0 "R10" V 8700 1950 50  0000 L CNN
+F 1 "100k" V 8500 1950 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 8600 2050 50  0001 C CNN
+F 3 "~" H 8600 2050 50  0001 C CNN
+	1    8600 2050
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -682,7 +588,7 @@ F 3 "~" H 10000 3700 50  0001 C CNN
 	1    10000 3700
 	1    0    0    -1  
 $EndComp
-Text GLabel 8400 1850 2    50   Input ~ 0
+Text GLabel 8400 1950 0    50   Input ~ 0
 3V3
 Text GLabel 10000 3600 1    50   Input ~ 0
 3V3
@@ -804,51 +710,40 @@ Wire Wire Line
 Text GLabel 9100 2200 1    50   Input ~ 0
 3V3
 Wire Wire Line
-	8200 2600 8750 2600
+	8550 2600 8900 2600
 Wire Wire Line
-	8750 2600 8750 3000
+	8900 2600 8900 3000
 Wire Wire Line
-	8750 3000 9300 3000
-Text GLabel 7550 1900 3    50   Input ~ 0
+	8900 3000 9300 3000
+Text GLabel 7750 1750 3    50   Input ~ 0
 TDI
-Text GLabel 7850 1900 3    50   Input ~ 0
+Text GLabel 8050 1750 3    50   Input ~ 0
 TDO
-Text GLabel 7650 1900 3    50   Input ~ 0
+Text GLabel 7850 1750 3    50   Input ~ 0
 TCK
-Text GLabel 7750 1900 3    50   Input ~ 0
+Text GLabel 7950 1750 3    50   Input ~ 0
 TMS
 Wire Wire Line
-	7750 1500 7850 1500
-Connection ~ 7750 1500
+	7950 1350 8050 1350
+Connection ~ 7950 1350
 Wire Wire Line
-	7650 1500 7750 1500
-Connection ~ 7650 1500
+	7850 1350 7950 1350
+Connection ~ 7850 1350
 Wire Wire Line
-	7550 1500 7650 1500
-Text GLabel 7550 1500 1    50   Input ~ 0
+	7750 1350 7850 1350
+Text GLabel 7750 1350 1    50   Input ~ 0
 3V3
 $Comp
 L Device:R_Pack04 RN2
 U 1 1 6265DCDE
-P 7750 1700
-F 0 "RN2" H 7938 1746 50  0000 L CNN
-F 1 "10k_Pack04" H 7938 1655 50  0000 L CNN
-F 2 "SF2000:RESCAF80P320X160X60-8N" V 8025 1700 50  0001 C CNN
-F 3 "~" H 7750 1700 50  0001 C CNN
-	1    7750 1700
+P 7950 1550
+F 0 "RN2" H 8138 1596 50  0000 L CNN
+F 1 "10k_Pack04" H 8138 1505 50  0000 L CNN
+F 2 "SF2000:RESCAF80P320X160X60-8N" V 8225 1550 50  0001 C CNN
+F 3 "~" H 7950 1550 50  0001 C CNN
+	1    7950 1550
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8400 2300 8300 2300
-Wire Wire Line
-	8300 2150 8300 2300
-Connection ~ 8300 2300
-Wire Wire Line
-	8300 2300 8200 2300
-Wire Wire Line
-	8300 1850 8300 1950
-Wire Wire Line
-	8300 1850 8400 1850
 Text Notes 8850 1200 0    50   ~ 0
 NPN
 Text Notes 9550 1000 0    50   ~ 0
@@ -876,4 +771,19 @@ Text Notes 8700 700  0    50   ~ 0
 Pulled-up to +5V in RN6
 Wire Notes Line
 	9400 700  9400 1150
+Text GLabel 7050 4900 2    50   Output ~ 0
+CP_IOWR_3V3
+Text GLabel 7050 4800 2    50   Output ~ 0
+CP_IORD_3V3
+Text GLabel 7050 5000 2    50   Output ~ 0
+CP_CS_3V3
+Wire Wire Line
+	8550 2300 8600 2300
+Wire Wire Line
+	8400 1950 8600 1950
+Wire Wire Line
+	8600 2150 8600 2300
+Connection ~ 8600 2300
+Wire Wire Line
+	8600 2300 8850 2300
 $EndSCHEMATC
