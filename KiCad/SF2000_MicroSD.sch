@@ -117,10 +117,8 @@ Text GLabel 2850 4800 3    50   Input ~ 0
 GND
 Text GLabel 3550 4500 2    50   Output ~ 0
 OSC_CLK
-Text GLabel 2000 3200 3    50   Input ~ 0
+Text GLabel 1900 3200 3    50   Input ~ 0
 JP8
-Text GLabel 2950 3200 3    50   Input ~ 0
-JP7
 Text GLabel 2550 4500 0    50   Input ~ 0
 3V3
 $Comp
@@ -143,4 +141,6 @@ Wire Wire Line
 	3250 4500 3150 4500
 Text Label 3200 4500 3    50   ~ 0
 OSC
+Text GLabel 2800 3250 3    50   Input ~ 0
+ROM_OE
 $EndSCHEMATC

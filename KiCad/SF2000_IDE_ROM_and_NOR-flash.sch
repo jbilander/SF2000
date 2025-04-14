@@ -337,7 +337,7 @@ F 3 "https://assets.nexperia.com/documents/data-sheet/74AHC_AHCT3G14.pdf" H 3050
 	1    2700 4500
 	1    0    0    -1  
 $EndComp
-Text GLabel 3200 4350 2    50   Input ~ 0
+Text GLabel 3550 4350 1    50   Input ~ 0
 +5VDC
 Text GLabel 2200 4650 0    50   Input ~ 0
 GND
@@ -359,4 +359,28 @@ Wire Notes Line
 	3600 3900 3600 2200
 Wire Notes Line
 	1800 2200 3600 2200
+Text GLabel 4000 3200 3    50   Input ~ 0
+LED_ACTIVE_n
+$Comp
+L Device:C C?
+U 1 1 683D3421
+P 3850 4500
+AR Path="/683D3421" Ref="C?"  Part="1" 
+AR Path="/620D263D/683D3421" Ref="C?"  Part="1" 
+AR Path="/627A6500/683D3421" Ref="C25"  Part="1" 
+F 0 "C25" H 3900 4600 50  0000 L CNN
+F 1 "0.1uF" H 3850 4400 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 3888 4350 50  0001 C CNN
+F 3 "~" H 3850 4500 50  0001 C CNN
+	1    3850 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 4350 3200 4350
+Wire Wire Line
+	3850 4650 3850 4850
+Wire Wire Line
+	3850 4850 2200 4850
+Wire Wire Line
+	2200 4850 2200 4650
 $EndSCHEMATC
