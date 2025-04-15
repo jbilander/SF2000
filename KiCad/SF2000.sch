@@ -1545,8 +1545,7 @@ Text Notes 9150 1400 0    50   ~ 0
 Supply to FPGA Core
 Text GLabel 1000 2650 0    50   Input ~ 0
 INT6
-Text GLabel 2850 3450 0    50   Output ~ 0
-INT6
-Text GLabel 3850 3550 2    50   Input ~ 0
-INT6_3V3
+NoConn ~ 3850 3550
+Text GLabel 2850 3450 0    50   Input ~ 0
+GND
 $EndSCHEMATC

@@ -108,24 +108,24 @@ Text GLabel 1200 4400 0    50   Input ~ 0
 TDI
 Text GLabel 1200 3300 0    50   Input ~ 0
 JP1
-Text GLabel 9050 4850 0    50   Input ~ 0
+Text GLabel 9550 5050 0    50   Input ~ 0
 JP2
 Text GLabel 12000 4200 1    50   Input ~ 0
 3V3
 $Comp
 L Connector_Generic:Conn_02x01 J4
 U 1 1 6276C760
-P 9350 4850
-F 0 "J4" H 9400 4600 50  0000 C CNN
-F 1 "Conn_02x01" H 9400 4700 50  0000 C CNN
-F 2 "Connector_PinHeader_2.00mm:PinHeader_2x01_P2.00mm_Vertical" H 9350 4850 50  0001 C CNN
-F 3 "~" H 9350 4850 50  0001 C CNN
-	1    9350 4850
+P 9850 5050
+F 0 "J4" H 9900 4800 50  0000 C CNN
+F 1 "Conn_02x01" H 9900 4900 50  0000 C CNN
+F 2 "Connector_PinHeader_2.00mm:PinHeader_2x01_P2.00mm_Vertical" H 9850 5050 50  0001 C CNN
+F 3 "~" H 9850 5050 50  0001 C CNN
+	1    9850 5050
 	-1   0    0    1   
 $EndComp
-Text GLabel 9550 4850 2    50   Input ~ 0
+Text GLabel 10050 5050 2    50   Input ~ 0
 GND
-Text GLabel 1200 3400 0    50   Input ~ 0
+Text GLabel 2700 1100 1    50   Input ~ 0
 JP2
 Text GLabel 1200 2300 0    50   Output ~ 0
 VMA_3V3
@@ -202,32 +202,32 @@ WE_BANK0_ODD
 $Comp
 L Connector_Generic:Conn_02x01 J9
 U 1 1 62127717
-P 9350 5650
-F 0 "J9" H 9400 5400 50  0000 C CNN
-F 1 "Conn_02x01" H 9400 5500 50  0000 C CNN
-F 2 "Connector_PinHeader_2.00mm:PinHeader_2x01_P2.00mm_Vertical" H 9350 5650 50  0001 C CNN
-F 3 "~" H 9350 5650 50  0001 C CNN
-	1    9350 5650
+P 9850 5850
+F 0 "J9" H 9900 5600 50  0000 C CNN
+F 1 "Conn_02x01" H 9900 5700 50  0000 C CNN
+F 2 "Connector_PinHeader_2.00mm:PinHeader_2x01_P2.00mm_Vertical" H 9850 5850 50  0001 C CNN
+F 3 "~" H 9850 5850 50  0001 C CNN
+	1    9850 5850
 	-1   0    0    1   
 $EndComp
-Text GLabel 9550 5650 2    50   Input ~ 0
+Text GLabel 10050 5850 2    50   Input ~ 0
 GND
 Text GLabel 5800 5950 3    50   Output ~ 0
 FLASH_OE
-Text GLabel 9050 5250 0    50   Input ~ 0
-JP6
+Text GLabel 9550 5450 0    50   Input ~ 0
+JP4
 $Comp
 L Connector_Generic:Conn_02x01 J8
 U 1 1 621772F2
-P 9350 5250
-F 0 "J8" H 9400 5000 50  0000 C CNN
-F 1 "Conn_02x01" H 9400 5100 50  0000 C CNN
-F 2 "Connector_PinHeader_2.00mm:PinHeader_2x01_P2.00mm_Vertical" H 9350 5250 50  0001 C CNN
-F 3 "~" H 9350 5250 50  0001 C CNN
-	1    9350 5250
+P 9850 5450
+F 0 "J8" H 9900 5200 50  0000 C CNN
+F 1 "Conn_02x01" H 9900 5300 50  0000 C CNN
+F 2 "Connector_PinHeader_2.00mm:PinHeader_2x01_P2.00mm_Vertical" H 9850 5450 50  0001 C CNN
+F 3 "~" H 9850 5450 50  0001 C CNN
+	1    9850 5450
 	-1   0    0    1   
 $EndComp
-Text GLabel 9550 5250 2    50   Input ~ 0
+Text GLabel 10050 5450 2    50   Input ~ 0
 GND
 $Comp
 L Device:R_Small R?
@@ -442,8 +442,6 @@ Text GLabel 7800 3550 0    50   Input ~ 0
 DI
 Text GLabel 9000 3550 2    50   Output ~ 0
 DO
-Text GLabel 2700 1100 1    50   Output ~ 0
-INT6_3V3
 Wire Wire Line
 	900  5000 1200 5000
 Wire Wire Line
@@ -604,8 +602,6 @@ F 3 "~" H 9650 3700 50  0001 C CNN
 	1    9650 3700
 	1    0    0    -1  
 $EndComp
-Text GLabel 9650 3800 3    50   Input ~ 0
-JP2
 Text GLabel 9650 3600 1    50   Input ~ 0
 3V3
 $Comp
@@ -757,6 +753,10 @@ Text GLabel 1200 4900 0    50   Output ~ 0
 ROM_WE
 Text GLabel 7050 4400 2    50   Output ~ 0
 ROM_OE
-Text GLabel 9050 5650 0    50   Input ~ 0
+Text GLabel 9550 5850 0    50   Input ~ 0
 ROM_B1
+Text GLabel 1200 3400 0    50   Input ~ 0
+JP4
+Text GLabel 9650 3800 3    50   Input ~ 0
+JP2
 $EndSCHEMATC
