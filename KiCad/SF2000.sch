@@ -594,8 +594,6 @@ Text GLabel 2850 2250 0    50   Output ~ 0
 CFGOUT
 Text GLabel 2850 3050 0    50   Output ~ 0
 OVR
-Text GLabel 2850 3250 0    50   Output ~ 0
-INT2
 Text GLabel 2850 2550 0    50   Input ~ 0
 CCKQ
 Text GLabel 2850 2750 0    50   Input ~ 0
@@ -741,8 +739,6 @@ F1 "SF2000_FPGA.sch" 50
 $EndSheet
 Text GLabel 3850 3150 2    50   Input ~ 0
 OVR_3V3
-Text GLabel 3850 3350 2    50   Input ~ 0
-INT2_3V3
 Text GLabel 3850 4350 2    50   Input ~ 0
 A5_3V3
 Text GLabel 3850 4450 2    50   Input ~ 0
@@ -1547,5 +1543,8 @@ Text GLabel 1000 2650 0    50   Input ~ 0
 INT6
 NoConn ~ 3850 3550
 Text GLabel 2850 3450 0    50   Input ~ 0
+GND
+NoConn ~ 3850 3350
+Text GLabel 2850 3250 0    50   Input ~ 0
 GND
 $EndSCHEMATC

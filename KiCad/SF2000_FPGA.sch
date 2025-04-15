@@ -19,8 +19,6 @@ Text GLabel 1200 3200 0    50   Input ~ 0
 C7M_3V3
 Text GLabel 1200 2400 0    50   Output ~ 0
 OVR_3V3
-Text GLabel 1200 2700 0    50   Output ~ 0
-INT2_3V3
 Text GLabel 1200 2500 0    50   Output ~ 0
 BOSS_3V3
 Text GLabel 1200 3500 0    50   Input ~ 0
@@ -108,22 +106,22 @@ Text GLabel 1200 4400 0    50   Input ~ 0
 TDI
 Text GLabel 1200 3300 0    50   Input ~ 0
 JP1
-Text GLabel 9550 5050 0    50   Input ~ 0
+Text GLabel 9550 4650 0    50   Input ~ 0
 JP2
 Text GLabel 12000 4200 1    50   Input ~ 0
 3V3
 $Comp
 L Connector_Generic:Conn_02x01 J4
 U 1 1 6276C760
-P 9850 5050
-F 0 "J4" H 9900 4800 50  0000 C CNN
-F 1 "Conn_02x01" H 9900 4900 50  0000 C CNN
-F 2 "Connector_PinHeader_2.00mm:PinHeader_2x01_P2.00mm_Vertical" H 9850 5050 50  0001 C CNN
-F 3 "~" H 9850 5050 50  0001 C CNN
-	1    9850 5050
+P 9850 4650
+F 0 "J4" H 9900 4400 50  0000 C CNN
+F 1 "Conn_02x01" H 9900 4500 50  0000 C CNN
+F 2 "Connector_PinHeader_2.00mm:PinHeader_2x01_P2.00mm_Vertical" H 9850 4650 50  0001 C CNN
+F 3 "~" H 9850 4650 50  0001 C CNN
+	1    9850 4650
 	-1   0    0    1   
 $EndComp
-Text GLabel 10050 5050 2    50   Input ~ 0
+Text GLabel 10050 4650 2    50   Input ~ 0
 GND
 Text GLabel 2700 1100 1    50   Input ~ 0
 JP2
@@ -759,15 +757,21 @@ Text GLabel 1200 3400 0    50   Input ~ 0
 JP4
 Text GLabel 9650 3800 3    50   Input ~ 0
 JP2
+Text GLabel 1200 2700 0    50   Input ~ 0
+JP3
 $Comp
 L Connector_Generic:Conn_02x01 J10
 U 1 1 682E963C
-P 9850 6250
-F 0 "J10" H 9900 6000 50  0000 C CNN
-F 1 "Conn_02x01" H 9900 6100 50  0000 C CNN
-F 2 "Connector_PinHeader_2.00mm:PinHeader_2x01_P2.00mm_Vertical" H 9850 6250 50  0001 C CNN
-F 3 "~" H 9850 6250 50  0001 C CNN
-	1    9850 6250
+P 9850 5050
+F 0 "J10" H 9900 4800 50  0000 C CNN
+F 1 "Conn_02x01" H 9900 4900 50  0000 C CNN
+F 2 "Connector_PinHeader_2.00mm:PinHeader_2x01_P2.00mm_Vertical" H 9850 5050 50  0001 C CNN
+F 3 "~" H 9850 5050 50  0001 C CNN
+	1    9850 5050
 	-1   0    0    1   
 $EndComp
+Text GLabel 9550 5050 0    50   Input ~ 0
+JP3
+Text GLabel 10050 5050 2    50   Input ~ 0
+GND
 $EndSCHEMATC
