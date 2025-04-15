@@ -149,12 +149,6 @@ Text GLabel 7050 5200 2    50   Output ~ 0
 FLASH_WE
 Text GLabel 7050 4600 2    50   BiDi ~ 0
 SD_D0
-Text GLabel 7950 5250 2    50   BiDi ~ 0
-SD_D1
-Text GLabel 7950 5350 2    50   BiDi ~ 0
-SD_D2
-Text GLabel 7950 5450 2    50   BiDi ~ 0
-SD_D3
 Text GLabel 7050 4700 2    50   Output ~ 0
 SD_CMD
 Text GLabel 5700 5950 3    50   Output ~ 0
@@ -218,29 +212,8 @@ F 3 "~" H 9350 5650 50  0001 C CNN
 $EndComp
 Text GLabel 9550 5650 2    50   Input ~ 0
 GND
-Text GLabel 9050 5650 0    50   Input ~ 0
-JP7
-$Comp
-L Connector_Generic:Conn_02x01 J10
-U 1 1 62132436
-P 9350 6050
-F 0 "J10" H 9400 5800 50  0000 C CNN
-F 1 "Conn_02x01" H 9400 5900 50  0000 C CNN
-F 2 "Connector_PinHeader_2.00mm:PinHeader_2x01_P2.00mm_Vertical" H 9350 6050 50  0001 C CNN
-F 3 "~" H 9350 6050 50  0001 C CNN
-	1    9350 6050
-	-1   0    0    1   
-$EndComp
-Text GLabel 9550 6050 2    50   Input ~ 0
-GND
-Text GLabel 9050 6050 0    50   Input ~ 0
-JP8
 Text GLabel 5800 5950 3    50   Output ~ 0
 FLASH_OE
-Text GLabel 8000 4750 3    50   Output ~ 0
-ROM_B1
-Text GLabel 8100 4750 3    50   Output ~ 0
-ROM_B2
 Text GLabel 9050 5250 0    50   Input ~ 0
 JP6
 $Comp
@@ -469,8 +442,6 @@ Text GLabel 7800 3550 0    50   Input ~ 0
 DI
 Text GLabel 9000 3550 2    50   Output ~ 0
 DO
-Text GLabel 8200 4750 3    50   Output ~ 0
-AVEC
 Text GLabel 2700 1100 1    50   Output ~ 0
 INT6_3V3
 Wire Wire Line
@@ -786,4 +757,6 @@ Text GLabel 1200 4900 0    50   Output ~ 0
 ROM_WE
 Text GLabel 7050 4400 2    50   Output ~ 0
 ROM_OE
+Text GLabel 9050 5650 0    50   Input ~ 0
+ROM_B1
 $EndSCHEMATC

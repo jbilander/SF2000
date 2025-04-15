@@ -111,8 +111,6 @@ Text GLabel 5650 3100 0    50   Input ~ 0
 A15_3V3
 Text GLabel 5650 3200 0    50   Input ~ 0
 ROM_B1
-Text GLabel 5650 3300 0    50   Input ~ 0
-ROM_B2
 Text GLabel 9550 3500 2    50   BiDi ~ 0
 D0_3V3
 Text GLabel 9550 3300 2    50   BiDi ~ 0
@@ -383,4 +381,7 @@ Wire Wire Line
 	3850 4850 2200 4850
 Wire Wire Line
 	2200 4850 2200 4650
+Wire Wire Line
+	5650 3300 5650 3400
+Connection ~ 5650 3400
 $EndSCHEMATC

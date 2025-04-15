@@ -141,5 +141,6 @@ Text Label 3200 4500 3    50   ~ 0
 OSC
 Text GLabel 2200 3200 3    50   Input ~ 0
 ROM_OE
-NoConn ~ 2300 3200
+Text GLabel 2300 3200 3    50   Input ~ 0
+ROM_B1
 $EndSCHEMATC
