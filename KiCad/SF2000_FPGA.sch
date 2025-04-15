@@ -17,8 +17,6 @@ Text GLabel 600  5150 3    50   Output ~ 0
 CLKCPU
 Text GLabel 1200 3200 0    50   Input ~ 0
 C7M_3V3
-Text GLabel 8250 5100 3    50   Output ~ 0
-ROM_WE
 Text GLabel 1200 2400 0    50   Output ~ 0
 OVR_3V3
 Text GLabel 1200 2500 0    50   Output ~ 0
@@ -149,15 +147,15 @@ Text GLabel 4500 5950 3    50   BiDi ~ 0
 D8_3V3
 Text GLabel 7050 5200 2    50   Output ~ 0
 FLASH_WE
-Text GLabel 7050 4400 2    50   BiDi ~ 0
+Text GLabel 7050 4600 2    50   BiDi ~ 0
 SD_D0
-Text GLabel 7750 5650 2    50   BiDi ~ 0
+Text GLabel 7950 5250 2    50   BiDi ~ 0
 SD_D1
-Text GLabel 7750 5750 2    50   BiDi ~ 0
+Text GLabel 7950 5350 2    50   BiDi ~ 0
 SD_D2
-Text GLabel 7750 5850 2    50   BiDi ~ 0
+Text GLabel 7950 5450 2    50   BiDi ~ 0
 SD_D3
-Text GLabel 7050 4600 2    50   Output ~ 0
+Text GLabel 7050 4700 2    50   Output ~ 0
 SD_CMD
 Text GLabel 5700 5950 3    50   Output ~ 0
 SD_CLK
@@ -239,11 +237,9 @@ Text GLabel 9050 6050 0    50   Input ~ 0
 JP8
 Text GLabel 5800 5950 3    50   Output ~ 0
 FLASH_OE
-Text GLabel 8150 5100 3    50   Output ~ 0
-ROM_OE
-Text GLabel 7950 5100 3    50   Output ~ 0
+Text GLabel 8000 4750 3    50   Output ~ 0
 ROM_B1
-Text GLabel 8050 5100 3    50   Output ~ 0
+Text GLabel 8100 4750 3    50   Output ~ 0
 ROM_B2
 Text GLabel 9050 5250 0    50   Input ~ 0
 JP6
@@ -324,7 +320,7 @@ U 1 1 6302BBCE
 P 800 5000
 AR Path="/6302BBCE" Ref="R?"  Part="1" 
 AR Path="/620D263D/6302BBCE" Ref="R3"  Part="1" 
-F 0 "R3" V 700 4900 50  0000 L CNN
+F 0 "R3" V 900 4900 50  0000 L CNN
 F 1 "33" V 800 4950 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 800 5000 50  0001 C CNN
 F 3 "~" H 800 5000 50  0001 C CNN
@@ -473,7 +469,7 @@ Text GLabel 7800 3550 0    50   Input ~ 0
 DI
 Text GLabel 9000 3550 2    50   Output ~ 0
 DO
-Text GLabel 1200 4900 0    50   Output ~ 0
+Text GLabel 8200 4750 3    50   Output ~ 0
 AVEC
 Text GLabel 2700 1100 1    50   Output ~ 0
 INT6_3V3
@@ -592,7 +588,7 @@ Text GLabel 8400 1950 0    50   Input ~ 0
 3V3
 Text GLabel 10000 3600 1    50   Input ~ 0
 3V3
-Text GLabel 10550 3900 3    50   Input ~ 0
+Text GLabel 10650 3900 3    50   Input ~ 0
 FLASH_OE
 Text GLabel 10350 3900 3    50   Input ~ 0
 FLASH_WE
@@ -622,7 +618,7 @@ F 3 "~" H 10550 3700 50  0001 C CNN
 $EndComp
 Text GLabel 10350 3500 1    50   Input ~ 0
 3V3
-Text GLabel 9300 3800 3    50   Input ~ 0
+Text GLabel 10550 3900 3    50   Input ~ 0
 AVEC
 $Comp
 L Device:R_Small R?
@@ -761,7 +757,7 @@ Wire Notes Line
 	11150 1800 11150 550 
 Wire Notes Line
 	11150 550  8650 550 
-Text GLabel 10650 3900 3    50   Input ~ 0
+Text GLabel 9300 3800 3    50   Input ~ 0
 ROM_WE
 Text Notes 9950 700  0    100  ~ 0
 LED Circuit
@@ -786,4 +782,8 @@ Wire Wire Line
 Connection ~ 8600 2300
 Wire Wire Line
 	8600 2300 8850 2300
+Text GLabel 1200 4900 0    50   Output ~ 0
+ROM_WE
+Text GLabel 7050 4400 2    50   Output ~ 0
+ROM_OE
 $EndSCHEMATC

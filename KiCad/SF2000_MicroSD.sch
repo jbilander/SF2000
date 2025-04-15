@@ -88,17 +88,17 @@ Wire Wire Line
 Connection ~ 3150 2800
 Wire Wire Line
 	3150 2800 3250 2800
-Text GLabel 2100 3200 3    50   BiDi ~ 0
+Text GLabel 3150 3200 3    50   BiDi ~ 0
 SD_D2
-Text GLabel 2200 3200 3    50   BiDi ~ 0
+Text GLabel 3050 3200 3    50   BiDi ~ 0
 SD_D3
-Text GLabel 2300 3200 3    50   Input ~ 0
+Text GLabel 2950 3200 3    50   Input ~ 0
 SD_CMD
 Text GLabel 3250 3200 3    50   BiDi ~ 0
 SD_D0
-Text GLabel 3150 3200 3    50   BiDi ~ 0
+Text GLabel 2100 3200 3    50   BiDi ~ 0
 SD_D1
-Text GLabel 3050 3200 3    50   Input ~ 0
+Text GLabel 2000 3200 3    50   Input ~ 0
 SD_CD
 $Comp
 L Oscillator:SG-8002CA X1
@@ -117,8 +117,6 @@ Text GLabel 2850 4800 3    50   Input ~ 0
 GND
 Text GLabel 3550 4500 2    50   Output ~ 0
 OSC_CLK
-Text GLabel 1900 3200 3    50   Input ~ 0
-JP8
 Text GLabel 2550 4500 0    50   Input ~ 0
 3V3
 $Comp
@@ -141,6 +139,7 @@ Wire Wire Line
 	3250 4500 3150 4500
 Text Label 3200 4500 3    50   ~ 0
 OSC
-Text GLabel 2800 3250 3    50   Input ~ 0
+Text GLabel 2200 3200 3    50   Input ~ 0
 ROM_OE
+NoConn ~ 2300 3200
 $EndSCHEMATC
