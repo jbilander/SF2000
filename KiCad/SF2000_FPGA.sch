@@ -759,4 +759,15 @@ Text GLabel 1200 3400 0    50   Input ~ 0
 JP4
 Text GLabel 9650 3800 3    50   Input ~ 0
 JP2
+$Comp
+L Connector_Generic:Conn_02x01 J10
+U 1 1 682E963C
+P 9850 6250
+F 0 "J10" H 9900 6000 50  0000 C CNN
+F 1 "Conn_02x01" H 9900 6100 50  0000 C CNN
+F 2 "Connector_PinHeader_2.00mm:PinHeader_2x01_P2.00mm_Vertical" H 9850 6250 50  0001 C CNN
+F 3 "~" H 9850 6250 50  0001 C CNN
+	1    9850 6250
+	-1   0    0    1   
+$EndComp
 $EndSCHEMATC
