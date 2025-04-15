@@ -19,9 +19,9 @@ Text GLabel 1200 3200 0    50   Input ~ 0
 C7M_3V3
 Text GLabel 1200 2400 0    50   Output ~ 0
 OVR_3V3
-Text GLabel 1200 2500 0    50   Output ~ 0
-INT2_3V3
 Text GLabel 1200 2700 0    50   Output ~ 0
+INT2_3V3
+Text GLabel 1200 2500 0    50   Output ~ 0
 BOSS_3V3
 Text GLabel 1200 3500 0    50   Input ~ 0
 FC0_3V3
