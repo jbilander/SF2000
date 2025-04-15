@@ -1513,7 +1513,7 @@ Wire Wire Line
 Text GLabel 9900 950  2    50   Output ~ 0
 1V2
 Wire Wire Line
-	9900 950  9000 950 
+	9900 950  9600 950 
 $Comp
 L Regulator_Linear:TPS73643DBV U2
 U 1 1 61F6B37B
@@ -1547,4 +1547,53 @@ GND
 NoConn ~ 3850 3350
 Text GLabel 2850 3250 0    50   Input ~ 0
 GND
+$Comp
+L Device:C_Small C47
+U 1 1 6835C2CA
+P 9350 850
+F 0 "C47" H 9150 1000 50  0000 L CNN
+F 1 "10uF" H 9050 900 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" H 9350 850 50  0001 C CNN
+F 3 "~" H 9350 850 50  0001 C CNN
+	1    9350 850 
+	1    0    0    -1  
+$EndComp
+Connection ~ 9350 950 
+Wire Wire Line
+	9350 950  9000 950 
+Text GLabel 9600 750  1    50   Input ~ 0
+GND
+$Comp
+L Device:C_Small C48
+U 1 1 6837BF57
+P 9600 850
+F 0 "C48" H 9700 1000 50  0000 L CNN
+F 1 "0.1uF" H 9700 900 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 9600 850 50  0001 C CNN
+F 3 "~" H 9600 850 50  0001 C CNN
+	1    9600 850 
+	1    0    0    -1  
+$EndComp
+Connection ~ 9600 950 
+Wire Wire Line
+	9600 950  9350 950 
+Wire Wire Line
+	9600 750  9350 750 
+$Comp
+L Device:C C49
+U 1 1 6839385A
+P 6450 5500
+F 0 "C49" H 6500 5600 50  0000 L CNN
+F 1 "0.01uF" H 6450 5400 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 6488 5350 50  0001 C CNN
+F 3 "~" H 6450 5500 50  0001 C CNN
+	1    6450 5500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 5350 6450 5350
+Connection ~ 6150 5350
+Wire Wire Line
+	6450 5650 6150 5650
+Connection ~ 6150 5650
 $EndSCHEMATC
