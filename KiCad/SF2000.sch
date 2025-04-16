@@ -1346,12 +1346,12 @@ Wire Wire Line
 $Comp
 L Device:C C23
 U 1 1 6226DADA
-P 4800 6600
-F 0 "C23" H 4850 6700 50  0000 L CNN
-F 1 "0.1uF" H 4800 6500 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4838 6450 50  0001 C CNN
-F 3 "~" H 4800 6600 50  0001 C CNN
-	1    4800 6600
+P 7050 5500
+F 0 "C23" H 7100 5600 50  0000 L CNN
+F 1 "0.1uF" H 7050 5400 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7088 5350 50  0001 C CNN
+F 3 "~" H 7050 5500 50  0001 C CNN
+	1    7050 5500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1596,4 +1596,10 @@ Connection ~ 6450 5350
 Wire Wire Line
 	6750 5650 6450 5650
 Connection ~ 6450 5650
+Wire Wire Line
+	6750 5350 7050 5350
+Connection ~ 6750 5350
+Wire Wire Line
+	6750 5650 7050 5650
+Connection ~ 6750 5650
 $EndSCHEMATC
