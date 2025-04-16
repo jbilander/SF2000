@@ -1144,19 +1144,15 @@ Wire Wire Line
 $Comp
 L Device:C C39
 U 1 1 624EB4DA
-P 4200 7300
-F 0 "C39" H 4250 7400 50  0000 L CNN
-F 1 "0.01uF" H 4200 7200 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4238 7150 50  0001 C CNN
-F 3 "~" H 4200 7300 50  0001 C CNN
-	1    4200 7300
+P 6750 5500
+F 0 "C39" H 6800 5600 50  0000 L CNN
+F 1 "0.01uF" H 6750 5400 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6788 5350 50  0001 C CNN
+F 3 "~" H 6750 5500 50  0001 C CNN
+	1    6750 5500
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3900 7150 4200 7150
 Connection ~ 3900 7150
-Wire Wire Line
-	3900 7450 4200 7450
 Connection ~ 3900 7450
 $Comp
 L Device:C C40
@@ -1169,12 +1165,6 @@ F 3 "~" H 4500 7300 50  0001 C CNN
 	1    4500 7300
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4200 7150 4500 7150
-Connection ~ 4200 7150
-Wire Wire Line
-	4200 7450 4500 7450
-Connection ~ 4200 7450
 $Comp
 L Device:C C41
 U 1 1 62559B16
@@ -1596,4 +1586,14 @@ Connection ~ 6150 5350
 Wire Wire Line
 	6450 5650 6150 5650
 Connection ~ 6150 5650
+Wire Wire Line
+	6450 5350 6750 5350
+Wire Wire Line
+	3900 7150 4500 7150
+Wire Wire Line
+	3900 7450 4500 7450
+Connection ~ 6450 5350
+Wire Wire Line
+	6750 5650 6450 5650
+Connection ~ 6450 5650
 $EndSCHEMATC
