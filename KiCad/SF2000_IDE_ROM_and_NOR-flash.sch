@@ -171,10 +171,6 @@ Text GLabel 6550 2300 2    50   BiDi ~ 0
 D6_3V3
 Text GLabel 6550 2400 2    50   BiDi ~ 0
 D7_3V3
-Text GLabel 1300 3050 0    50   Output ~ 0
-IDE_IORDY
-Text GLabel 1300 3250 0    50   Output ~ 0
-IDE_IRQ
 Text GLabel 2200 4350 0    50   Input ~ 0
 CP_IOWR_3V3
 Text GLabel 2200 4550 0    50   Input ~ 0
@@ -192,52 +188,6 @@ Text GLabel 6550 2800 2    50   Input ~ 0
 ROM_WE
 Text GLabel 6100 1500 1    50   Input ~ 0
 3V3
-$Comp
-L Device:R_Small R?
-U 1 1 62340B55
-P 1400 2950
-AR Path="/62340B55" Ref="R?"  Part="1" 
-AR Path="/620D263D/62340B55" Ref="R?"  Part="1" 
-AR Path="/627A6500/62340B55" Ref="R13"  Part="1" 
-F 0 "R13" H 1459 2996 50  0000 L CNN
-F 1 "4.7k" H 1459 2905 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1400 2950 50  0001 C CNN
-F 3 "~" H 1400 2950 50  0001 C CNN
-	1    1400 2950
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small R?
-U 1 1 62340D58
-P 1400 3350
-AR Path="/62340D58" Ref="R?"  Part="1" 
-AR Path="/620D263D/62340D58" Ref="R?"  Part="1" 
-AR Path="/627A6500/62340D58" Ref="R12"  Part="1" 
-F 0 "R12" H 1459 3396 50  0000 L CNN
-F 1 "1k" H 1459 3305 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1400 3350 50  0001 C CNN
-F 3 "~" H 1400 3350 50  0001 C CNN
-	1    1400 3350
-	1    0    0    -1  
-$EndComp
-Text GLabel 1400 3450 3    50   Input ~ 0
-GND
-Wire Wire Line
-	1400 3250 1300 3250
-Wire Wire Line
-	1400 3050 1300 3050
-Text GLabel 1400 2850 1    50   Input ~ 0
-3V3
-Wire Notes Line
-	600  2550 1650 2550
-Wire Notes Line
-	1650 2550 1650 3650
-Wire Notes Line
-	1650 3650 600  3650
-Wire Notes Line
-	600  3650 600  2550
-Text Notes 700  2650 0    50   ~ 0
-NOT CURRENTLY USED
 NoConn ~ 8550 3000
 NoConn ~ 8550 2900
 Text GLabel 8550 2700 0    50   Input ~ 0
