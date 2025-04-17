@@ -1157,12 +1157,12 @@ Connection ~ 3900 7450
 $Comp
 L Device:C C40
 U 1 1 62524EDA
-P 4500 7300
-F 0 "C40" H 4550 7400 50  0000 L CNN
-F 1 "0.01uF" H 4500 7200 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4538 7150 50  0001 C CNN
-F 3 "~" H 4500 7300 50  0001 C CNN
-	1    4500 7300
+P 7650 5500
+F 0 "C40" H 7700 5600 50  0000 L CNN
+F 1 "0.01uF" H 7650 5400 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7688 5350 50  0001 C CNN
+F 3 "~" H 7650 5500 50  0001 C CNN
+	1    7650 5500
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1187,18 +1187,12 @@ F 3 "~" H 5100 7300 50  0001 C CNN
 	1    5100 7300
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4500 7150 4800 7150
-Connection ~ 4500 7150
 Connection ~ 4800 7150
 Wire Wire Line
 	4800 7150 5100 7150
 Wire Wire Line
 	5100 7450 4800 7450
-Connection ~ 4500 7450
 Connection ~ 4800 7450
-Wire Wire Line
-	4800 7450 4500 7450
 $Comp
 L Device:C C43
 U 1 1 6263A5BF
@@ -1327,22 +1321,16 @@ $EndComp
 $Comp
 L Device:C C22
 U 1 1 6226213E
-P 4550 6600
-F 0 "C22" H 4600 6700 50  0000 L CNN
-F 1 "0.1uF" H 4550 6500 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4588 6450 50  0001 C CNN
-F 3 "~" H 4550 6600 50  0001 C CNN
-	1    4550 6600
+P 7350 5500
+F 0 "C22" H 7400 5600 50  0000 L CNN
+F 1 "0.1uF" H 7350 5400 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7388 5350 50  0001 C CNN
+F 3 "~" H 7350 5500 50  0001 C CNN
+	1    7350 5500
 	1    0    0    -1  
 $EndComp
 Connection ~ 4050 6450
-Connection ~ 4550 6450
-Wire Wire Line
-	4550 6450 4800 6450
 Connection ~ 4050 6750
-Connection ~ 4550 6750
-Wire Wire Line
-	4550 6750 4800 6750
 $Comp
 L Device:C C23
 U 1 1 6226DADA
@@ -1370,11 +1358,7 @@ F 3 "~" H 4050 6600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 4300 6450
-Wire Wire Line
-	4300 6450 4550 6450
 Connection ~ 4300 6750
-Wire Wire Line
-	4300 6750 4550 6750
 $Comp
 L Connector_Generic:Conn_02x01 J?
 U 1 1 62359ABC
@@ -1588,10 +1572,6 @@ Wire Wire Line
 Connection ~ 6150 5650
 Wire Wire Line
 	6450 5350 6750 5350
-Wire Wire Line
-	3900 7150 4500 7150
-Wire Wire Line
-	3900 7450 4500 7450
 Connection ~ 6450 5350
 Wire Wire Line
 	6750 5650 6450 5650
@@ -1602,4 +1582,24 @@ Connection ~ 6750 5350
 Wire Wire Line
 	6750 5650 7050 5650
 Connection ~ 6750 5650
+Wire Wire Line
+	7350 5350 7050 5350
+Wire Wire Line
+	4300 6450 4800 6450
+Wire Wire Line
+	4300 6750 4800 6750
+Connection ~ 7050 5350
+Wire Wire Line
+	7350 5650 7050 5650
+Connection ~ 7050 5650
+Wire Wire Line
+	7650 5350 7350 5350
+Wire Wire Line
+	3900 7150 4800 7150
+Wire Wire Line
+	3900 7450 4800 7450
+Connection ~ 7350 5350
+Wire Wire Line
+	7650 5650 7350 5650
+Connection ~ 7350 5650
 $EndSCHEMATC
