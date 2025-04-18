@@ -226,14 +226,14 @@ GND
 $Comp
 L Device:R_Small R?
 U 1 1 62517BB4
-P 9750 1400
+P 12000 4400
 AR Path="/62517BB4" Ref="R?"  Part="1" 
 AR Path="/620D263D/62517BB4" Ref="R8"  Part="1" 
-F 0 "R8" V 9850 1350 50  0000 L CNN
-F 1 "4k7" V 9850 1150 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 9750 1400 50  0001 C CNN
-F 3 "~" H 9750 1400 50  0001 C CNN
-	1    9750 1400
+F 0 "R8" V 12100 4350 50  0000 L CNN
+F 1 "4k7" V 12100 4150 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 12000 4400 50  0001 C CNN
+F 3 "~" H 12000 4400 50  0001 C CNN
+	1    12000 4400
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -445,68 +445,44 @@ SD_CS
 $Comp
 L Device:R_Small R?
 U 1 1 625C5BBC
-P 9250 1800
+P 9750 1000
 AR Path="/625C5BBC" Ref="R?"  Part="1" 
 AR Path="/620D263D/625C5BBC" Ref="R4"  Part="1" 
-F 0 "R4" V 9350 1750 50  0000 L CNN
-F 1 "330" V 9150 1750 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 9250 1800 50  0001 C CNN
-F 3 "~" H 9250 1800 50  0001 C CNN
-	1    9250 1800
+F 0 "R4" V 9850 950 50  0000 L CNN
+F 1 "330" V 9650 950 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 9750 1000 50  0001 C CNN
+F 3 "~" H 9750 1000 50  0001 C CNN
+	1    9750 1000
 	0    1    1    0   
 $EndComp
 $Comp
 L Connector_Generic:Conn_02x01 J11
 U 1 1 625CA23F
-P 9800 1800
-F 0 "J11" H 9850 1550 50  0000 C CNN
-F 1 "Conn_02x01" H 9850 1650 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x01_P2.54mm_Vertical" H 9800 1800 50  0001 C CNN
-F 3 "~" H 9800 1800 50  0001 C CNN
-	1    9800 1800
+P 10300 1000
+F 0 "J11" H 10350 750 50  0000 C CNN
+F 1 "Conn_02x01" H 10350 850 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x01_P2.54mm_Vertical" H 10300 1000 50  0001 C CNN
+F 3 "~" H 10300 1000 50  0001 C CNN
+	1    10300 1000
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	9350 1800 9500 1800
-Text GLabel 10400 1800 2    50   Input ~ 0
+	9850 1000 10000 1000
+Text GLabel 10650 1000 2    50   Input ~ 0
 GND
-Text Label 9500 1800 3    50   ~ 0
-SD_LED
-$Comp
-L Transistor_BJT:MMBT3904 Q1
-U 1 1 6822F2A5
-P 10300 1400
-F 0 "Q1" H 10491 1446 50  0000 L CNN
-F 1 "MMBT3904" H 10491 1355 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 10500 1325 50  0001 L CIN
-F 3 "https://www.onsemi.com/pub/Collateral/2N3903-D.PDF" H 10300 1400 50  0001 L CNN
-	1    10300 1400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Transistor_BJT:MMBT3906 Q2
-U 1 1 682636A7
-P 8950 1200
-F 0 "Q2" H 9141 1154 50  0000 L CNN
-F 1 "MMBT3906" H 9141 1245 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 9150 1125 50  0001 L CIN
-F 3 "https://www.onsemi.com/pub/Collateral/2N3906-D.PDF" H 8950 1200 50  0001 L CNN
-	1    8950 1200
-	1    0    0    1   
-$EndComp
 $Comp
 L Connector_Generic:Conn_01x01 J5
 U 1 1 6824099E
-P 10800 1100
-F 0 "J5" H 10800 1350 50  0000 R CNN
-F 1 "Conn_01x01" H 11150 1250 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 10800 1100 50  0001 C CNN
-F 3 "~" H 10800 1100 50  0001 C CNN
-	1    10800 1100
+P 10250 1750
+F 0 "J5" H 10250 2000 50  0000 R CNN
+F 1 "Conn_01x01" H 10600 1900 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Horizontal" H 10250 1750 50  0001 C CNN
+F 3 "~" H 10250 1750 50  0001 C CNN
+	1    10250 1750
 	1    0    0    -1  
 $EndComp
-Text GLabel 10400 1100 1    50   Input ~ 0
-LED_ACTIVE_n
+Text GLabel 9850 1750 0    50   Input ~ 0
+SD_ACTIVE
 $Comp
 L Device:R_Small R?
 U 1 1 68C712CB
@@ -684,23 +660,15 @@ F 3 "~" H 8200 2300 50  0001 C CNN
 	1    8200 2300
 	1    0    0    -1  
 $EndComp
-Text Notes 10150 1250 0    50   ~ 0
-NPN
-Text Notes 8800 1050 0    50   ~ 0
-PNP
 Wire Notes Line
 	11150 550  8650 550 
 Text GLabel 9300 3800 3    50   Input ~ 0
 ROM_WE
 Text Notes 9150 700  0    100  ~ 0
 LED Circuit
-Text Notes 9150 1000 0    50   ~ 0
-LED_ACTIVE_n can be \nconnected with a single \nwire to a A500_IDE_LED_board.
-Text Notes 10500 800  0    50   ~ 0
-Pulled-up to \n+5V in RN6
-Text GLabel 7050 5000 2    50   Output ~ 0
-CP_IOWR_3V3
 Text GLabel 7050 4900 2    50   Output ~ 0
+CP_IOWR_3V3
+Text GLabel 7050 5000 2    50   Output ~ 0
 CP_IORD_3V3
 Text GLabel 7050 5100 2    50   Output ~ 0
 CP_CS_3V3
@@ -740,44 +708,27 @@ Text GLabel 9550 5050 0    50   Input ~ 0
 JP3
 Text GLabel 10050 5050 2    50   Input ~ 0
 GND
-Text GLabel 9050 850  0    50   Input ~ 0
-3V3
-Wire Wire Line
-	9050 850  9050 1000
-Wire Wire Line
-	8750 1200 8400 1200
 Wire Wire Line
 	10800 2450 11000 2450
 Connection ~ 10800 2450
-Wire Notes Line
-	8650 2100 11150 2100
-Wire Notes Line
-	8650 550  8650 2100
-Wire Notes Line
-	11150 550  11150 2100
 Wire Wire Line
-	9050 1800 9150 1800
-Wire Wire Line
-	9050 1400 9050 1800
-Wire Wire Line
-	9050 1400 9650 1400
-Connection ~ 9050 1400
-Wire Wire Line
-	9850 1400 10100 1400
-Wire Wire Line
-	10400 1600 10400 1800
-Wire Wire Line
-	10400 1800 10000 1800
-Wire Wire Line
-	10400 1200 10400 1100
-Wire Wire Line
-	10400 1100 10600 1100
-Wire Notes Line
-	10550 850  10550 1100
-Text GLabel 8400 1200 0    50   Input ~ 0
-SD_CS
+	9850 1750 10050 1750
+Text GLabel 9500 1000 0    50   Input ~ 0
+SD_LED
 Text GLabel 7050 4800 2    50   Output ~ 0
 SD_MOSI
 Text GLabel 7050 4600 2    50   Input ~ 0
 SD_MISO
+Wire Wire Line
+	9500 1000 9650 1000
+Wire Wire Line
+	10500 1000 10650 1000
+Text Notes 8850 1550 0    50   ~ 0
+SD_ACTIVE* (+5V active low) can be \nconnected with a single \nwire to a A500_IDE_LED_board.
+Wire Notes Line
+	8650 550  8650 1950
+Wire Notes Line
+	8650 1950 11150 1950
+Wire Notes Line
+	11150 1950 11150 550 
 $EndSCHEMATC
