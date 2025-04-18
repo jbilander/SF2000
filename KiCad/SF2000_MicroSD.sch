@@ -24,16 +24,16 @@ F 3 "" H 5700 3600 50  0001 C CNN
 	1    5700 3600
 	1    0    0    -1  
 $EndComp
-Text GLabel 4800 3900 0    50   BiDi ~ 0
-SD_D0
-Text GLabel 4800 4000 0    50   BiDi ~ 0
-SD_D1
-Text GLabel 4800 3300 0    50   BiDi ~ 0
-SD_D2
-Text GLabel 4800 3400 0    50   BiDi ~ 0
-SD_D3
+Text GLabel 4800 3900 0    50   Output ~ 0
+SD_MISO
+Text GLabel 4800 4000 0    50   Input ~ 0
+SD_NC1
+Text GLabel 4800 3300 0    50   Input ~ 0
+SD_NC2
+Text GLabel 4800 3400 0    50   Input ~ 0
+SD_CS
 Text GLabel 4800 3500 0    50   Input ~ 0
-SD_CMD
+SD_MOSI
 Text GLabel 4800 3600 0    50   Input ~ 0
 3V3
 Text GLabel 4800 3800 0    50   Input ~ 0
@@ -89,15 +89,15 @@ Connection ~ 3150 2800
 Wire Wire Line
 	3150 2800 3250 2800
 Text GLabel 3150 3200 3    50   BiDi ~ 0
-SD_D2
+SD_NC2
 Text GLabel 3050 3200 3    50   BiDi ~ 0
-SD_D3
+SD_CS
 Text GLabel 2950 3200 3    50   Input ~ 0
-SD_CMD
-Text GLabel 3250 3200 3    50   BiDi ~ 0
-SD_D0
+SD_MOSI
+Text GLabel 3250 3200 3    50   Input ~ 0
+SD_MISO
 Text GLabel 2100 3200 3    50   BiDi ~ 0
-SD_D1
+SD_NC1
 Text GLabel 2000 3200 3    50   Input ~ 0
 SD_CD
 $Comp

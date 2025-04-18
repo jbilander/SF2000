@@ -108,7 +108,7 @@ Text GLabel 1200 3300 0    50   Input ~ 0
 JP1
 Text GLabel 9550 4650 0    50   Input ~ 0
 JP2
-Text GLabel 12000 4200 1    50   Input ~ 0
+Text GLabel 12500 4150 1    50   Input ~ 0
 3V3
 $Comp
 L Connector_Generic:Conn_02x01 J4
@@ -145,10 +145,6 @@ Text GLabel 4500 5950 3    50   BiDi ~ 0
 D8_3V3
 Text GLabel 7050 5200 2    50   Output ~ 0
 FLASH_WE
-Text GLabel 7050 4600 2    50   BiDi ~ 0
-SD_D0
-Text GLabel 7050 4700 2    50   Output ~ 0
-SD_CMD
 Text GLabel 5700 5950 3    50   Output ~ 0
 SD_CLK
 Text GLabel 7050 4500 2    50   Input ~ 0
@@ -234,7 +230,7 @@ P 9750 1400
 AR Path="/62517BB4" Ref="R?"  Part="1" 
 AR Path="/620D263D/62517BB4" Ref="R8"  Part="1" 
 F 0 "R8" V 9850 1350 50  0000 L CNN
-F 1 "4.7k" V 9850 1150 50  0000 L CNN
+F 1 "4k7" V 9850 1150 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 9750 1400 50  0001 C CNN
 F 3 "~" H 9750 1400 50  0001 C CNN
 	1    9750 1400
@@ -243,22 +239,22 @@ $EndComp
 $Comp
 L Device:R_Small R?
 U 1 1 62519236
-P 12500 4600
+P 13000 4550
 AR Path="/62519236" Ref="R?"  Part="1" 
 AR Path="/620D263D/62519236" Ref="R9"  Part="1" 
-F 0 "R9" V 12600 4550 50  0000 L CNN
-F 1 "10k" V 12400 4550 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 12500 4600 50  0001 C CNN
-F 3 "~" H 12500 4600 50  0001 C CNN
-	1    12500 4600
+F 0 "R9" V 13100 4500 50  0000 L CNN
+F 1 "10k" V 12900 4500 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 13000 4550 50  0001 C CNN
+F 3 "~" H 13000 4550 50  0001 C CNN
+	1    13000 4550
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	12000 4300 12000 4200
+	12500 4250 12500 4150
 Wire Wire Line
-	12000 4500 12000 4600
+	12500 4450 12500 4550
 Wire Wire Line
-	12400 4600 12000 4600
+	12900 4550 12500 4550
 Text GLabel 1200 2100 0    50   BiDi ~ 0
 BG_3V3
 Text GLabel 8800 2950 0    50   Input ~ 0
@@ -444,7 +440,7 @@ Wire Wire Line
 	900  5000 1200 5000
 Wire Wire Line
 	700  5000 600  5000
-Text GLabel 7050 5100 2    50   Output ~ 0
+Text GLabel 7050 4700 2    50   Output ~ 0
 SD_CS
 $Comp
 L Device:R_Small R?
@@ -702,11 +698,11 @@ Text Notes 9150 1000 0    50   ~ 0
 LED_ACTIVE_n can be \nconnected with a single \nwire to a A500_IDE_LED_board.
 Text Notes 10500 800  0    50   ~ 0
 Pulled-up to \n+5V in RN6
-Text GLabel 7050 4900 2    50   Output ~ 0
-CP_IOWR_3V3
-Text GLabel 7050 4800 2    50   Output ~ 0
-CP_IORD_3V3
 Text GLabel 7050 5000 2    50   Output ~ 0
+CP_IOWR_3V3
+Text GLabel 7050 4900 2    50   Output ~ 0
+CP_IORD_3V3
+Text GLabel 7050 5100 2    50   Output ~ 0
 CP_CS_3V3
 Wire Wire Line
 	9300 2550 9350 2550
@@ -780,4 +776,8 @@ Wire Notes Line
 	10550 850  10550 1100
 Text GLabel 8400 1200 0    50   Input ~ 0
 SD_CS
+Text GLabel 7050 4800 2    50   Output ~ 0
+SD_MOSI
+Text GLabel 7050 4600 2    50   Input ~ 0
+SD_MISO
 $EndSCHEMATC

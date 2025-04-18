@@ -242,11 +242,11 @@ CP_RTC_CS
 Text GLabel 2950 2850 2    50   Input ~ 0
 CP_RTC_DS
 Text GLabel 2450 2950 0    50   Input ~ 0
-CP_IORD
+CP_IORD_n
 Text GLabel 2950 2950 2    50   Input ~ 0
-CP_IOWR
+CP_IOWR_n
 Text GLabel 2950 2750 2    50   Input ~ 0
-CP_CS
+CP_CS_n
 Text GLabel 4000 2800 1    50   Input ~ 0
 +5VDC
 Text GLabel 4300 3200 3    50   Input ~ 0
@@ -290,11 +290,11 @@ Text GLabel 3550 4350 1    50   Input ~ 0
 Text GLabel 2200 4650 0    50   Input ~ 0
 GND
 Text GLabel 2200 4450 0    50   Output ~ 0
-CP_CS
+CP_CS_n
 Text GLabel 3200 4450 2    50   Output ~ 0
-CP_IOWR
+CP_IOWR_n
 Text GLabel 3200 4650 2    50   Output ~ 0
-CP_IORD
+CP_IORD_n
 Text GLabel 2450 2750 0    50   Output ~ 0
 INT6
 Text Notes 1900 3850 0    50   ~ 0
