@@ -108,8 +108,6 @@ Text GLabel 1200 3300 0    50   Input ~ 0
 JP1
 Text GLabel 9550 4650 0    50   Input ~ 0
 JP2
-Text GLabel 12500 4150 1    50   Input ~ 0
-3V3
 $Comp
 L Connector_Generic:Conn_02x01 J4
 U 1 1 6276C760
@@ -223,38 +221,6 @@ F 3 "~" H 9850 5450 50  0001 C CNN
 $EndComp
 Text GLabel 10050 5450 2    50   Input ~ 0
 GND
-$Comp
-L Device:R_Small R?
-U 1 1 62517BB4
-P 12000 4400
-AR Path="/62517BB4" Ref="R?"  Part="1" 
-AR Path="/620D263D/62517BB4" Ref="R10"  Part="1" 
-F 0 "R10" V 12100 4350 50  0000 L CNN
-F 1 "4k7" V 12100 4150 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 12000 4400 50  0001 C CNN
-F 3 "~" H 12000 4400 50  0001 C CNN
-	1    12000 4400
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R_Small R?
-U 1 1 62519236
-P 13000 4550
-AR Path="/62519236" Ref="R?"  Part="1" 
-AR Path="/620D263D/62519236" Ref="R9"  Part="1" 
-F 0 "R9" V 13100 4500 50  0000 L CNN
-F 1 "10k" V 12900 4500 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 13000 4550 50  0001 C CNN
-F 3 "~" H 13000 4550 50  0001 C CNN
-	1    13000 4550
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	12500 4250 12500 4150
-Wire Wire Line
-	12500 4450 12500 4550
-Wire Wire Line
-	12900 4550 12500 4550
 Text GLabel 1200 2100 0    50   BiDi ~ 0
 BG_3V3
 Text GLabel 8800 2950 0    50   Input ~ 0
@@ -716,19 +682,4 @@ Wire Notes Line
 	8650 1950 11150 1950
 Wire Notes Line
 	11150 1950 11150 550 
-Text GLabel 10000 3600 1    50   Input ~ 0
-3V3
-$Comp
-L Device:R_Small R?
-U 1 1 63189641
-P 10000 3700
-AR Path="/63189641" Ref="R?"  Part="1" 
-AR Path="/620D263D/63189641" Ref="R11"  Part="1" 
-F 0 "R11" V 10100 3650 50  0000 L CNN
-F 1 "10k" V 9900 3650 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 10000 3700 50  0001 C CNN
-F 3 "~" H 10000 3700 50  0001 C CNN
-	1    10000 3700
-	1    0    0    -1  
-$EndComp
 $EndSCHEMATC
