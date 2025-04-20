@@ -192,10 +192,10 @@ WE_BANK0_EVEN
 Text GLabel 7050 2000 2    50   Input ~ 0
 WE_BANK0_ODD
 $Comp
-L Connector_Generic:Conn_02x01 J9
+L Connector_Generic:Conn_02x01 J11
 U 1 1 62127717
 P 9850 5850
-F 0 "J9" H 9900 5600 50  0000 C CNN
+F 0 "J11" H 9900 5600 50  0000 C CNN
 F 1 "Conn_02x01" H 9900 5700 50  0000 C CNN
 F 2 "Connector_PinHeader_2.00mm:PinHeader_2x01_P2.00mm_Vertical" H 9850 5850 50  0001 C CNN
 F 3 "~" H 9850 5850 50  0001 C CNN
@@ -209,10 +209,10 @@ FLASH_OE
 Text GLabel 9550 5450 0    50   Input ~ 0
 JP4
 $Comp
-L Connector_Generic:Conn_02x01 J8
+L Connector_Generic:Conn_02x01 J6
 U 1 1 621772F2
 P 9850 5450
-F 0 "J8" H 9900 5200 50  0000 C CNN
+F 0 "J6" H 9900 5200 50  0000 C CNN
 F 1 "Conn_02x01" H 9900 5300 50  0000 C CNN
 F 2 "Connector_PinHeader_2.00mm:PinHeader_2x01_P2.00mm_Vertical" H 9850 5450 50  0001 C CNN
 F 3 "~" H 9850 5450 50  0001 C CNN
@@ -422,10 +422,10 @@ F 3 "~" H 9750 1000 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector_Generic:Conn_02x01 J11
+L Connector_Generic:Conn_02x01 J9
 U 1 1 625CA23F
 P 10300 1000
-F 0 "J11" H 10350 750 50  0000 C CNN
+F 0 "J9" H 10350 750 50  0000 C CNN
 F 1 "Conn_02x01" H 10350 850 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_2x01_P2.54mm_Vertical" H 10300 1000 50  0001 C CNN
 F 3 "~" H 10300 1000 50  0001 C CNN
@@ -437,10 +437,10 @@ Wire Wire Line
 Text GLabel 10650 1000 2    50   Input ~ 0
 GND
 $Comp
-L Connector_Generic:Conn_01x01 J5
+L Connector_Generic:Conn_01x01 J10
 U 1 1 6824099E
 P 10250 1750
-F 0 "J5" H 10250 2000 50  0000 R CNN
+F 0 "J10" H 10250 2000 50  0000 R CNN
 F 1 "Conn_01x01" H 10600 1900 50  0000 R CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Horizontal" H 10250 1750 50  0001 C CNN
 F 3 "~" H 10250 1750 50  0001 C CNN
@@ -645,10 +645,10 @@ JP2
 Text GLabel 1200 2700 0    50   Input ~ 0
 JP3
 $Comp
-L Connector_Generic:Conn_02x01 J10
+L Connector_Generic:Conn_02x01 J5
 U 1 1 682E963C
 P 9850 5050
-F 0 "J10" H 9900 4800 50  0000 C CNN
+F 0 "J5" H 9900 4800 50  0000 C CNN
 F 1 "Conn_02x01" H 9900 4900 50  0000 C CNN
 F 2 "Connector_PinHeader_2.00mm:PinHeader_2x01_P2.00mm_Vertical" H 9850 5050 50  0001 C CNN
 F 3 "~" H 9850 5050 50  0001 C CNN

@@ -191,10 +191,10 @@ NoConn ~ 7950 2900
 Text GLabel 7950 2700 0    50   Input ~ 0
 RST_3V3
 $Comp
-L Connector_Generic:Conn_02x11_Odd_Even J20
+L Connector_Generic:Conn_02x11_Odd_Even J12
 U 1 1 694B1E3E
 P 2650 3150
-F 0 "J20" H 2700 3867 50  0000 C CNN
+F 0 "J12" H 2700 3867 50  0000 C CNN
 F 1 "Conn_02x11_Odd_Even" H 2700 3776 50  0000 C CNN
 F 2 "Connector_PinHeader_2.00mm:PinHeader_2x11_P2.00mm_Vertical" H 2650 3150 50  0001 C CNN
 F 3 "~" H 2650 3150 50  0001 C CNN
