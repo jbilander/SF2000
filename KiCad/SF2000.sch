@@ -264,7 +264,7 @@ Text GLabel 3050 3950 0    50   Output ~ 0
 FC1
 Text GLabel 4850 2450 0    50   Output ~ 0
 A10
-Text GLabel 3050 2750 0    50   Output ~ 0
+Text GLabel 3050 3150 0    50   Output ~ 0
 FC2
 Text GLabel 5850 2650 2    50   Input ~ 0
 A11_3V3
@@ -698,30 +698,19 @@ Wire Wire Line
 Connection ~ 4900 950 
 Wire Wire Line
 	4900 950  5150 950 
-$Comp
-L SF2000:SN74AUP1T87DCKR U7
-U 1 1 62086554
-P 9900 5750
-F 0 "U7" H 9900 6265 50  0000 C CNN
-F 1 "SN74AUP1T87DCKR" H 9900 6174 50  0000 C CNN
-F 2 "SF2000:SOT-353_SC-70-5_Custom_Handsoldering" H 10400 6700 50  0001 C CNN
-F 3 "https://www.ti.com/lit/ds/symlink/sn74lvc1g17-q1.pdf" H 10400 6700 50  0001 C CNN
-	1    9900 5750
-	1    0    0    -1  
-$EndComp
-Text GLabel 10350 5550 2    50   Input ~ 0
+Text GLabel 10350 5400 2    50   Input ~ 0
 3V3
-Text GLabel 10750 5950 2    50   Output ~ 0
-C7M_3V3
-Text GLabel 9450 5950 0    50   Input ~ 0
+Text GLabel 9700 5950 2    50   Output ~ 0
+C14M_3V3
+Text GLabel 9350 5700 0    50   Input ~ 0
 GND
 Text GLabel 4050 3050 2    50   Output ~ 0
 CCKQ_3V3
 Text GLabel 4050 3150 2    50   Output ~ 0
 CCK_3V3
-Text GLabel 9450 5550 0    50   Input ~ 0
+Text GLabel 9350 5400 0    50   Input ~ 0
 CCKQ_3V3
-Text GLabel 9450 5750 0    50   Input ~ 0
+Text GLabel 9350 5500 0    50   Input ~ 0
 CCK_3V3
 NoConn ~ 4050 2450
 NoConn ~ 4050 2550
@@ -759,7 +748,7 @@ Text GLabel 4050 4150 2    50   Input ~ 0
 FC0_3V3
 Text GLabel 4050 3950 2    50   Input ~ 0
 FC1_3V3
-Text GLabel 4050 2850 2    50   Input ~ 0
+Text GLabel 4050 3250 2    50   Input ~ 0
 FC2_3V3
 Text GLabel 5850 2450 2    50   Input ~ 0
 A9_3V3
@@ -1257,12 +1246,6 @@ Text GLabel 2500 950  2    50   Input ~ 0
 GND
 Text GLabel 1550 6800 0    50   Input ~ 0
 GND
-Text GLabel 3050 3150 0    50   Input ~ 0
-GND
-NoConn ~ 4050 3250
-Text Notes 1550 2400 0    50   ~ 0
-CDAC
-NoConn ~ 1500 2350
 Wire Wire Line
 	3050 2350 3050 2450
 Text GLabel 4050 3750 2    50   BiDi ~ 0
@@ -1279,10 +1262,6 @@ NoConn ~ 1000 2450
 Wire Wire Line
 	6750 950  7100 950 
 Wire Wire Line
-	10750 5950 10650 5950
-Wire Wire Line
-	10450 5950 10350 5950
-Wire Wire Line
 	3300 6000 3550 6000
 Wire Wire Line
 	3300 6300 3550 6300
@@ -1297,12 +1276,12 @@ Wire Wire Line
 $Comp
 L Device:R_Small R2
 U 1 1 61DA2771
-P 10550 5950
-F 0 "R2" V 10450 5900 50  0000 L CNN
-F 1 "33" V 10550 5900 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 10550 5950 50  0001 C CNN
-F 3 "~" H 10550 5950 50  0001 C CNN
-	1    10550 5950
+P 9350 5950
+F 0 "R2" V 9250 5900 50  0000 L CNN
+F 1 "33" V 9350 5900 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 9350 5950 50  0001 C CNN
+F 3 "~" H 9350 5950 50  0001 C CNN
+	1    9350 5950
 	0    -1   -1   0   
 $EndComp
 Text GLabel 1550 7100 0    50   Output ~ 0
@@ -1699,4 +1678,39 @@ Wire Notes Line
 	550  6450 550  7250
 Wire Notes Line
 	550  7250 1800 7250
+$Comp
+L SF2000:SN74LVC2G86DCUR U7
+U 1 1 687FA1E1
+P 9850 5550
+F 0 "U7" H 9850 5965 50  0000 C CNN
+F 1 "SN74LVC2G86DCUR" H 9850 5874 50  0000 C CNN
+F 2 "Package_SO:VSSOP-8_2.3x2mm_P0.5mm" H 10200 5800 50  0001 L CNN
+F 3 "http://www.ti.com/lit/gpn/sn74lvc2g86" H 10200 5700 50  0001 L CNN
+	1    9850 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10350 5500 10450 5500
+Wire Wire Line
+	10450 5500 10450 5600
+Wire Wire Line
+	10450 5600 10350 5600
+Wire Wire Line
+	9350 5600 9050 5600
+Wire Wire Line
+	9050 5600 9050 5950
+Text GLabel 1500 2350 2    50   Output ~ 0
+CDAC
+Text GLabel 4050 2850 2    50   Output ~ 0
+CDAC_3V3
+Text GLabel 10350 5700 2    50   Input ~ 0
+CDAC_3V3
+Text GLabel 3050 2750 0    50   Input ~ 0
+CDAC
+Text Label 10450 5550 0    50   ~ 0
+C7M*
+Wire Wire Line
+	9250 5950 9050 5950
+Wire Wire Line
+	9450 5950 9700 5950
 $EndSCHEMATC

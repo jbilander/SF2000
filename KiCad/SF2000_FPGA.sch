@@ -16,7 +16,7 @@ $EndDescr
 Text GLabel 600  5150 3    50   Output ~ 0
 CLKCPU
 Text GLabel 1200 3200 0    50   Input ~ 0
-C7M_3V3
+C14M_3V3
 Text GLabel 1200 2400 0    50   Output ~ 0
 OVR_3V3
 Text GLabel 1200 2500 0    50   Output ~ 0
