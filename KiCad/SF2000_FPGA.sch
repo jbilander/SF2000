@@ -204,7 +204,7 @@ F 3 "~" H 9850 5850 50  0001 C CNN
 $EndComp
 Text GLabel 10050 5850 2    50   Input ~ 0
 GND
-Text GLabel 5800 5950 3    50   Output ~ 0
+Text GLabel 1200 4900 0    50   Output ~ 0
 FLASH_OE
 Text GLabel 9550 5450 0    50   Input ~ 0
 JP4
@@ -464,7 +464,7 @@ F 3 "~" H 9350 2300 50  0001 C CNN
 $EndComp
 Text GLabel 9150 2200 0    50   Input ~ 0
 3V3
-Text GLabel 10650 3900 3    50   Input ~ 0
+Text GLabel 9300 3800 3    50   Input ~ 0
 FLASH_OE
 Text GLabel 10350 3900 3    50   Input ~ 0
 FLASH_WE
@@ -613,7 +613,7 @@ F 3 "~" H 8200 2300 50  0001 C CNN
 $EndComp
 Wire Notes Line
 	11150 550  8650 550 
-Text GLabel 9300 3800 3    50   Input ~ 0
+Text GLabel 10650 3900 3    50   Input ~ 0
 ROM_WE
 Text Notes 9150 700  0    100  ~ 0
 LED Circuit
@@ -632,7 +632,7 @@ Wire Wire Line
 Connection ~ 9350 2550
 Wire Wire Line
 	9350 2550 9600 2550
-Text GLabel 1200 4900 0    50   Output ~ 0
+Text GLabel 5800 5950 3    50   Output ~ 0
 ROM_WE
 Text GLabel 7050 4400 2    50   Output ~ 0
 ROM_OE
