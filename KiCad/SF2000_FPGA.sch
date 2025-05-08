@@ -145,7 +145,7 @@ Text GLabel 7050 5200 2    50   Output ~ 0
 FLASH_WE
 Text GLabel 5700 5950 3    50   Output ~ 0
 SD_CLK
-Text GLabel 7050 4500 2    50   Input ~ 0
+Text GLabel 7050 4400 2    50   Input ~ 0
 SD_CD
 Text GLabel 7050 3300 2    50   BiDi ~ 0
 D0_3V3
@@ -634,7 +634,7 @@ Wire Wire Line
 	9350 2550 9600 2550
 Text GLabel 5800 5950 3    50   Output ~ 0
 ROM_WE
-Text GLabel 7050 4400 2    50   Output ~ 0
+Text GLabel 7050 4600 2    50   Output ~ 0
 ROM_OE
 Text GLabel 9550 5850 0    50   Input ~ 0
 ROM_B1
@@ -668,7 +668,7 @@ Text GLabel 9500 1000 0    50   Input ~ 0
 SD_LED
 Text GLabel 7050 4800 2    50   Output ~ 0
 SD_MOSI
-Text GLabel 7050 4600 2    50   Input ~ 0
+Text GLabel 7050 4500 2    50   Input ~ 0
 SD_MISO
 Wire Wire Line
 	9500 1000 9650 1000
