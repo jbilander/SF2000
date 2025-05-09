@@ -34,6 +34,28 @@ Revision 1B
 <img src="images/SF2000_pic4.jpg" width="360" height="270">
 </a>
 
+***
+
+BOM Rev. 2A
+---------
+Designator  | Name/Value   | Package | Notes
+-|-|-|-|
+U1 | Voltage Regulator 3.3V, <br /> LM1117-3.3 or <br /> AMS1117-3.3 | SOT-223 | 3.3V 1A Low Drop-Out (LDO) Linear Voltage regulator
+U2 | Voltage Regulator 4.3V, ABLIC S-1132B43-M5T1U or TPS73643DBVR | SOT-23-5 | 4.3V LDO Voltage Regulator<br />[S-1132B43-M5T1U](https://www.digikey.com/en/products/detail/ablic-inc/S-1132B43-M5T1U/6112740)
+U3 | Voltage Regulator 1.2V, TLV73312PDBVR | SOT-23-5 | 1.2V LDO Voltage Regulator<br />[TLV73312PDBVR](https://www.digikey.com/en/products/detail/texas-instruments/TLV73312PDBVR/5022371)
+U4,U5,U6 | Digital Bus Switch ICs 24-Bit FET, SN74CBT16211CDGGR or SN74CBT16811CDGGR | TSSOP-56 | FET Level-shifter <br />[SN74CBT16211CDGGR](https://www.digikey.com/en/products/detail/texas-instruments/SN74CBT16211CDGGR/864169) or <br />[SN74CBT16811CDGGR](https://www.digikey.com/en/products/detail/texas-instruments/sn74cbt16811cdggr/864186)
+U7 | Dual XOR gate SN74LVC2G86DCUR | VSSOP-8_2.3x2mm_P0.5mm | Generates 14 MHz CLK from (CCK XOR CCKQ) XOR CDAC <br />[SN74LVC2G86DCUR](https://www.digikey.com/en/products/detail/texas-instruments/sn74lvc2g86dcur/484697)
+U8 | Efinix Trion T8 FPGA T8Q144C3 | LQFP-144_20x20mm_P0.5mm | FPGA - Field Programmable Gate Array, 7384 LE, 97 I/O <br />[T8Q144C3](https://www.digikey.com/en/products/detail/efinix-inc/t8q144c3/11591370)
+U9 | AT25SF161B-SSHD-T 16 Mbit SPI NOR Flash memory | SOIC-8_3.9x4.9mm_P1.27mm (150-mil Narrow JEDEC SOIC) | [AT25SF161B-SSHD-T](https://www.digikey.com/en/products/detail/renesas-electronics-corporation/AT25SF161B-SSHD-T/14549318)
+U10 | Motorola CPU MC68SEC000AA20 20MHz | QFP-64_14x14mm_Pitch0.8mm | [MC68SEC000AA20](https://shop.tvsat.com.pl/en_GB/searchquery/68sec000/1/phot/5?url=68sec000)
+U11 | SST39LF802C-55-4C-EKE or SST39LF800A-55-4C-EKE | TSOP-I-48_18.4x12mm_P0.5mm | NOR Flash 3.0 to 3.6V 8Mbit Multi-Purpose Flash (for Kickstart) <br />[S39LF802C554CEKE](https://www.mouser.com/ProductDetail/579-S39LF802C554CEKE)<br />[S39LF800A554CEKE](https://www.digikey.com/en/products/detail/microchip-technology/SST39LF800A-55-4C-EKE/2297824)
+U12 | 74AHCT14PW, Six Channel Schmitt Trigger Inverter | TSSOP-14_4.4x5mm_P0.65mm | [74AHCT14PW,118](https://www.digikey.com/en/products/detail/nexperia-usa-inc/74AHCT14PW-118/1229627) or <br />[SN74AHCT14PWR](https://www.digikey.com/en/products/detail/texas-instruments/SN74AHCT14PWR/276754)
+U13 | NOR Flash SST39LF040-55-4C-NHE-T | PLCC-32 | NOR Flash 3.0 to 3.6V <br />[SST39LF040554CN](https://www.digikey.com/en/products/detail/microchip-technology/sst39lf040-55-4c-nhe-t/4080132) <br /> (or 39LF020, 39LF010)
+U14,U15 | SRAM ISSI IS61WV20488FBLL-10TLI  | TSOP-44 | First 4 MB SRAM <br />High-Speed, Async, 2Mbx8, 10ns, 2.4v-3.6v, 44 Pin TSOP II, RoHS <br />[IS61WV20488FBLL-10TLI](https://www.mouser.com/ProductDetail/870-61W20488FBLL10TI)
+U16,U17 | SRAM ISSI IS61WV20488FBLL-10TLI  | TSOP-44 | Second 4 MB (Optional) --"-- <br />
+
+***
+
 
 ***
 
