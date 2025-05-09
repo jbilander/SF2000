@@ -798,7 +798,7 @@
     (fp_text reference U9 (at 0 -4.8152) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value W25Q128JVSIQ (at 0 3.4) (layer F.Fab) hide
+    (fp_text value AT25SF161B-SSHD-T (at 0 3.4) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start 0 2.56) (end 1.95 2.56) (layer F.SilkS) (width 0.12))
@@ -7511,7 +7511,7 @@
   (gr_text 74LVC2G86 (at 131.1542 113.8643) (layer F.SilkS) (tstamp 6834C5FA)
     (effects (font (size 1 1) (thickness 0.15)))
   )
-  (gr_text W25Q128 (at 146.6042 88.4143) (layer F.SilkS) (tstamp 6831B89E)
+  (gr_text AT25SF (at 146.6042 88.4143) (layer F.SilkS) (tstamp 6831B89E)
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (gr_text 74AHCT14 (at 144.0542 60.2643) (layer F.SilkS) (tstamp 6831AF4F)
