@@ -75,9 +75,13 @@ R6 | 10k Ω Resistor | 0805 | Pull-up resistor for JP2 to 3V3
 R7 | 10k Ω Resistor | 0805 | Pull-up resistor for /CFGIN to 5V
 R8 | 100k Ω Resistor | 0805 | Pull-up resistor for CRESET_N to 3V3
 RN1-RN6 | Resistor pack 10k Ω (CAY16-103J4LF) | 1206 | [CAY16-103J4LF](https://www.digikey.com/en/products/detail/bourns-inc/cay16-103j4lf/431579)
-
-***
-
+C1 | Polarized Electrolytic Capacitor 100uF | CP_Elec_6.3x7.7 mm | [Wurth SMD WCAP-AS5H 100uF](https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/865230245004/5727885)
+C2 | Polarized Electrolytic Capacitor 22uF | CP_Elec_5x5.8 mm | [Wurth SMD WCAP-AS5H 22uF](https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/865230342002/5727846)
+C3-C8 | Ceramic Capacitor 10uF | 1206 |
+C9 | Ceramic Capacitor 2.2uF | 1206 |
+C10 | Ceramic Capacitor 0.47uF = 470 nF | 1206 |
+C11-C39 | Ceramic Capacitor 0.1uF = 100nF | 0805 | 
+C40-C54 | Capacitor 0.01uF = 10nF | 0805 |
 
 ***
 
