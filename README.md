@@ -41,8 +41,8 @@ BOM Rev. 2A
 Designator  | Name/Value   | Package | Notes
 -|-|-|-|
 U1 | Voltage Regulator 3.3V, <br /> LM1117-3.3 or <br /> AMS1117-3.3 | SOT-223 | 3.3V 1A Low Drop-Out (LDO) Linear Voltage regulator
-U2 | Voltage Regulator 4.3V, ABLIC S-1132B43-M5T1U or TPS73643DBVR | SOT-23-5 | 4.3V LDO Voltage Regulator<br />[S-1132B43-M5T1U](https://www.digikey.com/en/products/detail/ablic-inc/S-1132B43-M5T1U/6112740)
-U3 | Voltage Regulator 1.2V, TLV73312PDBVR | SOT-23-5 | 1.2V LDO Voltage Regulator<br />[TLV73312PDBVR](https://www.digikey.com/en/products/detail/texas-instruments/TLV73312PDBVR/5022371)
+U2 | Voltage Regulator 4.3V, ABLIC S-1132B43-M5T1U or TPS73643DBVR | SOT-23-5 | 4.3V LDO Linear Voltage Regulator<br />[S-1132B43-M5T1U](https://www.digikey.com/en/products/detail/ablic-inc/S-1132B43-M5T1U/6112740)
+U3 | Voltage Regulator 1.2V, TLV73312PDBVR | SOT-23-5 | 1.2V LDO Linear Voltage Regulator<br />[TLV73312PDBVR](https://www.digikey.com/en/products/detail/texas-instruments/TLV73312PDBVR/5022371)
 U4,U5,U6 | Digital Bus Switch ICs 24-Bit FET, SN74CBT16211CDGGR or SN74CBT16811CDGGR | TSSOP-56 | FET Level-shifter <br />[SN74CBT16211CDGGR](https://www.digikey.com/en/products/detail/texas-instruments/SN74CBT16211CDGGR/864169) or <br />[SN74CBT16811CDGGR](https://www.digikey.com/en/products/detail/texas-instruments/sn74cbt16811cdggr/864186)
 U7 | Dual XOR gate SN74LVC2G86DCUR | VSSOP-8_2.3x2mm_P0.5mm | Generates 14 MHz CLK from (CCK XOR CCKQ) XOR CDAC <br />[SN74LVC2G86DCUR](https://www.digikey.com/en/products/detail/texas-instruments/sn74lvc2g86dcur/484697)
 U8 | Efinix Trion T8 FPGA T8Q144C3 | LQFP-144_20x20mm_P0.5mm | FPGA - Field Programmable Gate Array, 7384 LE, 97 I/O <br />[T8Q144C3](https://www.digikey.com/en/products/detail/efinix-inc/t8q144c3/11591370)
@@ -53,6 +53,22 @@ U12 | 74AHCT14PW, Six Channel Schmitt Trigger Inverter | TSSOP-14_4.4x5mm_P0.65m
 U13 | NOR Flash SST39LF040-55-4C-NHE-T | PLCC-32 | NOR Flash 3.0 to 3.6V <br />[SST39LF040554CN](https://www.digikey.com/en/products/detail/microchip-technology/sst39lf040-55-4c-nhe-t/4080132) <br /> (or 39LF020, 39LF010)
 U14,U15 | SRAM ISSI IS61WV20488FBLL-10TLI  | TSOP-44 | First 4 MB SRAM <br />High-Speed, Async, 2Mbx8, 10ns, 2.4v-3.6v, 44 Pin TSOP II, RoHS <br />[IS61WV20488FBLL-10TLI](https://www.mouser.com/ProductDetail/870-61W20488FBLL10TI)
 U16,U17 | SRAM ISSI IS61WV20488FBLL-10TLI  | TSOP-44 | Second 4 MB (Optional) --"-- <br />
+J1 | Goldfingers on PCB | ENIG | Order PCB with Goldfingers, ENIG and 45 degrees chamfered edge (or chamfer the edge yourself with a file)
+J2 | CFGIN-header Two-Pin Header | 2.54mm pitch | Put a Jumper shunt here to activate autoconfig, or a CONFIGOUT-wire from other device to the right (pin 2) in this header.  
+J3 | JTAG-header, JP-header JP1 | Dual row 2.54mm (2 x 5) Pin Male Header | Pin 8,10 in header is JP1 7 MHz / Turbo selector
+J4 | JP-header JP2 | 2.00mm (2 x 1) Pin Male Header | Generate E-CLK (if internal 68k is removed from socket)
+J5 | JP-header JP3 | 2.00mm (2 x 1) Pin Male Header | Rom overlay jumper
+J6 | JP-header JP4 | 2.00mm (2 x 1) Pin Male Header | 4/8 MB SRAM Config
+J7 | VCC/GND Two-Pin Header | 2.54mm pitch | VIN +5V <br /> used when programming FPGA standalone (card not installed in the Amiga). Be careful with orientation, check polarity BEFORE plugging-in a phone charger or similar here.
+J8 | Sunrom Micro SD Card Holder | 9-pin Micro SD card slot connector | [Sunrom Micro-SD card holder](https://www.aliexpress.com/item/32802051702.html)
+J9 | SD_LED header, Two-Pin Header | 2.54mm pitch | Driven by U12 inverter buffer when /SD_CS is being asserted. Connect to here in order to drive an external HDD-LED
+J10 | SD_Active low signal, Right angle Single-Pin Header | 0.64 mm square pin angled | Driven by U12 inverter buffer when /SD_CS is being asserted. Connect to here in order to drive a [LED-board](https://github.com/jbilander/A500_IDE_LED_board) (Active low 5V-signal)
+J11 | Rom-bank selector | 2.00mm (2 x 1) Pin Male Header | Select first or second bank, address line A15 (pin 3) on U13 (SST39LF040)
+J12 | CLOCKPORT-header | 2.00mm 22-Pin (2x11) Pin Male Header | Caution: This header is +5V levels. Be careful with orientation.
+
+
+
+
 
 ***
 
