@@ -62,13 +62,19 @@ J6 | JP-header JP4 | 2.00mm (2 x 1) Pin Male Header | 4/8 MB SRAM Config
 J7 | VCC/GND Two-Pin Header | 2.54mm pitch | VIN +5V <br /> used when programming FPGA standalone (card not installed in the Amiga). Be careful with orientation, check polarity BEFORE plugging-in a phone charger or similar here.
 J8 | Sunrom Micro SD Card Holder | 9-pin Micro SD card slot connector | [Sunrom Micro-SD card holder](https://www.aliexpress.com/item/32802051702.html)
 J9 | SD_LED header, Two-Pin Header | 2.54mm pitch | Driven by U12 inverter buffer when /SD_CS is being asserted. Connect to here in order to drive an external HDD-LED
-J10 | SD_Active low signal, Right angle Single-Pin Header | 0.64 mm square pin angled | Driven by U12 inverter buffer when /SD_CS is being asserted. Connect to here in order to drive a [LED-board](https://github.com/jbilander/A500_IDE_LED_board) (Active low 5V-signal)
+J10 | SD_ACTIVE low signal, Right angle Single-Pin Header | 0.64 mm square pin angled | Driven by U12 inverter buffer when /SD_CS is being asserted. Connect to here in order to drive a [LED-board](https://github.com/jbilander/A500_IDE_LED_board) (Active low +5V-signal)
 J11 | Rom-bank selector | 2.00mm (2 x 1) Pin Male Header | Select first or second bank, address line A15 (pin 3) on U13 (SST39LF040)
 J12 | CLOCKPORT-header | 2.00mm 22-Pin (2x11) Pin Male Header | Caution: This header is +5V levels. Be careful with orientation.
-
-
-
-
+X1 | Crystal Oscillator 20 MHz | Oscillator_7.0x5.0mm |
+R1 | 33 Ω Resistor | 0805 | Damping resistor for 20 MHz clock-signal coming from X1 oscillator
+R2 | 33 Ω Resistor | 0805 | Damping resistor for 14 MHz clock-signal coming from U7 (SN74LVC2G86DCUR)
+R3 | 33 Ω Resistor | 0805 | Damping resistor for CLKCPU clock-signal coming from FPGA pin 33
+R4 | ~330 Ω Resistor | 0805 | Series resistor for SD_LED header J9, adjust R-value to your type of LED and preferred brightness
+R5 | 10k Ω Resistor | 0805 | Pull-up resistor for /FLASH_OE to 3V3
+R6 | 10k Ω Resistor | 0805 | Pull-up resistor for JP2 to 3V3
+R7 | 10k Ω Resistor | 0805 | Pull-up resistor for /CFGIN to 5V
+R8 | 100k Ω Resistor | 0805 | Pull-up resistor for CRESET_N to 3V3
+RN1-RN6 | Resistor pack 10k Ω (CAY16-103J4LF) | 1206 | [CAY16-103J4LF](https://www.digikey.com/en/products/detail/bourns-inc/cay16-103j4lf/431579)
 
 ***
 
