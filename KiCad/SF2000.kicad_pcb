@@ -7567,7 +7567,7 @@
   (gr_text 40 (at 149.7542 67.8143) (layer F.SilkS) (tstamp 6815A96C)
     (effects (font (size 1 1) (thickness 0.15)))
   )
-  (gr_text Airborn! (at 159.7542 68.1643) (layer F.SilkS) (tstamp 680A0C11)
+  (gr_text Airborne! (at 159.7542 68.1643) (layer F.SilkS) (tstamp 680A0C11)
     (effects (font (size 1.2 1.2) (thickness 0.2)))
   )
   (gr_text GND (at 167.9042 61.8143) (layer F.SilkS) (tstamp 6815E6E0)
