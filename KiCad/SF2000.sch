@@ -700,8 +700,8 @@ Wire Wire Line
 	4900 950  5150 950 
 Text GLabel 10350 5400 2    50   Input ~ 0
 3V3
-Text GLabel 9700 5950 2    50   Output ~ 0
-C14M_3V3
+Text GLabel 10750 4850 1    50   Output ~ 0
+C7M*_3V3
 Text GLabel 9350 5700 0    50   Input ~ 0
 GND
 Text GLabel 4050 3050 2    50   Output ~ 0
@@ -1276,13 +1276,13 @@ Wire Wire Line
 $Comp
 L Device:R_Small R2
 U 1 1 61DA2771
-P 9350 5950
-F 0 "R2" V 9250 5900 50  0000 L CNN
-F 1 "33" V 9350 5900 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 9350 5950 50  0001 C CNN
-F 3 "~" H 9350 5950 50  0001 C CNN
-	1    9350 5950
-	0    -1   -1   0   
+P 10750 5200
+F 0 "R2" V 10650 5150 50  0000 L CNN
+F 1 "33" V 10750 5150 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 10750 5200 50  0001 C CNN
+F 3 "~" H 10750 5200 50  0001 C CNN
+	1    10750 5200
+	-1   0    0    1   
 $EndComp
 Text GLabel 1550 7100 0    50   Output ~ 0
 CRESET_N
@@ -1689,28 +1689,23 @@ F 3 "http://www.ti.com/lit/gpn/sn74lvc2g86" H 10200 5700 50  0001 L CNN
 	1    9850 5550
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	10350 5500 10450 5500
-Wire Wire Line
-	10450 5500 10450 5600
-Wire Wire Line
-	10450 5600 10350 5600
-Wire Wire Line
-	9350 5600 9050 5600
-Wire Wire Line
-	9050 5600 9050 5950
 Text GLabel 1500 2350 2    50   Output ~ 0
 CDAC
 Text GLabel 4050 2850 2    50   Output ~ 0
 CDAC_3V3
-Text GLabel 10350 5700 2    50   Input ~ 0
-CDAC_3V3
 Text GLabel 3050 2750 0    50   Input ~ 0
 CDAC
-Text Label 10450 5550 0    50   ~ 0
+Text Label 10750 5500 0    50   ~ 0
 C7M*
 Wire Wire Line
-	9250 5950 9050 5950
+	10750 5300 10750 5500
 Wire Wire Line
-	9450 5950 9700 5950
+	10750 5100 10750 4850
+Text GLabel 10350 5700 2    50   Input ~ 0
+GND
+Wire Wire Line
+	10350 5600 10350 5700
+Wire Wire Line
+	10350 5500 10750 5500
+NoConn ~ 9350 5600
 $EndSCHEMATC
