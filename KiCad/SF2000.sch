@@ -590,7 +590,7 @@ Text GLabel 6750 3850 0    50   Input ~ 0
 4V3
 Text GLabel 3050 2550 0    50   Output ~ 0
 CFGOUT
-Text GLabel 3050 3350 0    50   Output ~ 0
+Text GLabel 2300 3500 0    50   Output ~ 0
 OVR
 Text GLabel 3050 2850 0    50   Input ~ 0
 CCKQ
@@ -724,7 +724,7 @@ U 620D263D
 F0 "SF2000_FPGA" 50
 F1 "SF2000_FPGA.sch" 50
 $EndSheet
-Text GLabel 4050 3450 2    50   Input ~ 0
+Text GLabel 2300 3350 2    50   Input ~ 0
 OVR_3V3
 Text GLabel 4050 4650 2    50   Input ~ 0
 A5_3V3
@@ -1708,4 +1708,8 @@ Wire Wire Line
 Wire Wire Line
 	10350 5500 10750 5500
 NoConn ~ 9350 5600
+Text GLabel 4050 3450 2    50   Input ~ 0
+INT2_3V3
+Text GLabel 3050 3350 0    50   Output ~ 0
+INT2
 $EndSCHEMATC

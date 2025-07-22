@@ -18,7 +18,7 @@ CLKCPU
 Text GLabel 1200 3200 0    50   Input ~ 0
 C7M*_3V3
 Text GLabel 1200 2400 0    50   Output ~ 0
-OVR_3V3
+INT2_3V3
 Text GLabel 1200 2500 0    50   Output ~ 0
 BOSS_3V3
 Text GLabel 1200 3500 0    50   Input ~ 0
