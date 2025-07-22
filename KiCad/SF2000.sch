@@ -590,8 +590,6 @@ Text GLabel 6750 3850 0    50   Input ~ 0
 4V3
 Text GLabel 3050 2550 0    50   Output ~ 0
 CFGOUT
-Text GLabel 2300 3500 0    50   Output ~ 0
-OVR
 Text GLabel 3050 2850 0    50   Input ~ 0
 CCKQ
 Text GLabel 3050 3050 0    50   Input ~ 0
@@ -724,8 +722,6 @@ U 620D263D
 F0 "SF2000_FPGA" 50
 F1 "SF2000_FPGA.sch" 50
 $EndSheet
-Text GLabel 2300 3350 2    50   Input ~ 0
-OVR_3V3
 Text GLabel 4050 4650 2    50   Input ~ 0
 A5_3V3
 Text GLabel 4050 4750 2    50   Input ~ 0
@@ -1691,10 +1687,8 @@ F 3 "http://www.ti.com/lit/gpn/sn74lvc2g86" H 10200 5700 50  0001 L CNN
 $EndComp
 Text GLabel 1500 2350 2    50   Output ~ 0
 CDAC
-Text GLabel 4050 2850 2    50   Output ~ 0
-CDAC_3V3
-Text GLabel 3050 2750 0    50   Input ~ 0
-CDAC
+Text GLabel 4050 2850 2    50   Input ~ 0
+INT6_3V3
 Text Label 10750 5500 0    50   ~ 0
 C7M*
 Wire Wire Line
@@ -1712,4 +1706,6 @@ Text GLabel 4050 3450 2    50   Input ~ 0
 INT2_3V3
 Text GLabel 3050 3350 0    50   Output ~ 0
 INT2
+Text GLabel 3050 2750 0    50   Output ~ 0
+INT6
 $EndSCHEMATC
