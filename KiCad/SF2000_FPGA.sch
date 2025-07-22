@@ -182,7 +182,7 @@ FLASH_A19
 Text GLabel 7050 2100 2    50   Input ~ 0
 OE_BANK1
 Text GLabel 4400 1100 1    50   Input ~ 0
-WE_BANK1_EVEN
+INT6_3V3
 Text GLabel 7050 2400 2    50   Input ~ 0
 WE_BANK1_ODD
 Text GLabel 5800 1100 1    50   Input ~ 0
