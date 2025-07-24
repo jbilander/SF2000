@@ -181,7 +181,7 @@ Text GLabel 5600 5950 3    50   Output ~ 0
 FLASH_A19
 Text GLabel 7050 2100 2    50   Input ~ 0
 OE_BANK1
-Text GLabel 4400 1100 1    50   Input ~ 0
+Text GLabel 5800 5950 3    50   Output ~ 0
 INT6_3V3
 Text GLabel 7050 2400 2    50   Input ~ 0
 WE_BANK1_ODD
@@ -623,8 +623,6 @@ Wire Wire Line
 Connection ~ 9350 2550
 Wire Wire Line
 	9350 2550 9600 2550
-Text GLabel 5800 5950 3    50   Output ~ 0
-ROM_WE
 Text GLabel 7050 4600 2    50   Output ~ 0
 ROM_OE
 Text GLabel 9550 6250 0    50   Input ~ 0
@@ -692,4 +690,6 @@ Text GLabel 10100 2950 3    50   Input ~ 0
 JP1
 Text GLabel 9300 2850 2    50   Input ~ 0
 3V3
+Text GLabel 4400 1100 1    50   Input ~ 0
+WE_BANK1_EVEN
 $EndSCHEMATC
