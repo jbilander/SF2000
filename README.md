@@ -55,7 +55,7 @@ U14,U15 | SRAM ISSI IS61WV20488FBLL-10TLI  | TSOP-44 | First 4 MB SRAM <br />Hig
 U16,U17 | SRAM ISSI IS61WV20488FBLL-10TLI  | TSOP-44 | Second 4 MB (Optional) --"-- <br />
 J1 | Goldfingers on PCB | ENIG | Order PCB with Goldfingers, ENIG and 45 degrees chamfered edge (or chamfer the edge yourself with a file)
 J2 | CFGIN-header Two-Pin Header | 2.54mm pitch | Put a Jumper shunt here to activate autoconfig, or a CONFIGOUT-wire from other device to the right (pin 2) in this header.  
-J3 | JTAG-header, JP-header JP1 | Dual row 2.54mm (2 x 5) Pin Male Header | Pin 8,10 in header is JP1 7 MHz / Turbo selector
+J3 | JTAG-header   | Dual row 2.54mm (2 x 5) Pin Male Header | 
 J4 | JP-header JP2 | 2.00mm (2 x 1) Pin Male Header | Generate E-CLK (if internal 68k is removed from socket)
 J5 | JP-header JP3 | 2.00mm (2 x 1) Pin Male Header | Rom overlay jumper
 J6 | JP-header JP4 | 2.00mm (2 x 1) Pin Male Header | 4/8 MB SRAM Config
@@ -65,6 +65,7 @@ J9 | SD_LED header, Two-Pin Header | 2.54mm pitch | Driven by U12 inverter buffe
 J10 | SD_ACTIVE low signal, Right angle Single-Pin Header | 0.64 mm square pin angled | Driven by U12 inverter buffer when /SD_CS is being asserted. Connect to here in order to drive a [LED-board](https://github.com/jbilander/A500_IDE_LED_board) (Active low +5V-signal)
 J11 | Rom-bank selector | 2.00mm (2 x 1) Pin Male Header | Select first or second bank, address line A15 (pin 3) on U13 (SST39LF040)
 J12 | CLOCKPORT-header | 2.00mm 22-Pin (2x11) Pin Male Header | Caution: This header is +5V levels. Be careful with orientation.
+J13 | JP-header JP1 | 2.54mm (2 x 1) Pin Male Header | 7 MHz / Turbo selector
 X1 | Crystal Oscillator 20 MHz | Oscillator_7.0x5.0mm |
 R1 | 33 Ω Resistor | 0805 | Damping resistor for 20 MHz clock-signal coming from X1 oscillator
 R2 | 33 Ω Resistor | 0805 | Damping resistor for 14 MHz clock-signal coming from U7 (SN74LVC2G86DCUR)
@@ -77,10 +78,10 @@ R8 | 100k Ω Resistor | 0805 | Pull-up resistor for CRESET_N to 3V3
 RN1-RN6 | Resistor pack 10k Ω (CAY16-103J4LF) | 1206 | [CAY16-103J4LF](https://www.digikey.com/en/products/detail/bourns-inc/cay16-103j4lf/431579)
 C1 | Polarized Electrolytic Capacitor 100uF | CP_Elec_6.3x7.7 mm | [Wurth SMD WCAP-AS5H 100uF](https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/865230245004/5727885)
 C2 | Polarized Electrolytic Capacitor 22uF | CP_Elec_5x5.8 mm | [Wurth SMD WCAP-AS5H 22uF](https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/865230342002/5727846)
-C3-C8 | Ceramic Capacitor 10uF | 1206 |
-C9 | Ceramic Capacitor 2.2uF | 1206 |
-C10 | Ceramic Capacitor 0.47uF = 470 nF | 1206 |
-C11-C39 | Ceramic Capacitor 0.1uF = 100nF | 0805 | 
+C3-C7 | Ceramic Capacitor 10uF | 1206 |
+C8 | Ceramic Capacitor 2.2uF | 1206 |
+C9 | Ceramic Capacitor 0.47uF = 470 nF | 1206 |
+C10-C39 | Ceramic Capacitor 0.1uF = 100nF | 0805 | 
 C40-C54 | Capacitor 0.01uF = 10nF | 0805 |
 
 ***
