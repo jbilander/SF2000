@@ -88,8 +88,6 @@ F 3 "~" H 9000 2750 50  0001 C CNN
 	1    9000 2750
 	1    0    0    -1  
 $EndComp
-Text GLabel 9300 2950 2    50   Input ~ 0
-GND
 Text GLabel 8800 2550 0    50   Output ~ 0
 TCK
 Text GLabel 8800 2750 0    50   Input ~ 0
@@ -359,7 +357,6 @@ Text GLabel 2400 1100 1    50   Input ~ 0
 3V3
 Text GLabel 4300 1100 1    50   Input ~ 0
 OSC_CLK
-NoConn ~ 9300 2750
 Text GLabel 1200 5200 0    50   Input ~ 0
 CRESET_N
 Text GLabel 9600 2550 1    50   Input ~ 0
@@ -688,8 +685,12 @@ Text GLabel 10050 4650 2    50   Input ~ 0
 GND
 Text GLabel 10100 2950 3    50   Input ~ 0
 JP1
-Text GLabel 9300 2850 2    50   Input ~ 0
-3V3
 Text GLabel 4400 1100 1    50   Input ~ 0
 WE_BANK1_EVEN
+Text GLabel 9300 2950 2    50   Input ~ 0
+SCLK
+Text GLabel 9300 2750 2    50   Output ~ 0
+DI
+Text GLabel 9300 2850 2    50   Input ~ 0
+DO
 $EndSCHEMATC
