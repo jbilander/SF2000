@@ -70,7 +70,7 @@ X1 | Crystal Oscillator 20 MHz | Oscillator_7.0x5.0mm |
 R1 | 33 Ω Resistor | 0805 | Damping resistor for 20 MHz clock-signal coming from X1 oscillator
 R2 | 33 Ω Resistor | 0805 | Damping resistor for 14 MHz clock-signal coming from U7 (SN74LVC2G86DCUR)
 R3 | 33 Ω Resistor | 0805 | Damping resistor for CLKCPU clock-signal coming from FPGA pin 33
-R4 | ~330 Ω Resistor | 0805 | Series resistor for SD_LED header J9, adjust R-value to your type of LED and preferred brightness
+R4 | ~220 Ω Resistor | 0805 | Series resistor for SD_LED header J9, adjust R-value to your type of LED and preferred brightness
 R5 | 10k Ω Resistor | 0805 | Pull-up resistor for /FLASH_OE to 3V3
 R6 | 10k Ω Resistor | 0805 | Pull-up resistor for JP2 to 3V3
 R7 | 10k Ω Resistor | 0805 | Pull-up resistor for /CFGIN to 5V
