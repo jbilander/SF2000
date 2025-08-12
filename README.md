@@ -3,16 +3,13 @@ Spitfire 2000, A low-end 42 MHz Amiga Accelerator based on the Motorola 68SEC000
 
 ***
 
-This is WORK IN PROGRESS, a DIY hobby project. If you are going to make and sell boards you are also the one doing the customer support. Also if you are going to build boards and sell for profit, you will need a consent from Matthias Heinrichs (Matze) and also from Oliver Kastl if you are going to bundle this software http://aminet.net/package/disk/misc/oktapus with the hardware (ROM-chip, U14).
+This is WORK IN PROGRESS, a DIY hobby project. If you are going to make and sell boards you are also the one doing the customer support.
 
 ***
 
 The firmware for this board is in a separate repository available here: <br />
 https://github.com/jbilander/SF2000-FW
 <br />
-<br />
-The ROM image to burn to the 39LF040-chip (U14) can be downloaded from here: <br />
-https://gitlab.com/MHeinrichs/CDTV-RAM-IDE/-/blob/master/Prog/ATOKTACOMBINED.rom-512.bin
 
 ***
 
@@ -36,7 +33,7 @@ Revision 1B
 
 ***
 
-BOM Rev. 2A
+BOM Rev. 2B
 ---------
 Designator  | Name/Value   | Package | Notes
 -|-|-|-|
@@ -46,7 +43,7 @@ U3 | Voltage Regulator 1.2V, TLV73312PDBVR | SOT-23-5 | 1.2V LDO Linear Voltage 
 U4,U5,U6 | Digital Bus Switch ICs 24-Bit FET, SN74CBT16211CDGGR or SN74CBT16811CDGGR | TSSOP-56 | FET Level-shifter <br />[SN74CBT16211CDGGR](https://www.digikey.com/en/products/detail/texas-instruments/SN74CBT16211CDGGR/864169) or <br />[SN74CBT16811CDGGR](https://www.digikey.com/en/products/detail/texas-instruments/sn74cbt16811cdggr/864186)
 U7 | Dual XOR gate SN74LVC2G86DCUR | VSSOP-8_2.3x2mm_P0.5mm | Generates 7 MHz CLK from ~(CCK XOR CCKQ) <br />[SN74LVC2G86DCUR](https://www.digikey.com/en/products/detail/texas-instruments/sn74lvc2g86dcur/484697)
 U8 | Efinix Trion T8 FPGA T8Q144C3 | LQFP-144_20x20mm_P0.5mm | FPGA - Field Programmable Gate Array, 7384 LE, 97 I/O <br />[T8Q144C3](https://www.digikey.com/en/products/detail/efinix-inc/t8q144c3/11591370)
-U9 | AT25SF161B-SSHD-T 16 Mbit SPI NOR Flash memory | SOIC-8_3.9x4.9mm_P1.27mm (150-mil Narrow JEDEC SOIC) | [AT25SF161B-SSHD-T](https://www.digikey.com/en/products/detail/renesas-electronics-corporation/AT25SF161B-SSHD-T/14549318)
+U9 | W25Q16JVSNIQ 16 Mbit SPI NOR Flash memory | SOIC-8_3.9x4.9mm_P1.27mm (150-mil Narrow JEDEC SOIC) | [W25Q16JVSNIQ](https://www.digikey.com/en/products/detail/winbond-electronics/w25q16jvsniq/6193768) or [AT25SF161B-SSHD-T](https://www.digikey.com/en/products/detail/renesas-electronics-corporation/AT25SF161B-SSHD-T/14549318)
 U10 | Motorola CPU MC68SEC000AA20 20MHz | QFP-64_14x14mm_Pitch0.8mm | [MC68SEC000AA20](https://shop.tvsat.com.pl/en_GB/searchquery/68sec000/1/phot/5?url=68sec000)
 U11 | SST39LF802C-55-4C-EKE or SST39LF800A-55-4C-EKE | TSOP-I-48_18.4x12mm_P0.5mm | NOR Flash 3.0 to 3.6V 8Mbit Multi-Purpose Flash (for Kickstart) <br />[S39LF802C554CEKE](https://www.mouser.com/ProductDetail/579-S39LF802C554CEKE)<br />[S39LF800A554CEKE](https://www.digikey.com/en/products/detail/microchip-technology/SST39LF800A-55-4C-EKE/2297824)
 U12 | 74AHCT14PW, Six Channel Schmitt Trigger Inverter | TSSOP-14_4.4x5mm_P0.65mm | [74AHCT14PW,118](https://www.digikey.com/en/products/detail/nexperia-usa-inc/74AHCT14PW-118/1229627) or <br />[SN74AHCT14PWR](https://www.digikey.com/en/products/detail/texas-instruments/SN74AHCT14PWR/276754)
