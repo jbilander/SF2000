@@ -666,25 +666,17 @@ Wire Wire Line
 Connection ~ 4900 950 
 Wire Wire Line
 	4900 950  5150 950 
-Text GLabel 7300 3950 2    50   Input ~ 0
+Text GLabel 7500 3750 2    50   Input ~ 0
 3V3
-Text GLabel 7700 4700 3    50   Output ~ 0
-C7M*_3V3
-Text GLabel 6300 4250 0    50   Input ~ 0
-GND
+Text GLabel 7600 4350 3    50   Output ~ 0
+C7M_3V3
 Text GLabel 3600 2850 2    50   Output ~ 0
 CCKQ_3V3
 Text GLabel 3600 3050 2    50   Output ~ 0
 CCK_3V3
-Text GLabel 6300 3950 0    50   Input ~ 0
-CCKQ_3V3
-Text GLabel 6300 4050 0    50   Input ~ 0
+Text GLabel 6250 4100 3    50   Input ~ 0
 CCK_3V3
 NoConn ~ 3600 2550
-Text GLabel 3600 2750 2    50   Output ~ 0
-CFGIN_3V3
-Text GLabel 3600 2650 2    50   Input ~ 0
-CFGOUT_3V3
 $Sheet
 S 10050 1850 800  500 
 U 620D263D
@@ -1230,12 +1222,12 @@ Wire Wire Line
 $Comp
 L Device:R_Small R2
 U 1 1 61DA2771
-P 7700 4350
-F 0 "R2" V 7600 4300 50  0000 L CNN
-F 1 "33" V 7700 4300 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7700 4350 50  0001 C CNN
-F 3 "~" H 7700 4350 50  0001 C CNN
-	1    7700 4350
+P 7600 4150
+F 0 "R2" V 7500 4100 50  0000 L CNN
+F 1 "33" V 7600 4100 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7600 4150 50  0001 C CNN
+F 3 "~" H 7600 4150 50  0001 C CNN
+	1    7600 4150
 	1    0    0    -1  
 $EndComp
 Text GLabel 2250 6300 0    50   Output ~ 0
@@ -1623,34 +1615,12 @@ Wire Notes Line
 	550  6450 550  7250
 Wire Notes Line
 	550  7250 1800 7250
-$Comp
-L SF2000:SN74LVC2G86DCUR U7
-U 1 1 687FA1E1
-P 6800 4100
-F 0 "U7" H 6800 4515 50  0000 C CNN
-F 1 "SN74LVC2G86DCUR" H 6800 4424 50  0000 C CNN
-F 2 "Package_SO:VSSOP-8_2.3x2mm_P0.5mm" H 7150 4350 50  0001 L CNN
-F 3 "http://www.ti.com/lit/gpn/sn74lvc2g86" H 7150 4250 50  0001 L CNN
-	1    6800 4100
-	1    0    0    -1  
-$EndComp
 Text GLabel 1500 2350 2    50   Output ~ 0
 CDAC
 Text GLabel 3600 3650 2    50   Input ~ 0
 INT6_3V3
-Text Label 7700 4050 0    50   ~ 0
-C7M*
 Wire Wire Line
-	7700 4250 7700 4050
-Wire Wire Line
-	7700 4450 7700 4700
-Text GLabel 7300 4250 2    50   Input ~ 0
-GND
-Wire Wire Line
-	7300 4150 7300 4250
-Wire Wire Line
-	7300 4050 7700 4050
-NoConn ~ 6300 4150
+	7600 4050 7600 3850
 Text GLabel 3600 3450 2    50   Input ~ 0
 INT2_3V3
 Text GLabel 2600 3350 0    50   Output ~ 0
@@ -1664,10 +1634,10 @@ Wire Notes Line
 Wire Notes Line
 	1850 6450 9100 6450
 $Comp
-L SF2000:SN74LVC16245ADGGR U18
+L SF2000:SN74LVC16245ADGGR U7
 U 1 1 6A982519
 P 8850 3400
-F 0 "U18" H 8850 2000 50  0000 C CNN
+F 0 "U7" H 8850 2000 50  0000 C CNN
 F 1 "SN74LVC16245ADGGR" H 8850 2100 50  0000 C CNN
 F 2 "Package_SO:TSSOP-48_6.1x12.5mm_P0.5mm" H 9300 4650 50  0001 L CNN
 F 3 "http://www.ti.com/lit/gpn/sn74lvc16245a" H 9300 4550 50  0001 L CNN
@@ -1747,4 +1717,164 @@ Text GLabel 2600 2350 0    50   Input ~ 0
 CLK7M
 Text GLabel 3600 2450 2    50   Output ~ 0
 CLK7M_3V3
+$Comp
+L SF2000:74LVC1G57GV U19
+U 1 1 6B11E548
+P 7000 3750
+F 0 "U19" H 7000 4115 50  0000 C CNN
+F 1 "74LVC1G57GV" H 7000 4024 50  0000 C CNN
+F 2 "Package_SO:TSOP-6_1.65x3.05mm_P0.95mm" H 7350 3950 50  0001 L CNN
+F 3 "" H 7350 3850 50  0001 L CNN
+	1    7000 3750
+	1    0    0    -1  
+$EndComp
+Text GLabel 6500 3750 0    50   Input ~ 0
+GND
+Text GLabel 7500 3650 2    50   Input ~ 0
+CCKQ_3V3
+Wire Wire Line
+	7600 3850 7500 3850
+Wire Wire Line
+	7600 4250 7600 4350
+Wire Wire Line
+	6500 3650 6250 3650
+Wire Wire Line
+	6250 3650 6250 3850
+Wire Wire Line
+	6500 3850 6250 3850
+Connection ~ 6250 3850
+Wire Wire Line
+	6250 3850 6250 4100
+Text GLabel 3600 2650 2    50   Input ~ 0
+CFGOUT_3V3
+Text GLabel 3600 2750 2    50   Output ~ 0
+CFGIN_3V3
+$Comp
+L Device:C_Small C55
+U 1 1 6B94135C
+P 3600 5500
+F 0 "C55" H 3600 5600 50  0000 L CNN
+F 1 "0.1uF" H 3600 5400 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 3600 5500 50  0001 C CNN
+F 3 "~" H 3600 5500 50  0001 C CNN
+	1    3600 5500
+	1    0    0    -1  
+$EndComp
+Text GLabel 3550 5350 0    50   Input ~ 0
+GND
+Text GLabel 3550 5650 0    50   Input ~ 0
+3V3
+Wire Wire Line
+	3550 5350 3600 5350
+Wire Wire Line
+	3600 5350 3600 5400
+Wire Wire Line
+	3550 5650 3600 5650
+Wire Wire Line
+	3600 5650 3600 5600
+$Comp
+L Device:C_Small C56
+U 1 1 6B9715A3
+P 3850 5500
+F 0 "C56" H 3850 5600 50  0000 L CNN
+F 1 "0.1uF" H 3850 5400 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 3850 5500 50  0001 C CNN
+F 3 "~" H 3850 5500 50  0001 C CNN
+	1    3850 5500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 5400 3850 5350
+Wire Wire Line
+	3850 5350 3600 5350
+Connection ~ 3600 5350
+Wire Wire Line
+	3600 5650 3850 5650
+Wire Wire Line
+	3850 5650 3850 5600
+Connection ~ 3600 5650
+$Comp
+L Device:C_Small C57
+U 1 1 6B97F1FC
+P 4100 5500
+F 0 "C57" H 4100 5600 50  0000 L CNN
+F 1 "0.1uF" H 4100 5400 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 4100 5500 50  0001 C CNN
+F 3 "~" H 4100 5500 50  0001 C CNN
+	1    4100 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C58
+U 1 1 6B97FF4F
+P 4350 5500
+F 0 "C58" H 4350 5600 50  0000 L CNN
+F 1 "0.1uF" H 4350 5400 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 4350 5500 50  0001 C CNN
+F 3 "~" H 4350 5500 50  0001 C CNN
+	1    4350 5500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 5350 4100 5350
+Wire Wire Line
+	4100 5350 4100 5400
+Connection ~ 3850 5350
+Wire Wire Line
+	4100 5350 4350 5350
+Wire Wire Line
+	4350 5350 4350 5400
+Connection ~ 4100 5350
+Wire Wire Line
+	3850 5650 4100 5650
+Wire Wire Line
+	4100 5650 4100 5600
+Connection ~ 3850 5650
+Wire Wire Line
+	4100 5650 4350 5650
+Wire Wire Line
+	4350 5650 4350 5600
+Connection ~ 4100 5650
+$Comp
+L Device:C_Small C59
+U 1 1 6B9D126B
+P 4600 5500
+F 0 "C59" H 4600 5600 50  0000 L CNN
+F 1 "0.1uF" H 4600 5400 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 4600 5500 50  0001 C CNN
+F 3 "~" H 4600 5500 50  0001 C CNN
+	1    4600 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C60
+U 1 1 6B9D1E3B
+P 4850 5500
+F 0 "C60" H 4850 5600 50  0000 L CNN
+F 1 "0.1uF" H 4850 5400 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 4850 5500 50  0001 C CNN
+F 3 "~" H 4850 5500 50  0001 C CNN
+	1    4850 5500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 5350 4600 5350
+Wire Wire Line
+	4600 5350 4600 5400
+Connection ~ 4350 5350
+Wire Wire Line
+	4600 5350 4850 5350
+Wire Wire Line
+	4850 5350 4850 5400
+Connection ~ 4600 5350
+Wire Wire Line
+	4350 5650 4600 5650
+Wire Wire Line
+	4600 5650 4600 5600
+Connection ~ 4350 5650
+Wire Wire Line
+	4600 5650 4850 5650
+Wire Wire Line
+	4850 5650 4850 5600
+Connection ~ 4600 5650
 $EndSCHEMATC
