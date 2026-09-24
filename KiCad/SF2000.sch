@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 5
+Sheet 1 6
 Title ""
 Date ""
 Rev ""
@@ -1877,4 +1877,10 @@ Wire Wire Line
 Wire Wire Line
 	4850 5650 4850 5600
 Connection ~ 4600 5650
+$Sheet
+S 10050 5100 800  500 
+U 6AB92870
+F0 "ESP32-C5-WROOM" 50
+F1 "ESP32-C5-WROOM.sch" 50
+$EndSheet
 $EndSCHEMATC
