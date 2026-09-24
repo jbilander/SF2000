@@ -89,14 +89,30 @@ Wire Wire Line
 NoConn ~ 3050 1650
 NoConn ~ 1650 3450
 $Comp
-L Connector:USB_C_Receptacle_USB2.0 J?
+L Connector:USB_C_Receptacle_USB2.0 J14
 U 1 1 6ABE0510
 P 2550 4450
-F 0 "J?" V 2611 5180 50  0000 L CNN
+F 0 "J14" V 2611 5180 50  0000 L CNN
 F 1 "USB_C_Receptacle_USB2.0" V 2702 5180 50  0000 L CNN
 F 2 "Connector_USB:USB_C_Receptacle_HRO_TYPE-C-31-M-12" H 2700 4450 50  0001 C CNN
 F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 2700 4450 50  0001 C CNN
 	1    2550 4450
 	0    1    1    0   
 $EndComp
+Text GLabel 2600 5150 3    50   Input ~ 0
+USB_D−
+Text GLabel 2400 5150 3    50   Input ~ 0
+USB_D+
+Wire Wire Line
+	2350 5050 2350 5150
+Wire Wire Line
+	2450 5050 2450 5150
+Wire Wire Line
+	2350 5150 2450 5150
+Wire Wire Line
+	2550 5050 2550 5150
+Wire Wire Line
+	2650 5050 2650 5150
+Wire Wire Line
+	2550 5150 2650 5150
 $EndSCHEMATC
