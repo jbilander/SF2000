@@ -96,7 +96,7 @@ Text GLabel 2250 9350 0    50   Output ~ 0
 TDO
 Text GLabel 2250 9250 0    50   Input ~ 0
 TDI
-Text GLabel 3950 -3550 2    50   Input ~ 0
+Text GLabel 7650 3900 2    50   Input ~ 0
 SW1
 Text GLabel 9550 5050 0    50   Input ~ 0
 JP2
@@ -113,7 +113,7 @@ F 3 "~" H 9850 5050 50  0001 C CNN
 $EndComp
 Text GLabel 10050 5050 2    50   Input ~ 0
 GND
-Text GLabel 3950 -3450 2    50   Input ~ 0
+Text GLabel 7650 4000 2    50   Input ~ 0
 JP2
 Text GLabel 3950 10250 2    50   Output ~ 0
 VMA_3V3
@@ -546,11 +546,11 @@ Text GLabel 6300 6500 2    50   Output ~ 0
 ROM_OE
 Text GLabel 9550 6250 0    50   Input ~ 0
 ROM_B1
-Text GLabel 6500 3900 0    50   Input ~ 0
+Text GLabel 7650 4200 2    50   Input ~ 0
 JP4
 Text GLabel 9650 3800 3    50   Input ~ 0
 JP2
-Text GLabel 6500 3800 0    50   Input ~ 0
+Text GLabel 7650 4100 2    50   Input ~ 0
 JP3
 $Comp
 L Connector_Generic:Conn_02x01 J5
@@ -838,17 +838,11 @@ Text GLabel 2250 7250 0    50   Input ~ 0
 LOW_SPEED
 Text GLabel 2250 7850 0    50   Input ~ 0
 LOW_SPEED
-Text GLabel 2250 9150 0    50   Input ~ 0
-LOW_SPEED
-Text GLabel 2250 9050 0    50   Input ~ 0
-LOW_SPEED
 Text GLabel 2250 11050 0    50   Input ~ 0
 LOW_SPEED
 Text GLabel 2250 11150 0    50   Input ~ 0
 LOW_SPEED
 Text GLabel 2250 10950 0    50   Input ~ 0
-LOW_SPEED
-Text GLabel 2250 10850 0    50   Input ~ 0
 LOW_SPEED
 Text GLabel 2250 11350 0    50   Input ~ 0
 LOW_SPEED
@@ -985,4 +979,56 @@ Text GLabel 7300 1000 1    50   Input ~ 0
 GND
 Text GLabel 7400 1400 3    50   Input ~ 0
 CONF_DONE
+$Comp
+L TDB04H0SB1R:TDB04H0SB1R S1
+U 1 1 6AC47AA1
+P 7400 5150
+F 0 "S1" H 7400 5565 50  0000 C CNN
+F 1 "TDB04H0SB1R" H 7400 5474 50  0000 C CNN
+F 2 "SF2000:TDB04H0SB1" H 7900 5400 50  0001 L CNN
+F 3 "https://www.ckswitches.com/media/3807/tdb-series.pdf" H 7900 5300 50  0001 L CNN
+	1    7400 5150
+	1    0    0    -1  
+$EndComp
+Text GLabel 8050 5000 2    50   Input ~ 0
+RAMSZ0
+Text GLabel 8050 5100 2    50   Input ~ 0
+RAMSZ1
+Text GLabel 8050 5200 2    50   Input ~ 0
+RAMSZ2
+Text GLabel 8050 5300 2    50   Input ~ 0
+RAMSZ3
+Text GLabel 6550 5150 0    50   Input ~ 0
+GND
+Wire Wire Line
+	6750 5000 6650 5000
+Wire Wire Line
+	6650 5000 6650 5100
+Wire Wire Line
+	6750 5100 6650 5100
+Connection ~ 6650 5100
+Wire Wire Line
+	6750 5200 6650 5200
+Wire Wire Line
+	6650 5100 6650 5150
+Wire Wire Line
+	6750 5300 6650 5300
+Wire Wire Line
+	6650 5300 6650 5200
+Connection ~ 6650 5200
+Wire Wire Line
+	6550 5150 6650 5150
+Connection ~ 6650 5150
+Wire Wire Line
+	6650 5150 6650 5200
+Text GLabel 3950 -3550 2    50   Input ~ 0
+RAMSZ3
+Text GLabel 3950 -3450 2    50   Input ~ 0
+RAMSZ2
+Text GLabel 2250 10850 0    50   Input ~ 0
+RAMSZ1
+Text GLabel 2250 9050 0    50   Input ~ 0
+RAMSZ0
+Text GLabel 2250 9150 0    50   Input ~ 0
+JP1
 $EndSCHEMATC
