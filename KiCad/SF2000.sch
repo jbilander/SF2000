@@ -591,12 +591,12 @@ Connection ~ 5950 950
 $Comp
 L Device:C_Small C8
 U 1 1 61F7EF31
-P 8350 850
-F 0 "C8" H 8150 1000 50  0000 L CNN
-F 1 "2.2uF" H 8050 900 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 8350 850 50  0001 C CNN
-F 3 "~" H 8350 850 50  0001 C CNN
-	1    8350 850 
+P 8250 850
+F 0 "C8" H 8300 1000 50  0000 L CNN
+F 1 "2.2uF" H 8300 900 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 8250 850 50  0001 C CNN
+F 3 "~" H 8250 850 50  0001 C CNN
+	1    8250 850 
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1242,12 +1242,12 @@ Wire Wire Line
 $Comp
 L Regulator_Linear:TLV73312PDBV U3
 U 1 1 691DDB1F
-P 8700 1050
-F 0 "U3" H 8700 1392 50  0000 C CNN
-F 1 "TLV74312PDBV" H 8700 1300 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-5" H 8700 1375 50  0001 C CIN
-F 3 "https://www.ti.com/lit/ds/symlink/tlv743p.pdf?ts=1744052905730" H 8700 1050 50  0001 C CNN
-	1    8700 1050
+P 10100 -450
+F 0 "U3" H 10100 -108 50  0000 C CNN
+F 1 "TLV74312PDBV" H 10100 -200 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 10100 -125 50  0001 C CIN
+F 3 "https://www.ti.com/lit/ds/symlink/tlv743p.pdf?ts=1744052905730" H 10100 -450 50  0001 C CNN
+	1    10100 -450
 	1    0    0    -1  
 $EndComp
 Wire Notes Line
@@ -1262,26 +1262,22 @@ Wire Wire Line
 	6350 1350 6450 1350
 Text Notes 7100 1300 0    100  ~ 0
 4V3
-Text GLabel 8300 950  0    50   Input ~ 0
+Text GLabel 9700 -550 0    50   Input ~ 0
 +5VDC
-Text GLabel 8350 750  1    50   Input ~ 0
+Text GLabel 8250 750  1    50   Input ~ 0
 GND
 Wire Wire Line
-	8300 950  8350 950 
-Connection ~ 8350 950 
+	9700 -550 9750 -550
+Connection ~ 9750 -550
 Wire Wire Line
-	8350 950  8400 950 
+	9750 -550 9800 -550
 Wire Wire Line
-	8400 1050 8400 950 
-Connection ~ 8400 950 
-Text GLabel 8800 1350 2    50   Input ~ 0
-GND
-Wire Wire Line
-	8700 1350 8800 1350
-Text GLabel 9900 950  2    50   Output ~ 0
+	9800 -450 9800 -550
+Connection ~ 9800 -550
+Text GLabel 11300 -550 2    50   Output ~ 0
 1V2
 Wire Wire Line
-	9900 950  9600 950 
+	11300 -550 11000 -550
 $Comp
 L Regulator_Linear:TPS73643DBV U2
 U 1 1 61F6B37B
@@ -1300,13 +1296,13 @@ Wire Notes Line
 Wire Notes Line
 	2850 500  10150 500 
 Text Notes 9400 1300 0    100  ~ 0
-1V2
+3V3
 Text Notes 4350 1400 0    50   ~ 0
 Supply to FPGA I/O LVTTL
 Text Notes 6750 1400 0    50   ~ 0
 Supply to FET level shifters
 Text Notes 9150 1400 0    50   ~ 0
-Supply to FPGA Core
+Supply to ESP32-C5
 Text GLabel 1000 2650 0    50   Input ~ 0
 INT6
 NoConn ~ 3600 3750
@@ -1315,24 +1311,19 @@ GND
 $Comp
 L Device:C_Small C5
 U 1 1 6835C2CA
-P 9350 850
-F 0 "C5" H 9150 1000 50  0000 L CNN
-F 1 "10uF" H 9050 900 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" H 9350 850 50  0001 C CNN
-F 3 "~" H 9350 850 50  0001 C CNN
-	1    9350 850 
+P 9550 950
+F 0 "C5" H 9600 1100 50  0000 L CNN
+F 1 "10uF" H 9600 1000 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" H 9550 950 50  0001 C CNN
+F 3 "~" H 9550 950 50  0001 C CNN
+	1    9550 950 
 	1    0    0    -1  
 $EndComp
-Connection ~ 9350 950 
-Wire Wire Line
-	9350 950  9000 950 
-Text GLabel 9600 750  1    50   Input ~ 0
+Text GLabel 11000 -750 1    50   Input ~ 0
 GND
-Connection ~ 9600 950 
+Connection ~ 11000 -550
 Wire Wire Line
-	9600 950  9350 950 
-Wire Wire Line
-	9600 750  9350 750 
+	11000 -750 10750 -750
 $Comp
 L Device:C C31
 U 1 1 681439C9
@@ -1391,12 +1382,12 @@ $EndComp
 $Comp
 L Device:C_Small C17
 U 1 1 6837BF57
-P 9600 850
-F 0 "C17" H 9700 1000 50  0000 L CNN
-F 1 "0.1uF" H 9700 900 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 9600 850 50  0001 C CNN
-F 3 "~" H 9600 850 50  0001 C CNN
-	1    9600 850 
+P 11000 -650
+F 0 "C17" H 11100 -500 50  0000 L CNN
+F 1 "0.1uF" H 11100 -600 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 11000 -650 50  0001 C CNN
+F 3 "~" H 11000 -650 50  0001 C CNN
+	1    11000 -650
 	1    0    0    -1  
 $EndComp
 Connection ~ 5850 6000
@@ -1883,4 +1874,39 @@ U 6AB92870
 F0 "ESP32-C5-WROOM" 50
 F1 "ESP32-C5-WROOM.sch" 50
 $EndSheet
+$Comp
+L SF2000:TLV75533PDBVR U14
+U 1 1 6AC23383
+P 8900 1050
+F 0 "U14" H 8900 1415 50  0000 C CNN
+F 1 "TLV75533PDBVR" H 8900 1324 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5_HandSoldering" H 9250 1250 50  0001 L CNN
+F 3 "http://www.ti.com/lit/gpn/tlv755p" H 9250 1150 50  0001 L CNN
+	1    8900 1050
+	1    0    0    -1  
+$EndComp
+Text GLabel 8100 950  1    50   Input ~ 0
++5VDC
+Wire Wire Line
+	8400 950  8250 950 
+Wire Wire Line
+	8100 950  8100 1150
+Wire Wire Line
+	8100 1150 8400 1150
+Text GLabel 9800 1050 2    50   Output ~ 0
+3V3_C5
+Text GLabel 8400 1050 0    50   Input ~ 0
+GND
+Text GLabel 9550 850  1    50   Input ~ 0
+GND
+Wire Wire Line
+	9800 1050 9550 1050
+Wire Wire Line
+	10400 -550 11000 -550
+Connection ~ 9550 1050
+Wire Wire Line
+	9550 1050 9400 1050
+Connection ~ 8250 950 
+Wire Wire Line
+	8250 950  8100 950 
 $EndSCHEMATC

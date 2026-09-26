@@ -115,4 +115,14 @@ Wire Wire Line
 	2650 5050 2650 5150
 Wire Wire Line
 	2550 5150 2650 5150
+Text GLabel 2850 5050 3    50   Input ~ 0
+CC2
+Text GLabel 2950 5050 3    50   Input ~ 0
+CC1
+Text GLabel 1650 4450 0    50   Input ~ 0
+GND
+Text GLabel 1650 4150 0    50   Input ~ 0
+GND
+Text GLabel 1650 1650 0    50   Input ~ 0
+3V3_C5
 $EndSCHEMATC
