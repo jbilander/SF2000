@@ -115,14 +115,51 @@ Wire Wire Line
 	2650 5050 2650 5150
 Wire Wire Line
 	2550 5150 2650 5150
-Text GLabel 2850 5050 3    50   Input ~ 0
-CC2
-Text GLabel 2950 5050 3    50   Input ~ 0
-CC1
 Text GLabel 1650 4450 0    50   Input ~ 0
 GND
 Text GLabel 1650 4150 0    50   Input ~ 0
 GND
 Text GLabel 1650 1650 0    50   Input ~ 0
 3V3_C5
+$Comp
+L Device:R_Small R9
+U 1 1 6AEB9B3F
+P 2850 5250
+F 0 "R9" H 2700 5300 50  0000 L CNN
+F 1 "5k1" V 2850 5200 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 2850 5250 50  0001 C CNN
+F 3 "~" H 2850 5250 50  0001 C CNN
+	1    2850 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 5050 2850 5150
+Text Label 2850 5150 2    50   ~ 0
+CC2
+Text GLabel 2900 5450 3    50   Input ~ 0
+GND
+$Comp
+L Device:R_Small R10
+U 1 1 6AEC8E87
+P 2950 5250
+F 0 "R10" H 3000 5300 50  0000 L CNN
+F 1 "5k1" V 2950 5200 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 2950 5250 50  0001 C CNN
+F 3 "~" H 2950 5250 50  0001 C CNN
+	1    2950 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 5050 2950 5150
+Text Label 2950 5150 0    50   ~ 0
+CC1
+Wire Wire Line
+	2850 5350 2850 5450
+Wire Wire Line
+	2950 5350 2950 5450
+Wire Wire Line
+	2850 5450 2950 5450
+NoConn ~ 1950 5050
+NoConn ~ 2050 5050
+NoConn ~ 3150 5050
 $EndSCHEMATC
