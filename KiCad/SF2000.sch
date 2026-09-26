@@ -314,19 +314,19 @@ Text GLabel 4400 3550 0    50   Output ~ 0
 A23
 Text GLabel 7550 2950 2    50   BiDi ~ 0
 BGACK
-Text GLabel 8250 2350 0    50   BiDi ~ 0
+Text GLabel 8250 2750 0    50   BiDi ~ 0
 D15
 Text GLabel 7550 2750 2    50   BiDi ~ 0
 BG
-Text GLabel 8250 2450 0    50   BiDi ~ 0
+Text GLabel 8250 2650 0    50   BiDi ~ 0
 D14
 Text GLabel 7550 2550 2    50   Input ~ 0
 DTACK
-Text GLabel 8250 2650 0    50   BiDi ~ 0
+Text GLabel 8250 2450 0    50   BiDi ~ 0
 D13
 Text GLabel 7550 2450 2    50   BiDi ~ 0
 RW
-Text GLabel 8250 2750 0    50   BiDi ~ 0
+Text GLabel 8250 2350 0    50   BiDi ~ 0
 D12
 Text GLabel 7550 2650 2    50   BiDi ~ 0
 LDS
@@ -793,13 +793,13 @@ Text GLabel 9450 3050 2    50   BiDi ~ 0
 D10_3V3
 Text GLabel 9450 2950 2    50   BiDi ~ 0
 D11_3V3
-Text GLabel 9450 2750 2    50   BiDi ~ 0
-D12_3V3
-Text GLabel 9450 2650 2    50   BiDi ~ 0
-D13_3V3
-Text GLabel 9450 2450 2    50   BiDi ~ 0
-D14_3V3
 Text GLabel 9450 2350 2    50   BiDi ~ 0
+D12_3V3
+Text GLabel 9450 2450 2    50   BiDi ~ 0
+D13_3V3
+Text GLabel 9450 2650 2    50   BiDi ~ 0
+D14_3V3
+Text GLabel 9450 2750 2    50   BiDi ~ 0
 D15_3V3
 Text GLabel 6450 2950 0    50   BiDi ~ 0
 AS_MB_3V3
