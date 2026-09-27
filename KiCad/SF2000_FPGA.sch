@@ -35,9 +35,9 @@ Text GLabel 3950 8350 2    50   Input ~ 0
 A21_3V3
 Text GLabel 3950 10650 2    50   Input ~ 0
 A12_3V3
-Text GLabel 6300 5850 2    50   Input ~ 0
+Text GLabel 2250 1350 0    50   Input ~ 0
 UDS_3V3
-Text GLabel 6300 5950 2    50   Input ~ 0
+Text GLabel 2250 1250 0    50   Input ~ 0
 LDS_3V3
 Text GLabel 2250 1750 0    50   Input ~ 0
 RW_3V3
@@ -135,15 +135,15 @@ Text GLabel 6300 6200 2    50   Output ~ 0
 SD_CLK
 Text GLabel 6300 6300 2    50   Input ~ 0
 SD_CD
-Text GLabel 6300 4250 2    50   BiDi ~ 0
+Text GLabel 2250 1450 0    50   BiDi ~ 0
 D0_3V3
-Text GLabel 6300 4350 2    50   BiDi ~ 0
+Text GLabel 2250 1550 0    50   BiDi ~ 0
 D1_3V3
-Text GLabel 6300 4450 2    50   BiDi ~ 0
+Text GLabel 2250 3150 0    50   BiDi ~ 0
 D2_3V3
-Text GLabel 6300 4550 2    50   BiDi ~ 0
+Text GLabel 2250 4950 0    50   BiDi ~ 0
 D3_3V3
-Text GLabel 6300 4650 2    50   BiDi ~ 0
+Text GLabel 2250 5050 0    50   BiDi ~ 0
 D4_3V3
 Text GLabel 2250 5150 0    50   BiDi ~ 0
 D5_3V3
