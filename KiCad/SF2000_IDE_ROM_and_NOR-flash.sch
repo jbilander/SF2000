@@ -39,29 +39,29 @@ RST
 Text Notes 2500 2350 0    50   ~ 0
 CLOCKPORT
 Text GLabel 2950 3050 2    50   Input ~ 0
-A4
+CP_A4
 Text GLabel 2450 3150 0    50   Input ~ 0
-A3
+CP_A3
 Text GLabel 2950 3150 2    50   Input ~ 0
-A2
+CP_A2
 Text GLabel 2450 3050 0    50   Input ~ 0
-A5
+CP_A5
 Text GLabel 2950 3550 2    50   BiDi ~ 0
-D0
+CP_D0
 Text GLabel 2450 3550 0    50   BiDi ~ 0
-D1
+CP_D1
 Text GLabel 2950 3450 2    50   BiDi ~ 0
-D2
+CP_D2
 Text GLabel 2450 3450 0    50   BiDi ~ 0
-D3
+CP_D3
 Text GLabel 2950 3350 2    50   BiDi ~ 0
-D4
+CP_D4
 Text GLabel 2450 3250 0    50   BiDi ~ 0
-D7
+CP_D7
 Text GLabel 2950 3250 2    50   BiDi ~ 0
-D6
+CP_D6
 Text GLabel 2450 3350 0    50   BiDi ~ 0
-D5
+CP_D5
 Text GLabel 2450 2850 0    50   Input ~ 0
 CP_RTC_CS
 Text GLabel 2950 2850 2    50   Input ~ 0
@@ -75,7 +75,7 @@ CP_CS
 Text GLabel 4300 2800 1    50   Input ~ 0
 +5VDC
 Text GLabel 4300 3200 3    50   Input ~ 0
-INT6
+CP_INT6
 Text GLabel 4100 3200 3    50   Input ~ 0
 CP_RTC_CS
 Text GLabel 4200 3200 3    50   Input ~ 0
@@ -103,7 +103,7 @@ GND
 Text GLabel 2200 5050 0    50   Output ~ 0
 CP_IOWR
 Text GLabel 2450 2750 0    50   Output ~ 0
-INT6
+CP_INT6
 Text Notes 1900 3850 0    50   ~ 0
 Caution: This header is +5V logic levels.
 Wire Notes Line
@@ -159,9 +159,9 @@ Wire Wire Line
 	1600 5350 1600 4550
 Wire Wire Line
 	1600 4550 2200 4550
-Text GLabel 4000 2800 1    50   Input ~ 0
+Text GLabel 4100 4150 1    50   Input ~ 0
 3V3
-Text GLabel 4000 3200 3    50   Input ~ 0
+Text GLabel 6950 4650 2    50   Input ~ 0
 CP_CS_3V3
 Text GLabel 3200 4850 2    50   Input ~ 0
 SD_CS
@@ -178,4 +178,144 @@ Wire Wire Line
 Connection ~ 3700 4950
 Wire Wire Line
 	3700 4950 3750 4950
+$Comp
+L SF2000:74LVC8T245PW,118 U3
+U 1 1 6AF422B4
+P 6250 3100
+F 0 "U3" H 6250 3915 50  0000 C CNN
+F 1 "74LVC8T245PW,118" H 6250 3824 50  0000 C CNN
+F 2 "Package_SO:TSSOP-24_4.4x7.8mm_P0.65mm" H 6800 3750 50  0001 L CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74LVC_LVCH8T245.pdf" H 6800 3650 50  0001 L CNN
+	1    6250 3100
+	1    0    0    -1  
+$EndComp
+Text GLabel 7050 2600 2    50   Input ~ 0
++5VDC
+Wire Wire Line
+	6950 2550 7050 2550
+Wire Wire Line
+	6950 2650 7050 2650
+Wire Wire Line
+	7050 2550 7050 2650
+Text GLabel 6950 3650 2    50   Input ~ 0
+GND
+Text GLabel 5550 2550 0    50   Input ~ 0
+3V3
+$Comp
+L SF2000:74LVC8T245PW,118 U15
+U 1 1 6AF47162
+P 6250 4800
+F 0 "U15" H 6250 5615 50  0000 C CNN
+F 1 "74LVC8T245PW,118" H 6250 5524 50  0000 C CNN
+F 2 "Package_SO:TSSOP-24_4.4x7.8mm_P0.65mm" H 6800 5450 50  0001 L CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74LVC_LVCH8T245.pdf" H 6800 5350 50  0001 L CNN
+	1    6250 4800
+	1    0    0    -1  
+$EndComp
+Text GLabel 7100 4300 2    50   Input ~ 0
+3V3
+Text GLabel 5550 4250 0    50   Input ~ 0
++5VDC
+Wire Wire Line
+	6950 4250 7100 4250
+Wire Wire Line
+	6950 4350 7100 4350
+Wire Wire Line
+	7100 4250 7100 4350
+Text GLabel 5550 2650 0    50   Input ~ 0
+CP_D_DIR
+Text GLabel 6950 2750 2    50   Input ~ 0
+CP_D_OE
+Text GLabel 5450 3600 0    50   Input ~ 0
+GND
+Text GLabel 5450 5300 0    50   Input ~ 0
+GND
+Wire Wire Line
+	5550 3550 5450 3550
+Wire Wire Line
+	5550 3650 5450 3650
+Wire Wire Line
+	5450 3550 5450 3650
+Wire Wire Line
+	5550 5250 5450 5250
+Wire Wire Line
+	5550 5350 5450 5350
+Wire Wire Line
+	5450 5250 5450 5350
+Text GLabel 6950 5350 2    50   Input ~ 0
+GND
+Text GLabel 5550 2850 0    50   BiDi ~ 0
+CP_D1_3V3
+Text GLabel 5550 2950 0    50   BiDi ~ 0
+CP_D2_3V3
+Text GLabel 5550 3050 0    50   BiDi ~ 0
+CP_D3_3V3
+Text GLabel 5550 3150 0    50   BiDi ~ 0
+CP_D4_3V3
+Text GLabel 5550 3250 0    50   BiDi ~ 0
+CP_D5_3V3
+Text GLabel 5550 3350 0    50   BiDi ~ 0
+CP_D6_3V3
+Text GLabel 5550 3450 0    50   BiDi ~ 0
+CP_D7_3V3
+Text GLabel 4000 3200 3    50   Input ~ 0
+RST
+Wire Wire Line
+	4100 2800 4000 2800
+Connection ~ 4100 2800
+Text GLabel 7100 4450 2    50   Input ~ 0
+GND
+Text GLabel 5550 4350 0    50   Input ~ 0
+GND
+Wire Wire Line
+	6950 4450 7100 4450
+Wire Wire Line
+	7100 4450 7100 4550
+Wire Wire Line
+	7100 4550 6950 4550
+Text GLabel 5550 4550 0    50   Output ~ 0
+CP_CS
+NoConn ~ 5550 4450
+Text GLabel 5550 4650 0    50   Output ~ 0
+CP_IORD
+Text GLabel 5550 4750 0    50   Output ~ 0
+CP_IOWR
+Text GLabel 6950 4750 2    50   Input ~ 0
+CP_IORD_3V3
+Text GLabel 6950 4850 2    50   Input ~ 0
+CP_IOWR_3V3
+Text GLabel 5550 4850 0    50   Output ~ 0
+CP_A5
+Text GLabel 5550 5050 0    50   Output ~ 0
+CP_A3
+Text GLabel 5550 4950 0    50   Output ~ 0
+CP_A4
+Text GLabel 5550 5150 0    50   Output ~ 0
+CP_A2
+Text GLabel 6950 4950 2    50   Input ~ 0
+CP_A5_3V3
+Text GLabel 6950 5150 2    50   Input ~ 0
+CP_A3_3V3
+Text GLabel 6950 5050 2    50   Input ~ 0
+CP_A4_3V3
+Text GLabel 6950 5250 2    50   Input ~ 0
+CP_A2_3V3
+Text GLabel 5550 2750 0    50   BiDi ~ 0
+CP_D0_3V3
+Text GLabel 6950 2950 2    50   BiDi ~ 0
+CP_D1
+Text GLabel 6950 3050 2    50   BiDi ~ 0
+CP_D2
+Text GLabel 6950 3150 2    50   BiDi ~ 0
+CP_D3
+Text GLabel 6950 3250 2    50   BiDi ~ 0
+CP_D4
+Text GLabel 6950 3350 2    50   BiDi ~ 0
+CP_D5
+Text GLabel 6950 3450 2    50   BiDi ~ 0
+CP_D6
+Text GLabel 6950 3550 2    50   BiDi ~ 0
+CP_D7
+Text GLabel 6950 2850 2    50   BiDi ~ 0
+CP_D0
 $EndSCHEMATC

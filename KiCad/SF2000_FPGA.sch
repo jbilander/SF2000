@@ -1040,4 +1040,6 @@ Text GLabel 6650 1300 3    50   Input ~ 0
 RAMSZ2
 Text GLabel 6550 1300 3    50   Input ~ 0
 RAMSZ3
+Text GLabel 3950 6150 2    50   Input ~ 0
+CP_INT6_3V3
 $EndSCHEMATC

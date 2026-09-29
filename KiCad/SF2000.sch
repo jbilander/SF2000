@@ -628,7 +628,7 @@ Text GLabel 2100 2450 1    50   Input ~ 0
 +5VDC
 NoConn ~ 1500 2050
 Text GLabel 2600 2450 0    50   Input ~ 0
-GND
+CP_INT6
 $Comp
 L Device:CP C2
 U 1 1 62051709
@@ -676,7 +676,6 @@ Text GLabel 3600 3050 2    50   Output ~ 0
 CCK_3V3
 Text GLabel 6250 4100 3    50   Input ~ 0
 CCK_3V3
-NoConn ~ 3600 2550
 $Sheet
 S 10050 1850 800  500 
 U 620D263D
@@ -1281,8 +1280,6 @@ Supply to ESP32-C5
 Text GLabel 1000 2650 0    50   Input ~ 0
 INT6
 NoConn ~ 3600 3750
-Text GLabel 2600 3650 0    50   Input ~ 0
-GND
 $Comp
 L Device:C_Small C6
 U 1 1 6835C2CA
@@ -1877,4 +1874,8 @@ Wire Wire Line
 Connection ~ 8250 950 
 Wire Wire Line
 	8250 950  8100 950 
+Text GLabel 2600 3650 0    50   Input ~ 0
+GND
+Text GLabel 3600 2550 2    50   Output ~ 0
+CP_INT6_3V3
 $EndSCHEMATC
