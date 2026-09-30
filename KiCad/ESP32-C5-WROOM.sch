@@ -162,4 +162,8 @@ Wire Wire Line
 NoConn ~ 1950 5050
 NoConn ~ 2050 5050
 NoConn ~ 3150 5050
+Text GLabel 3050 1850 2    50   Input ~ 0
+RX0
+Text GLabel 3050 1950 2    50   Output ~ 0
+TX0
 $EndSCHEMATC
