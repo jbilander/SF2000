@@ -131,9 +131,9 @@ Text GLabel 3950 -250 2    50   BiDi ~ 0
 D15_3V3
 Text GLabel 2250 8650 0    50   BiDi ~ 0
 D8_3V3
-Text GLabel 6300 6200 2    50   Output ~ 0
+Text GLabel 6150 3500 2    50   Output ~ 0
 SD_CLK
-Text GLabel 6300 6300 2    50   Input ~ 0
+Text GLabel 6150 3600 2    50   Input ~ 0
 SD_CD
 Text GLabel 2250 1450 0    50   BiDi ~ 0
 D0_3V3
@@ -180,8 +180,6 @@ F 3 "~" H 9850 6250 50  0001 C CNN
 $EndComp
 Text GLabel 10050 6250 2    50   Input ~ 0
 GND
-Text GLabel 5950 4000 0    50   Output ~ 0
-FLASH_OE
 Text GLabel 9550 5850 0    50   Input ~ 0
 JP4
 $Comp
@@ -298,16 +296,6 @@ Text GLabel 2250 4350 0    50   Input ~ 0
 3V3
 Text GLabel 3950 250  2    50   Input ~ 0
 OSC_CLK
-Text GLabel 5950 3900 0    50   Output ~ 0
-SPI_SS
-Text GLabel 5950 3600 0    50   Input ~ 0
-DO
-Text GLabel 5950 3700 0    50   Output ~ 0
-DI
-Text GLabel 5950 3800 0    50   Output ~ 0
-SCLK
-Text GLabel 7000 3950 0    50   Input ~ 0
-SPI_SS
 $Comp
 L Memory_Flash:AT25SF081-SSHD-X U9
 U 1 1 6925ADB2
@@ -319,21 +307,19 @@ F 3 "https://www.mouser.com/datasheet/2/949/w25q16jv_spi_revg_03222018_plus-1489
 	1    5650 2550
 	1    0    0    -1  
 $EndComp
-NoConn ~ 5050 2650
-NoConn ~ 5050 2750
 Text GLabel 5650 2050 1    50   Input ~ 0
 3V3
 Text GLabel 5050 2550 0    50   Input ~ 0
-SPI_SS
+SS_W25Q16
 Text GLabel 5050 2450 0    50   Input ~ 0
 SCLK
 Text GLabel 5650 3050 3    50   Input ~ 0
 GND
 Text GLabel 5050 2350 0    50   Input ~ 0
-DI
+MOSI
 Text GLabel 6250 2350 2    50   Output ~ 0
-DO
-Text GLabel 6300 6600 2    50   Output ~ 0
+MISO
+Text GLabel 6150 3900 2    50   Output ~ 0
 SD_CS
 $Comp
 L Device:R_Small R?
@@ -389,36 +375,6 @@ F 3 "~" H 4900 1100 50  0001 C CNN
 	1    4900 1100
 	1    0    0    -1  
 $EndComp
-Text GLabel 10350 3900 3    50   Input ~ 0
-FLASH_WE
-Text GLabel 10450 3900 3    50   Input ~ 0
-CDONE
-Wire Wire Line
-	10550 3500 10650 3500
-Connection ~ 10550 3500
-Wire Wire Line
-	10450 3500 10550 3500
-Connection ~ 10450 3500
-Wire Wire Line
-	10350 3500 10450 3500
-$Comp
-L Device:R_Pack04 RN?
-U 1 1 67FCD62D
-P 10550 3700
-AR Path="/62892CF3/67FCD62D" Ref="RN?"  Part="1" 
-AR Path="/621DFEC4/67FCD62D" Ref="RN?"  Part="1" 
-AR Path="/620D263D/67FCD62D" Ref="RN5"  Part="1" 
-F 0 "RN5" H 10738 3746 50  0000 L CNN
-F 1 "10k_Pack04" H 10738 3655 50  0000 L CNN
-F 2 "SF2000:RESCAF80P320X160X60-8N" V 10825 3700 50  0001 C CNN
-F 3 "~" H 10550 3700 50  0001 C CNN
-	1    10550 3700
-	1    0    0    -1  
-$EndComp
-Text GLabel 10350 3500 1    50   Input ~ 0
-3V3
-Text GLabel 10550 3900 3    50   Input ~ 0
-AVEC
 $Comp
 L Device:R_Small R?
 U 1 1 626987D6
@@ -475,15 +431,11 @@ F 3 "~" H 7500 1050 50  0001 C CNN
 	1    7500 1050
 	1    0    0    -1  
 $EndComp
-Text GLabel 8100 1050 3    50   Input ~ 0
-RST_3V3
 Connection ~ 6650 900 
 Wire Wire Line
 	6650 900  6550 900 
 Wire Wire Line
 	6750 900  6700 900 
-Text GLabel 8200 1050 3    50   Input ~ 0
-SPI_SS
 Text GLabel 6700 800  1    50   Input ~ 0
 3V3
 Text GLabel 5200 1300 3    50   Input ~ 0
@@ -512,18 +464,14 @@ F 3 "~" H 5750 1100 50  0001 C CNN
 $EndComp
 Wire Notes Line
 	11150 550  8650 550 
-Text GLabel 10650 3900 3    50   Input ~ 0
-ROM_WE
 Text Notes 9150 700  0    100  ~ 0
 LED Circuit
-Text GLabel 6300 6800 2    50   Output ~ 0
+Text GLabel 6150 4100 2    50   Output ~ 0
 CP_IOWR_3V3
-Text GLabel 6300 6900 2    50   Output ~ 0
+Text GLabel 6150 4200 2    50   Output ~ 0
 CP_IORD_3V3
-Text GLabel 6300 7000 2    50   Output ~ 0
+Text GLabel 6150 4300 2    50   Output ~ 0
 CP_CS_3V3
-Text GLabel 6300 6500 2    50   Output ~ 0
-ROM_OE
 Text GLabel 9550 6250 0    50   Input ~ 0
 ROM_B1
 Text GLabel 6900 2350 2    50   Input ~ 0
@@ -551,9 +499,9 @@ Wire Wire Line
 	9850 1750 10050 1750
 Text GLabel 9500 1000 0    50   Input ~ 0
 SD_LED
-Text GLabel 6300 6700 2    50   Output ~ 0
+Text GLabel 6150 4000 2    50   Output ~ 0
 SD_MOSI
-Text GLabel 6300 6400 2    50   Input ~ 0
+Text GLabel 6150 3700 2    50   Input ~ 0
 SD_MISO
 Wire Wire Line
 	9500 1000 9650 1000
@@ -584,12 +532,6 @@ Text GLabel 10050 4650 2    50   Input ~ 0
 GND
 Text GLabel 5550 1300 3    50   Input ~ 0
 JP1
-Text GLabel 7000 3650 0    50   Input ~ 0
-SCLK
-Text GLabel 7000 3850 0    50   Output ~ 0
-DI
-Text GLabel 7000 3750 0    50   Input ~ 0
-DO
 $Comp
 L SF2000:10M02SCU324C8G U?
 U 1 1 6AE03F38
@@ -943,8 +885,6 @@ Wire Wire Line
 	4650 -1850 4850 -1850
 Text GLabel 2250 8850 0    50   Input ~ 0
 AVEC
-Text GLabel 5950 4200 0    50   Input ~ 0
-CDONE
 Text GLabel 7450 3400 0    50   Input ~ 0
 GND
 Text GLabel 7450 3300 0    50   Input ~ 0
@@ -954,7 +894,7 @@ NoConn ~ 7450 3100
 NoConn ~ 7450 3200
 Text GLabel 4900 900  1    50   Input ~ 0
 GND
-Text GLabel 8300 1050 3    50   Input ~ 0
+Text GLabel 7550 1800 3    50   Input ~ 0
 CONF_DONE
 Text GLabel 8050 5000 2    50   Input ~ 0
 RAMSZ0
@@ -1042,4 +982,60 @@ Text GLabel 6550 1300 3    50   Input ~ 0
 RAMSZ3
 Text GLabel 3950 6150 2    50   Input ~ 0
 CP_INT6_3V3
+Text GLabel 1650 1650 0    50   Output ~ 0
+MOSI
+Text GLabel 2250 -50  0    50   Input ~ 0
+MISO
+$Comp
+L Device:R_Small R?
+U 1 1 6AD535C3
+P 1950 1650
+AR Path="/6AD535C3" Ref="R?"  Part="1" 
+AR Path="/620D263D/6AD535C3" Ref="R11"  Part="1" 
+F 0 "R11" V 2000 1750 50  0000 L CNN
+F 1 "33" V 1950 1600 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 1950 1650 50  0001 C CNN
+F 3 "~" H 1950 1650 50  0001 C CNN
+	1    1950 1650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2050 1650 2250 1650
+Wire Wire Line
+	1850 1650 1650 1650
+$Comp
+L Device:R_Small R?
+U 1 1 6AD6AEAE
+P 1950 -150
+AR Path="/6AD6AEAE" Ref="R?"  Part="1" 
+AR Path="/620D263D/6AD6AEAE" Ref="R12"  Part="1" 
+F 0 "R12" V 2000 -400 50  0000 L CNN
+F 1 "33" V 1950 -200 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 1950 -150 50  0001 C CNN
+F 3 "~" H 1950 -150 50  0001 C CNN
+	1    1950 -150
+	0    1    1    0   
+$EndComp
+Text GLabel 1650 -150 0    50   Output ~ 0
+SCLK
+Wire Wire Line
+	1650 -150 1850 -150
+Wire Wire Line
+	2250 -150 2050 -150
+Text GLabel 2250 -250 0    50   Output ~ 0
+SS_W25Q16
+Text GLabel 5000 2700 0    50   Input ~ 0
+3V3
+Wire Wire Line
+	5050 2650 5000 2650
+Wire Wire Line
+	5050 2750 5000 2750
+Wire Wire Line
+	5000 2650 5000 2750
+Text GLabel 2250 -2050 0    50   Output ~ 0
+CP_A5_3V3
+Text GLabel 2250 3050 0    50   Input ~ 0
+IRQ_RP2354
+Text GLabel 2250 -1950 0    50   Output ~ 0
+SS_RP2354
 $EndSCHEMATC

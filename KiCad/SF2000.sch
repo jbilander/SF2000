@@ -887,8 +887,6 @@ F 3 "~" H 3400 6950 50  0001 C CNN
 	1    3400 6950
 	1    0    0    -1  
 $EndComp
-Connection ~ 2800 7100
-Connection ~ 2800 6800
 $Comp
 L Device:C C54
 U 1 1 6231D11D
@@ -949,12 +947,12 @@ $EndComp
 $Comp
 L Device:C C45
 U 1 1 623E1D0B
-P 2800 6950
-F 0 "C45" H 2850 7050 50  0000 L CNN
-F 1 "0.01uF" H 2800 6850 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2838 6800 50  0001 C CNN
-F 3 "~" H 2800 6950 50  0001 C CNN
-	1    2800 6950
+P 5450 5500
+F 0 "C45" H 5500 5600 50  0000 L CNN
+F 1 "0.01uF" H 5450 5400 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 5488 5350 50  0001 C CNN
+F 3 "~" H 5450 5500 50  0001 C CNN
+	1    5450 5500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -965,17 +963,6 @@ Wire Wire Line
 	4300 7100 4600 7100
 Connection ~ 4300 7100
 Connection ~ 4600 7100
-$Comp
-L Device:C C36
-U 1 1 623F86B0
-P 6100 6150
-F 0 "C36" H 6150 6250 50  0000 L CNN
-F 1 "0.1uF" H 6100 6050 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6138 6000 50  0001 C CNN
-F 3 "~" H 6100 6150 50  0001 C CNN
-	1    6100 6150
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:C C26
 U 1 1 62441B62
@@ -1456,28 +1443,14 @@ F 3 "~" H 6350 6150 50  0001 C CNN
 	1    6350 6150
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6350 6000 6100 6000
-Wire Wire Line
-	6100 6300 6350 6300
 Connection ~ 6100 6000
 Connection ~ 6100 6300
-Wire Wire Line
-	6600 6000 6350 6000
-Connection ~ 6350 6000
-Wire Wire Line
-	6600 6300 6350 6300
-Connection ~ 6350 6300
 Wire Wire Line
 	2200 7100 2500 7100
 Wire Wire Line
 	2200 6800 2500 6800
 Connection ~ 2500 6800
-Wire Wire Line
-	2500 6800 2800 6800
 Connection ~ 2500 7100
-Wire Wire Line
-	2500 7100 2800 7100
 Connection ~ 4900 6800
 Connection ~ 4900 7100
 Wire Wire Line
@@ -1490,10 +1463,6 @@ Wire Wire Line
 	5200 6800 5500 6800
 Wire Wire Line
 	5200 7100 5500 7100
-Wire Wire Line
-	2800 7100 3100 7100
-Wire Wire Line
-	2800 6800 3100 6800
 Connection ~ 3100 6800
 Connection ~ 3100 7100
 Wire Wire Line
@@ -1842,10 +1811,10 @@ F0 "ESP32-C5-WROOM" 50
 F1 "ESP32-C5-WROOM.sch" 50
 $EndSheet
 $Comp
-L SF2000:TLV75533PDBVR U14
+L SF2000:TLV75533PDBVR U3
 U 1 1 6AC23383
 P 8900 1050
-F 0 "U14" H 8900 1415 50  0000 C CNN
+F 0 "U3" H 8900 1415 50  0000 C CNN
 F 1 "TLV75533PDBVR" H 8900 1324 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-23-5_HandSoldering" H 9250 1250 50  0001 L CNN
 F 3 "http://www.ti.com/lit/gpn/tlv755p" H 9250 1150 50  0001 L CNN
@@ -1878,4 +1847,33 @@ Text GLabel 2600 3650 0    50   Input ~ 0
 GND
 Text GLabel 3600 2550 2    50   Output ~ 0
 CP_INT6_3V3
+$Comp
+L Device:C C36
+U 1 1 623F86B0
+P 6100 6150
+F 0 "C36" H 6150 6250 50  0000 L CNN
+F 1 "0.1uF" H 6100 6050 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6138 6000 50  0001 C CNN
+F 3 "~" H 6100 6150 50  0001 C CNN
+	1    6100 6150
+	1    0    0    -1  
+$EndComp
+Text GLabel 5450 5650 0    50   Input ~ 0
+3V3
+Text GLabel 5450 5350 0    50   Input ~ 0
+GND
+Wire Wire Line
+	6100 6000 6350 6000
+Wire Wire Line
+	6100 6300 6350 6300
+Connection ~ 6350 6000
+Wire Wire Line
+	6350 6000 6600 6000
+Connection ~ 6350 6300
+Wire Wire Line
+	6350 6300 6600 6300
+Wire Wire Line
+	2500 6800 3100 6800
+Wire Wire Line
+	2500 7100 3100 7100
 $EndSCHEMATC

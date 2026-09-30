@@ -72,30 +72,30 @@ Text GLabel 2950 2950 2    50   Input ~ 0
 CP_IOWR
 Text GLabel 2950 2750 2    50   Input ~ 0
 CP_CS
-Text GLabel 4300 2800 1    50   Input ~ 0
+Text GLabel 4300 2350 1    50   Input ~ 0
 +5VDC
-Text GLabel 4300 3200 3    50   Input ~ 0
+Text GLabel 4300 2750 3    50   Input ~ 0
 CP_INT6
-Text GLabel 4100 3200 3    50   Input ~ 0
+Text GLabel 4100 2750 3    50   Input ~ 0
 CP_RTC_CS
-Text GLabel 4200 3200 3    50   Input ~ 0
+Text GLabel 4200 2750 3    50   Input ~ 0
 CP_RTC_DS
 $Comp
 L Device:R_Pack04 RN6
 U 1 1 680E7107
-P 4200 3000
-F 0 "RN6" H 4388 3046 50  0000 L CNN
-F 1 "10k_Pack04" H 4388 2955 50  0000 L CNN
-F 2 "SF2000:RESCAF80P320X160X60-8N" V 4475 3000 50  0001 C CNN
-F 3 "~" H 4200 3000 50  0001 C CNN
-	1    4200 3000
+P 4200 2550
+F 0 "RN6" H 4388 2596 50  0000 L CNN
+F 1 "10k_Pack04" H 4388 2505 50  0000 L CNN
+F 2 "SF2000:RESCAF80P320X160X60-8N" V 4475 2550 50  0001 C CNN
+F 3 "~" H 4200 2550 50  0001 C CNN
+	1    4200 2550
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4100 2800 4200 2800
-Connection ~ 4200 2800
+	4100 2350 4200 2350
+Connection ~ 4200 2350
 Wire Wire Line
-	4200 2800 4300 2800
+	4200 2350 4300 2350
 Text GLabel 3550 4550 1    50   Input ~ 0
 +5VDC
 Text GLabel 4200 4850 3    50   Input ~ 0
@@ -159,8 +159,6 @@ Wire Wire Line
 	1600 5350 1600 4550
 Wire Wire Line
 	1600 4550 2200 4550
-Text GLabel 4100 4150 1    50   Input ~ 0
-3V3
 Text GLabel 6950 4650 2    50   Input ~ 0
 CP_CS_3V3
 Text GLabel 3200 4850 2    50   Input ~ 0
@@ -179,10 +177,10 @@ Connection ~ 3700 4950
 Wire Wire Line
 	3700 4950 3750 4950
 $Comp
-L SF2000:74LVC8T245PW,118 U3
+L SF2000:74LVC8T245PW,118 U14
 U 1 1 6AF422B4
 P 6250 3100
-F 0 "U3" H 6250 3915 50  0000 C CNN
+F 0 "U14" H 6250 3915 50  0000 C CNN
 F 1 "74LVC8T245PW,118" H 6250 3824 50  0000 C CNN
 F 2 "Package_SO:TSSOP-24_4.4x7.8mm_P0.65mm" H 6800 3750 50  0001 L CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/74LVC_LVCH8T245.pdf" H 6800 3650 50  0001 L CNN
@@ -258,11 +256,11 @@ Text GLabel 5550 3350 0    50   BiDi ~ 0
 CP_D6_3V3
 Text GLabel 5550 3450 0    50   BiDi ~ 0
 CP_D7_3V3
-Text GLabel 4000 3200 3    50   Input ~ 0
+Text GLabel 4000 2750 3    50   Input ~ 0
 RST
 Wire Wire Line
-	4100 2800 4000 2800
-Connection ~ 4100 2800
+	4100 2350 4000 2350
+Connection ~ 4100 2350
 Text GLabel 7100 4450 2    50   Input ~ 0
 GND
 Text GLabel 5550 4350 0    50   Input ~ 0
@@ -318,4 +316,37 @@ Text GLabel 6950 3550 2    50   BiDi ~ 0
 CP_D7
 Text GLabel 6950 2850 2    50   BiDi ~ 0
 CP_D0
+Wire Wire Line
+	4500 3550 4600 3550
+Connection ~ 4500 3550
+Wire Wire Line
+	4400 3550 4500 3550
+$Comp
+L Device:R_Pack04 RN?
+U 1 1 6AE31D87
+P 4600 3750
+AR Path="/62892CF3/6AE31D87" Ref="RN?"  Part="1" 
+AR Path="/621DFEC4/6AE31D87" Ref="RN?"  Part="1" 
+AR Path="/620D263D/6AE31D87" Ref="RN?"  Part="1" 
+AR Path="/627A6500/6AE31D87" Ref="RN5"  Part="1" 
+F 0 "RN5" H 4788 3796 50  0000 L CNN
+F 1 "10k_Pack04" H 4788 3705 50  0000 L CNN
+F 2 "SF2000:RESCAF80P320X160X60-8N" V 4875 3750 50  0001 C CNN
+F 3 "~" H 4600 3750 50  0001 C CNN
+	1    4600 3750
+	1    0    0    -1  
+$EndComp
+Text GLabel 4400 3550 1    50   Input ~ 0
+3V3
+Text GLabel 4600 3950 3    50   Input ~ 0
+CP_CS_3V3
+Text GLabel 4500 3950 3    50   Input ~ 0
+CP_IORD_3V3
+Text GLabel 4400 3950 3    50   Input ~ 0
+CP_IOWR_3V3
+Wire Wire Line
+	4600 3550 4700 3550
+Connection ~ 4600 3550
+Text GLabel 4700 3950 3    50   Input ~ 0
+SS_W25Q16
 $EndSCHEMATC
