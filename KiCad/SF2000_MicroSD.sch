@@ -27,9 +27,9 @@ $EndComp
 Text GLabel 4800 3900 0    50   Output ~ 0
 SD_MISO
 Text GLabel 4800 4000 0    50   Input ~ 0
-SD_NC1
+SD_D1
 Text GLabel 4800 3300 0    50   Input ~ 0
-SD_NC2
+SD_D2
 Text GLabel 4800 3400 0    50   Input ~ 0
 SD_CS
 Text GLabel 4800 3500 0    50   Input ~ 0
@@ -40,107 +40,121 @@ Text GLabel 4800 3800 0    50   Input ~ 0
 GND
 Text GLabel 6500 4200 2    50   Input ~ 0
 GND
-Text GLabel 4800 3700 0    50   Input ~ 0
+Text GLabel 4050 3700 0    50   Input ~ 0
 SD_CLK
 Text GLabel 4800 4200 0    50   Output ~ 0
 SD_CD
 $Comp
 L Device:R_Pack04 RN3
 U 1 1 61FDB219
-P 2200 3000
-F 0 "RN3" H 2388 3046 50  0000 L CNN
-F 1 "10k_Pack04" H 2388 2955 50  0000 L CNN
-F 2 "SF2000:RESCAF80P320X160X60-8N" V 2475 3000 50  0001 C CNN
-F 3 "~" H 2200 3000 50  0001 C CNN
-	1    2200 3000
+P 2450 3450
+F 0 "RN3" H 2638 3496 50  0000 L CNN
+F 1 "10k_Pack04" H 2638 3405 50  0000 L CNN
+F 2 "SF2000:RESCAF80P320X160X60-8N" V 2725 3450 50  0001 C CNN
+F 3 "~" H 2450 3450 50  0001 C CNN
+	1    2450 3450
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R_Pack04 RN4
 U 1 1 61FDC27F
-P 3150 3000
-F 0 "RN4" H 3338 3046 50  0000 L CNN
-F 1 "10k_Pack04" H 3338 2955 50  0000 L CNN
-F 2 "SF2000:RESCAF80P320X160X60-8N" V 3425 3000 50  0001 C CNN
-F 3 "~" H 3150 3000 50  0001 C CNN
-	1    3150 3000
+P 3400 3450
+F 0 "RN4" H 3588 3496 50  0000 L CNN
+F 1 "10k_Pack04" H 3588 3405 50  0000 L CNN
+F 2 "SF2000:RESCAF80P320X160X60-8N" V 3675 3450 50  0001 C CNN
+F 3 "~" H 3400 3450 50  0001 C CNN
+	1    3400 3450
 	1    0    0    -1  
 $EndComp
-Text GLabel 2000 2800 0    50   Input ~ 0
+Text GLabel 2250 3250 0    50   Input ~ 0
 3V3
 Wire Wire Line
-	2000 2800 2100 2800
-Connection ~ 2100 2800
+	2250 3250 2350 3250
+Connection ~ 2350 3250
 Wire Wire Line
-	2100 2800 2200 2800
-Connection ~ 2200 2800
+	2350 3250 2450 3250
+Connection ~ 2450 3250
 Wire Wire Line
-	2200 2800 2300 2800
-Connection ~ 2300 2800
+	2450 3250 2550 3250
+Connection ~ 2550 3250
 Wire Wire Line
-	2300 2800 2950 2800
-Connection ~ 2950 2800
+	2550 3250 3200 3250
+Connection ~ 3200 3250
 Wire Wire Line
-	2950 2800 3050 2800
-Connection ~ 3050 2800
+	3200 3250 3300 3250
+Connection ~ 3300 3250
 Wire Wire Line
-	3050 2800 3150 2800
-Connection ~ 3150 2800
+	3300 3250 3400 3250
+Connection ~ 3400 3250
 Wire Wire Line
-	3150 2800 3250 2800
-Text GLabel 3150 3200 3    50   BiDi ~ 0
-SD_NC2
-Text GLabel 3050 3200 3    50   BiDi ~ 0
+	3400 3250 3500 3250
+Text GLabel 3400 3650 3    50   BiDi ~ 0
+SD_D2
+Text GLabel 3300 3650 3    50   BiDi ~ 0
 SD_CS
-Text GLabel 2950 3200 3    50   Input ~ 0
+Text GLabel 3200 3650 3    50   Input ~ 0
 SD_MOSI
-Text GLabel 3250 3200 3    50   Input ~ 0
+Text GLabel 3500 3650 3    50   Input ~ 0
 SD_MISO
-Text GLabel 2100 3200 3    50   BiDi ~ 0
-SD_NC1
-Text GLabel 2000 3200 3    50   Input ~ 0
+Text GLabel 2350 3650 3    50   BiDi ~ 0
+SD_D1
+Text GLabel 2250 3650 3    50   Input ~ 0
 SD_CD
 $Comp
 L Oscillator:SG-8002CA X1
 U 1 1 620EE0AB
-P 2850 4500
-F 0 "X1" H 3100 4850 50  0000 L CNN
-F 1 "Oscillator_7.0x5.0mm" H 3100 4750 50  0000 L CNN
-F 2 "Oscillator:Oscillator_SMD_SeikoEpson_SG8002CA-4Pin_7.0x5.0mm" H 3550 4150 50  0001 C CNN
-F 3 "" H 2750 4500 50  0001 C CNN
-	1    2850 4500
+P 2850 5500
+F 0 "X1" H 3100 5850 50  0000 L CNN
+F 1 "Oscillator_7.0x5.0mm" H 3100 5750 50  0000 L CNN
+F 2 "Oscillator:Oscillator_SMD_SeikoEpson_SG8002CA-4Pin_7.0x5.0mm" H 3550 5150 50  0001 C CNN
+F 3 "" H 2750 5500 50  0001 C CNN
+	1    2850 5500
 	1    0    0    -1  
 $EndComp
-Text GLabel 2850 4200 1    50   Input ~ 0
+Text GLabel 2850 5200 1    50   Input ~ 0
 3V3
-Text GLabel 2850 4800 3    50   Input ~ 0
+Text GLabel 2850 5800 3    50   Input ~ 0
 GND
-Text GLabel 3550 4500 2    50   Output ~ 0
+Text GLabel 3550 5500 2    50   Output ~ 0
 OSC_CLK
-Text GLabel 2550 4500 0    50   Input ~ 0
+Text GLabel 2550 5500 0    50   Input ~ 0
 3V3
 $Comp
 L Device:R_Small R?
 U 1 1 68B856DF
-P 3350 4500
+P 3350 5500
 AR Path="/68B856DF" Ref="R?"  Part="1" 
 AR Path="/620D263D/68B856DF" Ref="R?"  Part="1" 
 AR Path="/62892CF3/68B856DF" Ref="R1"  Part="1" 
-F 0 "R1" V 3450 4450 50  0000 L CNN
-F 1 "33" V 3350 4450 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 3350 4500 50  0001 C CNN
-F 3 "~" H 3350 4500 50  0001 C CNN
-	1    3350 4500
+F 0 "R1" V 3450 5450 50  0000 L CNN
+F 1 "33" V 3350 5450 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 3350 5500 50  0001 C CNN
+F 3 "~" H 3350 5500 50  0001 C CNN
+	1    3350 5500
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	3550 4500 3450 4500
+	3550 5500 3450 5500
 Wire Wire Line
-	3250 4500 3150 4500
-Text Label 3200 4500 3    50   ~ 0
+	3250 5500 3150 5500
+Text Label 3200 5500 3    50   ~ 0
 OSC
-Text GLabel 2200 3200 3    50   Input ~ 0
-ROM_OE
-Text GLabel 2300 3200 3    50   Input ~ 0
-ROM_B1
+$Comp
+L Device:R_Small R?
+U 1 1 6AFFD5D0
+P 4350 3700
+AR Path="/6AFFD5D0" Ref="R?"  Part="1" 
+AR Path="/620D263D/6AFFD5D0" Ref="R?"  Part="1" 
+AR Path="/62892CF3/6AFFD5D0" Ref="R13"  Part="1" 
+F 0 "R13" V 4450 3650 50  0000 L CNN
+F 1 "33" V 4350 3650 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 4350 3700 50  0001 C CNN
+F 3 "~" H 4350 3700 50  0001 C CNN
+	1    4350 3700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4050 3700 4250 3700
+Wire Wire Line
+	4450 3700 4800 3700
 $EndSCHEMATC

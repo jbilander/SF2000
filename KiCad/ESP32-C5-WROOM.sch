@@ -166,4 +166,29 @@ Text GLabel 3050 1850 2    50   Input ~ 0
 RX0
 Text GLabel 3050 1950 2    50   Output ~ 0
 TX0
+Text GLabel 3050 2050 2    50   Input ~ 0
+CTS
+Text GLabel 3050 2150 2    50   Output ~ 0
+RTS
+Text GLabel 3050 1750 2    50   Input ~ 0
+RX1
+Text GLabel 3050 1550 2    50   Output ~ 0
+TX1
+Text GLabel 1650 1750 0    50   Input ~ 0
+EN
+NoConn ~ 3050 2550
+NoConn ~ 1650 1850
+NoConn ~ 1650 1950
+NoConn ~ 1650 2050
+NoConn ~ 1650 2150
+NoConn ~ 1650 2250
+NoConn ~ 1650 2350
+NoConn ~ 1650 2450
+NoConn ~ 1650 2550
+NoConn ~ 1650 2650
+NoConn ~ 1650 2950
+NoConn ~ 1650 3050
+NoConn ~ 1650 3150
+NoConn ~ 1650 3250
+NoConn ~ 1650 3350
 $EndSCHEMATC

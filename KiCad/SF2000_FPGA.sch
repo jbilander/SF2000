@@ -466,11 +466,11 @@ Wire Notes Line
 	11150 550  8650 550 
 Text Notes 9150 700  0    100  ~ 0
 LED Circuit
-Text GLabel 6150 4100 2    50   Output ~ 0
+Text GLabel 2250 -450 0    50   Output ~ 0
 CP_IOWR_3V3
-Text GLabel 6150 4200 2    50   Output ~ 0
+Text GLabel 2250 -2150 0    50   Output ~ 0
 CP_IORD_3V3
-Text GLabel 6150 4300 2    50   Output ~ 0
+Text GLabel 2250 -2050 0    50   Output ~ 0
 CP_CS_3V3
 Text GLabel 9550 6250 0    50   Input ~ 0
 ROM_B1
@@ -1032,10 +1032,16 @@ Wire Wire Line
 	5050 2750 5000 2750
 Wire Wire Line
 	5000 2650 5000 2750
-Text GLabel 2250 -2050 0    50   Output ~ 0
+Text GLabel 2250 -2250 0    50   Output ~ 0
 CP_A5_3V3
 Text GLabel 2250 3050 0    50   Input ~ 0
 IRQ_RP2354
 Text GLabel 2250 -1950 0    50   Output ~ 0
 SS_RP2354
+Text GLabel 2250 -550 0    50   Output ~ 0
+CP_A4_3V3
+Text GLabel 2250 -2350 0    50   Output ~ 0
+CP_A3_3V3
+Text GLabel 2250 -650 0    50   Output ~ 0
+CP_A2_3V3
 $EndSCHEMATC
