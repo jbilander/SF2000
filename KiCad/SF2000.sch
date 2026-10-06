@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 6
+Sheet 1 7
 Title ""
 Date ""
 Rev ""
@@ -1876,4 +1876,10 @@ Wire Wire Line
 	2500 6800 3100 6800
 Wire Wire Line
 	2500 7100 3100 7100
+$Sheet
+S 10050 5900 800  500 
+U 6AFE5B10
+F0 "RP2354A" 50
+F1 "RP2354A.sch" 50
+$EndSheet
 $EndSCHEMATC
