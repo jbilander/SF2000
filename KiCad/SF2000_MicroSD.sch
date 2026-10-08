@@ -158,5 +158,5 @@ Wire Wire Line
 Wire Wire Line
 	4450 3700 4800 3700
 Text GLabel 2550 3650 3    50   Input ~ 0
-CTS
+ESP32_CTS
 $EndSCHEMATC

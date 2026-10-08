@@ -82,48 +82,53 @@ Wire Wire Line
 	5900 4500 5900 4600
 Wire Wire Line
 	5800 4600 5900 4600
-Text GLabel 3700 4000 0    50   Input ~ 0
-SCLK
-Text GLabel 3700 3800 0    50   Input ~ 0
-MOSI
 Text GLabel 4500 4500 3    50   Output ~ 0
 MISO
-Text GLabel 3700 3900 0    50   Input ~ 0
-SS_RP2354
-Text GLabel 3700 2700 0    50   Input ~ 0
-GPIO12
-Text GLabel 3700 2800 0    50   Input ~ 0
-GPIO13
-Text GLabel 3700 2900 0    50   Input ~ 0
-GPIO14
-Text GLabel 3700 3000 0    50   Input ~ 0
-GPIO15
-Text GLabel 4500 2400 1    50   Input ~ 0
-GPIO11
-Text GLabel 4600 2400 1    50   Input ~ 0
-GPIO10
-Text GLabel 4700 2400 1    50   Input ~ 0
-GPIO09
-Text GLabel 4800 2400 1    50   Input ~ 0
-GPIO08
-Text GLabel 5500 2400 1    50   Input ~ 0
-GPIO03
-Text GLabel 5600 2400 1    50   Input ~ 0
-GPIO02
-Text GLabel 5700 2400 1    50   Input ~ 0
-GPIO01
-Text GLabel 5800 2400 1    50   Input ~ 0
-GPIO00
-Text GLabel 6600 5150 2    50   Input ~ 0
-RP_RX0
-Text GLabel 6600 5250 2    50   Output ~ 0
-RP_TX0
 Text GLabel 5000 2400 1    50   Output ~ 0
-CTS
+ESP32_CTS
 Text GLabel 5100 2400 1    50   Input ~ 0
-RTS
+ESP32_RTS
 Text GLabel 5300 2400 1    50   Output ~ 0
-RX1
+ESP32_RX1
 Text GLabel 5200 2400 1    50   Input ~ 0
-TX1
+ESP32_TX1
+Text GLabel 3700 2700 0    50   Input ~ 0
+MOSI
+Text GLabel 4500 2400 1    50   Output ~ 0
+MISO
+Text GLabel 4700 2400 1    50   Input ~ 0
+SS_RP2354
+Text GLabel 3700 2900 0    50   Input ~ 0
+SCLK
+Text GLabel 3700 2800 0    50   Output ~ 0
+IRQ_RP2354
+NoConn ~ 4600 2400
+NoConn ~ 4800 2400
+NoConn ~ 3700 3000
+NoConn ~ 3700 3800
+NoConn ~ 3700 3900
+NoConn ~ 3700 4000
+Text GLabel 5800 2400 1    50   Output ~ 0
+RP_TX0
+Text GLabel 5700 2400 1    50   Input ~ 0
+RP_RX0
+NoConn ~ 4600 4500
+NoConn ~ 4700 4500
+NoConn ~ 4800 4500
+NoConn ~ 4900 4500
+NoConn ~ 5000 4500
+NoConn ~ 5100 4500
+NoConn ~ 5400 4500
+NoConn ~ 5500 4500
+NoConn ~ 5600 4500
+NoConn ~ 5700 4500
+NoConn ~ 6900 3300
+NoConn ~ 6900 3200
+NoConn ~ 6900 3100
+NoConn ~ 6900 3000
+NoConn ~ 6900 2900
+NoConn ~ 6900 2800
+NoConn ~ 5600 2400
+Text GLabel 5500 2400 1    50   Output ~ 0
+ESP32_EN
 $EndSCHEMATC

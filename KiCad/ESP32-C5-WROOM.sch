@@ -163,19 +163,19 @@ NoConn ~ 1950 5050
 NoConn ~ 2050 5050
 NoConn ~ 3150 5050
 Text GLabel 3050 1850 2    50   Input ~ 0
-RX0
+ESP32_RX0
 Text GLabel 3050 1950 2    50   Output ~ 0
-TX0
+ESP32_TX0
 Text GLabel 3050 2050 2    50   Input ~ 0
-CTS
+ESP32_CTS
 Text GLabel 3050 2150 2    50   Output ~ 0
-RTS
+ESP32_RTS
 Text GLabel 3050 1750 2    50   Input ~ 0
-RX1
+ESP32_RX1
 Text GLabel 3050 1550 2    50   Output ~ 0
-TX1
+ESP32_TX1
 Text GLabel 1650 1750 0    50   Input ~ 0
-EN
+ESP32_EN
 NoConn ~ 3050 2550
 NoConn ~ 1650 1850
 NoConn ~ 1650 1950

@@ -365,30 +365,30 @@ SD_ACTIVE
 $Comp
 L Device:R_Small R?
 U 1 1 68C712CB
-P 4900 1100
+P 5250 1100
 AR Path="/68C712CB" Ref="R?"  Part="1" 
 AR Path="/620D263D/68C712CB" Ref="R8"  Part="1" 
-F 0 "R8" V 5000 1050 50  0000 L CNN
-F 1 "10k" V 4800 1050 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 4900 1100 50  0001 C CNN
-F 3 "~" H 4900 1100 50  0001 C CNN
-	1    4900 1100
+F 0 "R8" V 5350 1050 50  0000 L CNN
+F 1 "10k" V 5150 1050 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 5250 1100 50  0001 C CNN
+F 3 "~" H 5250 1100 50  0001 C CNN
+	1    5250 1100
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R_Small R?
 U 1 1 626987D6
-P 5200 1100
+P 5550 1100
 AR Path="/626987D6" Ref="R?"  Part="1" 
 AR Path="/620D263D/626987D6" Ref="R6"  Part="1" 
-F 0 "R6" V 5300 1050 50  0000 L CNN
-F 1 "10k" V 5100 1050 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 5200 1100 50  0001 C CNN
-F 3 "~" H 5200 1100 50  0001 C CNN
-	1    5200 1100
+F 0 "R6" V 5650 1050 50  0000 L CNN
+F 1 "10k" V 5450 1050 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 5550 1100 50  0001 C CNN
+F 3 "~" H 5550 1100 50  0001 C CNN
+	1    5550 1100
 	1    0    0    -1  
 $EndComp
-Text GLabel 5200 900  1    50   Input ~ 0
+Text GLabel 5550 900  1    50   Input ~ 0
 3V3
 $Comp
 L Device:R_Small R?
@@ -406,60 +406,60 @@ $EndComp
 $Comp
 L Device:R_Pack04 RN1
 U 1 1 625F56E7
-P 6750 1100
-F 0 "RN1" H 6938 1146 50  0000 L CNN
-F 1 "10k_Pack04" H 6938 1055 50  0000 L CNN
-F 2 "SF2000:RESCAF80P320X160X60-8N" V 7025 1100 50  0001 C CNN
-F 3 "~" H 6750 1100 50  0001 C CNN
-	1    6750 1100
+P 7100 1100
+F 0 "RN1" H 7288 1146 50  0000 L CNN
+F 1 "10k_Pack04" H 7288 1055 50  0000 L CNN
+F 2 "SF2000:RESCAF80P320X160X60-8N" V 7375 1100 50  0001 C CNN
+F 3 "~" H 7100 1100 50  0001 C CNN
+	1    7100 1100
 	1    0    0    -1  
 $EndComp
-Text GLabel 7700 900  2    50   Output ~ 0
+Text GLabel 8050 900  2    50   Output ~ 0
 SW1
-Text GLabel 7500 1200 3    50   Input ~ 0
+Text GLabel 7850 1200 3    50   Input ~ 0
 GND
 $Comp
 L Device:C C?
 U 1 1 624A6DA8
-P 7500 1050
+P 7850 1050
 AR Path="/624A6DA8" Ref="C?"  Part="1" 
 AR Path="/620D263D/624A6DA8" Ref="C15"  Part="1" 
-F 0 "C15" H 7650 1050 50  0000 L CNN
-F 1 "0.1uF" H 7500 950 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7538 900 50  0001 C CNN
-F 3 "~" H 7500 1050 50  0001 C CNN
-	1    7500 1050
+F 0 "C15" H 8000 1050 50  0000 L CNN
+F 1 "0.1uF" H 7850 950 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7888 900 50  0001 C CNN
+F 3 "~" H 7850 1050 50  0001 C CNN
+	1    7850 1050
 	1    0    0    -1  
 $EndComp
-Connection ~ 6650 900 
+Connection ~ 7000 900 
 Wire Wire Line
-	6650 900  6550 900 
+	7000 900  6900 900 
 Wire Wire Line
-	6750 900  6700 900 
-Text GLabel 6700 800  1    50   Input ~ 0
+	7100 900  7050 900 
+Text GLabel 7050 800  1    50   Input ~ 0
 3V3
-Text GLabel 5200 1300 3    50   Input ~ 0
+Text GLabel 5550 1300 3    50   Input ~ 0
 TDI
-Text GLabel 4900 1300 3    50   Input ~ 0
+Text GLabel 5250 1300 3    50   Input ~ 0
 TCK
-Text GLabel 5650 1300 3    50   Input ~ 0
+Text GLabel 6000 1300 3    50   Input ~ 0
 TMS
 Wire Wire Line
-	5750 900  5850 900 
-Connection ~ 5750 900 
+	6100 900  6200 900 
+Connection ~ 6100 900 
 Wire Wire Line
-	5650 900  5700 900 
-Text GLabel 5700 800  1    50   Input ~ 0
+	6000 900  6050 900 
+Text GLabel 6050 800  1    50   Input ~ 0
 3V3
 $Comp
 L Device:R_Pack04 RN2
 U 1 1 6265DCDE
-P 5750 1100
-F 0 "RN2" H 5938 1146 50  0000 L CNN
-F 1 "10k_Pack04" H 5938 1055 50  0000 L CNN
-F 2 "SF2000:RESCAF80P320X160X60-8N" V 6025 1100 50  0001 C CNN
-F 3 "~" H 5750 1100 50  0001 C CNN
-	1    5750 1100
+P 6100 1100
+F 0 "RN2" H 6288 1146 50  0000 L CNN
+F 1 "10k_Pack04" H 6288 1055 50  0000 L CNN
+F 2 "SF2000:RESCAF80P320X160X60-8N" V 6375 1100 50  0001 C CNN
+F 3 "~" H 6100 1100 50  0001 C CNN
+	1    6100 1100
 	1    0    0    -1  
 $EndComp
 Wire Notes Line
@@ -494,7 +494,7 @@ JP3
 Text GLabel 10050 5450 2    50   Input ~ 0
 GND
 Wire Wire Line
-	7500 900  7700 900 
+	7850 900  8050 900 
 Wire Wire Line
 	9850 1750 10050 1750
 Text GLabel 9500 1000 0    50   Input ~ 0
@@ -530,7 +530,7 @@ F 3 "~" H 9850 4650 50  0001 C CNN
 $EndComp
 Text GLabel 10050 4650 2    50   Input ~ 0
 GND
-Text GLabel 5550 1300 3    50   Input ~ 0
+Text GLabel 5900 1300 3    50   Input ~ 0
 JP1
 $Comp
 L SF2000:10M02SCU324C8G U?
@@ -892,7 +892,7 @@ Text GLabel 7450 3300 0    50   Input ~ 0
 NoConn ~ 7950 3100
 NoConn ~ 7450 3100
 NoConn ~ 7450 3200
-Text GLabel 4900 900  1    50   Input ~ 0
+Text GLabel 5250 900  1    50   Input ~ 0
 GND
 Text GLabel 7550 1800 3    50   Input ~ 0
 CONF_DONE
@@ -949,36 +949,36 @@ F 3 "" H 7900 5300 50  0001 L CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5200 900  5200 1000
+	5550 900  5550 1000
 Wire Wire Line
-	5200 1200 5200 1300
+	5550 1200 5550 1300
 Wire Wire Line
-	4900 900  4900 1000
+	5250 900  5250 1000
 Wire Wire Line
-	4900 1200 4900 1300
+	5250 1200 5250 1300
 Wire Wire Line
-	5650 900  5550 900 
-Connection ~ 5650 900 
+	6000 900  5900 900 
+Connection ~ 6000 900 
 Wire Wire Line
-	5700 800  5700 900 
-Connection ~ 5700 900 
+	6050 800  6050 900 
+Connection ~ 6050 900 
 Wire Wire Line
-	5700 900  5750 900 
+	6050 900  6100 900 
 Wire Wire Line
-	6850 900  6750 900 
-Connection ~ 6750 900 
+	7200 900  7100 900 
+Connection ~ 7100 900 
 Wire Wire Line
-	6700 800  6700 900 
-Connection ~ 6700 900 
+	7050 800  7050 900 
+Connection ~ 7050 900 
 Wire Wire Line
-	6700 900  6650 900 
-Text GLabel 6850 1300 3    50   Input ~ 0
+	7050 900  7000 900 
+Text GLabel 7200 1300 3    50   Input ~ 0
 RAMSZ0
-Text GLabel 6750 1300 3    50   Input ~ 0
+Text GLabel 7100 1300 3    50   Input ~ 0
 RAMSZ1
-Text GLabel 6650 1300 3    50   Input ~ 0
+Text GLabel 7000 1300 3    50   Input ~ 0
 RAMSZ2
-Text GLabel 6550 1300 3    50   Input ~ 0
+Text GLabel 6900 1300 3    50   Input ~ 0
 RAMSZ3
 Text GLabel 3950 6150 2    50   Input ~ 0
 CP_INT6_3V3
@@ -1044,4 +1044,50 @@ Text GLabel 2250 -2350 0    50   Output ~ 0
 CP_A3_3V3
 Text GLabel 2250 -650 0    50   Output ~ 0
 CP_A2_3V3
+$Comp
+L Connector_Generic:Conn_01x06 J15
+U 1 1 6ACC2212
+P 9350 2750
+F 0 "J15" V 9314 2362 50  0000 R CNN
+F 1 "Conn_01x06" V 9223 2362 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 9350 2750 50  0001 C CNN
+F 3 "~" H 9350 2750 50  0001 C CNN
+	1    9350 2750
+	0    -1   -1   0   
+$EndComp
+Text GLabel 9150 2950 3    50   Input ~ 0
+SS_W25Q16
+Text GLabel 9650 2950 3    50   Input ~ 0
+GND
+Text GLabel 9550 2950 3    50   Output ~ 0
+MOSI
+Text GLabel 9450 2950 3    50   Input ~ 0
+MISO
+Text GLabel 9350 2950 3    50   Output ~ 0
+SCLK
+Text GLabel 9250 2950 3    50   Input ~ 0
+PROG_DET
+Text GLabel 2250 2950 0    50   Input ~ 0
+PROG_DET
+$Comp
+L Device:R_Small R?
+U 1 1 6AD70060
+P 4950 1100
+AR Path="/6AD70060" Ref="R?"  Part="1" 
+AR Path="/620D263D/6AD70060" Ref="R14"  Part="1" 
+F 0 "R14" V 5050 1050 50  0000 L CNN
+F 1 "10k" V 4850 1050 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 4950 1100 50  0001 C CNN
+F 3 "~" H 4950 1100 50  0001 C CNN
+	1    4950 1100
+	1    0    0    -1  
+$EndComp
+Text GLabel 4950 900  1    50   Input ~ 0
+GND
+Wire Wire Line
+	4950 900  4950 1000
+Wire Wire Line
+	4950 1200 4950 1300
+Text GLabel 4950 1300 3    50   Input ~ 0
+PROG_DET
 $EndSCHEMATC
