@@ -365,14 +365,14 @@ SD_ACTIVE
 $Comp
 L Device:R_Small R?
 U 1 1 68C712CB
-P 5250 1100
+P 4950 1100
 AR Path="/68C712CB" Ref="R?"  Part="1" 
 AR Path="/620D263D/68C712CB" Ref="R8"  Part="1" 
-F 0 "R8" V 5350 1050 50  0000 L CNN
-F 1 "10k" V 5150 1050 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 5250 1100 50  0001 C CNN
-F 3 "~" H 5250 1100 50  0001 C CNN
-	1    5250 1100
+F 0 "R8" V 5050 1050 50  0000 L CNN
+F 1 "10k" V 4850 1050 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 4950 1100 50  0001 C CNN
+F 3 "~" H 4950 1100 50  0001 C CNN
+	1    4950 1100
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -440,7 +440,7 @@ Text GLabel 7050 800  1    50   Input ~ 0
 3V3
 Text GLabel 5550 1300 3    50   Input ~ 0
 TDI
-Text GLabel 5250 1300 3    50   Input ~ 0
+Text GLabel 4950 1300 3    50   Input ~ 0
 TCK
 Text GLabel 6000 1300 3    50   Input ~ 0
 TMS
@@ -892,7 +892,7 @@ Text GLabel 7450 3300 0    50   Input ~ 0
 NoConn ~ 7950 3100
 NoConn ~ 7450 3100
 NoConn ~ 7450 3200
-Text GLabel 5250 900  1    50   Input ~ 0
+Text GLabel 4950 900  1    50   Input ~ 0
 GND
 Text GLabel 7550 1800 3    50   Input ~ 0
 CONF_DONE
@@ -953,9 +953,9 @@ Wire Wire Line
 Wire Wire Line
 	5550 1200 5550 1300
 Wire Wire Line
-	5250 900  5250 1000
+	4950 900  4950 1000
 Wire Wire Line
-	5250 1200 5250 1300
+	4950 1200 4950 1300
 Wire Wire Line
 	6000 900  5900 900 
 Connection ~ 6000 900 
@@ -1072,22 +1072,82 @@ PROG_DET
 $Comp
 L Device:R_Small R?
 U 1 1 6AD70060
-P 4950 1100
+P 4650 1100
 AR Path="/6AD70060" Ref="R?"  Part="1" 
 AR Path="/620D263D/6AD70060" Ref="R14"  Part="1" 
-F 0 "R14" V 5050 1050 50  0000 L CNN
-F 1 "10k" V 4850 1050 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 4950 1100 50  0001 C CNN
-F 3 "~" H 4950 1100 50  0001 C CNN
-	1    4950 1100
+F 0 "R14" V 4750 1050 50  0000 L CNN
+F 1 "10k" V 4550 1050 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 4650 1100 50  0001 C CNN
+F 3 "~" H 4650 1100 50  0001 C CNN
+	1    4650 1100
 	1    0    0    -1  
 $EndComp
-Text GLabel 4950 900  1    50   Input ~ 0
+Text GLabel 4650 900  1    50   Input ~ 0
 GND
 Wire Wire Line
-	4950 900  4950 1000
+	4650 900  4650 1000
 Wire Wire Line
-	4950 1200 4950 1300
-Text GLabel 4950 1300 3    50   Input ~ 0
+	4650 1200 4650 1300
+Text GLabel 4650 1300 3    50   Input ~ 0
 PROG_DET
+$Comp
+L Device:R_Small R?
+U 1 1 6AE3A1D4
+P 5250 1100
+AR Path="/6AE3A1D4" Ref="R?"  Part="1" 
+AR Path="/620D263D/6AE3A1D4" Ref="R15"  Part="1" 
+F 0 "R15" V 5350 1050 50  0000 L CNN
+F 1 "10k" V 5150 1050 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 5250 1100 50  0001 C CNN
+F 3 "~" H 5250 1100 50  0001 C CNN
+	1    5250 1100
+	1    0    0    -1  
+$EndComp
+Text GLabel 5250 900  1    50   Input ~ 0
+3V3
+Wire Wire Line
+	5250 900  5250 1000
+Wire Wire Line
+	5250 1200 5250 1300
+Text GLabel 5250 1300 3    50   Input ~ 0
+ESP32_RTS
+Text GLabel 5350 5550 1    50   Input ~ 0
+3V3
+Text GLabel 5350 6150 3    50   Input ~ 0
+GND
+Text GLabel 6050 5850 2    50   Output ~ 0
+OSC_CLK
+Text GLabel 5050 5850 0    50   Input ~ 0
+3V3
+$Comp
+L Device:R_Small R?
+U 1 1 6AF4288F
+P 5850 5850
+AR Path="/6AF4288F" Ref="R?"  Part="1" 
+AR Path="/620D263D/6AF4288F" Ref="R1"  Part="1" 
+AR Path="/62892CF3/6AF4288F" Ref="R?"  Part="1" 
+F 0 "R1" V 5950 5800 50  0000 L CNN
+F 1 "33" V 5850 5800 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 5850 5850 50  0001 C CNN
+F 3 "~" H 5850 5850 50  0001 C CNN
+	1    5850 5850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6050 5850 5950 5850
+Wire Wire Line
+	5750 5850 5650 5850
+Text Label 5700 5850 3    50   ~ 0
+OSC
+$Comp
+L Oscillator:Standard_Clock_Oscillators_XTAL_OSC X1
+U 1 1 6AF574DE
+P 5350 5850
+F 0 "X1" H 5000 6150 50  0000 L CNN
+F 1 "Oscillator_5.0x3.2mm" H 5600 6050 50  0000 L CNN
+F 2 "Oscillator:Oscillator_SMD_SeikoEpson_SG8002LB-4Pin_5.0x3.2mm" H 6050 5500 50  0001 C CNN
+F 3 "" H 5250 5850 50  0001 C CNN
+	1    5350 5850
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
