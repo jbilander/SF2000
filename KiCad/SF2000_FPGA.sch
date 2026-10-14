@@ -133,7 +133,7 @@ Text GLabel 2250 8650 0    50   BiDi ~ 0
 D8_3V3
 Text GLabel 2250 -2450 0    50   Output ~ 0
 SD_CLK
-Text GLabel 6150 3600 2    50   Input ~ 0
+Text GLabel 2250 650  0    50   Input ~ 0
 SD_CD
 Text GLabel 2250 1450 0    50   BiDi ~ 0
 D0_3V3
@@ -319,7 +319,7 @@ Text GLabel 5050 2350 0    50   Input ~ 0
 MOSI
 Text GLabel 6250 2350 2    50   Output ~ 0
 MISO
-Text GLabel 6150 3900 2    50   Output ~ 0
+Text GLabel 2250 -3250 0    50   Output ~ 0
 SD_CS
 $Comp
 L Device:R_Small R?
@@ -499,9 +499,9 @@ Wire Wire Line
 	9850 1750 10050 1750
 Text GLabel 9500 1000 0    50   Input ~ 0
 SD_LED
-Text GLabel 6150 4000 2    50   Output ~ 0
+Text GLabel 2250 -1350 0    50   Output ~ 0
 SD_MOSI
-Text GLabel 6150 3700 2    50   Input ~ 0
+Text GLabel 2250 -3150 0    50   Input ~ 0
 SD_MISO
 Wire Wire Line
 	9500 1000 9650 1000
@@ -665,31 +665,19 @@ Text GLabel 2250 -3450 0    50   Input ~ 0
 LOW_SPEED
 Text GLabel 2250 -1550 0    50   Input ~ 0
 LOW_SPEED
-Text GLabel 2250 -3350 0    50   Input ~ 0
-LOW_SPEED
 Text GLabel 2250 7950 0    50   Input ~ 0
 nSTATUS
 Text GLabel 2250 8050 0    50   Input ~ 0
 CONFIG_SEL
-Text GLabel 2250 -1450 0    50   Input ~ 0
+Text GLabel 2250 -3350 0    50   Input ~ 0
 LOW_SPEED
 Text GLabel 2250 350  0    50   Input ~ 0
 LOW_SPEED
-Text GLabel 2250 -3250 0    50   Input ~ 0
-LOW_SPEED
 Text GLabel 2250 450  0    50   Input ~ 0
-LOW_SPEED
-Text GLabel 2250 650  0    50   Input ~ 0
-LOW_SPEED
-Text GLabel 2250 -1350 0    50   Input ~ 0
 LOW_SPEED
 Text GLabel 2250 750  0    50   Input ~ 0
 LOW_SPEED
 Text GLabel 2250 550  0    50   Input ~ 0
-LOW_SPEED
-Text GLabel 2250 -3150 0    50   Input ~ 0
-LOW_SPEED
-Text GLabel 2250 -3050 0    50   Input ~ 0
 LOW_SPEED
 Text GLabel 2250 2450 0    50   Input ~ 0
 LOW_SPEED
@@ -1154,4 +1142,8 @@ Text GLabel 2250 -750 0    50   Input ~ 0
 CP_D_OE
 Text GLabel 2250 2550 0    50   Input ~ 0
 LOW_SPEED
+Text GLabel 2250 -3050 0    50   Input ~ 0
+SD_D1
+Text GLabel 2250 -1450 0    50   BiDi ~ 0
+SD_D2
 $EndSCHEMATC

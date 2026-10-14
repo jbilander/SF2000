@@ -88,17 +88,17 @@ Wire Wire Line
 Connection ~ 3400 3250
 Wire Wire Line
 	3400 3250 3500 3250
-Text GLabel 3400 3650 3    50   BiDi ~ 0
+Text GLabel 2450 3650 3    50   BiDi ~ 0
 SD_D2
-Text GLabel 3300 3650 3    50   BiDi ~ 0
+Text GLabel 2550 3650 3    50   BiDi ~ 0
 SD_CS
-Text GLabel 3200 3650 3    50   Input ~ 0
-SD_MOSI
 Text GLabel 3500 3650 3    50   Input ~ 0
+SD_MOSI
+Text GLabel 3400 3650 3    50   Input ~ 0
 SD_MISO
-Text GLabel 2350 3650 3    50   BiDi ~ 0
+Text GLabel 3300 3650 3    50   BiDi ~ 0
 SD_D1
-Text GLabel 2250 3650 3    50   Input ~ 0
+Text GLabel 3200 3650 3    50   Input ~ 0
 SD_CD
 $Comp
 L Device:R_Small R?
@@ -118,6 +118,8 @@ Wire Wire Line
 	4050 3700 4250 3700
 Wire Wire Line
 	4450 3700 4800 3700
-Text GLabel 2550 3650 3    50   Input ~ 0
+Text GLabel 2250 3650 3    50   Input ~ 0
 ESP32_CTS
+Text GLabel 2350 3650 3    50   Input ~ 0
+nCONFIG
 $EndSCHEMATC
