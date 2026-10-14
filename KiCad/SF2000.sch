@@ -817,12 +817,12 @@ GND
 $Comp
 L Device:C C21
 U 1 1 620B176A
-P 2950 6150
-F 0 "C21" H 3000 6250 50  0000 L CNN
-F 1 "0.1uF" H 2950 6050 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2988 6000 50  0001 C CNN
-F 3 "~" H 2950 6150 50  0001 C CNN
-	1    2950 6150
+P 5700 6150
+F 0 "C21" H 5750 6250 50  0000 L CNN
+F 1 "0.1uF" H 5700 6050 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5738 6000 50  0001 C CNN
+F 3 "~" H 5700 6150 50  0001 C CNN
+	1    5700 6150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -936,12 +936,12 @@ $EndComp
 $Comp
 L Device:C C23
 U 1 1 623E0F2C
-P 3200 6150
-F 0 "C23" H 3250 6250 50  0000 L CNN
-F 1 "0.1uF" H 3200 6050 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3238 6000 50  0001 C CNN
-F 3 "~" H 3200 6150 50  0001 C CNN
-	1    3200 6150
+P 6000 6150
+F 0 "C23" H 6050 6250 50  0000 L CNN
+F 1 "0.1uF" H 6000 6050 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6038 6000 50  0001 C CNN
+F 3 "~" H 6000 6150 50  0001 C CNN
+	1    6000 6150
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1015,7 +1015,7 @@ U 1 1 62485EA7
 P 2700 6150
 F 0 "C20" H 2750 6250 50  0000 L CNN
 F 1 "0.1uF" H 2700 6050 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2738 6000 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 2738 6000 50  0001 C CNN
 F 3 "~" H 2700 6150 50  0001 C CNN
 	1    2700 6150
 	1    0    0    -1  
@@ -1058,12 +1058,12 @@ $EndComp
 $Comp
 L Device:C C30
 U 1 1 6263A5BF
-P 4200 6150
-F 0 "C30" H 4250 6250 50  0000 L CNN
-F 1 "0.1uF" H 4200 6050 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4238 6000 50  0001 C CNN
-F 3 "~" H 4200 6150 50  0001 C CNN
-	1    4200 6150
+P 2950 6150
+F 0 "C30" H 3000 6250 50  0000 L CNN
+F 1 "0.1uF" H 2950 6050 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 2988 6000 50  0001 C CNN
+F 3 "~" H 2950 6150 50  0001 C CNN
+	1    2950 6150
 	1    0    0    -1  
 $EndComp
 $Sheet
@@ -1348,10 +1348,6 @@ Wire Wire Line
 	4450 6300 4700 6300
 Connection ~ 2950 6000
 Connection ~ 2950 6300
-Wire Wire Line
-	2950 6000 3200 6000
-Wire Wire Line
-	2950 6300 3200 6300
 Connection ~ 7350 6000
 Connection ~ 7350 6300
 Wire Wire Line
@@ -1364,12 +1360,6 @@ Wire Wire Line
 Connection ~ 7600 6300
 Wire Wire Line
 	7600 6300 7850 6300
-Connection ~ 3200 6000
-Connection ~ 3200 6300
-Wire Wire Line
-	3200 6000 3450 6000
-Wire Wire Line
-	3200 6300 3450 6300
 Connection ~ 7850 6000
 Connection ~ 7850 6300
 Connection ~ 3450 6000
@@ -1386,10 +1376,6 @@ Wire Wire Line
 	3700 6300 3950 6300
 Connection ~ 3950 6000
 Connection ~ 3950 6300
-Wire Wire Line
-	3950 6000 4200 6000
-Wire Wire Line
-	3950 6300 4200 6300
 Wire Wire Line
 	7850 6000 8100 6000
 Wire Wire Line
@@ -1412,12 +1398,6 @@ Wire Wire Line
 	8600 6000 8850 6000
 Wire Wire Line
 	8600 6300 8850 6300
-Connection ~ 4200 6000
-Wire Wire Line
-	4200 6000 4450 6000
-Connection ~ 4200 6300
-Wire Wire Line
-	4200 6300 4450 6300
 Wire Wire Line
 	4600 6800 4900 6800
 Wire Wire Line
@@ -1892,4 +1872,24 @@ Wire Wire Line
 	2200 6250 2200 6300
 Wire Wire Line
 	2200 6050 2200 6000
+Wire Wire Line
+	5450 6000 5700 6000
+Wire Wire Line
+	2950 6000 3450 6000
+Wire Wire Line
+	2950 6300 3450 6300
+Wire Wire Line
+	3950 6000 4450 6000
+Wire Wire Line
+	3950 6300 4450 6300
+Connection ~ 5450 6000
+Connection ~ 5700 6000
+Wire Wire Line
+	5700 6000 6000 6000
+Wire Wire Line
+	5450 6300 5700 6300
+Connection ~ 5450 6300
+Connection ~ 5700 6300
+Wire Wire Line
+	5700 6300 6000 6300
 $EndSCHEMATC

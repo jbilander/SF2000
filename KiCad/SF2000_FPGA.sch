@@ -131,7 +131,7 @@ Text GLabel 3950 -250 2    50   BiDi ~ 0
 D15_3V3
 Text GLabel 2250 8650 0    50   BiDi ~ 0
 D8_3V3
-Text GLabel 6150 3500 2    50   Output ~ 0
+Text GLabel 2250 -2450 0    50   Output ~ 0
 SD_CLK
 Text GLabel 6150 3600 2    50   Input ~ 0
 SD_CD
@@ -691,35 +691,17 @@ Text GLabel 2250 -3150 0    50   Input ~ 0
 LOW_SPEED
 Text GLabel 2250 -3050 0    50   Input ~ 0
 LOW_SPEED
-Text GLabel 2250 -1150 0    50   Input ~ 0
-LOW_SPEED
 Text GLabel 2250 2450 0    50   Input ~ 0
-LOW_SPEED
-Text GLabel 2250 -2950 0    50   Input ~ 0
-LOW_SPEED
-Text GLabel 2250 2550 0    50   Input ~ 0
 LOW_SPEED
 Text GLabel 2250 850  0    50   Input ~ 0
 LOW_SPEED
-Text GLabel 2250 -1050 0    50   Input ~ 0
-LOW_SPEED
 Text GLabel 2250 950  0    50   Input ~ 0
-LOW_SPEED
-Text GLabel 2250 -950 0    50   Input ~ 0
-LOW_SPEED
-Text GLabel 2250 -2850 0    50   Input ~ 0
 LOW_SPEED
 Text GLabel 2250 8150 0    50   Input ~ 0
 LOW_SPEED
-Text GLabel 2250 -2750 0    50   Input ~ 0
-LOW_SPEED
 Text GLabel 2250 6350 0    50   Input ~ 0
 LOW_SPEED
-Text GLabel 2250 -2650 0    50   Input ~ 0
-LOW_SPEED
 Text GLabel 2250 2650 0    50   Input ~ 0
-LOW_SPEED
-Text GLabel 2250 -2550 0    50   Input ~ 0
 LOW_SPEED
 Text GLabel 2250 2750 0    50   Input ~ 0
 LOW_SPEED
@@ -1150,4 +1132,26 @@ F 3 "" H 5250 5850 50  0001 C CNN
 	1    5350 5850
 	1    0    0    -1  
 $EndComp
+Text GLabel 2250 1050 0    50   Input ~ 0
+CP_D_DIR
+Text GLabel 2250 -1150 0    50   BiDi ~ 0
+CP_D1_3V3
+Text GLabel 2250 -2850 0    50   BiDi ~ 0
+CP_D2_3V3
+Text GLabel 2250 -1050 0    50   BiDi ~ 0
+CP_D3_3V3
+Text GLabel 2250 -2750 0    50   BiDi ~ 0
+CP_D4_3V3
+Text GLabel 2250 -950 0    50   BiDi ~ 0
+CP_D5_3V3
+Text GLabel 2250 -2650 0    50   BiDi ~ 0
+CP_D6_3V3
+Text GLabel 2250 -2550 0    50   BiDi ~ 0
+CP_D7_3V3
+Text GLabel 2250 -2950 0    50   BiDi ~ 0
+CP_D0_3V3
+Text GLabel 2250 -750 0    50   Input ~ 0
+CP_D_OE
+Text GLabel 2250 2550 0    50   Input ~ 0
+LOW_SPEED
 $EndSCHEMATC
