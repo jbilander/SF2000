@@ -42,9 +42,9 @@ Text GLabel 5200 4500 3    50   Input ~ 0
 3V3
 Text GLabel 5850 4600 3    50   Input ~ 0
 3V3
-Text GLabel 3700 3200 0    50   Input ~ 0
+Text GLabel 3050 3100 1    50   Input ~ 0
 XIN
-Text GLabel 3700 3300 0    50   Output ~ 0
+Text GLabel 3050 3400 3    50   Output ~ 0
 XOUT
 Text GLabel 3700 3400 0    50   Input ~ 0
 1V1
@@ -131,4 +131,31 @@ NoConn ~ 6900 2800
 NoConn ~ 5600 2400
 Text GLabel 5500 2400 1    50   Output ~ 0
 ESP32_EN
+Text GLabel 2900 3250 2    50   Input ~ 0
+GND
+$Comp
+L Device:Crystal_GND24 Y1
+U 1 1 6B212228
+P 2700 3250
+F 0 "Y1" V 2550 3400 50  0000 L CNN
+F 1 "Crystal_GND24" V 2900 3400 50  0000 L CNN
+F 2 "Crystal:Crystal_SMD_Abracon_ABM8G-4Pin_3.2x2.5mm" H 2700 3250 50  0001 C CNN
+F 3 "~" H 2700 3250 50  0001 C CNN
+	1    2700 3250
+	0    -1   -1   0   
+$EndComp
+Text GLabel 2500 3250 0    50   Input ~ 0
+GND
+Wire Wire Line
+	2700 3100 3350 3100
+Wire Wire Line
+	3350 3100 3350 3200
+Wire Wire Line
+	3350 3200 3700 3200
+Wire Wire Line
+	3700 3300 3350 3300
+Wire Wire Line
+	3350 3300 3350 3400
+Wire Wire Line
+	3350 3400 2700 3400
 $EndSCHEMATC
