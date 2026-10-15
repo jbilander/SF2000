@@ -78,8 +78,6 @@ Wire Wire Line
 	5900 4500 5900 4600
 Wire Wire Line
 	5800 4600 5900 4600
-Text GLabel 4500 4500 3    50   Output ~ 0
-MISO
 Text GLabel 5000 2400 1    50   Output ~ 0
 ESP32_CTS
 Text GLabel 5100 2400 1    50   Input ~ 0
@@ -222,4 +220,5 @@ Wire Wire Line
 Wire Wire Line
 	2750 3400 2400 3400
 Connection ~ 2400 3400
+NoConn ~ 4500 4500
 $EndSCHEMATC
