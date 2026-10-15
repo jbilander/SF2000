@@ -167,19 +167,6 @@ Text GLabel 3950 5150 2    50   Input ~ 0
 A1_3V3
 Text GLabel 3950 10050 2    50   Output ~ 0
 INT6_3V3
-$Comp
-L Connector_Generic:Conn_02x01 J11
-U 1 1 62127717
-P 9850 6250
-F 0 "J11" H 9900 6000 50  0000 C CNN
-F 1 "Conn_02x01" H 9900 6100 50  0000 C CNN
-F 2 "Connector_PinHeader_2.00mm:PinHeader_2x01_P2.00mm_Vertical" H 9850 6250 50  0001 C CNN
-F 3 "~" H 9850 6250 50  0001 C CNN
-	1    9850 6250
-	-1   0    0    1   
-$EndComp
-Text GLabel 10050 6250 2    50   Input ~ 0
-GND
 Text GLabel 9550 5850 0    50   Input ~ 0
 JP4
 $Comp
@@ -472,8 +459,6 @@ Text GLabel 2250 -2150 0    50   Output ~ 0
 CP_IORD_3V3
 Text GLabel 2250 -2050 0    50   Output ~ 0
 CP_CS_3V3
-Text GLabel 9550 6250 0    50   Input ~ 0
-ROM_B1
 Text GLabel 6900 2350 2    50   Input ~ 0
 JP4
 Text GLabel 6900 2250 2    50   Input ~ 0

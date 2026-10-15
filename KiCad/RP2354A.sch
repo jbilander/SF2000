@@ -42,10 +42,6 @@ Text GLabel 5200 4500 3    50   Input ~ 0
 3V3
 Text GLabel 5850 4600 3    50   Input ~ 0
 3V3
-Text GLabel 3050 3100 1    50   Input ~ 0
-XIN
-Text GLabel 3050 3400 3    50   Output ~ 0
-XOUT
 Text GLabel 3700 3400 0    50   Input ~ 0
 1V1
 Text GLabel 5400 2400 1    50   Input ~ 0
@@ -131,23 +127,23 @@ NoConn ~ 6900 2800
 NoConn ~ 5600 2400
 Text GLabel 5500 2400 1    50   Output ~ 0
 ESP32_EN
-Text GLabel 2900 3250 2    50   Input ~ 0
+Text GLabel 2550 3250 2    50   Input ~ 0
 GND
 $Comp
 L Device:Crystal_GND24 Y1
 U 1 1 6B212228
-P 2700 3250
-F 0 "Y1" V 2550 3400 50  0000 L CNN
-F 1 "Crystal_GND24" V 2900 3400 50  0000 L CNN
-F 2 "Crystal:Crystal_SMD_Abracon_ABM8G-4Pin_3.2x2.5mm" H 2700 3250 50  0001 C CNN
-F 3 "~" H 2700 3250 50  0001 C CNN
-	1    2700 3250
-	0    -1   -1   0   
+P 2350 3250
+F 0 "Y1" V 2350 3200 50  0000 L CNN
+F 1 "ABM8-272-T3" V 2150 2400 50  0000 L CNN
+F 2 "Crystal:Crystal_SMD_Abracon_ABM8G-4Pin_3.2x2.5mm" H 2350 3250 50  0001 C CNN
+F 3 "~" H 2350 3250 50  0001 C CNN
+	1    2350 3250
+	0    1    1    0   
 $EndComp
-Text GLabel 2500 3250 0    50   Input ~ 0
+Text GLabel 2000 3250 0    50   Input ~ 0
 GND
 Wire Wire Line
-	2700 3100 3350 3100
+	2350 3100 2400 3100
 Wire Wire Line
 	3350 3100 3350 3200
 Wire Wire Line
@@ -156,6 +152,74 @@ Wire Wire Line
 	3700 3300 3350 3300
 Wire Wire Line
 	3350 3300 3350 3400
+$Comp
+L Device:C_Small C61
+U 1 1 6B2625A2
+P 2250 2950
+F 0 "C61" V 2000 2900 50  0000 C CNN
+F 1 "15pF" V 2112 2950 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 2250 2950 50  0001 C CNN
+F 3 "~" H 2250 2950 50  0001 C CNN
+	1    2250 2950
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C62
+U 1 1 6B263398
+P 2250 3550
+F 0 "C62" V 2400 3500 50  0000 C CNN
+F 1 "15pF" V 2500 3550 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 2250 3550 50  0001 C CNN
+F 3 "~" H 2250 3550 50  0001 C CNN
+	1    2250 3550
+	0    1    1    0   
+$EndComp
+Text Label 3050 3100 0    50   ~ 0
+XIN
+Text Label 3050 3400 0    50   ~ 0
+XOUT
 Wire Wire Line
-	3350 3400 2700 3400
+	2150 3250 2100 3250
+Wire Wire Line
+	2150 2950 2100 2950
+Wire Wire Line
+	2100 2950 2100 3250
+Connection ~ 2100 3250
+Wire Wire Line
+	2100 3250 2000 3250
+Wire Wire Line
+	2150 3550 2100 3550
+Wire Wire Line
+	2100 3550 2100 3250
+Wire Wire Line
+	2400 3400 2400 3550
+Wire Wire Line
+	2400 3550 2350 3550
+Wire Wire Line
+	2400 3400 2350 3400
+Wire Wire Line
+	2400 3100 2400 2950
+Wire Wire Line
+	2400 2950 2350 2950
+Connection ~ 2400 3100
+Wire Wire Line
+	2400 3100 3350 3100
+$Comp
+L Device:R_Small R?
+U 1 1 6B28DDCB
+P 2850 3400
+AR Path="/6B28DDCB" Ref="R?"  Part="1" 
+AR Path="/6AFE5B10/6B28DDCB" Ref="R16"  Part="1" 
+F 0 "R16" V 2750 3350 50  0000 L CNN
+F 1 "1k" V 2950 3350 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 2850 3400 50  0001 C CNN
+F 3 "~" H 2850 3400 50  0001 C CNN
+	1    2850 3400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2950 3400 3350 3400
+Wire Wire Line
+	2750 3400 2400 3400
+Connection ~ 2400 3400
 $EndSCHEMATC
