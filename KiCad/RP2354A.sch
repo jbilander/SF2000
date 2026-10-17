@@ -26,9 +26,9 @@ F 3 "https://pip-assets.raspberrypi.com/categories/1214-rp2350/documents/RP-0083
 $EndComp
 Text GLabel 6900 2700 2    50   Input ~ 0
 GND
-Text GLabel 6900 3600 2    50   Input ~ 0
+Text GLabel 7600 3600 2    50   Input ~ 0
 USB_DP
-Text GLabel 6900 3700 2    50   Input ~ 0
+Text GLabel 7600 3700 2    50   Input ~ 0
 USB_DM
 Text GLabel 5900 2400 1    50   Input ~ 0
 3V3
@@ -121,7 +121,6 @@ NoConn ~ 6900 3200
 NoConn ~ 6900 3100
 NoConn ~ 6900 3000
 NoConn ~ 6900 2900
-NoConn ~ 6900 2800
 NoConn ~ 5600 2400
 Text GLabel 5500 2400 1    50   Output ~ 0
 ESP32_EN
@@ -222,10 +221,10 @@ Wire Wire Line
 Connection ~ 2400 3400
 NoConn ~ 4500 4500
 $Comp
-L Connector_Generic:Conn_01x02 J?
+L Connector_Generic:Conn_01x02 J11
 U 1 1 6ADBB844
 P 5700 1450
-F 0 "J?" V 5664 1262 50  0000 R CNN
+F 0 "J11" V 5664 1262 50  0000 R CNN
 F 1 "Conn_01x02" V 5573 1262 50  0000 R CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5700 1450 50  0001 C CNN
 F 3 "~" H 5700 1450 50  0001 C CNN
@@ -236,4 +235,40 @@ Wire Wire Line
 	5700 1650 5700 2400
 Wire Wire Line
 	5800 1650 5800 2400
+Text GLabel 6900 2800 2    50   Input ~ 0
+BOOTSEL
+$Comp
+L Device:R_Small R?
+U 1 1 6ADC9F07
+P 7350 3600
+AR Path="/6ADC9F07" Ref="R?"  Part="1" 
+AR Path="/6AFE5B10/6ADC9F07" Ref="R?"  Part="1" 
+F 0 "R?" V 7250 3600 50  0000 L CNN
+F 1 "27" V 7350 3550 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 7350 3600 50  0001 C CNN
+F 3 "~" H 7350 3600 50  0001 C CNN
+	1    7350 3600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6900 3600 7250 3600
+Wire Wire Line
+	7450 3600 7600 3600
+$Comp
+L Device:R_Small R?
+U 1 1 6ADD8B0E
+P 7350 3700
+AR Path="/6ADD8B0E" Ref="R?"  Part="1" 
+AR Path="/6AFE5B10/6ADD8B0E" Ref="R?"  Part="1" 
+F 0 "R?" V 7450 3700 50  0000 L CNN
+F 1 "27" V 7350 3650 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 7350 3700 50  0001 C CNN
+F 3 "~" H 7350 3700 50  0001 C CNN
+	1    7350 3700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6900 3700 7250 3700
+Wire Wire Line
+	7450 3700 7600 3700
 $EndSCHEMATC
