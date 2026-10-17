@@ -1036,23 +1036,23 @@ $EndComp
 $Comp
 L Device:C C35
 U 1 1 62559B16
-P 4700 6150
-F 0 "C35" H 4750 6250 50  0000 L CNN
-F 1 "0.1uF" H 4700 6050 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4738 6000 50  0001 C CNN
-F 3 "~" H 4700 6150 50  0001 C CNN
-	1    4700 6150
+P 6000 6150
+F 0 "C35" H 6050 6250 50  0000 L CNN
+F 1 "0.1uF" H 6000 6050 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6038 6000 50  0001 C CNN
+F 3 "~" H 6000 6150 50  0001 C CNN
+	1    6000 6150
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C28
 U 1 1 6255AB6E
-P 6000 6150
-F 0 "C28" H 6050 6250 50  0000 L CNN
-F 1 "0.1uF" H 6000 6050 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6038 6000 50  0001 C CNN
-F 3 "~" H 6000 6150 50  0001 C CNN
-	1    6000 6150
+P 7600 6150
+F 0 "C28" H 7650 6250 50  0000 L CNN
+F 1 "0.1uF" H 7600 6050 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 7638 6000 50  0001 C CNN
+F 3 "~" H 7600 6150 50  0001 C CNN
+	1    7600 6150
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1353,8 +1353,6 @@ F 3 "~" H 5200 6150 50  0001 C CNN
 	1    5200 6150
 	1    0    0    -1  
 $EndComp
-Connection ~ 4700 6000
-Connection ~ 4700 6300
 Wire Wire Line
 	2200 7100 2500 7100
 Wire Wire Line
@@ -1770,10 +1768,6 @@ Text GLabel 5450 5650 0    50   Input ~ 0
 3V3
 Text GLabel 5450 5350 0    50   Input ~ 0
 GND
-Wire Wire Line
-	4700 6000 4950 6000
-Wire Wire Line
-	4700 6300 4950 6300
 Connection ~ 4950 6000
 Wire Wire Line
 	4950 6000 5200 6000
@@ -1846,10 +1840,10 @@ Wire Wire Line
 	3450 6300 3700 6300
 Connection ~ 7350 6000
 Wire Wire Line
-	7350 6000 8850 6000
+	7350 6000 7600 6000
 Connection ~ 7350 6300
 Wire Wire Line
-	7350 6300 8850 6300
+	7350 6300 7600 6300
 Connection ~ 3700 6000
 Connection ~ 3700 6300
 Wire Wire Line
@@ -1876,8 +1870,20 @@ Wire Wire Line
 Connection ~ 6300 6300
 Connection ~ 4200 6000
 Wire Wire Line
-	4200 6000 4700 6000
+	4200 6000 4450 6000
 Connection ~ 4200 6300
 Wire Wire Line
-	4200 6300 4700 6300
+	4200 6300 4450 6300
+Connection ~ 4450 6000
+Connection ~ 4450 6300
+Wire Wire Line
+	4450 6000 4950 6000
+Wire Wire Line
+	4450 6300 4950 6300
+Connection ~ 7600 6000
+Wire Wire Line
+	7600 6000 8850 6000
+Connection ~ 7600 6300
+Wire Wire Line
+	7600 6300 8850 6300
 $EndSCHEMATC
