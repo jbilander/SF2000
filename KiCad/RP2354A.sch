@@ -26,9 +26,9 @@ F 3 "https://pip-assets.raspberrypi.com/categories/1214-rp2350/documents/RP-0083
 $EndComp
 Text GLabel 6900 2700 2    50   Input ~ 0
 GND
-Text GLabel 7600 3600 2    50   Input ~ 0
+Text GLabel 7800 3000 0    50   Input ~ 0
 USB_DP
-Text GLabel 7600 3700 2    50   Input ~ 0
+Text GLabel 8000 3450 2    50   Input ~ 0
 USB_DM
 Text GLabel 5900 2400 1    50   Input ~ 0
 3V3
@@ -242,8 +242,8 @@ L Device:R_Small R?
 U 1 1 6ADC9F07
 P 7350 3600
 AR Path="/6ADC9F07" Ref="R?"  Part="1" 
-AR Path="/6AFE5B10/6ADC9F07" Ref="R?"  Part="1" 
-F 0 "R?" V 7250 3600 50  0000 L CNN
+AR Path="/6AFE5B10/6ADC9F07" Ref="R17"  Part="1" 
+F 0 "R17" V 7250 3600 50  0000 L CNN
 F 1 "27" V 7350 3550 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 7350 3600 50  0001 C CNN
 F 3 "~" H 7350 3600 50  0001 C CNN
@@ -252,15 +252,13 @@ F 3 "~" H 7350 3600 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6900 3600 7250 3600
-Wire Wire Line
-	7450 3600 7600 3600
 $Comp
 L Device:R_Small R?
 U 1 1 6ADD8B0E
 P 7350 3700
 AR Path="/6ADD8B0E" Ref="R?"  Part="1" 
-AR Path="/6AFE5B10/6ADD8B0E" Ref="R?"  Part="1" 
-F 0 "R?" V 7450 3700 50  0000 L CNN
+AR Path="/6AFE5B10/6ADD8B0E" Ref="R18"  Part="1" 
+F 0 "R18" V 7450 3700 50  0000 L CNN
 F 1 "27" V 7350 3650 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 7350 3700 50  0001 C CNN
 F 3 "~" H 7350 3700 50  0001 C CNN
@@ -269,6 +267,86 @@ F 3 "~" H 7350 3700 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6900 3700 7250 3700
+$Comp
+L Connector:USB_C_Receptacle_USB2.0 J16
+U 1 1 6AE0E79A
+P 7950 2000
+F 0 "J16" V 8011 2730 50  0000 L CNN
+F 1 "USB_C_Receptacle_USB2.0" V 8102 2730 50  0000 L CNN
+F 2 "Connector_USB:USB_C_Receptacle_HRO_TYPE-C-31-M-12" H 8100 2000 50  0001 C CNN
+F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 8100 2000 50  0001 C CNN
+	1    7950 2000
+	0    1    1    0   
+$EndComp
 Wire Wire Line
-	7450 3700 7600 3700
+	7750 2600 7750 2700
+Wire Wire Line
+	7850 2600 7850 2700
+Wire Wire Line
+	7750 2700 7800 2700
+Wire Wire Line
+	7950 2600 7950 2700
+Wire Wire Line
+	8050 2600 8050 2700
+Wire Wire Line
+	7950 2700 8000 2700
+Text GLabel 7050 2000 0    50   Input ~ 0
+GND
+Text GLabel 7050 1700 0    50   Input ~ 0
+GND
+$Comp
+L Device:R_Small R19
+U 1 1 6AE0E7AA
+P 8250 2800
+F 0 "R19" V 8150 2700 50  0000 L CNN
+F 1 "5k1" V 8250 2750 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 8250 2800 50  0001 C CNN
+F 3 "~" H 8250 2800 50  0001 C CNN
+	1    8250 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8250 2600 8250 2700
+Text Label 8250 2700 2    50   ~ 0
+CC2
+Text GLabel 8300 3000 3    50   Input ~ 0
+GND
+$Comp
+L Device:R_Small R20
+U 1 1 6AE0E7B3
+P 8350 2800
+F 0 "R20" V 8450 2700 50  0000 L CNN
+F 1 "5k1" V 8350 2750 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 8350 2800 50  0001 C CNN
+F 3 "~" H 8350 2800 50  0001 C CNN
+	1    8350 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8350 2600 8350 2700
+Text Label 8350 2700 0    50   ~ 0
+CC1
+Wire Wire Line
+	8250 2900 8250 3000
+Wire Wire Line
+	8350 2900 8350 3000
+Wire Wire Line
+	8250 3000 8350 3000
+NoConn ~ 7350 2600
+NoConn ~ 7450 2600
+NoConn ~ 8550 2600
+Wire Wire Line
+	7800 2700 7800 3600
+Wire Wire Line
+	7450 3600 7800 3600
+Connection ~ 7800 2700
+Wire Wire Line
+	7800 2700 7850 2700
+Wire Wire Line
+	8000 2700 8000 3700
+Wire Wire Line
+	7450 3700 8000 3700
+Connection ~ 8000 2700
+Wire Wire Line
+	8000 2700 8050 2700
 $EndSCHEMATC
