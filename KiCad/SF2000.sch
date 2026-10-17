@@ -1869,21 +1869,15 @@ Wire Wire Line
 	6600 6300 6300 6300
 Connection ~ 6300 6300
 Connection ~ 4200 6000
-Wire Wire Line
-	4200 6000 4450 6000
 Connection ~ 4200 6300
-Wire Wire Line
-	4200 6300 4450 6300
-Connection ~ 4450 6000
-Connection ~ 4450 6300
-Wire Wire Line
-	4450 6000 4950 6000
-Wire Wire Line
-	4450 6300 4950 6300
 Connection ~ 7600 6000
 Wire Wire Line
 	7600 6000 8850 6000
 Connection ~ 7600 6300
 Wire Wire Line
 	7600 6300 8850 6300
+Wire Wire Line
+	4200 6000 4950 6000
+Wire Wire Line
+	4200 6300 4950 6300
 $EndSCHEMATC

@@ -102,9 +102,9 @@ NoConn ~ 3700 3000
 NoConn ~ 3700 3800
 NoConn ~ 3700 3900
 NoConn ~ 3700 4000
-Text GLabel 5800 2400 1    50   Output ~ 0
+Text GLabel 5800 1800 2    50   Output ~ 0
 RP_TX0
-Text GLabel 5700 2400 1    50   Input ~ 0
+Text GLabel 5700 1800 0    50   Input ~ 0
 RP_RX0
 NoConn ~ 4600 4500
 NoConn ~ 4700 4500
@@ -221,4 +221,19 @@ Wire Wire Line
 	2750 3400 2400 3400
 Connection ~ 2400 3400
 NoConn ~ 4500 4500
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 6ADBB844
+P 5700 1450
+F 0 "J?" V 5664 1262 50  0000 R CNN
+F 1 "Conn_01x02" V 5573 1262 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5700 1450 50  0001 C CNN
+F 3 "~" H 5700 1450 50  0001 C CNN
+	1    5700 1450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5700 1650 5700 2400
+Wire Wire Line
+	5800 1650 5800 2400
 $EndSCHEMATC
