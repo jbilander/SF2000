@@ -979,12 +979,12 @@ Connection ~ 2700 6300
 $Comp
 L Device:C C27
 U 1 1 62446240
-P 8250 5450
-F 0 "C27" H 8300 5550 50  0000 L CNN
-F 1 "0.1uF" H 8250 5350 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 8288 5300 50  0001 C CNN
-F 3 "~" H 8250 5450 50  0001 C CNN
-	1    8250 5450
+P 4200 6150
+F 0 "C27" H 4250 6250 50  0000 L CNN
+F 1 "0.1uF" H 4200 6050 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 4238 6000 50  0001 C CNN
+F 3 "~" H 4200 6150 50  0001 C CNN
+	1    4200 6150
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1295,12 +1295,12 @@ $EndComp
 $Comp
 L Device:C C33
 U 1 1 681A6453
-P 4450 6150
-F 0 "C33" H 4500 6250 50  0000 L CNN
-F 1 "0.1uF" H 4450 6050 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 4488 6000 50  0001 C CNN
-F 3 "~" H 4450 6150 50  0001 C CNN
-	1    4450 6150
+P 6600 6150
+F 0 "C33" H 6650 6250 50  0000 L CNN
+F 1 "0.1uF" H 6600 6050 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 6638 6000 50  0001 C CNN
+F 3 "~" H 6600 6150 50  0001 C CNN
+	1    6600 6150
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1336,12 +1336,6 @@ F 3 "~" H 2200 6150 50  0001 C CNN
 	1    2200 6150
 	1    0    0    -1  
 $EndComp
-Connection ~ 4450 6000
-Wire Wire Line
-	4450 6000 4700 6000
-Connection ~ 4450 6300
-Wire Wire Line
-	4450 6300 4700 6300
 Connection ~ 2950 6000
 Connection ~ 2950 6300
 Wire Wire Line
@@ -1866,12 +1860,24 @@ Connection ~ 3950 6000
 Connection ~ 3950 6300
 Wire Wire Line
 	6300 6000 6000 6000
-Wire Wire Line
-	3950 6000 4450 6000
-Wire Wire Line
-	3950 6300 4450 6300
 Connection ~ 6000 6000
 Wire Wire Line
 	6300 6300 6000 6300
 Connection ~ 6000 6300
+Wire Wire Line
+	6600 6000 6300 6000
+Wire Wire Line
+	3950 6000 4200 6000
+Wire Wire Line
+	3950 6300 4200 6300
+Connection ~ 6300 6000
+Wire Wire Line
+	6600 6300 6300 6300
+Connection ~ 6300 6300
+Connection ~ 4200 6000
+Wire Wire Line
+	4200 6000 4700 6000
+Connection ~ 4200 6300
+Wire Wire Line
+	4200 6300 4700 6300
 $EndSCHEMATC
