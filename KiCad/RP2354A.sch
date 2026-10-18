@@ -235,7 +235,7 @@ Wire Wire Line
 	5700 1650 5700 2400
 Wire Wire Line
 	5800 1650 5800 2400
-Text GLabel 6900 2800 2    50   Input ~ 0
+Text GLabel 7150 2800 2    50   Input ~ 0
 BOOTSEL
 $Comp
 L Device:R_Small R?
@@ -349,4 +349,23 @@ Wire Wire Line
 Connection ~ 8000 2700
 Wire Wire Line
 	8000 2700 8050 2700
+$Comp
+L Switch:SW_Push SW1
+U 1 1 6AE2E6BB
+P 6500 2300
+F 0 "SW1" H 6500 2585 50  0000 C CNN
+F 1 "SW_Push" H 6500 2494 50  0000 C CNN
+F 2 "SF2000:Sunrom_Tactile_Switch_3x4x2mm_SMD_2-Pin" H 6500 2500 50  0001 C CNN
+F 3 "~" H 6500 2500 50  0001 C CNN
+	1    6500 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6900 2800 7150 2800
+Wire Wire Line
+	7150 2800 7150 2300
+Wire Wire Line
+	7150 2300 6700 2300
+Text GLabel 6300 2300 0    50   Input ~ 0
+GND
 $EndSCHEMATC
