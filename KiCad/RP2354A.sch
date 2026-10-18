@@ -364,8 +364,23 @@ Wire Wire Line
 	6900 2800 7150 2800
 Wire Wire Line
 	7150 2800 7150 2300
-Wire Wire Line
-	7150 2300 6700 2300
 Text GLabel 6300 2300 0    50   Input ~ 0
 GND
+$Comp
+L Device:R_Small R?
+U 1 1 6AE48264
+P 6900 2300
+AR Path="/6AE48264" Ref="R?"  Part="1" 
+AR Path="/6AFE5B10/6AE48264" Ref="R?"  Part="1" 
+F 0 "R?" V 6800 2250 50  0000 L CNN
+F 1 "1k" V 7000 2250 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 6900 2300 50  0001 C CNN
+F 3 "~" H 6900 2300 50  0001 C CNN
+	1    6900 2300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7000 2300 7150 2300
+Wire Wire Line
+	6800 2300 6700 2300
 $EndSCHEMATC
