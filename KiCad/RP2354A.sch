@@ -54,8 +54,6 @@ Text GLabel 3700 3600 0    50   Input ~ 0
 SWDIO
 Text GLabel 3700 3700 0    50   Input ~ 0
 RUN
-Text GLabel 6900 3800 2    50   Input ~ 0
-VREG_FB
 Text GLabel 6900 4000 2    50   Input ~ 0
 VREG_LX
 Text GLabel 6900 4100 2    50   Input ~ 0
@@ -239,7 +237,7 @@ U 1 1 6ADC9F07
 P 7350 3600
 AR Path="/6ADC9F07" Ref="R?"  Part="1" 
 AR Path="/6AFE5B10/6ADC9F07" Ref="R17"  Part="1" 
-F 0 "R17" V 7250 3600 50  0000 L CNN
+F 0 "R17" V 7300 3700 50  0000 L CNN
 F 1 "27" V 7350 3550 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 7350 3600 50  0001 C CNN
 F 3 "~" H 7350 3600 50  0001 C CNN
@@ -254,7 +252,7 @@ U 1 1 6ADD8B0E
 P 7350 3700
 AR Path="/6ADD8B0E" Ref="R?"  Part="1" 
 AR Path="/6AFE5B10/6ADD8B0E" Ref="R18"  Part="1" 
-F 0 "R18" V 7450 3700 50  0000 L CNN
+F 0 "R18" V 7400 3800 50  0000 L CNN
 F 1 "27" V 7350 3650 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 7350 3700 50  0001 C CNN
 F 3 "~" H 7350 3700 50  0001 C CNN
@@ -410,15 +408,15 @@ $EndComp
 $Comp
 L Device:C C?
 U 1 1 6AFADC4E
-P 8550 4550
+P 9150 3550
 AR Path="/6AFADC4E" Ref="C?"  Part="1" 
 AR Path="/6AFE5B10/6AFADC4E" Ref="C39"  Part="1" 
-F 0 "C39" H 8600 4650 50  0000 L CNN
-F 1 "4.7uF" H 8550 4450 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" H 8588 4400 50  0001 C CNN
-F 3 "~" H 8550 4550 50  0001 C CNN
-	1    8550 4550
-	1    0    0    -1  
+F 0 "C39" H 8850 3600 50  0000 L CNN
+F 1 "4.7uF" H 8800 3500 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" H 9188 3400 50  0001 C CNN
+F 3 "~" H 9150 3550 50  0001 C CNN
+	1    9150 3550
+	-1   0    0    1   
 $EndComp
 Wire Wire Line
 	6900 4200 7050 4200
@@ -448,10 +446,21 @@ Wire Wire Line
 	8200 4200 8000 4200
 Wire Wire Line
 	6900 3900 8550 3900
-Wire Wire Line
-	8550 3900 8550 3700
 Text GLabel 8550 3400 1    50   Input ~ 0
 GND
-Text GLabel 8550 3800 2    50   Input ~ 0
+Text GLabel 8550 3700 2    50   Input ~ 0
 3V3
+Wire Wire Line
+	8550 3700 8550 3900
+Text GLabel 9150 3400 1    50   Input ~ 0
+GND
+Text GLabel 9450 3800 2    50   Input ~ 0
+1V1
+Wire Wire Line
+	9450 3800 9150 3800
+Wire Wire Line
+	9150 3700 9150 3800
+Connection ~ 9150 3800
+Wire Wire Line
+	9150 3800 6900 3800
 $EndSCHEMATC
