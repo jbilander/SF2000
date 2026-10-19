@@ -56,8 +56,6 @@ Text GLabel 3700 3700 0    50   Input ~ 0
 RUN
 Text GLabel 6900 3800 2    50   Input ~ 0
 VREG_FB
-Text GLabel 6900 3900 2    50   Input ~ 0
-VREG_VIN
 Text GLabel 6900 4000 2    50   Input ~ 0
 VREG_LX
 Text GLabel 6900 4100 2    50   Input ~ 0
@@ -399,15 +397,15 @@ $EndComp
 $Comp
 L Device:C C?
 U 1 1 6AF91B11
-P 8200 4550
+P 8550 3550
 AR Path="/6AF91B11" Ref="C?"  Part="1" 
 AR Path="/6AFE5B10/6AF91B11" Ref="C35"  Part="1" 
-F 0 "C35" H 8250 4650 50  0000 L CNN
-F 1 "4.7uF" H 8200 4450 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" H 8238 4400 50  0001 C CNN
-F 3 "~" H 8200 4550 50  0001 C CNN
-	1    8200 4550
-	1    0    0    -1  
+F 0 "C35" H 8250 3600 50  0000 L CNN
+F 1 "4.7uF" H 8200 3500 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" H 8588 3400 50  0001 C CNN
+F 3 "~" H 8550 3550 50  0001 C CNN
+	1    8550 3550
+	-1   0    0    1   
 $EndComp
 $Comp
 L Device:C C?
@@ -436,8 +434,8 @@ L Device:R_Small R?
 U 1 1 6AFDAD5A
 P 7900 4200
 AR Path="/6AFDAD5A" Ref="R?"  Part="1" 
-AR Path="/6AFE5B10/6AFDAD5A" Ref="R?"  Part="1" 
-F 0 "R?" V 7800 4150 50  0000 L CNN
+AR Path="/6AFE5B10/6AFDAD5A" Ref="R22"  Part="1" 
+F 0 "R22" V 7800 4150 50  0000 L CNN
 F 1 "33" V 8000 4150 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 7900 4200 50  0001 C CNN
 F 3 "~" H 7900 4200 50  0001 C CNN
@@ -448,4 +446,12 @@ Text GLabel 8200 4200 2    50   Input ~ 0
 3V3
 Wire Wire Line
 	8200 4200 8000 4200
+Wire Wire Line
+	6900 3900 8550 3900
+Wire Wire Line
+	8550 3900 8550 3700
+Text GLabel 8550 3400 1    50   Input ~ 0
+GND
+Text GLabel 8550 3800 2    50   Input ~ 0
+3V3
 $EndSCHEMATC
