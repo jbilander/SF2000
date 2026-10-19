@@ -1034,17 +1034,6 @@ F 3 "~" H 7450 6150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C35
-U 1 1 62559B16
-P 6000 6150
-F 0 "C35" H 6050 6250 50  0000 L CNN
-F 1 "0.1uF" H 6000 6050 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6038 6000 50  0001 C CNN
-F 3 "~" H 6000 6150 50  0001 C CNN
-	1    6000 6150
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:C C28
 U 1 1 6255AB6E
 P 7950 6150
@@ -1160,17 +1149,6 @@ F 3 "~" H 7700 6150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C39
-U 1 1 622B5AAE
-P 6600 6150
-F 0 "C39" H 6650 6250 50  0000 L CNN
-F 1 "0.1uF" H 6600 6050 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6638 6000 50  0001 C CNN
-F 3 "~" H 6600 6150 50  0001 C CNN
-	1    6600 6150
-	1    0    0    -1  
-$EndComp
-$Comp
 L Connector_Generic:Conn_02x01 J?
 U 1 1 62359ABC
 P 2300 950
@@ -1282,17 +1260,6 @@ F 3 "~" H 4700 6150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C34
-U 1 1 68166D11
-P 9000 5450
-F 0 "C34" H 9050 5550 50  0000 L CNN
-F 1 "0.1uF" H 9000 5350 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 9038 5300 50  0001 C CNN
-F 3 "~" H 9000 5450 50  0001 C CNN
-	1    9000 5450
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:C C33
 U 1 1 681A6453
 P 5200 6150
@@ -1345,12 +1312,12 @@ Wire Wire Line
 $Comp
 L Device:C C37
 U 1 1 623F7CFB
-P 6850 6150
-F 0 "C37" H 6900 6250 50  0000 L CNN
-F 1 "0.1uF" H 6850 6050 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6888 6000 50  0001 C CNN
-F 3 "~" H 6850 6150 50  0001 C CNN
-	1    6850 6150
+P 6250 6150
+F 0 "C37" H 6300 6250 50  0000 L CNN
+F 1 "0.1uF" H 6250 6050 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6288 6000 50  0001 C CNN
+F 3 "~" H 6250 6150 50  0001 C CNN
+	1    6250 6150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1756,12 +1723,12 @@ CP_INT6_3V3
 $Comp
 L Device:C C36
 U 1 1 623F86B0
-P 6250 6150
-F 0 "C36" H 6300 6250 50  0000 L CNN
-F 1 "0.1uF" H 6250 6050 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6288 6000 50  0001 C CNN
-F 3 "~" H 6250 6150 50  0001 C CNN
-	1    6250 6150
+P 5950 6150
+F 0 "C36" H 6000 6250 50  0000 L CNN
+F 1 "0.1uF" H 5950 6050 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5988 6000 50  0001 C CNN
+F 3 "~" H 5950 6150 50  0001 C CNN
+	1    5950 6150
 	1    0    0    -1  
 $EndComp
 Text GLabel 5450 5650 0    50   Input ~ 0
@@ -1792,18 +1759,8 @@ Wire Wire Line
 	2200 6250 2200 6300
 Wire Wire Line
 	2200 6050 2200 6000
-Wire Wire Line
-	5450 6000 5700 6000
-Connection ~ 5450 6000
 Connection ~ 5700 6000
-Wire Wire Line
-	5700 6000 6000 6000
-Wire Wire Line
-	5450 6300 5700 6300
-Connection ~ 5450 6300
 Connection ~ 5700 6300
-Wire Wire Line
-	5700 6300 6000 6300
 Wire Wire Line
 	7450 6000 7700 6000
 Wire Wire Line
@@ -1840,8 +1797,6 @@ Wire Wire Line
 	3700 6300 3950 6300
 Connection ~ 3950 6000
 Connection ~ 3950 6300
-Connection ~ 6000 6000
-Connection ~ 6000 6300
 Wire Wire Line
 	3950 6000 4200 6000
 Wire Wire Line
@@ -1864,28 +1819,14 @@ Wire Wire Line
 Connection ~ 4450 6300
 Wire Wire Line
 	4450 6300 4700 6300
-Wire Wire Line
-	6000 6000 6250 6000
-Wire Wire Line
-	6000 6300 6250 6300
 Connection ~ 6250 6000
-Wire Wire Line
-	6250 6000 6600 6000
 Connection ~ 6250 6300
-Wire Wire Line
-	6250 6300 6600 6300
 Connection ~ 4700 6000
 Connection ~ 4700 6300
-Wire Wire Line
-	6850 6000 6600 6000
 Wire Wire Line
 	4700 6000 4950 6000
 Wire Wire Line
 	4700 6300 4950 6300
-Connection ~ 6600 6000
-Wire Wire Line
-	6850 6300 6600 6300
-Connection ~ 6600 6300
 Connection ~ 4950 6000
 Wire Wire Line
 	4950 6000 5200 6000
@@ -1893,9 +1834,27 @@ Connection ~ 4950 6300
 Wire Wire Line
 	4950 6300 5200 6300
 Connection ~ 5200 6000
-Wire Wire Line
-	5200 6000 5450 6000
 Connection ~ 5200 6300
 Wire Wire Line
-	5200 6300 5450 6300
+	5200 6000 5700 6000
+Wire Wire Line
+	5200 6300 5700 6300
+Text GLabel 7400 5350 0    50   Input ~ 0
+GND
+Text GLabel 7400 5650 0    50   Input ~ 0
+3V3
+Wire Wire Line
+	5700 6000 5950 6000
+Wire Wire Line
+	5700 6300 5950 6300
+Wire Wire Line
+	6250 6000 6850 6000
+Wire Wire Line
+	6250 6300 6850 6300
+Connection ~ 5950 6000
+Wire Wire Line
+	5950 6000 6250 6000
+Connection ~ 5950 6300
+Wire Wire Line
+	5950 6300 6250 6300
 $EndSCHEMATC

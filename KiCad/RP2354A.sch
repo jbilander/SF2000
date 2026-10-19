@@ -60,8 +60,6 @@ Text GLabel 6900 3900 2    50   Input ~ 0
 VREG_VIN
 Text GLabel 6900 4000 2    50   Input ~ 0
 VREG_LX
-Text GLabel 6900 4200 2    50   Input ~ 0
-VREG_AVDD
 Text GLabel 6900 4100 2    50   Input ~ 0
 GND
 Text GLabel 7000 3450 2    50   Input ~ 0
@@ -350,11 +348,11 @@ Connection ~ 8000 2700
 Wire Wire Line
 	8000 2700 8050 2700
 $Comp
-L Switch:SW_Push SW1
+L Switch:SW_Push BT1
 U 1 1 6AE2E6BB
 P 6500 2300
-F 0 "SW1" H 6500 2585 50  0000 C CNN
-F 1 "SW_Push" H 6500 2494 50  0000 C CNN
+F 0 "BT1" H 6500 2585 50  0000 C CNN
+F 1 "BT_Push" H 6500 2494 50  0000 C CNN
 F 2 "SF2000:Sunrom_Tactile_Switch_3x4x2mm_SMD_2-Pin" H 6500 2500 50  0001 C CNN
 F 3 "~" H 6500 2500 50  0001 C CNN
 	1    6500 2300
@@ -383,4 +381,71 @@ Wire Wire Line
 	7000 2300 7150 2300
 Wire Wire Line
 	6800 2300 6700 2300
+Text Label 6800 2300 1    50   ~ 0
+BOOT
+$Comp
+L Device:C C?
+U 1 1 6AF78685
+P 7050 4350
+AR Path="/6AF78685" Ref="C?"  Part="1" 
+AR Path="/6AFE5B10/6AF78685" Ref="C34"  Part="1" 
+F 0 "C34" H 7200 4300 50  0000 L CNN
+F 1 "4.7uF" H 7200 4400 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" H 7088 4200 50  0001 C CNN
+F 3 "~" H 7050 4350 50  0001 C CNN
+	1    7050 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 6AF91B11
+P 8200 4550
+AR Path="/6AF91B11" Ref="C?"  Part="1" 
+AR Path="/6AFE5B10/6AF91B11" Ref="C35"  Part="1" 
+F 0 "C35" H 8250 4650 50  0000 L CNN
+F 1 "4.7uF" H 8200 4450 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" H 8238 4400 50  0001 C CNN
+F 3 "~" H 8200 4550 50  0001 C CNN
+	1    8200 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 6AFADC4E
+P 8550 4550
+AR Path="/6AFADC4E" Ref="C?"  Part="1" 
+AR Path="/6AFE5B10/6AFADC4E" Ref="C39"  Part="1" 
+F 0 "C39" H 8600 4650 50  0000 L CNN
+F 1 "4.7uF" H 8550 4450 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" H 8588 4400 50  0001 C CNN
+F 3 "~" H 8550 4550 50  0001 C CNN
+	1    8550 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6900 4200 7050 4200
+Connection ~ 7050 4200
+Wire Wire Line
+	7050 4200 7800 4200
+Text Label 7300 4200 0    50   ~ 0
+VREG_AVDD
+Text GLabel 7050 4500 3    50   Input ~ 0
+GND
+$Comp
+L Device:R_Small R?
+U 1 1 6AFDAD5A
+P 7900 4200
+AR Path="/6AFDAD5A" Ref="R?"  Part="1" 
+AR Path="/6AFE5B10/6AFDAD5A" Ref="R?"  Part="1" 
+F 0 "R?" V 7800 4150 50  0000 L CNN
+F 1 "33" V 8000 4150 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 7900 4200 50  0001 C CNN
+F 3 "~" H 7900 4200 50  0001 C CNN
+	1    7900 4200
+	0    1    1    0   
+$EndComp
+Text GLabel 8200 4200 2    50   Input ~ 0
+3V3
+Wire Wire Line
+	8200 4200 8000 4200
 $EndSCHEMATC
