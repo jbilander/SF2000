@@ -54,8 +54,6 @@ Text GLabel 3700 3600 0    50   Input ~ 0
 SWDIO
 Text GLabel 3700 3700 0    50   Input ~ 0
 RUN
-Text GLabel 6900 4000 2    50   Input ~ 0
-VREG_LX
 Text GLabel 6900 4100 2    50   Input ~ 0
 GND
 Text GLabel 7000 3450 2    50   Input ~ 0
@@ -461,6 +459,24 @@ Wire Wire Line
 Wire Wire Line
 	9150 3700 9150 3800
 Connection ~ 9150 3800
+$Comp
+L Device:L_Small L1
+U 1 1 6B0133F1
+P 8900 3900
+F 0 "L1" H 8948 3946 50  0000 L CNN
+F 1 "3.3uH" H 8948 3855 50  0000 L CNN
+F 2 "SF2000:AOTAB201610S3R3101T" H 8900 3900 50  0001 C CNN
+F 3 "~" H 8900 3900 50  0001 C CNN
+	1    8900 3900
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	9150 3800 6900 3800
+	6900 3800 8900 3800
+Connection ~ 8900 3800
+Wire Wire Line
+	8900 3800 9150 3800
+Wire Wire Line
+	8900 4000 6900 4000
+Text Label 7300 4000 0    50   ~ 0
+VREG_LX
 $EndSCHEMATC
