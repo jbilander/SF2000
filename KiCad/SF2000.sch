@@ -1360,17 +1360,6 @@ Wire Wire Line
 	6000 7100 6300 7100
 Wire Wire Line
 	6000 6800 6300 6800
-$Comp
-L Device:C C40
-U 1 1 6839385A
-P 6000 6950
-F 0 "C40" H 6050 7050 50  0000 L CNN
-F 1 "0.01uF" H 6000 6850 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 6038 6800 50  0001 C CNN
-F 3 "~" H 6000 6950 50  0001 C CNN
-	1    6000 6950
-	1    0    0    -1  
-$EndComp
 Text GLabel 6000 6800 0    50   Input ~ 0
 GND
 Text GLabel 6000 7100 0    50   Input ~ 0
