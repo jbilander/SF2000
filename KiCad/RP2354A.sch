@@ -52,7 +52,7 @@ Text GLabel 3700 3500 0    50   Input ~ 0
 SWCLK
 Text GLabel 3700 3600 0    50   Input ~ 0
 SWDIO
-Text GLabel 3700 3700 0    50   Input ~ 0
+Text GLabel 3300 3950 0    50   Input ~ 0
 RUN
 Text GLabel 6900 4100 2    50   Input ~ 0
 GND
@@ -479,4 +479,45 @@ Wire Wire Line
 	8900 4000 6900 4000
 Text Label 7300 4000 0    50   ~ 0
 VREG_LX
+$Comp
+L Switch:SW_Push BT2
+U 1 1 6B0575C8
+P 2600 4200
+F 0 "BT2" H 2600 4485 50  0000 C CNN
+F 1 "BT_Push" H 2600 4394 50  0000 C CNN
+F 2 "SF2000:Sunrom_Tactile_Switch_3x4x2mm_SMD_2-Pin" H 2600 4400 50  0001 C CNN
+F 3 "~" H 2600 4400 50  0001 C CNN
+	1    2600 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 3700 3300 3700
+Text GLabel 2400 4200 0    50   Input ~ 0
+GND
+$Comp
+L Device:R_Small R?
+U 1 1 6B05EE3D
+P 2900 4350
+AR Path="/6B05EE3D" Ref="R?"  Part="1" 
+AR Path="/6AFE5B10/6B05EE3D" Ref="R23"  Part="1" 
+F 0 "R23" V 2800 4300 50  0000 L CNN
+F 1 "4.7k" H 2950 4350 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 2900 4350 50  0001 C CNN
+F 3 "~" H 2900 4350 50  0001 C CNN
+	1    2900 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 3700 3300 4200
+Text GLabel 2900 4500 3    50   Input ~ 0
+3V3
+Wire Wire Line
+	2800 4200 2900 4200
+Wire Wire Line
+	2900 4250 2900 4200
+Connection ~ 2900 4200
+Wire Wire Line
+	2900 4200 3300 4200
+Wire Wire Line
+	2900 4450 2900 4500
 $EndSCHEMATC
