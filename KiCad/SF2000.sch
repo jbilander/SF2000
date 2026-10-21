@@ -1058,8 +1058,8 @@ $EndComp
 $Sheet
 S 10050 3450 800  500 
 U 627A6500
-F0 "SF2000_IDE_ROM_and_NOR-flash" 50
-F1 "SF2000_IDE_ROM_and_NOR-flash.sch" 50
+F0 "SF2000_Clockport_and_SD_LED" 50
+F1 "SF2000_Clockport_and_SD_LED.sch" 50
 $EndSheet
 $Sheet
 S 10050 4250 800  500 
