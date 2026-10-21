@@ -13,10 +13,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text GLabel 2200 4950 0    50   Input ~ 0
-CP_IOWR_3V3
-Text GLabel 2200 4750 0    50   Input ~ 0
-CP_IORD_3V3
 $Comp
 L Connector_Generic:Conn_02x11_Odd_Even J12
 U 1 1 694B1E3E
@@ -96,12 +92,6 @@ Wire Wire Line
 Connection ~ 4200 2350
 Wire Wire Line
 	4200 2350 4300 2350
-Text GLabel 3550 4550 1    50   Input ~ 0
-+5VDC
-Text GLabel 4200 4850 3    50   Input ~ 0
-GND
-Text GLabel 2200 5050 0    50   Output ~ 0
-CP_IOWR
 Text GLabel 2450 2750 0    50   Output ~ 0
 CP_INT6
 Text Notes 1900 3850 0    50   ~ 0
@@ -114,68 +104,8 @@ Wire Notes Line
 	3600 3900 3600 2200
 Wire Notes Line
 	1800 2200 3600 2200
-Text GLabel 3750 4950 2    50   Output ~ 0
-SD_LED
-$Comp
-L Device:C C?
-U 1 1 683D3421
-P 4200 4700
-AR Path="/683D3421" Ref="C?"  Part="1" 
-AR Path="/620D263D/683D3421" Ref="C?"  Part="1" 
-AR Path="/627A6500/683D3421" Ref="C38"  Part="1" 
-F 0 "C38" H 4250 4800 50  0000 L CNN
-F 1 "0.1uF" H 4200 4600 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 4238 4550 50  0001 C CNN
-F 3 "~" H 4200 4700 50  0001 C CNN
-	1    4200 4700
-	1    0    0    -1  
-$EndComp
-$Comp
-L SF2000:74AHCT14PW,118 U12
-U 1 1 6802794C
-P 2700 4850
-F 0 "U12" H 2700 5415 50  0000 C CNN
-F 1 "74AHCT14PW,118" H 2700 5324 50  0000 C CNN
-F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 3050 5250 50  0001 L CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/74AHC_AHCT14.pdf" H 3050 5150 50  0001 L CNN
-	1    2700 4850
-	1    0    0    -1  
-$EndComp
-Text GLabel 3200 5050 2    50   Input ~ 0
-CP_CS_3V3
-Text GLabel 2200 5150 0    50   Input ~ 0
-GND
-Text GLabel 2200 4650 0    50   Output ~ 0
-CP_CS
-Text GLabel 2200 4850 0    50   Output ~ 0
-CP_IORD
-Text Label 1600 4550 2    50   ~ 0
-CP_CS_n
-Wire Wire Line
-	3200 5150 3200 5350
-Wire Wire Line
-	3200 5350 1600 5350
-Wire Wire Line
-	1600 5350 1600 4550
-Wire Wire Line
-	1600 4550 2200 4550
 Text GLabel 6950 4650 2    50   Input ~ 0
 CP_CS_3V3
-Text GLabel 3200 4850 2    50   Input ~ 0
-SD_CS
-Text GLabel 3200 4750 2    50   Output ~ 0
-SD_ACTIVE
-Wire Wire Line
-	3200 4550 4200 4550
-Wire Wire Line
-	3200 4950 3700 4950
-Wire Wire Line
-	3700 4950 3700 4650
-Wire Wire Line
-	3700 4650 3200 4650
-Connection ~ 3700 4950
-Wire Wire Line
-	3700 4950 3750 4950
 $Comp
 L SF2000:74LVC8T245PW,118 U14
 U 1 1 6AF422B4
@@ -349,4 +279,58 @@ Wire Wire Line
 Connection ~ 4600 3550
 Text GLabel 4700 3950 3    50   Input ~ 0
 SS_W25Q16
+Connection ~ 3250 4750
+Wire Wire Line
+	3300 4750 3250 4750
+Wire Wire Line
+	1850 4400 3250 4400
+Wire Wire Line
+	3200 4750 3250 4750
+Wire Wire Line
+	1850 4950 2200 4950
+Wire Wire Line
+	1850 4400 1850 4950
+Wire Wire Line
+	3250 4750 3250 4400
+$Comp
+L SF2000:74HCT2G14GV,125 U12
+U 1 1 6B0CC1BF
+P 2700 4850
+F 0 "U12" H 2700 5215 50  0000 C CNN
+F 1 "74HCT2G14GV,125" H 2700 5124 50  0000 C CNN
+F 2 "Package_SO:TSOP-6_1.65x3.05mm_P0.95mm" H 3050 5050 50  0001 L CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT2G14.pdf" H 3050 4950 50  0001 L CNN
+	1    2700 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 4850 4200 4850
+Text GLabel 3200 4950 2    50   Output ~ 0
+SD_ACTIVE
+Text GLabel 2200 4750 0    50   Input ~ 0
+SD_CS
+$Comp
+L Device:C C?
+U 1 1 683D3421
+P 4200 5000
+AR Path="/683D3421" Ref="C?"  Part="1" 
+AR Path="/620D263D/683D3421" Ref="C?"  Part="1" 
+AR Path="/627A6500/683D3421" Ref="C38"  Part="1" 
+F 0 "C38" H 4250 5100 50  0000 L CNN
+F 1 "0.1uF" H 4200 4900 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 4238 4850 50  0001 C CNN
+F 3 "~" H 4200 5000 50  0001 C CNN
+	1    4200 5000
+	1    0    0    -1  
+$EndComp
+Text GLabel 3300 4750 2    50   Output ~ 0
+SD_LED
+Text GLabel 4200 5150 3    50   Input ~ 0
+GND
+Text GLabel 3900 4850 1    50   Input ~ 0
++5VDC
+Text GLabel 2200 4850 0    50   Input ~ 0
+GND
+Text Notes 1900 5200 0    50   ~ 0
+Caution: These signals are +5V logic levels.
 $EndSCHEMATC
