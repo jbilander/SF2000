@@ -1367,12 +1367,12 @@ Text GLabel 6000 7100 0    50   Input ~ 0
 $Comp
 L Device:C C42
 U 1 1 6226213E
-P 6300 6950
-F 0 "C42" H 6350 7050 50  0000 L CNN
-F 1 "0.01uF" H 6300 6850 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6338 6800 50  0001 C CNN
-F 3 "~" H 6300 6950 50  0001 C CNN
-	1    6300 6950
+P 5700 6150
+F 0 "C42" H 5750 6250 50  0000 L CNN
+F 1 "0.1uF" H 5700 6050 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 5738 6000 50  0001 C CNN
+F 3 "~" H 5700 6150 50  0001 C CNN
+	1    5700 6150
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1712,12 +1712,12 @@ CP_INT6_3V3
 $Comp
 L Device:C C36
 U 1 1 623F86B0
-P 5950 6150
-F 0 "C36" H 6000 6250 50  0000 L CNN
-F 1 "0.1uF" H 5950 6050 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5988 6000 50  0001 C CNN
-F 3 "~" H 5950 6150 50  0001 C CNN
-	1    5950 6150
+P 6850 6150
+F 0 "C36" H 6900 6250 50  0000 L CNN
+F 1 "0.1uF" H 6850 6050 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6888 6000 50  0001 C CNN
+F 3 "~" H 6850 6150 50  0001 C CNN
+	1    6850 6150
 	1    0    0    -1  
 $EndComp
 Text GLabel 5450 5650 0    50   Input ~ 0
@@ -1748,8 +1748,6 @@ Wire Wire Line
 	2200 6250 2200 6300
 Wire Wire Line
 	2200 6050 2200 6000
-Connection ~ 5700 6000
-Connection ~ 5700 6300
 Wire Wire Line
 	7450 6000 7700 6000
 Wire Wire Line
@@ -1833,10 +1831,6 @@ GND
 Text GLabel 7400 5650 0    50   Input ~ 0
 3V3
 Wire Wire Line
-	5700 6000 5950 6000
-Wire Wire Line
-	5700 6300 5950 6300
-Wire Wire Line
 	6250 6000 6550 6000
 Wire Wire Line
 	6250 6300 6550 6300
@@ -1853,9 +1847,15 @@ Connection ~ 6550 6300
 Wire Wire Line
 	6550 6300 6850 6300
 Connection ~ 5450 6000
-Wire Wire Line
-	5450 6000 5700 6000
 Connection ~ 5450 6300
 Wire Wire Line
+	5450 6000 5700 6000
+Wire Wire Line
 	5450 6300 5700 6300
+Connection ~ 5700 6000
+Wire Wire Line
+	5700 6000 5950 6000
+Connection ~ 5700 6300
+Wire Wire Line
+	5700 6300 5950 6300
 $EndSCHEMATC
