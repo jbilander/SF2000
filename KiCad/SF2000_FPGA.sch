@@ -316,7 +316,7 @@ AR Path="/625C5BBC" Ref="R?"  Part="1"
 AR Path="/620D263D/625C5BBC" Ref="R4"  Part="1" 
 F 0 "R4" V 9850 950 50  0000 L CNN
 F 1 "220" V 9650 950 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 9750 1000 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 9750 1000 50  0001 C CNN
 F 3 "~" H 9750 1000 50  0001 C CNN
 	1    9750 1000
 	0    1    1    0   

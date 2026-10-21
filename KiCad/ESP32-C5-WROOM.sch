@@ -186,9 +186,25 @@ NoConn ~ 1650 2350
 NoConn ~ 1650 2450
 NoConn ~ 1650 2550
 NoConn ~ 1650 2650
-NoConn ~ 1650 2950
 NoConn ~ 1650 3050
 NoConn ~ 1650 3150
 NoConn ~ 1650 3250
 NoConn ~ 1650 3350
+$Comp
+L Switch:SW_Push BT?
+U 1 1 6B13C84E
+P 950 2950
+AR Path="/6AFE5B10/6B13C84E" Ref="BT?"  Part="1" 
+AR Path="/6AB92870/6B13C84E" Ref="BT3"  Part="1" 
+F 0 "BT3" H 950 3235 50  0000 C CNN
+F 1 "BT_Push" H 950 3144 50  0000 C CNN
+F 2 "SF2000:Sunrom_Tactile_Switch_3x4x2mm_SMD_2-Pin" H 950 3150 50  0001 C CNN
+F 3 "~" H 950 3150 50  0001 C CNN
+	1    950  2950
+	1    0    0    -1  
+$EndComp
+Text GLabel 750  2950 0    50   Input ~ 0
+GND
+Wire Wire Line
+	1650 2950 1150 2950
 $EndSCHEMATC
