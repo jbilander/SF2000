@@ -401,23 +401,6 @@ F 3 "~" H 7100 1100 50  0001 C CNN
 	1    7100 1100
 	1    0    0    -1  
 $EndComp
-Text GLabel 8050 900  2    50   Output ~ 0
-SW1
-Text GLabel 7850 1200 3    50   Input ~ 0
-GND
-$Comp
-L Device:C C?
-U 1 1 624A6DA8
-P 7850 1050
-AR Path="/624A6DA8" Ref="C?"  Part="1" 
-AR Path="/620D263D/624A6DA8" Ref="C15"  Part="1" 
-F 0 "C15" H 8000 1050 50  0000 L CNN
-F 1 "0.1uF" H 7850 950 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7888 900 50  0001 C CNN
-F 3 "~" H 7850 1050 50  0001 C CNN
-	1    7850 1050
-	1    0    0    -1  
-$EndComp
 Connection ~ 7000 900 
 Wire Wire Line
 	7000 900  6900 900 
@@ -478,8 +461,6 @@ Text GLabel 9550 5450 0    50   Input ~ 0
 JP3
 Text GLabel 10050 5450 2    50   Input ~ 0
 GND
-Wire Wire Line
-	7850 900  8050 900 
 Wire Wire Line
 	9850 1750 10050 1750
 Text GLabel 9500 1000 0    50   Input ~ 0

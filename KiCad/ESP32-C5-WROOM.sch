@@ -212,8 +212,8 @@ L Switch:SW_Push BT?
 U 1 1 6B1C0633
 P 950 1750
 AR Path="/6AFE5B10/6B1C0633" Ref="BT?"  Part="1" 
-AR Path="/6AB92870/6B1C0633" Ref="BT?"  Part="1" 
-F 0 "BT?" H 950 2035 50  0000 C CNN
+AR Path="/6AB92870/6B1C0633" Ref="BT4"  Part="1" 
+F 0 "BT4" H 950 2035 50  0000 C CNN
 F 1 "BT_Push" H 950 1944 50  0000 C CNN
 F 2 "SF2000:Sunrom_Tactile_Switch_3x4x2mm_SMD_2-Pin" H 950 1950 50  0001 C CNN
 F 3 "~" H 950 1950 50  0001 C CNN
@@ -223,5 +223,43 @@ $EndComp
 Text GLabel 750  1750 0    50   Input ~ 0
 GND
 Wire Wire Line
-	1650 1750 1150 1750
+	1650 1750 1400 1750
+$Comp
+L Device:C C?
+U 1 1 6B1E6F7D
+P 1400 1900
+AR Path="/6B1E6F7D" Ref="C?"  Part="1" 
+AR Path="/620D263D/6B1E6F7D" Ref="C?"  Part="1" 
+AR Path="/6AB92870/6B1E6F7D" Ref="C15"  Part="1" 
+F 0 "C15" H 1450 2000 50  0000 L CNN
+F 1 "0.1uF" H 1400 1800 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 1438 1750 50  0001 C CNN
+F 3 "~" H 1400 1900 50  0001 C CNN
+	1    1400 1900
+	1    0    0    -1  
+$EndComp
+Text GLabel 1400 2050 3    50   Input ~ 0
+GND
+$Comp
+L Device:R_Small R?
+U 1 1 6B1F631E
+P 1150 1850
+AR Path="/6B1F631E" Ref="R?"  Part="1" 
+AR Path="/6AFE5B10/6B1F631E" Ref="R?"  Part="1" 
+AR Path="/6AB92870/6B1F631E" Ref="R24"  Part="1" 
+F 0 "R24" H 1000 1850 50  0000 L CNN
+F 1 "10k" H 950 1750 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 1150 1850 50  0001 C CNN
+F 3 "~" H 1150 1850 50  0001 C CNN
+	1    1150 1850
+	1    0    0    -1  
+$EndComp
+Text GLabel 1150 2000 3    50   Input ~ 0
+3V3
+Wire Wire Line
+	1150 1950 1150 2000
+Connection ~ 1400 1750
+Connection ~ 1150 1750
+Wire Wire Line
+	1150 1750 1400 1750
 $EndSCHEMATC
