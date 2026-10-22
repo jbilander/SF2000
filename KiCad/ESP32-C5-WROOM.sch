@@ -174,7 +174,7 @@ Text GLabel 3050 1750 2    50   Input ~ 0
 ESP32_RX1
 Text GLabel 3050 1550 2    50   Output ~ 0
 ESP32_TX1
-Text GLabel 1650 1750 0    50   Input ~ 0
+Text GLabel 1250 1750 1    50   Input ~ 0
 ESP32_EN
 NoConn ~ 3050 2550
 NoConn ~ 1650 1850
@@ -207,4 +207,21 @@ Text GLabel 750  2950 0    50   Input ~ 0
 GND
 Wire Wire Line
 	1650 2950 1150 2950
+$Comp
+L Switch:SW_Push BT?
+U 1 1 6B1C0633
+P 950 1750
+AR Path="/6AFE5B10/6B1C0633" Ref="BT?"  Part="1" 
+AR Path="/6AB92870/6B1C0633" Ref="BT?"  Part="1" 
+F 0 "BT?" H 950 2035 50  0000 C CNN
+F 1 "BT_Push" H 950 1944 50  0000 C CNN
+F 2 "SF2000:Sunrom_Tactile_Switch_3x4x2mm_SMD_2-Pin" H 950 1950 50  0001 C CNN
+F 3 "~" H 950 1950 50  0001 C CNN
+	1    950  1750
+	1    0    0    -1  
+$EndComp
+Text GLabel 750  1750 0    50   Input ~ 0
+GND
+Wire Wire Line
+	1650 1750 1150 1750
 $EndSCHEMATC

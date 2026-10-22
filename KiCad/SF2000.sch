@@ -1350,16 +1350,6 @@ Text Notes 4050 5900 0    100  ~ 0
 0603 0.1uF = 100nF
 Text GLabel 7450 6000 0    50   Input ~ 0
 GND
-Wire Wire Line
-	6300 7100 6600 7100
-Wire Wire Line
-	6300 6800 6600 6800
-Connection ~ 6300 7100
-Connection ~ 6300 6800
-Wire Wire Line
-	6000 7100 6300 7100
-Wire Wire Line
-	6000 6800 6300 6800
 Text GLabel 6000 6800 0    50   Input ~ 0
 GND
 Text GLabel 6000 7100 0    50   Input ~ 0
@@ -1834,12 +1824,6 @@ Wire Wire Line
 	6250 6000 6550 6000
 Wire Wire Line
 	6250 6300 6550 6300
-Connection ~ 5950 6000
-Wire Wire Line
-	5950 6000 6250 6000
-Connection ~ 5950 6300
-Wire Wire Line
-	5950 6300 6250 6300
 Connection ~ 6550 6000
 Wire Wire Line
 	6550 6000 6850 6000
@@ -1853,9 +1837,13 @@ Wire Wire Line
 Wire Wire Line
 	5450 6300 5700 6300
 Connection ~ 5700 6000
-Wire Wire Line
-	5700 6000 5950 6000
 Connection ~ 5700 6300
 Wire Wire Line
-	5700 6300 5950 6300
+	6000 7100 6600 7100
+Wire Wire Line
+	6000 6800 6600 6800
+Wire Wire Line
+	5700 6000 6250 6000
+Wire Wire Line
+	5700 6300 6250 6300
 $EndSCHEMATC
