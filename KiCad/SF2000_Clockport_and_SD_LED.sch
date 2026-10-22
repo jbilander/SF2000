@@ -152,7 +152,7 @@ Wire Wire Line
 	7100 4250 7100 4350
 Text GLabel 5550 2650 0    50   Input ~ 0
 CP_D_DIR
-Text GLabel 6950 2750 2    50   Input ~ 0
+Text GLabel 7500 2750 3    50   Input ~ 0
 CP_D_OE
 Text GLabel 5450 3600 0    50   Input ~ 0
 GND
@@ -333,4 +333,26 @@ Text GLabel 2200 4850 0    50   Input ~ 0
 GND
 Text Notes 1900 5200 0    50   ~ 0
 Caution: These signals are +5V logic levels.
+Wire Wire Line
+	6950 2750 7700 2750
+Wire Wire Line
+	7700 2750 7700 2600
+$Comp
+L Device:R_Small R?
+U 1 1 6B25571D
+P 7700 2500
+AR Path="/6B25571D" Ref="R?"  Part="1" 
+AR Path="/6AFE5B10/6B25571D" Ref="R?"  Part="1" 
+AR Path="/627A6500/6B25571D" Ref="R?"  Part="1" 
+F 0 "R?" H 7550 2500 50  0000 L CNN
+F 1 "10k" H 7750 2500 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 7700 2500 50  0001 C CNN
+F 3 "~" H 7700 2500 50  0001 C CNN
+	1    7700 2500
+	-1   0    0    1   
+$EndComp
+Text GLabel 7700 2350 1    50   Input ~ 0
+3V3
+Wire Wire Line
+	7700 2400 7700 2350
 $EndSCHEMATC

@@ -1320,12 +1320,6 @@ F 3 "~" H 6250 6150 50  0001 C CNN
 	1    6250 6150
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2200 7100 2500 7100
-Wire Wire Line
-	2200 6800 2500 6800
-Connection ~ 2500 6800
-Connection ~ 2500 7100
 Connection ~ 4900 6800
 Connection ~ 4900 7100
 Wire Wire Line
@@ -1712,10 +1706,6 @@ Text GLabel 5450 5650 0    50   Input ~ 0
 3V3
 Text GLabel 5450 5350 0    50   Input ~ 0
 GND
-Wire Wire Line
-	2500 6800 3100 6800
-Wire Wire Line
-	2500 7100 3100 7100
 $Sheet
 S 10050 5900 800  500 
 U 6AFE5B10
@@ -1852,4 +1842,8 @@ Wire Wire Line
 Connection ~ 6250 7650
 Wire Wire Line
 	6250 7650 6550 7650
+Wire Wire Line
+	2200 7100 3100 7100
+Wire Wire Line
+	2200 6800 3100 6800
 $EndSCHEMATC
