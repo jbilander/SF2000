@@ -96,7 +96,7 @@ Text GLabel 2250 9350 0    50   Output ~ 0
 TDO
 Text GLabel 2250 9250 0    50   Input ~ 0
 TDI
-Text GLabel 9700 4650 2    50   Input ~ 0
+Text GLabel 10000 4650 1    50   Input ~ 0
 JP2
 Text GLabel 9200 4650 0    50   Input ~ 0
 GND
@@ -414,7 +414,7 @@ Text GLabel 2250 -2150 0    50   Output ~ 0
 CP_IORD_3V3
 Text GLabel 2250 -2050 0    50   Output ~ 0
 CP_CS_3V3
-Text GLabel 9700 4750 2    50   Input ~ 0
+Text GLabel 10000 4750 3    50   Input ~ 0
 JP3
 Text GLabel 9200 4750 0    50   Input ~ 0
 GND
@@ -562,7 +562,7 @@ Text GLabel 3950 4650 2    50   Input ~ 0
 3V3
 Text GLabel 3950 4750 2    50   Input ~ 0
 3V3
-Text GLabel 4200 4850 2    50   Input ~ 0
+Text GLabel 3950 4850 2    50   Input ~ 0
 3V3
 Text GLabel 2250 9650 0    50   Input ~ 0
 JTAGEN
@@ -1080,4 +1080,46 @@ F 3 "~" H 9400 4650 50  0001 C CNN
 	1    9400 4650
 	1    0    0    -1  
 $EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 6B42BB4E
+P 10250 4450
+AR Path="/6B42BB4E" Ref="R?"  Part="1" 
+AR Path="/620D263D/6B42BB4E" Ref="R26"  Part="1" 
+F 0 "R26" V 10350 4400 50  0000 L CNN
+F 1 "10k" V 10150 4400 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 10250 4450 50  0001 C CNN
+F 3 "~" H 10250 4450 50  0001 C CNN
+	1    10250 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10250 4250 10250 4350
+Wire Wire Line
+	9700 4650 10250 4650
+Wire Wire Line
+	10250 4650 10250 4550
+$Comp
+L Device:R_Small R?
+U 1 1 6B430503
+P 10600 4450
+AR Path="/6B430503" Ref="R?"  Part="1" 
+AR Path="/620D263D/6B430503" Ref="R27"  Part="1" 
+F 0 "R27" V 10700 4400 50  0000 L CNN
+F 1 "10k" V 10500 4400 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 10600 4450 50  0001 C CNN
+F 3 "~" H 10600 4450 50  0001 C CNN
+	1    10600 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10600 4250 10600 4350
+Wire Wire Line
+	9700 4750 10600 4750
+Wire Wire Line
+	10600 4750 10600 4550
+Text GLabel 10600 4250 1    50   Input ~ 0
+3V3
+Text GLabel 10250 4250 1    50   Input ~ 0
+3V3
 $EndSCHEMATC
