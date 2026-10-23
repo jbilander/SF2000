@@ -247,7 +247,7 @@ P 1150 1850
 AR Path="/6B1F631E" Ref="R?"  Part="1" 
 AR Path="/6AFE5B10/6B1F631E" Ref="R?"  Part="1" 
 AR Path="/6AB92870/6B1F631E" Ref="R24"  Part="1" 
-F 0 "R24" H 1000 1850 50  0000 L CNN
+F 0 "R24" H 950 1850 50  0000 L CNN
 F 1 "10k" H 950 1750 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 1150 1850 50  0001 C CNN
 F 3 "~" H 1150 1850 50  0001 C CNN
@@ -255,7 +255,7 @@ F 3 "~" H 1150 1850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 1150 2000 3    50   Input ~ 0
-3V3
+3V3_C5
 Wire Wire Line
 	1150 1950 1150 2000
 Connection ~ 1400 1750

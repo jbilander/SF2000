@@ -1070,10 +1070,10 @@ SD_D1
 Text GLabel 2250 -1450 0    50   BiDi ~ 0
 SD_D2
 $Comp
-L Connector_Generic:Conn_02x02_Odd_Even J?
+L Connector_Generic:Conn_02x02_Odd_Even J4
 U 1 1 6B27A83C
 P 9400 4650
-F 0 "J?" H 9450 4800 50  0000 C CNN
+F 0 "J4" H 9450 4800 50  0000 C CNN
 F 1 "Conn_02x02_Odd_Even" H 9450 4400 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Vertical" H 9400 4650 50  0001 C CNN
 F 3 "~" H 9400 4650 50  0001 C CNN
