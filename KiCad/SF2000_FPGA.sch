@@ -74,21 +74,21 @@ AS_MB_3V3
 $Comp
 L Connector_Generic:Conn_02x05_Odd_Even J3
 U 1 1 625BCAC6
-P 7750 3200
-F 0 "J3" H 7800 2775 50  0000 C CNN
-F 1 "Conn_02x05_Odd_Even" H 7800 2866 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical" H 7750 3200 50  0001 C CNN
-F 3 "~" H 7750 3200 50  0001 C CNN
-	1    7750 3200
+P 7750 2350
+F 0 "J3" H 7800 1925 50  0000 C CNN
+F 1 "Conn_02x05_Odd_Even" H 7800 2016 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical" H 7750 2350 50  0001 C CNN
+F 3 "~" H 7750 2350 50  0001 C CNN
+	1    7750 2350
 	-1   0    0    1   
 $EndComp
-Text GLabel 7950 3400 2    50   Output ~ 0
+Text GLabel 7950 2550 2    50   Output ~ 0
 TCK
-Text GLabel 7950 3300 2    50   Input ~ 0
+Text GLabel 7950 2450 2    50   Input ~ 0
 TDO
-Text GLabel 7950 3000 2    50   Output ~ 0
+Text GLabel 7950 2150 2    50   Output ~ 0
 TDI
-Text GLabel 7950 3200 2    50   Output ~ 0
+Text GLabel 7950 2350 2    50   Output ~ 0
 TMS
 Text GLabel 2250 11550 0    50   Input ~ 0
 TCK
@@ -156,7 +156,7 @@ Text GLabel 3950 10050 2    50   Output ~ 0
 INT6_3V3
 Text GLabel 3950 10150 2    50   BiDi ~ 0
 BG_3V3
-Text GLabel 7450 3000 0    50   Input ~ 0
+Text GLabel 7450 2150 0    50   Input ~ 0
 GND
 Text GLabel 2250 8950 0    50   Input ~ 0
 BERR_3V3
@@ -778,48 +778,48 @@ Wire Wire Line
 	4650 -1850 4850 -1850
 Text GLabel 2250 8850 0    50   Input ~ 0
 AVEC
-Text GLabel 7450 3400 0    50   Input ~ 0
+Text GLabel 7450 2550 0    50   Input ~ 0
 GND
-Text GLabel 7450 3300 0    50   Input ~ 0
+Text GLabel 7450 2450 0    50   Input ~ 0
 3V3
-NoConn ~ 7950 3100
-NoConn ~ 7450 3100
-NoConn ~ 7450 3200
+NoConn ~ 7950 2250
+NoConn ~ 7450 2250
+NoConn ~ 7450 2350
 Text GLabel 4950 900  1    50   Input ~ 0
 GND
 Text GLabel 6100 1300 3    50   Input ~ 0
 CONF_DONE
-Text GLabel 8050 5000 2    50   Input ~ 0
+Text GLabel 8050 4350 2    50   Input ~ 0
 RAMSZ0
-Text GLabel 8050 5100 2    50   Input ~ 0
+Text GLabel 8050 4450 2    50   Input ~ 0
 RAMSZ1
-Text GLabel 8050 5200 2    50   Input ~ 0
+Text GLabel 8050 4550 2    50   Input ~ 0
 RAMSZ2
-Text GLabel 8050 5300 2    50   Input ~ 0
+Text GLabel 8050 4650 2    50   Input ~ 0
 RAMSZ3
-Text GLabel 6550 5150 0    50   Input ~ 0
+Text GLabel 6550 4500 0    50   Input ~ 0
 GND
 Wire Wire Line
-	6750 5000 6650 5000
+	6750 4350 6650 4350
 Wire Wire Line
-	6650 5000 6650 5100
+	6650 4350 6650 4450
 Wire Wire Line
-	6750 5100 6650 5100
-Connection ~ 6650 5100
+	6750 4450 6650 4450
+Connection ~ 6650 4450
 Wire Wire Line
-	6750 5200 6650 5200
+	6750 4550 6650 4550
 Wire Wire Line
-	6650 5100 6650 5150
+	6650 4450 6650 4500
 Wire Wire Line
-	6750 5300 6650 5300
+	6750 4650 6650 4650
 Wire Wire Line
-	6650 5300 6650 5200
-Connection ~ 6650 5200
+	6650 4650 6650 4550
+Connection ~ 6650 4550
 Wire Wire Line
-	6550 5150 6650 5150
-Connection ~ 6650 5150
+	6550 4500 6650 4500
+Connection ~ 6650 4500
 Wire Wire Line
-	6650 5150 6650 5200
+	6650 4500 6650 4550
 Text GLabel 3950 -3550 2    50   Input ~ 0
 RAMSZ3
 Text GLabel 3950 -3450 2    50   Input ~ 0
@@ -833,12 +833,12 @@ JP1
 $Comp
 L SF2000:TDB04H0SB1R S1
 U 1 1 6ABF7939
-P 7400 5150
-F 0 "S1" H 7400 5565 50  0000 C CNN
-F 1 "TDB04H0SB1R" H 7400 5474 50  0000 C CNN
-F 2 "SF2000:TDB04H0SB1" H 7900 5400 50  0001 L CNN
-F 3 "" H 7900 5300 50  0001 L CNN
-	1    7400 5150
+P 7400 4500
+F 0 "S1" H 7400 4915 50  0000 C CNN
+F 1 "TDB04H0SB1R" H 7400 4824 50  0000 C CNN
+F 2 "SF2000:TDB04H0SB1" H 7900 4750 50  0001 L CNN
+F 3 "" H 7900 4650 50  0001 L CNN
+	1    7400 4500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1004,43 +1004,43 @@ Wire Wire Line
 	5250 1200 5250 1300
 Text GLabel 5250 1300 3    50   Input ~ 0
 ESP32_RTS
-Text GLabel 5350 5550 1    50   Input ~ 0
+Text GLabel 6950 3000 1    50   Input ~ 0
 3V3
-Text GLabel 5350 6150 3    50   Input ~ 0
+Text GLabel 6950 3600 3    50   Input ~ 0
 GND
-Text GLabel 6050 5850 2    50   Output ~ 0
+Text GLabel 7650 3300 2    50   Output ~ 0
 OSC_CLK
-Text GLabel 5050 5850 0    50   Input ~ 0
+Text GLabel 6650 3300 0    50   Input ~ 0
 3V3
 $Comp
 L Device:R_Small R?
 U 1 1 6AF4288F
-P 5850 5850
+P 7450 3300
 AR Path="/6AF4288F" Ref="R?"  Part="1" 
 AR Path="/620D263D/6AF4288F" Ref="R1"  Part="1" 
 AR Path="/62892CF3/6AF4288F" Ref="R?"  Part="1" 
-F 0 "R1" V 5950 5800 50  0000 L CNN
-F 1 "33" V 5850 5800 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 5850 5850 50  0001 C CNN
-F 3 "~" H 5850 5850 50  0001 C CNN
-	1    5850 5850
+F 0 "R1" V 7550 3250 50  0000 L CNN
+F 1 "33" V 7450 3250 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 7450 3300 50  0001 C CNN
+F 3 "~" H 7450 3300 50  0001 C CNN
+	1    7450 3300
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	6050 5850 5950 5850
+	7650 3300 7550 3300
 Wire Wire Line
-	5750 5850 5650 5850
-Text Label 5700 5850 3    50   ~ 0
+	7350 3300 7250 3300
+Text Label 7300 3300 3    50   ~ 0
 OSC
 $Comp
 L Oscillator:Standard_Clock_Oscillators_XTAL_OSC X1
 U 1 1 6AF574DE
-P 5350 5850
-F 0 "X1" H 5000 6150 50  0000 L CNN
-F 1 "Oscillator_5.0x3.2mm" H 5600 6050 50  0000 L CNN
-F 2 "Oscillator:Oscillator_SMD_SeikoEpson_SG8002LB-4Pin_5.0x3.2mm" H 6050 5500 50  0001 C CNN
-F 3 "" H 5250 5850 50  0001 C CNN
-	1    5350 5850
+P 6950 3300
+F 0 "X1" H 6600 3600 50  0000 L CNN
+F 1 "Oscillator_5.0x3.2mm" H 7200 3500 50  0000 L CNN
+F 2 "Oscillator:Oscillator_SMD_SeikoEpson_SG8002LB-4Pin_5.0x3.2mm" H 7650 2950 50  0001 C CNN
+F 3 "" H 6850 3300 50  0001 C CNN
+	1    6950 3300
 	1    0    0    -1  
 $EndComp
 Text GLabel 2250 1050 0    50   Input ~ 0
@@ -1122,4 +1122,6 @@ Text GLabel 10600 4250 1    50   Input ~ 0
 3V3
 Text GLabel 10250 4250 1    50   Input ~ 0
 3V3
+Text GLabel 6200 1300 3    50   Input ~ 0
+nSTATUS
 $EndSCHEMATC
