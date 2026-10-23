@@ -534,4 +534,21 @@ $EndComp
 Connection ~ 3300 4200
 Text GLabel 3300 4500 3    50   Input ~ 0
 GND
+$Comp
+L Connector_Generic:Conn_01x03 J5
+U 1 1 6B3FC5A9
+P 1300 4100
+F 0 "J5" V 1172 4280 50  0000 L CNN
+F 1 "Conn_01x03" V 1263 4280 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 1300 4100 50  0001 C CNN
+F 3 "~" H 1300 4100 50  0001 C CNN
+	1    1300 4100
+	0    1    1    0   
+$EndComp
+Text GLabel 1400 3900 1    50   Input ~ 0
+SWCLK
+Text GLabel 1200 3900 1    50   Input ~ 0
+SWDIO
+Text GLabel 1300 3900 1    50   Input ~ 0
+GND
 $EndSCHEMATC
