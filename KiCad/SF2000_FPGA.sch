@@ -578,96 +578,10 @@ Text GLabel 3950 -1050 2    50   Input ~ 0
 CLK7M_3V3
 Text GLabel 3950 -2550 2    50   Input ~ 0
 CDAC_3V3
-Text GLabel 2250 -1650 0    50   Input ~ 0
-LOW_SPEED
-Text GLabel 2250 2250 0    50   Input ~ 0
-LOW_SPEED
-Text GLabel 2250 2350 0    50   Input ~ 0
-LOW_SPEED
-Text GLabel 2250 -3450 0    50   Input ~ 0
-LOW_SPEED
-Text GLabel 2250 -1550 0    50   Input ~ 0
-LOW_SPEED
 Text GLabel 2250 7950 0    50   Input ~ 0
 nSTATUS
 Text GLabel 2250 8050 0    50   Input ~ 0
 CONFIG_SEL
-Text GLabel 2250 -3350 0    50   Input ~ 0
-LOW_SPEED
-Text GLabel 2250 350  0    50   Input ~ 0
-LOW_SPEED
-Text GLabel 2250 450  0    50   Input ~ 0
-LOW_SPEED
-Text GLabel 2250 750  0    50   Input ~ 0
-LOW_SPEED
-Text GLabel 2250 550  0    50   Input ~ 0
-LOW_SPEED
-Text GLabel 2250 2450 0    50   Input ~ 0
-LOW_SPEED
-Text GLabel 2250 850  0    50   Input ~ 0
-LOW_SPEED
-Text GLabel 2250 950  0    50   Input ~ 0
-LOW_SPEED
-Text GLabel 2250 8150 0    50   Input ~ 0
-LOW_SPEED
-Text GLabel 2250 6350 0    50   Input ~ 0
-LOW_SPEED
-Text GLabel 2250 2650 0    50   Input ~ 0
-LOW_SPEED
-Text GLabel 2250 2750 0    50   Input ~ 0
-LOW_SPEED
-Text GLabel 2250 2150 0    50   Input ~ 0
-LOW_SPEED
-Text GLabel 2250 150  0    50   Input ~ 0
-LOW_SPEED
-Text GLabel 2250 3950 0    50   Input ~ 0
-LOW_SPEED
-Text GLabel 2250 1950 0    50   Input ~ 0
-LOW_SPEED
-Text GLabel 2250 7750 0    50   Input ~ 0
-LOW_SPEED
-Text GLabel 2250 -1750 0    50   Input ~ 0
-LOW_SPEED
-Text GLabel 2250 9550 0    50   Input ~ 0
-LOW_SPEED
-Text GLabel 2250 50   0    50   Input ~ 0
-LOW_SPEED
-Text GLabel 2250 5850 0    50   Input ~ 0
-LOW_SPEED
-Text GLabel 2250 1850 0    50   Input ~ 0
-LOW_SPEED
-Text GLabel 2250 4050 0    50   Input ~ 0
-LOW_SPEED
-Text GLabel 2250 3650 0    50   Input ~ 0
-LOW_SPEED
-Text GLabel 2250 7450 0    50   Input ~ 0
-LOW_SPEED
-Text GLabel 2250 5450 0    50   Input ~ 0
-LOW_SPEED
-Text GLabel 2250 5550 0    50   Input ~ 0
-LOW_SPEED
-Text GLabel 2250 7250 0    50   Input ~ 0
-LOW_SPEED
-Text GLabel 2250 7850 0    50   Input ~ 0
-LOW_SPEED
-Text GLabel 2250 11050 0    50   Input ~ 0
-LOW_SPEED
-Text GLabel 2250 11150 0    50   Input ~ 0
-LOW_SPEED
-Text GLabel 2250 10950 0    50   Input ~ 0
-LOW_SPEED
-Text GLabel 2250 11350 0    50   Input ~ 0
-LOW_SPEED
-Text GLabel 3950 -2950 2    50   Input ~ 0
-LOW_SPEED
-Text GLabel 3950 -3250 2    50   Input ~ 0
-LOW_SPEED
-Text GLabel 3950 -1750 2    50   Input ~ 0
-LOW_SPEED
-Text GLabel 3950 -3350 2    50   Input ~ 0
-LOW_SPEED
-Text GLabel 3950 -1650 2    50   Input ~ 0
-LOW_SPEED
 Text GLabel 3950 -150 2    50   BiDi ~ 0
 E_3V3
 Text GLabel 3950 3550 2    50   Input ~ 0
@@ -1063,8 +977,6 @@ Text GLabel 2250 -2950 0    50   BiDi ~ 0
 CP_D0_3V3
 Text GLabel 2250 -750 0    50   Input ~ 0
 CP_D_OE
-Text GLabel 2250 2550 0    50   Input ~ 0
-LOW_SPEED
 Text GLabel 2250 -3050 0    50   Input ~ 0
 SD_D1
 Text GLabel 2250 -1450 0    50   BiDi ~ 0
@@ -1124,4 +1036,48 @@ Text GLabel 10250 4250 1    50   Input ~ 0
 3V3
 Text GLabel 6200 1300 3    50   Input ~ 0
 nSTATUS
+NoConn ~ 2250 -3450
+NoConn ~ 2250 -3350
+NoConn ~ 2250 -1750
+NoConn ~ 2250 -1650
+NoConn ~ 2250 -1550
+NoConn ~ 2250 50  
+NoConn ~ 2250 150 
+NoConn ~ 2250 350 
+NoConn ~ 2250 450 
+NoConn ~ 2250 550 
+NoConn ~ 2250 750 
+NoConn ~ 2250 850 
+NoConn ~ 2250 950 
+NoConn ~ 2250 1850
+NoConn ~ 2250 1950
+NoConn ~ 2250 2150
+NoConn ~ 2250 2250
+NoConn ~ 2250 2350
+NoConn ~ 2250 2450
+NoConn ~ 2250 2550
+NoConn ~ 2250 2650
+NoConn ~ 2250 2750
+NoConn ~ 2250 3650
+NoConn ~ 2250 3950
+NoConn ~ 2250 4050
+NoConn ~ 2250 5450
+NoConn ~ 2250 5550
+NoConn ~ 2250 5850
+NoConn ~ 2250 6350
+NoConn ~ 2250 7250
+NoConn ~ 2250 7450
+NoConn ~ 2250 7750
+NoConn ~ 2250 7850
+NoConn ~ 2250 8150
+NoConn ~ 2250 9550
+NoConn ~ 2250 10950
+NoConn ~ 2250 11050
+NoConn ~ 2250 11150
+NoConn ~ 2250 11350
+NoConn ~ 3950 -3350
+NoConn ~ 3950 -3250
+NoConn ~ 3950 -2950
+NoConn ~ 3950 -1750
+NoConn ~ 3950 -1650
 $EndSCHEMATC
