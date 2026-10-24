@@ -828,12 +828,12 @@ $EndComp
 $Comp
 L Device:C C47
 U 1 1 623684A3
-P 2850 7550
-F 0 "C47" H 2900 7650 50  0000 L CNN
-F 1 "0.01uF" H 2850 7450 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2888 7400 50  0001 C CNN
-F 3 "~" H 2850 7550 50  0001 C CNN
-	1    2850 7550
+P 6200 6150
+F 0 "C47" H 6250 6250 50  0000 L CNN
+F 1 "0.1uF" H 6200 6050 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 6238 6000 50  0001 C CNN
+F 3 "~" H 6200 6150 50  0001 C CNN
+	1    6200 6150
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1695,8 +1695,6 @@ Wire Wire Line
 Connection ~ 4450 6300
 Wire Wire Line
 	4450 6300 4700 6300
-Connection ~ 6250 6000
-Connection ~ 6250 6300
 Connection ~ 4700 6000
 Connection ~ 4700 6300
 Wire Wire Line
@@ -1715,10 +1713,6 @@ Wire Wire Line
 	5200 6000 5450 6000
 Wire Wire Line
 	5200 6300 5450 6300
-Wire Wire Line
-	6250 6000 6550 6000
-Wire Wire Line
-	6250 6300 6550 6300
 Connection ~ 6550 6000
 Wire Wire Line
 	6550 6000 6850 6000
@@ -1788,60 +1782,66 @@ $EndComp
 Text GLabel 5650 5300 0    50   Input ~ 0
 GND
 Wire Wire Line
-	4750 5600 5000 5600
-Connection ~ 4750 5600
+	2450 7050 2700 7050
+Connection ~ 2450 7050
 Wire Wire Line
-	4500 5600 4750 5600
+	2200 7050 2450 7050
 Wire Wire Line
-	4750 5300 5000 5300
-Connection ~ 4750 5300
+	2450 6750 2700 6750
+Connection ~ 2450 6750
 Wire Wire Line
-	4500 5300 4750 5300
+	2200 6750 2450 6750
 $Comp
 L Device:C C14
 U 1 1 61E368D7
-P 5000 5450
-F 0 "C14" H 5000 5550 50  0000 L CNN
-F 1 "0.1uF" H 5000 5350 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5038 5300 50  0001 C CNN
-F 3 "~" H 5000 5450 50  0001 C CNN
-	1    5000 5450
+P 2700 6900
+F 0 "C14" H 2700 7000 50  0000 L CNN
+F 1 "0.1uF" H 2700 6800 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2738 6750 50  0001 C CNN
+F 3 "~" H 2700 6900 50  0001 C CNN
+	1    2700 6900
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C13
 U 1 1 61E35B65
-P 4750 5450
-F 0 "C13" H 4750 5550 50  0000 L CNN
-F 1 "0.1uF" H 4750 5350 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4788 5300 50  0001 C CNN
-F 3 "~" H 4750 5450 50  0001 C CNN
-	1    4750 5450
+P 2450 6900
+F 0 "C13" H 2450 7000 50  0000 L CNN
+F 1 "0.1uF" H 2450 6800 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2488 6750 50  0001 C CNN
+F 3 "~" H 2450 6900 50  0001 C CNN
+	1    2450 6900
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C12
 U 1 1 61E334D3
-P 4500 5450
-F 0 "C12" H 4500 5550 50  0000 L CNN
-F 1 "0.1uF" H 4500 5350 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4538 5300 50  0001 C CNN
-F 3 "~" H 4500 5450 50  0001 C CNN
-	1    4500 5450
+P 2200 6900
+F 0 "C12" H 2200 7000 50  0000 L CNN
+F 1 "0.1uF" H 2200 6800 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2238 6750 50  0001 C CNN
+F 3 "~" H 2200 6900 50  0001 C CNN
+	1    2200 6900
 	1    0    0    -1  
 $EndComp
-Text GLabel 4500 5600 0    50   Input ~ 0
-4V3
-Text GLabel 4500 5300 0    50   Input ~ 0
-GND
 Text GLabel 2200 7050 0    50   Input ~ 0
-3V3
+4V3
 Text GLabel 2200 6750 0    50   Input ~ 0
 GND
+Text GLabel 3400 7050 0    50   Input ~ 0
+3V3
+Text GLabel 3400 6750 0    50   Input ~ 0
+GND
 Connection ~ 5950 6000
-Wire Wire Line
-	5950 6000 6250 6000
 Connection ~ 5950 6300
 Wire Wire Line
-	5950 6300 6250 6300
+	5950 6000 6200 6000
+Wire Wire Line
+	5950 6300 6200 6300
+Connection ~ 6200 6000
+Wire Wire Line
+	6200 6000 6550 6000
+Connection ~ 6200 6300
+Wire Wire Line
+	6200 6300 6550 6300
 $EndSCHEMATC
