@@ -821,12 +821,12 @@ $EndComp
 $Comp
 L Device:C C54
 U 1 1 6231D11D
-P 4950 7550
-F 0 "C54" H 5000 7650 50  0000 L CNN
-F 1 "0.01uF" H 4950 7450 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4988 7400 50  0001 C CNN
-F 3 "~" H 4950 7550 50  0001 C CNN
-	1    4950 7550
+P 7900 6200
+F 0 "C54" H 7950 6300 50  0000 L CNN
+F 1 "0.1uF" H 7900 6100 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 7938 6050 50  0001 C CNN
+F 3 "~" H 7900 6200 50  0001 C CNN
+	1    7900 6200
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1830,4 +1830,10 @@ Connection ~ 7400 6050
 Wire Wire Line
 	7650 6350 7400 6350
 Connection ~ 7400 6350
+Wire Wire Line
+	7900 6050 7650 6050
+Connection ~ 7650 6050
+Wire Wire Line
+	7900 6350 7650 6350
+Connection ~ 7650 6350
 $EndSCHEMATC
