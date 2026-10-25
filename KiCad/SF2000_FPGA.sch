@@ -1080,4 +1080,8 @@ NoConn ~ 3950 -3250
 NoConn ~ 3950 -2950
 NoConn ~ 3950 -1750
 NoConn ~ 3950 -1650
+Text GLabel 3950 6350 2    50   Input ~ 0
+JP2
+Text GLabel 3950 4550 2    50   Input ~ 0
+JP3
 $EndSCHEMATC
