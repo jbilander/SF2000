@@ -262,4 +262,19 @@ Connection ~ 1400 1750
 Connection ~ 1150 1750
 Wire Wire Line
 	1150 1750 1400 1750
+$Comp
+L Connector_Generic:Conn_01x02 J6
+U 1 1 6B744C51
+P 3900 1550
+F 0 "J6" H 3980 1542 50  0000 L CNN
+F 1 "Conn_01x02" H 3980 1451 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3900 1550 50  0001 C CNN
+F 3 "~" H 3900 1550 50  0001 C CNN
+	1    3900 1550
+	0    -1   -1   0   
+$EndComp
+Text GLabel 3900 1750 3    50   Output ~ 0
+ESP32_TX0
+Text GLabel 4000 1750 3    50   Input ~ 0
+ESP32_RX0
 $EndSCHEMATC
