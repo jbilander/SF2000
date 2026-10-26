@@ -742,7 +742,7 @@ Text GLabel 2250 10850 0    50   Input ~ 0
 RAMSZ1
 Text GLabel 2250 9050 0    50   Input ~ 0
 RAMSZ0
-Text GLabel 2250 9150 0    50   Input ~ 0
+Text GLabel 2250 7250 0    50   Input ~ 0
 JP1
 $Comp
 L SF2000:TDB04H0SB1R S1
@@ -1065,7 +1065,6 @@ NoConn ~ 2250 5450
 NoConn ~ 2250 5550
 NoConn ~ 2250 5850
 NoConn ~ 2250 6350
-NoConn ~ 2250 7250
 NoConn ~ 2250 7450
 NoConn ~ 2250 7750
 NoConn ~ 2250 7850
@@ -1084,4 +1083,6 @@ Text GLabel 3950 6350 2    50   Input ~ 0
 JP2
 Text GLabel 3950 4550 2    50   Input ~ 0
 JP3
+NoConn ~ 2250 8050
+NoConn ~ 2250 9150
 $EndSCHEMATC

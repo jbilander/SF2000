@@ -1855,4 +1855,25 @@ Wire Wire Line
 Wire Wire Line
 	3750 7650 3750 7600
 Connection ~ 3500 7650
+$Comp
+L Device:C_Small C64
+U 1 1 6BA3EFC2
+P 4000 7500
+F 0 "C64" H 4000 7600 50  0000 L CNN
+F 1 "0.1uF" H 4000 7400 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 4000 7500 50  0001 C CNN
+F 3 "~" H 4000 7500 50  0001 C CNN
+	1    4000 7500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 7350 4000 7350
+Wire Wire Line
+	4000 7350 4000 7400
+Connection ~ 3750 7350
+Wire Wire Line
+	3750 7650 4000 7650
+Wire Wire Line
+	4000 7650 4000 7600
+Connection ~ 3750 7650
 $EndSCHEMATC
