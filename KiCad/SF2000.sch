@@ -1985,4 +1985,25 @@ Wire Wire Line
 Wire Wire Line
 	5500 7650 5500 7600
 Connection ~ 5250 7650
+$Comp
+L Device:C_Small C70
+U 1 1 6BBA2BDF
+P 5750 7500
+F 0 "C70" H 5750 7600 50  0000 L CNN
+F 1 "0.1uF" H 5750 7400 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 5750 7500 50  0001 C CNN
+F 3 "~" H 5750 7500 50  0001 C CNN
+	1    5750 7500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 7350 5750 7350
+Wire Wire Line
+	5750 7350 5750 7400
+Connection ~ 5500 7350
+Wire Wire Line
+	5500 7650 5750 7650
+Wire Wire Line
+	5750 7650 5750 7600
+Connection ~ 5500 7650
 $EndSCHEMATC
