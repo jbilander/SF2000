@@ -819,17 +819,6 @@ F 3 "~" H 8150 6050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C53
-U 1 1 6231C987
-P 7650 6050
-F 0 "C53" H 7700 6150 50  0000 L CNN
-F 1 "0.1uF" H 7650 5950 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 7688 5900 50  0001 C CNN
-F 3 "~" H 7650 6050 50  0001 C CNN
-	1    7650 6050
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:C C50
 U 1 1 6231BC31
 P 6900 6050
@@ -937,23 +926,23 @@ Wire Wire Line
 $Comp
 L Device:C C19
 U 1 1 62524EDA
-P 8300 5350
-F 0 "C19" H 8350 5450 50  0000 L CNN
-F 1 "0.1uF" H 8300 5250 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 8338 5200 50  0001 C CNN
-F 3 "~" H 8300 5350 50  0001 C CNN
-	1    8300 5350
+P 8200 5350
+F 0 "C19" H 8250 5450 50  0000 L CNN
+F 1 "0.1uF" H 8200 5250 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 8238 5200 50  0001 C CNN
+F 3 "~" H 8200 5350 50  0001 C CNN
+	1    8200 5350
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C28
 U 1 1 6255AB6E
-P 8800 5350
-F 0 "C28" H 8850 5450 50  0000 L CNN
-F 1 "0.1uF" H 8800 5250 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 8838 5200 50  0001 C CNN
-F 3 "~" H 8800 5350 50  0001 C CNN
-	1    8800 5350
+P 8700 5350
+F 0 "C28" H 8750 5450 50  0000 L CNN
+F 1 "0.1uF" H 8700 5250 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 8738 5200 50  0001 C CNN
+F 3 "~" H 8700 5350 50  0001 C CNN
+	1    8700 5350
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1030,12 +1019,12 @@ $EndComp
 $Comp
 L Device:C C24
 U 1 1 6226DADA
-P 8550 5350
-F 0 "C24" H 8600 5450 50  0000 L CNN
-F 1 "0.1uF" H 8550 5250 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 8588 5200 50  0001 C CNN
-F 3 "~" H 8550 5350 50  0001 C CNN
-	1    8550 5350
+P 8450 5350
+F 0 "C24" H 8500 5450 50  0000 L CNN
+F 1 "0.1uF" H 8450 5250 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 8488 5200 50  0001 C CNN
+F 3 "~" H 8450 5350 50  0001 C CNN
+	1    8450 5350
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1193,7 +1182,7 @@ F 3 "~" H 6400 6050 50  0001 C CNN
 $EndComp
 Text Notes 4050 5800 0    100  ~ 0
 0603 0.1uF = 100nF
-Text GLabel 8300 5200 0    50   Input ~ 0
+Text GLabel 8200 5200 0    50   Input ~ 0
 GND
 Text GLabel 9300 5200 0    50   Input ~ 0
 GND
@@ -1562,10 +1551,10 @@ Connection ~ 2400 6200
 Wire Wire Line
 	2400 6200 2650 6200
 Wire Wire Line
-	8300 5200 8550 5200
+	8200 5200 8450 5200
 Wire Wire Line
-	8300 5500 8550 5500
-Text GLabel 8300 5500 0    50   Input ~ 0
+	8200 5500 8450 5500
+Text GLabel 8200 5500 0    50   Input ~ 0
 1V1
 Wire Wire Line
 	2900 5900 3150 5900
@@ -1583,12 +1572,12 @@ Wire Wire Line
 	3400 5900 3650 5900
 Wire Wire Line
 	3400 6200 3650 6200
-Connection ~ 8550 5200
+Connection ~ 8450 5200
 Wire Wire Line
-	8550 5200 8800 5200
-Connection ~ 8550 5500
+	8450 5200 8700 5200
+Connection ~ 8450 5500
 Wire Wire Line
-	8550 5500 8800 5500
+	8450 5500 8700 5500
 Connection ~ 3650 5900
 Connection ~ 3650 6200
 Wire Wire Line
@@ -1762,14 +1751,8 @@ Connection ~ 7150 5900
 Wire Wire Line
 	7400 6200 7150 6200
 Connection ~ 7150 6200
-Wire Wire Line
-	7650 5900 7400 5900
 Connection ~ 7400 5900
-Wire Wire Line
-	7650 6200 7400 6200
 Connection ~ 7400 6200
-Connection ~ 7650 5900
-Connection ~ 7650 6200
 Wire Notes Line
 	1850 5650 7800 5650
 Wire Notes Line
@@ -1960,10 +1943,6 @@ Wire Wire Line
 Wire Wire Line
 	5250 7650 5250 7600
 Connection ~ 5000 7650
-Wire Wire Line
-	7650 5900 8150 5900
-Wire Wire Line
-	7650 6200 8150 6200
 $Comp
 L Device:C_Small C69
 U 1 1 6BB7492A
@@ -2006,4 +1985,29 @@ Wire Wire Line
 Wire Wire Line
 	5750 7650 5750 7600
 Connection ~ 5500 7650
+$Comp
+L Device:C_Small C53
+U 1 1 6BBCB8BC
+P 6000 7500
+F 0 "C53" H 6000 7600 50  0000 L CNN
+F 1 "0.1uF" H 6000 7400 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 6000 7500 50  0001 C CNN
+F 3 "~" H 6000 7500 50  0001 C CNN
+	1    6000 7500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 7350 6000 7350
+Wire Wire Line
+	6000 7350 6000 7400
+Connection ~ 5750 7350
+Wire Wire Line
+	5750 7650 6000 7650
+Wire Wire Line
+	6000 7650 6000 7600
+Connection ~ 5750 7650
+Wire Wire Line
+	7400 5900 8150 5900
+Wire Wire Line
+	7400 6200 8150 6200
 $EndSCHEMATC
