@@ -819,17 +819,6 @@ F 3 "~" H 8150 6050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C54
-U 1 1 6231D11D
-P 7900 6050
-F 0 "C54" H 7950 6150 50  0000 L CNN
-F 1 "0.1uF" H 7900 5950 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 7938 5900 50  0001 C CNN
-F 3 "~" H 7900 6050 50  0001 C CNN
-	1    7900 6050
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:C C53
 U 1 1 6231C987
 P 7650 6050
@@ -1779,11 +1768,7 @@ Connection ~ 7400 5900
 Wire Wire Line
 	7650 6200 7400 6200
 Connection ~ 7400 6200
-Wire Wire Line
-	7900 5900 7650 5900
 Connection ~ 7650 5900
-Wire Wire Line
-	7900 6200 7650 6200
 Connection ~ 7650 6200
 Wire Notes Line
 	1850 5650 7800 5650
@@ -1793,12 +1778,6 @@ Wire Notes Line
 	10000 6350 10000 5000
 Wire Notes Line
 	7800 5000 10000 5000
-Wire Wire Line
-	8150 5900 7900 5900
-Connection ~ 7900 5900
-Wire Wire Line
-	8150 6200 7900 6200
-Connection ~ 7900 6200
 Wire Wire Line
 	7300 5150 7000 5150
 Wire Wire Line
@@ -1919,10 +1898,10 @@ Wire Wire Line
 	4500 7650 4500 7600
 Connection ~ 4250 7650
 $Comp
-L Device:C_Small C?
+L Device:C_Small C67
 U 1 1 6BADE1D3
 P 4750 7500
-F 0 "C?" H 4750 7600 50  0000 L CNN
+F 0 "C67" H 4750 7600 50  0000 L CNN
 F 1 "0.1uF" H 4750 7400 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 4750 7500 50  0001 C CNN
 F 3 "~" H 4750 7500 50  0001 C CNN
@@ -1939,4 +1918,50 @@ Wire Wire Line
 Wire Wire Line
 	4750 7650 4750 7600
 Connection ~ 4500 7650
+$Comp
+L Device:C_Small C68
+U 1 1 6BAFDE5A
+P 5000 7500
+F 0 "C68" H 5000 7600 50  0000 L CNN
+F 1 "0.1uF" H 5000 7400 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 5000 7500 50  0001 C CNN
+F 3 "~" H 5000 7500 50  0001 C CNN
+	1    5000 7500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 7350 5000 7350
+Wire Wire Line
+	5000 7350 5000 7400
+Connection ~ 4750 7350
+Wire Wire Line
+	4750 7650 5000 7650
+Wire Wire Line
+	5000 7650 5000 7600
+Connection ~ 4750 7650
+$Comp
+L Device:C_Small C54
+U 1 1 6BB2F4A3
+P 5250 7500
+F 0 "C54" H 5250 7600 50  0000 L CNN
+F 1 "0.1uF" H 5250 7400 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 5250 7500 50  0001 C CNN
+F 3 "~" H 5250 7500 50  0001 C CNN
+	1    5250 7500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 7350 5250 7350
+Wire Wire Line
+	5250 7350 5250 7400
+Connection ~ 5000 7350
+Wire Wire Line
+	5000 7650 5250 7650
+Wire Wire Line
+	5250 7650 5250 7600
+Connection ~ 5000 7650
+Wire Wire Line
+	7650 5900 8150 5900
+Wire Wire Line
+	7650 6200 8150 6200
 $EndSCHEMATC
