@@ -1918,4 +1918,25 @@ Wire Wire Line
 Wire Wire Line
 	4500 7650 4500 7600
 Connection ~ 4250 7650
+$Comp
+L Device:C_Small C?
+U 1 1 6BADE1D3
+P 4750 7500
+F 0 "C?" H 4750 7600 50  0000 L CNN
+F 1 "0.1uF" H 4750 7400 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 4750 7500 50  0001 C CNN
+F 3 "~" H 4750 7500 50  0001 C CNN
+	1    4750 7500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 7400 4750 7350
+Wire Wire Line
+	4750 7350 4500 7350
+Connection ~ 4500 7350
+Wire Wire Line
+	4500 7650 4750 7650
+Wire Wire Line
+	4750 7650 4750 7600
+Connection ~ 4500 7650
 $EndSCHEMATC
