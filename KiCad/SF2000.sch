@@ -2047,4 +2047,25 @@ Wire Wire Line
 	6400 5900 8150 5900
 Wire Wire Line
 	6400 6200 8150 6200
+$Comp
+L Device:C_Small C72
+U 1 1 6BDA850E
+P 6200 7500
+F 0 "C72" H 6200 7600 50  0000 L CNN
+F 1 "0.1uF" H 6200 7400 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 6200 7500 50  0001 C CNN
+F 3 "~" H 6200 7500 50  0001 C CNN
+	1    6200 7500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 7400 6200 7350
+Wire Wire Line
+	6200 7350 5950 7350
+Connection ~ 5950 7350
+Wire Wire Line
+	6200 7600 6200 7650
+Wire Wire Line
+	6200 7650 5950 7650
+Connection ~ 5950 7650
 $EndSCHEMATC
