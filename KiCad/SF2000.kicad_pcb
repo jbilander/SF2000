@@ -1103,7 +1103,7 @@
     (tags "resistor handsolder")
     (path /61FB0B67)
     (attr smd)
-    (fp_text reference R8 (at 0 -1.43) (layer F.SilkS)
+    (fp_text reference R21 (at 0 -1.43) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value 10k (at 0 1.43) (layer F.Fab) hide
@@ -4513,7 +4513,7 @@
     (tags "resistor handsolder")
     (path /620D263D/625C5BBC)
     (attr smd)
-    (fp_text reference R11 (at -2.425 0.46 180) (layer F.SilkS)
+    (fp_text reference R8 (at -2.425 0.46 180) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value 330 (at 0 1.43 90) (layer F.Fab) hide
@@ -5081,7 +5081,7 @@
     (tags "resistor handsolder")
     (path /6AFE5B10/6AE48264)
     (attr smd)
-    (fp_text reference R21 (at 0 1.43) (layer B.SilkS)
+    (fp_text reference R9 (at 0 1.43) (layer B.SilkS)
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
     (fp_text value 1k (at 0 -1.43) (layer B.Fab) hide
@@ -6403,7 +6403,7 @@
     (tags "resistor handsolder")
     (path /6AB92870/6AEC8E87)
     (attr smd)
-    (fp_text reference R9 (at 2.575 0.1) (layer F.SilkS)
+    (fp_text reference R10 (at 2.575 0.1) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value 5k1 (at 0 1.43) (layer F.Fab) hide
@@ -6439,7 +6439,7 @@
     (tags "resistor handsolder")
     (path /6AB92870/6AEB9B3F)
     (attr smd)
-    (fp_text reference R10 (at 3.075 0) (layer F.SilkS)
+    (fp_text reference R11 (at 3.075 0) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value 5k1 (at 0 1.43) (layer F.Fab) hide
@@ -13229,11 +13229,6 @@
   (segment (start 162.5192 94.0459) (end 162.5192 92.7203) (width 0.2032) (layer F.Cu) (net 156))
   (segment (start 153.413176 93.1893) (end 155.088176 94.8643) (width 0.2032) (layer F.Cu) (net 156))
   (segment (start 139.3167 93.1893) (end 153.413176 93.1893) (width 0.2032) (layer F.Cu) (net 156))
-  (segment (start 137.2917 92.9893) (end 137.4917 93.1893) (width 0.2032) (layer F.Cu) (net 444))
-  (segment (start 136.3542 92.9893) (end 136.7792 92.9893) (width 0.2032) (layer F.Cu) (net 444))
-  (segment (start 134.8042 92.9893) (end 136.3542 92.9893) (width 0.2032) (layer F.Cu) (net 444))
-  (segment (start 136.3542 92.9893) (end 137.2917 92.9893) (width 0.2032) (layer F.Cu) (net 444))
-  (segment (start 136.7792 92.9893) (end 137.2042 93.4143) (width 0.2032) (layer F.Cu) (net 444))
   (via (at 127.7542 125.8893) (size 0.5) (drill 0.3) (layers F.Cu B.Cu) (net 158) (tstamp 6AA89A7A))
   (segment (start 127.7572 125.8863) (end 127.7542 125.8893) (width 0.2032) (layer F.Cu) (net 158))
   (segment (start 125.4672 138.8703) (end 125.4672 133.0013) (width 0.2032) (layer B.Cu) (net 158))
@@ -14687,6 +14682,11 @@
   (segment (start 135.1042 86.1893) (end 136.2792 86.1893) (width 0.2032) (layer F.Cu) (net 443))
   (segment (start 136.6792 85.7893) (end 137.4917 85.7893) (width 0.2032) (layer F.Cu) (net 443))
   (segment (start 136.2792 86.1893) (end 136.6792 85.7893) (width 0.2032) (layer F.Cu) (net 443))
+  (segment (start 137.2917 92.9893) (end 137.4917 93.1893) (width 0.2032) (layer F.Cu) (net 444))
+  (segment (start 136.3542 92.9893) (end 136.7792 92.9893) (width 0.2032) (layer F.Cu) (net 444))
+  (segment (start 134.8042 92.9893) (end 136.3542 92.9893) (width 0.2032) (layer F.Cu) (net 444))
+  (segment (start 136.3542 92.9893) (end 137.2917 92.9893) (width 0.2032) (layer F.Cu) (net 444))
+  (segment (start 136.7792 92.9893) (end 137.2042 93.4143) (width 0.2032) (layer F.Cu) (net 444))
 
   (zone (net 1) (net_name GND) (layer B.Cu) (tstamp 621B83AB) (hatch edge 0.508)
     (connect_pads (clearance 0.2032))
