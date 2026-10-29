@@ -229,34 +229,8 @@ Wire Wire Line
 	5800 1650 5800 2400
 Text GLabel 7150 2800 2    50   Input ~ 0
 BOOTSEL
-$Comp
-L Device:R_Small R?
-U 1 1 6ADC9F07
-P 7350 3600
-AR Path="/6ADC9F07" Ref="R?"  Part="1" 
-AR Path="/6AFE5B10/6ADC9F07" Ref="R17"  Part="1" 
-F 0 "R17" V 7300 3700 50  0000 L CNN
-F 1 "27" V 7350 3550 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 7350 3600 50  0001 C CNN
-F 3 "~" H 7350 3600 50  0001 C CNN
-	1    7350 3600
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	6900 3600 7250 3600
-$Comp
-L Device:R_Small R?
-U 1 1 6ADD8B0E
-P 7350 3700
-AR Path="/6ADD8B0E" Ref="R?"  Part="1" 
-AR Path="/6AFE5B10/6ADD8B0E" Ref="R18"  Part="1" 
-F 0 "R18" V 7400 3800 50  0000 L CNN
-F 1 "27" V 7350 3650 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 7350 3700 50  0001 C CNN
-F 3 "~" H 7350 3700 50  0001 C CNN
-	1    7350 3700
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	6900 3700 7250 3700
 $Comp
@@ -363,8 +337,8 @@ L Device:R_Small R?
 U 1 1 6AE48264
 P 6900 2300
 AR Path="/6AE48264" Ref="R?"  Part="1" 
-AR Path="/6AFE5B10/6AE48264" Ref="R9"  Part="1" 
-F 0 "R9" V 6800 2250 50  0000 L CNN
+AR Path="/6AFE5B10/6AE48264" Ref="R11"  Part="1" 
+F 0 "R11" V 6800 2250 50  0000 L CNN
 F 1 "1k" V 7000 2250 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 6900 2300 50  0001 C CNN
 F 3 "~" H 6900 2300 50  0001 C CNN
@@ -551,4 +525,30 @@ Text GLabel 1200 3900 1    50   Input ~ 0
 SWDIO
 Text GLabel 1300 3900 1    50   Input ~ 0
 GND
+$Comp
+L Device:R_Small R?
+U 1 1 6ADC9F07
+P 7350 3600
+AR Path="/6ADC9F07" Ref="R?"  Part="1" 
+AR Path="/6AFE5B10/6ADC9F07" Ref="R9"  Part="1" 
+F 0 "R9" V 7300 3700 50  0000 L CNN
+F 1 "27" V 7350 3550 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 7350 3600 50  0001 C CNN
+F 3 "~" H 7350 3600 50  0001 C CNN
+	1    7350 3600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 6ADD8B0E
+P 7350 3700
+AR Path="/6ADD8B0E" Ref="R?"  Part="1" 
+AR Path="/6AFE5B10/6ADD8B0E" Ref="R10"  Part="1" 
+F 0 "R10" V 7400 3800 50  0000 L CNN
+F 1 "27" V 7350 3650 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 7350 3700 50  0001 C CNN
+F 3 "~" H 7350 3700 50  0001 C CNN
+	1    7350 3700
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
