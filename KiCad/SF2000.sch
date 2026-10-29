@@ -564,12 +564,12 @@ F 3 "~" H 7100 850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small R7
+L Device:R_Small R8
 U 1 1 61FB0B67
 P 2100 2550
-F 0 "R7" H 2150 2600 50  0000 L CNN
+F 0 "R8" H 2150 2600 50  0000 L CNN
 F 1 "10k" H 2159 2505 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2100 2550 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 2100 2550 50  0001 C CNN
 F 3 "~" H 2100 2550 50  0001 C CNN
 	1    2100 2550
 	1    0    0    -1  
