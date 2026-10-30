@@ -324,14 +324,14 @@ SD_ACTIVE
 $Comp
 L Device:R_Small R?
 U 1 1 68C712CB
-P 4950 1100
+P 5250 1100
 AR Path="/68C712CB" Ref="R?"  Part="1" 
 AR Path="/620D263D/68C712CB" Ref="R20"  Part="1" 
-F 0 "R20" V 5050 1050 50  0000 L CNN
-F 1 "10k" V 4850 1050 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 4950 1100 50  0001 C CNN
-F 3 "~" H 4950 1100 50  0001 C CNN
-	1    4950 1100
+F 0 "R20" V 5350 1050 50  0000 L CNN
+F 1 "10k" V 5150 1050 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 5250 1100 50  0001 C CNN
+F 3 "~" H 5250 1100 50  0001 C CNN
+	1    5250 1100
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -382,7 +382,7 @@ Text GLabel 7050 800  1    50   Input ~ 0
 3V3
 Text GLabel 5550 1300 3    50   Input ~ 0
 TDI
-Text GLabel 4950 1300 3    50   Input ~ 0
+Text GLabel 5250 1300 3    50   Input ~ 0
 TCK
 Text GLabel 6000 1300 3    50   Input ~ 0
 TMS
@@ -699,7 +699,7 @@ Text GLabel 7450 2450 0    50   Input ~ 0
 NoConn ~ 7950 2250
 NoConn ~ 7450 2250
 NoConn ~ 7450 2350
-Text GLabel 4950 900  1    50   Input ~ 0
+Text GLabel 5250 900  1    50   Input ~ 0
 GND
 Text GLabel 6100 1300 3    50   Input ~ 0
 CONF_DONE
@@ -760,9 +760,9 @@ Wire Wire Line
 Wire Wire Line
 	5550 1200 5550 1300
 Wire Wire Line
-	4950 900  4950 1000
+	5250 900  5250 1000
 Wire Wire Line
-	4950 1200 4950 1300
+	5250 1200 5250 1300
 Wire Wire Line
 	6000 900  5900 900 
 Connection ~ 6000 900 
@@ -900,23 +900,23 @@ PROG_DET
 $Comp
 L Device:R_Small R?
 U 1 1 6AE3A1D4
-P 5250 1100
+P 4950 1100
 AR Path="/6AE3A1D4" Ref="R?"  Part="1" 
 AR Path="/620D263D/6AE3A1D4" Ref="R22"  Part="1" 
-F 0 "R22" V 5350 1050 50  0000 L CNN
-F 1 "10k" V 5150 1050 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 5250 1100 50  0001 C CNN
-F 3 "~" H 5250 1100 50  0001 C CNN
-	1    5250 1100
+F 0 "R22" V 5050 1050 50  0000 L CNN
+F 1 "10k" V 4850 1050 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 4950 1100 50  0001 C CNN
+F 3 "~" H 4950 1100 50  0001 C CNN
+	1    4950 1100
 	1    0    0    -1  
 $EndComp
-Text GLabel 5250 900  1    50   Input ~ 0
+Text GLabel 4950 900  1    50   Input ~ 0
 3V3
 Wire Wire Line
-	5250 900  5250 1000
+	4950 900  4950 1000
 Wire Wire Line
-	5250 1200 5250 1300
-Text GLabel 5250 1300 3    50   Input ~ 0
+	4950 1200 4950 1300
+Text GLabel 4950 1300 3    50   Input ~ 0
 ESP32_RTS
 Text GLabel 6950 3000 1    50   Input ~ 0
 3V3
