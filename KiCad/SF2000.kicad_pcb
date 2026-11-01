@@ -10124,7 +10124,7 @@
   (gr_text "CC BY-SA 4.0" (at 124.9292 118.4143) (layer B.SilkS) (tstamp 6B380D03)
     (effects (font (size 2 2) (thickness 0.3)) (justify mirror))
   )
-  (gr_text "Earned\nWings" (at 208.0934 111.324) (layer B.SilkS) (tstamp 6B384C27)
+  (gr_text "Earned\nWings" (at 206.1122 110.9176) (layer B.SilkS) (tstamp 6B384C27)
     (effects (font (size 2 2) (thickness 0.2)) (justify left mirror))
   )
   (gr_text "Special Thanks and Shoutouts:\n* Matt Harlum (LIV2), sd-card fw and driver.\n* Niklas Ekström, sd-card device driver and firmware.\n* Marcin Rönndahl (Eriond), power supply advice.\n* Levo_man, tlt, crossmanbx, beta testing." (at 207.4711 119.8838) (layer B.SilkS) (tstamp 6B37E98E)
