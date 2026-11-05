@@ -1,18 +1,35 @@
 # SF2000
 Spitfire 2000, A low-end 42 MHz Amiga Accelerator based on the Motorola 68SEC000 CPU
-
+ 
 ***
-
+ 
 This is WORK IN PROGRESS, a DIY hobby project. If you are going to make and sell boards you are also the one doing the customer support.
-
+ 
+**Revision 3A is brand new and has not been tested yet.**
+ 
+IMPORTANT **Please do not build Revision 2B.** We have found problems with the bus isolation on that revision which cause SRAM corruption. The Rev. 2B and Rev. 1B bills of material further down are kept for reference only.
+ 
 ***
-
+ 
 The firmware for this board is in a separate repository available here: <br />
 https://github.com/jbilander/SF2000-FW
 <br />
-
+ 
 ***
-
+ 
+Revision 3A
+<br />
+<a href="images/SF2000_rev3a_3Dview_topside.png">
+<img src="images/SF2000_rev3a_3Dview_topside.png" width="360" height="240">
+</a>
+<a href="images/SF2000_rev3a_3Dview_underside.png">
+<img src="images/SF2000_rev3a_3Dview_underside.png" width="360" height="240">
+</a>
+<br />
+Full schematic: <a href="images/SF2000_rev3a_schematic.pdf">SF2000_rev3a_schematic.pdf</a>
+ 
+***
+ 
 Revision 1B
 <br />
 <a href="images/SF2000_pic1.png">
@@ -21,18 +38,131 @@ Revision 1B
 <a href="images/SF2000_pic2.png">
 <img src="images/SF2000_pic2.png" width="360" height="264">
 </a>
-
+ 
 ***
-
+ 
 <a href="images/SF2000_pic3.jpg">
 <img src="images/SF2000_pic3.jpg" width="360" height="270">
 </a>
 <a href="images/SF2000_pic4.jpg">
 <img src="images/SF2000_pic4.jpg" width="360" height="270">
 </a>
-
 ***
-
+ 
+BOM Rev. 3A
+---------
+Rev. 3A replaces the four asynchronous SRAMs with a single SDRAM, swaps the Efinix Trion for an Intel/Altera MAX 10,
+drops the on-board IDE interface, and adds an ESP32-C5 module and an RP2354A. Values and packages below are taken
+straight from the KiCad netlist.
+ 
+Designator  | Name/Value   | Package | Notes
+-|-|-|-|
+U1 | Voltage Regulator 3.3V, <br /> LM1117-3.3 or <br /> AMS1117-3.3 | SOT-223 | 3.3V 1A Low Drop-Out (LDO) Linear Voltage Regulator, main `3V3` rail
+U2 | Voltage Regulator 4.3V, ABLIC S-1132B43-M5T1U or TPS73643DBVR | SOT-23-5 | 4.3V LDO, the `4V3` supply rail for the CBT FET bus switches U4,U5,U6 <br />[S-1132B43-M5T1U](https://www.digikey.com/en/products/detail/ablic-inc/S-1132B43-M5T1U/6112740)
+U3 | Voltage Regulator 3.3V, TLV75533PDBVR | SOT-23-5 | 3.3V 500mA LDO, separate `3V3_C5` rail for the ESP32-C5 module so its Wi-Fi bursts stay off the FPGA rail
+U4,U5 | Digital Bus Switch 24-Bit FET, SN74CBT16211CDGGR or SN74CBT16811CDGGR | TSSOP-56 | FET level-shifter, Amiga +5V bus <-> 3V3 <br />[SN74CBT16211CDGGR](https://www.digikey.com/en/products/detail/texas-instruments/SN74CBT16211CDGGR/864169)
+U6 | Digital Bus Switch 10-Bit FET, SN74CBT3244PW | TSSOP-20 | FET level-shifter for the remaining control lines
+U7 | Bus Transceiver 16-Bit, SN74LVC16245ADGGR | TSSOP-48 | Buffers the D0-D15 data bus, direction and output-enable driven by the FPGA (`DATA_DIR`, `OE_D_HIGH`, `OE_D_LOW`)
+U8 | Intel/Altera MAX 10 FPGA, 10M04SCU324C8G | BGA-324, 15x15mm, 0.8mm pitch | 4000 LE, internal configuration flash and UFM. It has to be the `S` **single-supply** variant - there is no 1.2V core rail on this board. The symbol and footprint in KiCad are drawn as a 10M02 so the design can be downsized to a 10M02SCU324 later if it fits; the firmware is developed for the 10M04 <br />[10M04SCU324C8G](https://www.digikey.com/en/products/detail/altera/10M04SCU324C8G/8259243)
+U9 | W25Q16JVSNIQ 16 Mbit SPI NOR Flash memory | SOIC-8_3.9x4.9mm_P1.27mm (150-mil Narrow JEDEC SOIC) | [W25Q16JVSNIQ](https://www.digikey.com/en/products/detail/winbond-electronics/w25q16jvsniq/6193768) or [AT25SF161B-SSHD-T](https://www.digikey.com/en/products/detail/renesas-electronics-corporation/AT25SF161B-SSHD-T/14549318)
+U10 | Motorola CPU MC68SEC000AA20 20MHz | QFP-64_14x14mm_Pitch0.8mm | [MC68SEC000AA20](https://shop.tvsat.com.pl/en_GB/searchquery/68sec000/1/phot/5?url=68sec000)
+U11 | SDRAM 8Mx16 (128 Mbit), <br /> IM1216SDBABG-6I or <br /> AS4C8M16SA-6BIN | TFBGA-54, 8x8mm, 0.8mm pitch | Replaces the four SRAMs of Rev. 2B. 128 Mbit is 16 MB, which is the whole address space the MC68SEC000 can reach, so there is nothing to gain from a bigger part. The footprint is routed for all 13 address lines, so a 256 Mbit 16Mx16 part (AS4C16M16SA-6BIN) drops straight in as well should a large shadow RAM ever want one - unlikely, but the option costs nothing. On the 128 Mbit parts ball F9 (`A12`) is a no-connect, so the controller's row-address width has to match whichever density is fitted
+U12 | 74HCT2G14GV,125 Dual Schmitt Trigger Inverter | TSOP-6 / SOT457 / SC-74 | Drives the SD_LED header J9 and the /SD_ACTIVE pin J10 at +5V
+U13 | ESP32-C5-WROOM-1U-N8R8 | Module, 18 x 25.5mm, U.FL antenna connector | The `-1U` variant uses an external antenna, so no PCB antenna keep-out is needed under or beside the module. If you fit the PCB-antenna `-1` variant instead, the module has to be moved so its antenna end hangs over the board edge
+U14 | Level shifter 74LVC8T245PW,118 | TSSOP-24 | Clockport data bus CP_D0-CP_D7. 3V3 on the A side, +5V on the B side, direction and enable from the FPGA
+U15 | Level shifter 74LVC8T245PW,118 | TSSOP-24 | Clockport address and control (CP_A2-CP_A5, /CS, /IORD, /IOWR). +5V on the A side, 3V3 on the B side, DIR and /OE tied low so it always drives 3V3 -> +5V
+U16 | Raspberry Pi RP2354A | QFN-60, 7x7mm, 0.4mm pitch | MCU with 2 MB stacked flash. SPI slave to the FPGA (`SS_RP2354`, `IRQ_RP2354`) plus a UART link to the ESP32-C5
+U17 | 74LVC1G57GV Configurable Multiple-Function Gate | TSOP-6 / SOT457 / SC-88A | Wired as XNOR with A and B tied together: CLK7M = CCK XNOR CCKQ (replaces the SN74LVC2G86DCUR XOR of Rev. 2B). This is how the 7 MHz is generated on every supported machine - the real 7M is not present on the co-pro slot of the early German A2000, nor on A500 Rev 3 and Rev 5, but CCK and CCKQ always are
+J1 | Goldfingers on PCB, 86-pin | ENIG | Order PCB with Goldfingers, ENIG and 45 degrees chamfered edge (or chamfer the edge yourself with a file)
+J2 | CFGIN-header, Two-Pin Header | 2.54mm (1 x 2) | Put a jumper shunt here to activate autoconfig, or a CONFIGOUT-wire from another device into pin 2. Pin 2 is pulled up to +5V by R21
+J3 | JTAG-header | Dual row 2.54mm (2 x 5) Pin Male Header |
+J4 | JP-header JP2, JP3 | 2.54mm (2 x 2) Pin Male Header | JP2 = Generate E-CLK (if the internal 68k is removed from the socket), JP3 = MapROM
+J5 | SWD pads, SWCLK / GND / SWDIO | 2.54mm (1 x 3) | Serial Wire Debug for U16 (RP2354A)
+J6 | ESP32 UART0, TX0 / RX0 | 2.54mm (1 x 2) Pin Male Header | Console and flashing header for U13
+J7 | VCC/GND Two-Pin Header | 2.54mm (2 x 1) | VIN +5V <br /> used when programming the FPGA standalone (card not installed in the Amiga). Be careful with orientation, check polarity BEFORE plugging-in a phone charger or similar here
+J8 | GCT MEM2055-00-190-01-A Micro SD Card Socket | 9-pin push-pull micro-SD socket | Wired for 4-bit SDIO as well as 1-bit SPI: SD_CS=DAT3, SD_MOSI=CMD, SD_MISO=DAT0, SD_D1=DAT1, SD_D2=DAT2
+J9 | SD_LED header, Two-Pin Header | 2.54mm (2 x 1) | Driven by U12 inverter buffer when /SD_CS is being asserted. Connect here to drive an external HDD-LED
+J10 | SD_ACTIVE low signal, Right angle Single-Pin Header | 0.64 mm square pin angled | Driven by U12 inverter buffer when /SD_CS is being asserted. Connect from here to a [LED-board](https://github.com/jbilander/A500_IDE_LED_board) (Active low +5V-signal)
+J11 | RP2354A UART0, TX0 / RX0 | 2.54mm (1 x 2) Pin Male Header | Console header for U16
+J12 | CLOCKPORT-header | 2.00mm 22-Pin (2x11) Pin Male Header | Caution: This header is +5V levels. Be careful with orientation
+J13 | JP-header JP1 | 2.54mm (2 x 1) Pin Male Header | 7 MHz / Turbo selector
+J14 | USB-C Receptacle USB 2.0, HRO TYPE-C-31-M-12 | 16-pin SMD | Native USB for the ESP32-C5 (U13)
+J15 | SPI-header: CS0, PROG_DET, SCK, MISO, MOSI, GND | 2.54mm (1 x 6) Pin Male Header | External SPI access to U9. `PROG_DET` tells the FPGA that a programmer is attached so it releases the bus
+J16 | USB-C Receptacle USB 2.0, HRO TYPE-C-31-M-12 | 16-pin SMD | Native USB for the RP2354A (U16), UF2 / BOOTSEL
+S1 | 4-way DIP switch, TDB04H0SB1R | SMD, 1.27mm pitch | Autoconfig fast-RAM size, RAMSZ0-RAMSZ3. Pulled up by RN1, so **all switches OFF, or the switch not fitted at all, means 8 MB**
+X1 | Crystal Oscillator 20 MHz | Oscillator 5.0 x 3.2mm, 4-pad | **Do not populate.** Every internal clock is derived from the 7 MHz reconstructed by U17, through the FPGA PLL. X1 is kept in the design in case a free-running clock is needed later; it lands on a dedicated clock input (CLK0p) through R3. Leave the pads empty until then
+Y1 | Crystal 12 MHz, ABM8-272-T3 | 3.2 x 2.5mm, 4-pad | CL = 10 pF, +/-30 ppm. With C49/C50 = 15 pF and R12 = 1k this is the RP2350/RP2354 reference oscillator circuit <br />[ABM8-272-T3](https://www.digikey.com/en/products/detail/abracon-llc/ABM8-272-T3/22472366)
+L1 | Inductor 3.3uH, AOTA AB201610S3R3101T | 2.0 x 1.6mm SMD shielded power inductor | Switching inductor for the RP2354A internal core buck regulator (`VREG_LX`)
+BT1,BT2 | Tactile push button | 3 x 4 x 2mm SMD, 2-pin | BT1 = BOOT (pulls `BOOTSEL` low through R13), BT2 = RESET (pulls `RUN` low) for U16
+BT3,BT4 | Tactile push button | 3 x 4 x 2mm SMD, 2-pin | BT3 = BOOT (IO28 strap), BT4 = EN/RESET for U13
+R1 | 22 Ω Resistor | 0603 | Series damping on `CLK_SDRAM`, straight off the FPGA PLL output pin
+R2 | 33 Ω Resistor | 0603 | Series damping on the 7 MHz generated by U17, into the FPGA clock input
+R3 | 33 Ω Resistor | 0603 | Series damping on `OSC_CLK` from X1 (only relevant if X1 is fitted)
+R4 | 33 Ω Resistor | 0603 | Series damping on `CLKCPU` from the FPGA to U10
+R5 | 33 Ω Resistor | 0603 | Series damping on SPI MOSI
+R6 | 33 Ω Resistor | 0603 | Series damping on SPI SCLK
+R7 | 33 Ω Resistor | 0603 | Series damping on `SD_CLK` to the micro SD card
+R8 | 33 Ω Resistor | 0603 | RC filter into the RP2354A `VREG_AVDD` analog supply, together with C9
+R9,R10 | 27 Ω Resistor | 0603 | USB series resistors for D+ / D- on J16
+R11 | 330 Ω Resistor | 0603 | Series resistor for the SD_LED header J9, adjust to your LED and preferred brightness
+R12 | 1k Ω Resistor | 0603 | Series resistor on `XOUT` of Y1 (RP2354A reference circuit)
+R13 | 1k Ω Resistor | 0603 | Series resistor between `BOOTSEL` and the BOOT button BT1
+R14 | 4.7k Ω Resistor | 0603 | Pull-up for `RUN` on U16, with C44 as the reset delay
+R15,R16 | 5.1k Ω Resistor | 0603 | USB-C CC1 / CC2 pull-downs for J16
+R17,R18 | 5.1k Ω Resistor | 0603 | USB-C CC1 / CC2 pull-downs for J14
+R19 | 10k Ω Resistor | 0603 | Pull-up for JTAG `TDI` to 3V3
+R20 | 10k Ω Resistor | 0603 | Pull-down for JTAG `TCK`
+R21 | 10k Ω Resistor | 0603 | Pull-up for /CFGIN to +5V (J2 pin 2)
+R22 | 10k Ω Resistor | 0603 | Pull-up for `ESP32_RTS`
+R23 | 10k Ω Resistor | 0603 | Pull-down for `PROG_DET`
+R24 | 10k Ω Resistor | 0603 | Pull-up for the ESP32-C5 `EN` pin, forms an RC reset delay with C46
+R25 | 10k Ω Resistor | 0603 | Pull-up for `CP_D_OE` on the 3V3 side
+R26,R27 | 10k Ω Resistor | 0603 | Pull-ups for JP2 and JP3
+RN1 | Resistor pack 10k Ω (CAY16-103J4LF) | 1206 | Pull-ups for RAMSZ0-RAMSZ3 (S1) <br />[CAY16-103J4LF](https://www.digikey.com/en/products/detail/bourns-inc/cay16-103j4lf/431579)
+RN2 | Resistor pack 10k Ω (CAY16-103J4LF) | 1206 | Pull-ups for JP1, `TMS`, `CONF_DONE` and `nSTATUS`
+RN3 | Resistor pack 10k Ω (CAY16-103J4LF) | 1206 | Pull-ups for `ESP32_CTS`, `nCONFIG`, `SD_D2` and `SD_CS`
+RN4 | Resistor pack 10k Ω (CAY16-103J4LF) | 1206 | Pull-ups for `SD_CD`, `SD_D1`, `SD_MISO` and `SD_MOSI`
+RN5 | Resistor pack 10k Ω (CAY16-103J4LF) | 1206 | Pull-ups for `CP_IOWR`, `CP_IORD`, `CP_CS` (3V3 side) and `SS_W25Q16`
+RN6 | Resistor pack 10k Ω (CAY16-103J4LF) | 1206 | Pull-ups to **+5V** for `RST`, `CP_RTC_CS`, `CP_RTC_DS` and `CP_INT6` on the clockport
+C1 | Polarized Electrolytic Capacitor 100uF | CP_Elec_6.3x7.7 mm | [Wurth SMD WCAP-AS5H 100uF](https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/865230245004/5727885)
+C2 | Polarized Electrolytic Capacitor 22uF | CP_Elec_5x5.8 mm | [Wurth SMD WCAP-AS5H 22uF](https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/865230342002/5727846)
+C3-C8 | Ceramic Capacitor 10uF | 1206 | Bulk on the 3V3, 4V3, 3V3_C5 and clockport +5V rails
+C9-C11 | Ceramic Capacitor 4.7uF | 1206 | RP2354A supplies and core buck output
+C12 | Ceramic Capacitor 0.47uF = 470nF | 1206 |
+C13 | Ceramic Capacitor 0.22uF = 220nF | 1206 | Local reservoir at the ESP32-C5 3V3 pin
+C14-C19 | Ceramic Capacitor 0.1uF = 100nF | 0805 |
+C20-C46 | Ceramic Capacitor 0.1uF = 100nF | 0603 | Decoupling
+C47,C48 | Ceramic Capacitor 0.01uF = 10nF | 0603 |
+C49,C50 | Ceramic Capacitor 15pF | 0603 | Load capacitors for Y1
+C51-C72 | Ceramic Capacitor 0.1uF = 100nF | 0402 | The cluster on the underside directly beneath U8 and U11
+ 
+***
+ 
+### Rev. 3A board layout
+ 
+Four layer stackup. The top and bottom layers carry the signal routing with a GND pour filling the gaps,
+the second layer is a solid GND plane and the third layer is a 3.3V plane.
+<br />
+Top layer, and the GND plane on inner layer 1:
+<br />
+<a href="images/SF2000_top_layer.png">
+<img src="images/SF2000_top_layer.png" width="360" height="264">
+</a>
+<a href="images/SF2000_GND_second_layer.png">
+<img src="images/SF2000_GND_second_layer.png" width="360" height="264">
+</a>
+<br />
+The 3.3V plane on inner layer 2, and the bottom layer:
+<br />
+<a href="images/SF2000_3V3_third_layer.png">
+<img src="images/SF2000_3V3_third_layer.png" width="360" height="264">
+</a>
+<a href="images/SF2000_bottom_layer.png">
+<img src="images/SF2000_bottom_layer.png" width="360" height="264">
+</a>
+ 
+***
+ 
 BOM Rev. 2B
 ---------
 Designator  | Name/Value   | Package | Notes
@@ -80,9 +210,9 @@ C8 | Ceramic Capacitor 2.2uF | 1206 |
 C9 | Ceramic Capacitor 0.47uF = 470 nF | 1206 |
 C10-C39 | Ceramic Capacitor 0.1uF = 100nF | 0805 | 
 C40-C54 | Capacitor 0.01uF = 10nF | 0805 |
-
+ 
 ***
-
+ 
 BOM Rev. 1B
 ---------
 Designator  | Name/Value   | Package | Notes
@@ -136,24 +266,24 @@ C8 | Capacitor 10uF | 1206 |
 C9-C25 | Capacitor 0.1uF = 100nF | 0805 | C24 capacitor in RC-debounce circuit
 C26-C27 | Capacitor 10uF | 1206 |
 C28-C46 | Capacitor 0.01uF = 10nF | 0805 |
-
+ 
 ***
-
+ 
 A SF2000 shared shopping cart with most of the stuff in the list, no 3V3-regulator though and not all birdseed (passives):
 https://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=fdb374e26b
-
+ 
 ***
-
+ 
 The FPGA used in this Accelerator board, please note it has to be the Voltage `UV` version because of 3.3V is being used for all VCC/VCCIO on the Accelerator:
 <br />
 <a href="images/SF2000_FPGA_GW1N-UV9LQ144.png">
 <img src="images/SF2000_FPGA_GW1N-UV9LQ144.png" width="640" height="270">
 </a>
-
+ 
 ***
-
+ 
 ### Ordering details (JLCPCB):
-
+ 
 <a href="images/SF2000_JLCPCB_ordering_pic1.png">
 <img src="images/SF2000_JLCPCB_ordering_pic1.png" width="574" height="442">
 </a>
@@ -164,10 +294,9 @@ The FPGA used in this Accelerator board, please note it has to be the Voltage `U
 <a href="images/SF2000_pic5.png">
 <img src="images/SF2000_pic5.png" width="357" height="220">
 </a>
-
 ***
 ### MC68SEC000 
-
+ 
 The SF2000 is based on the MC68SEC000 CPU <br />
 https://www.nxp.com/docs/en/product-brief/MC68SEC000.pdf <br />
 <a href="images/SF2000_pic6.jpg">
@@ -175,11 +304,11 @@ https://www.nxp.com/docs/en/product-brief/MC68SEC000.pdf <br />
 </a>
 <br />
 You can contact Eriond, https://github.com/eriond (over at A314 or Retro Tinkering or SUGA (Swedish User Group Amiga) discord) to buy a NOS MC68SEC000 at a reasonable price.
-
+ 
 ***
-
+ 
 ### Installing in A500 or A2000:
-
+ 
 Internal A500 installation with this adapter: <br />
 https://github.com/jbilander/A500_Edge_Expansion_adapter
 <br />
@@ -200,7 +329,7 @@ https://github.com/jbilander/A500_Edge_Expansion_adapter
 <a href="images/SF2000_pic11.jpg">
 <img src="images/SF2000_pic11.jpg" width="256" height="192">
 </a>
-
+ 
 External A500 installation with this adapter: <br />
 https://github.com/jbilander/POC86
 <br />
@@ -218,16 +347,15 @@ https://github.com/jbilander/POC86
 <a href="images/SF2000_pic16.jpg">
 <img src="images/SF2000_pic16.jpg" width="256" height="192">
 </a>
-
+ 
 ### A2000 Co-pro slot:<br />
 <a href="images/SF2000_pic13.jpg">
 <img src="images/SF2000_pic13.jpg" width="512" height="384">
 </a>
-
 ***
-
+ 
 ### Building
-
+ 
 Follow the dots to get the correct orientation of the chips when soldering, don't rely on the silkscreen text.
 <br />
 <a href="images/SF2000_pic17.jpg">
@@ -264,11 +392,11 @@ For A2000 and ribbon cable use you can solder a 44 pin IDE-header like this:
 <a href="images/SF2000_pic24.jpg">
 <img src="images/SF2000_pic24.jpg" width="256" height="192">
 </a>
-
+ 
 ***
-
+ 
 ### Performance
-
+ 
 Some MC68SEC000 can be overclocked to 42 MHz and running with only one wait state for the IDE/ATA interface we can reach really good performance:
 <br />
 <a href="images/SF2000_pic25.jpg">
@@ -315,21 +443,22 @@ JTAG-header description:
 <a href="images/SF2000_JTAG_pinout_desciption.jpg">
 <img src="images/SF2000_JTAG_pinout_desciption.jpg" width="505" height="303">
 </a>
-
-
+ 
+ 
 ***
-
+ 
 Happy Hackin' 
-
+ 
 ***
-
+ 
 [![CC BY-SA 4.0][cc-by-sa-shield]][cc-by-sa]
-
+ 
 This work is licensed under a
 [Creative Commons Attribution-ShareAlike 4.0 International License][cc-by-sa].
-
+ 
 [![CC BY-SA 4.0][cc-by-sa-image]][cc-by-sa]
-
+ 
 [cc-by-sa]: http://creativecommons.org/licenses/by-sa/4.0/
 [cc-by-sa-image]: https://licensebuttons.net/l/by-sa/4.0/88x31.png
 [cc-by-sa-shield]: https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg
+ 
