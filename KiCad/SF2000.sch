@@ -1051,13 +1051,13 @@ Wire Notes Line
 	2850 1500 10150 1500
 Wire Notes Line
 	2850 500  10150 500 
-Text Notes 9400 1300 0    100  ~ 0
+Text Notes 9700 1300 0    100  ~ 0
 3V3
 Text Notes 4350 1400 0    50   ~ 0
 Supply to FPGA I/O LVTTL
 Text Notes 6750 1400 0    50   ~ 0
 Supply to FET level shifters
-Text Notes 9150 1400 0    50   ~ 0
+Text Notes 9300 1400 0    50   ~ 0
 Supply to ESP32-C5
 Text GLabel 900  1950 0    50   Input ~ 0
 INT6
@@ -1424,17 +1424,6 @@ U 6AB92870
 F0 "ESP32-C5-WROOM" 50
 F1 "ESP32-C5-WROOM.sch" 50
 $EndSheet
-$Comp
-L SF2000:TLV75533PDBVR U3
-U 1 1 6AC23383
-P 8900 1050
-F 0 "U3" H 8900 1415 50  0000 C CNN
-F 1 "TLV75533PDBVR" H 8900 1324 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-5_HandSoldering" H 9250 1250 50  0001 L CNN
-F 3 "http://www.ti.com/lit/gpn/tlv755p" H 9250 1150 50  0001 L CNN
-	1    8900 1050
-	1    0    0    -1  
-$EndComp
 Text GLabel 8100 950  1    50   Input ~ 0
 +5VDC
 Wire Wire Line
@@ -2074,4 +2063,17 @@ Wire Wire Line
 Connection ~ 3750 7350
 Wire Wire Line
 	3750 7350 4000 7350
+$Comp
+L SF2000:TLV75533PDYDR U3
+U 1 1 6BF00FF1
+P 8900 1050
+F 0 "U3" H 8900 1415 50  0000 C CNN
+F 1 "TLV75533PDYDR" H 8900 1324 50  0000 C CNN
+F 2 "SF2000:TLV75533PDYDR" H 8700 1350 50  0001 L CNN
+F 3 "https://www.ti.com/lit/ds/symlink/tlv755p.pdf?ts=1772613033334&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FTLV755P" H 9250 1100 50  0001 L CNN
+	1    8900 1050
+	1    0    0    -1  
+$EndComp
+Text GLabel 9400 1150 2    50   Input ~ 0
+GND
 $EndSCHEMATC
