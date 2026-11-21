@@ -1174,17 +1174,6 @@ Text GLabel 2600 3550 0    50   Output ~ 0
 INT6
 Wire Notes Line
 	600  5650 600  6350
-$Comp
-L SF2000:SN74LVC16245ADGGR U7
-U 1 1 6A982519
-P 8850 3400
-F 0 "U7" H 8850 2000 50  0000 C CNN
-F 1 "74LVC162245ADGG" H 8850 2100 50  0000 C CNN
-F 2 "Package_SO:TSSOP-48_6.1x12.5mm_P0.5mm" H 9300 4650 50  0001 L CNN
-F 3 "http://www.ti.com/lit/gpn/sn74lvc16245a" H 9300 4550 50  0001 L CNN
-	1    8850 3400
-	-1   0    0    1   
-$EndComp
 Text GLabel 8250 4250 0    50   Input ~ 0
 GND
 Text GLabel 8250 3650 0    50   Input ~ 0
@@ -2076,4 +2065,15 @@ F 3 "https://www.ti.com/lit/ds/symlink/tlv755p.pdf?ts=1772613033334&ref_url=http
 $EndComp
 Text GLabel 9400 1150 2    50   Input ~ 0
 GND
+$Comp
+L SF2000:74LVC162245ADGG U7
+U 1 1 6B036672
+P 8850 3400
+F 0 "U7" H 8850 2000 50  0000 C CNN
+F 1 "74LVC162245ADGG" H 8850 2100 50  0000 C CNN
+F 2 "Package_SO:TSSOP-48_6.1x12.5mm_P0.5mm" H 9300 4650 50  0001 L CNN
+F 3 "" H 9300 4550 50  0001 L CNN
+	1    8850 3400
+	-1   0    0    1   
+$EndComp
 $EndSCHEMATC
