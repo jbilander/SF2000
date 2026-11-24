@@ -2076,4 +2076,15 @@ F 3 "" H 9300 4550 50  0001 L CNN
 	1    8850 3400
 	-1   0    0    1   
 $EndComp
+$Comp
+L Mechanical:MountingHole H?
+U 1 1 6B0A4F60
+P 8550 5500
+F 0 "H?" H 8650 5546 50  0000 L CNN
+F 1 "MountingHole" H 8650 5455 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 8550 5500 50  0001 C CNN
+F 3 "~" H 8550 5500 50  0001 C CNN
+	1    8550 5500
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
