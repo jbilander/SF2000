@@ -2087,4 +2087,38 @@ F 3 "~" H 8550 5500 50  0001 C CNN
 	1    8550 5500
 	1    0    0    -1  
 $EndComp
+Text GLabel 7050 5000 3    50   Input ~ 0
+OE_ABUS
+$Comp
+L Device:R_Pack04 RN7
+U 1 1 6B2AB77C
+P 6950 4800
+F 0 "RN7" H 7138 4846 50  0000 L CNN
+F 1 "10k_Pack04" H 7138 4755 50  0000 L CNN
+F 2 "SF2000:RESCAF80P320X160X60-8N" V 7225 4800 50  0001 C CNN
+F 3 "~" H 6950 4800 50  0001 C CNN
+	1    6950 4800
+	1    0    0    -1  
+$EndComp
+Connection ~ 6850 4600
+Wire Wire Line
+	6850 4600 6750 4600
+Wire Wire Line
+	6950 4600 6900 4600
+Text GLabel 6900 4500 1    50   Input ~ 0
+3V3
+Wire Wire Line
+	7050 4600 6950 4600
+Connection ~ 6950 4600
+Wire Wire Line
+	6900 4500 6900 4600
+Connection ~ 6900 4600
+Wire Wire Line
+	6900 4600 6850 4600
+Text GLabel 6750 5000 3    50   Input ~ 0
+OE_D_HIGH
+Text GLabel 6850 5000 3    50   Input ~ 0
+OE_D_LOW
+Text GLabel 6950 5000 3    50   BiDi ~ 0
+DATA_DIR
 $EndSCHEMATC
